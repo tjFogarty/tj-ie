@@ -17,7 +17,7 @@ to = "/archive/"
 
 [[redirects]]
 from = "/category/*"
-to = "/tag/:splat"
+to = "/tags/:splat"
 
 [[redirects]]
 from = "/posts/"
