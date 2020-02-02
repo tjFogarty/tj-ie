@@ -1,7 +1,7 @@
 [build]
   publish = "_site"
-  command = "DEBUG=* eleventy"
-  functions = "lambda/src/"
+  command = "npm run build"
+  functions = "lambda/src"
 
 [dev]
   command = "npm run serve"
