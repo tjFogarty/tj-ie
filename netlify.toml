@@ -1,7 +1,7 @@
 [build]
   publish = "_site"
   command = "DEBUG=* eleventy"
-  functions = "lambda/src"
+  functions = "lambda/src/"
 
 [dev]
   command = "npm run serve"
@@ -14,6 +14,10 @@
 [[redirects]]
 from = "/category/"
 to = "/archive/"
+
+[[redirects]]
+from = "/category/*"
+to = "/tag/:splat"
 
 [[redirects]]
 from = "/posts/"
