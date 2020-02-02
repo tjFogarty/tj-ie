@@ -1,0 +1,15 @@
+---
+layout: layouts/home.njk
+permalink: /archive/
+eleventyNavigation:
+  key: Archive
+  order: 2
+---
+
+<article class="c-article">
+  <h1>Archive</h1>
+
+  {% set postslist = collections.posts %}
+
+  {% include "postslist.njk" %}
+</article>

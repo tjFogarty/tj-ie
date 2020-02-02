@@ -1,0 +1,25 @@
+{% set year = '' %}
+<ol class="c-post-list">
+  {% for post in postslist | reverse %}
+    {% set postYear = post.date | year %}
+    {% set isNewYear = year !== postYear %}
+    {% if isNewYear and postslistYears !== 'off' %}
+      <li class="c-post-list__item c-post-list__sticky">
+        <h2>{{ postYear }}</h2>
+      </li>
+      {% set year = postYear %}
+    {% endif %}
+    <li class="c-post-list__item">
+      <time class="c-post-list__item-date" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
+      <a href="{{ post.url | url }}" class="c-post-list__item-title">
+        {% if post.data.title %}{{ post.data.title }}{% else %}<code>{{ post.url }}</code>{% endif %}
+      </a>
+      {% for tag in post.data.tags %}
+        {%- if collections.tagList.indexOf(tag) != -1 -%}
+        {% set tagUrl %}/tags/{{ tag }}/{% endset %}
+        <a href="{{ tagUrl | url }}" class="tag">{{ tag }}</a>
+        {%- endif -%}
+      {% endfor %}
+    </li>
+  {% endfor %}
+</ol>

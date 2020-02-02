@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ renderData.title or title or metadata.title }}</title>
+    <meta name="Description" content="{{ renderData.description or description or metadata.description }}">
+    <link rel="alternate" href="{{ metadata.feed.path | url }}" type="application/atom+xml" title="{{ metadata.title }}">
+
+    <link rel="preload" href="/assets/js/index.js" as="script" crossorigin>
+
+    {% set css %}
+      {% include 'assets/css/base/reset.css' %}
+      {% include 'assets/css/base/variables.css' %}
+      {% include 'assets/css/base/type.css' %}
+      {% include 'assets/css/base/code.css' %}
+
+      {% include 'assets/css/components/article.css' %}
+      {% include 'assets/css/components/navigation.css' %}
+      {% include 'assets/css/components/post-list.css' %}
+
+      {% include 'assets/css/layout/page.css' %}
+    {% endset %}
+
+    <style>
+      {{ css | cssmin | safe }}
+    </style>
+  </head>
+  <body class="l-page">
+    <header>
+      <ul class="c-nav">
+        <li class="c-nav__item">
+          <a href="{{ '/' | url }}">{{ metadata.title }}</a>
+        </li>
+      {%- for entry in collections.all | eleventyNavigation %}
+        <li class="c-nav__item{% if entry.url == page.url %} is-active{% endif %}">
+          <a href="{{ entry.url | url }}">{{ entry.title }}</a>
+        </li>
+      {%- endfor %}
+      </ul>
+    </header>
+
+    <main{% if templateClass %} class="{{ templateClass }}"{% endif %}>
+      {{ content | safe }}
+    </main>
+
+    <footer>
+      &copy; TJ Fogarty
+    </footer>
+
+    <!-- Current page: {{ page.url | url }} -->
+
+    <script src="/assets/js/index.js" type="module" defer></script>
+  </body>
+</html>

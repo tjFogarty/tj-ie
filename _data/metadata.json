@@ -1,0 +1,15 @@
+{
+  "title": "TJ Fogarty",
+  "url": "https://tj.ie/",
+  "description": "Performance focused Front-end Development.",
+  "feed": {
+    "subtitle": "Performance focused Front-end Development.",
+    "filename": "feed.xml",
+    "path": "/feed/feed.xml",
+    "id": "https://tj.ie/"
+  },
+  "author": {
+    "name": "TJ Fogarty",
+    "email": "contact@tj.ie"
+  }
+}
