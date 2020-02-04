@@ -72,6 +72,10 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("img");
   eleventyConfig.addPassthroughCopy("assets");
   eleventyConfig.addPassthroughCopy("lambda");
+  eleventyConfig.addPassthroughCopy("favicon.ico");
+  eleventyConfig.addPassthroughCopy("robots.txt");
+  eleventyConfig.addPassthroughCopy("keybase.txt");
+  eleventyConfig.addPassthroughCopy("googlea2c3a0ad5b2401f7.html");
 
   /* Markdown Overrides */
   let markdownLibrary = markdownIt({

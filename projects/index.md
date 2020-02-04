@@ -1,9 +1,6 @@
 ---
 layout: layouts/post.njk
 title: Projects
-eleventyNavigation:
-  key: Projects
-  order: 5
 ---
 
 Currently as an engineer at {% external-link "https://wwww.teamwork.com", "Teamwork" %} I work on their Projects product on the front end.

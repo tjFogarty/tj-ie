@@ -10,9 +10,7 @@ I’m TJ, a web devel­op­er from {% external-link "https://en.wikipedia.org/wi
 
 I'm a Senior Software Engineer at Teamwork. Pre­vi­ous­ly, I’ve worked for ResourceKraft as a Designer/​Developer, Mav­er­ick as the Lead Devel­op­er, Emag­ine as the Tech­ni­cal Lead, and StitcherAds as a UI Devel­op­er.
 
-I enjoy work­ing with JavaScript (React and Vue), Node, PHP (Craft CMS, Word­Press, Lar­avel, Expres­sio­nEngine), and CSS (Sass, Less, good ‘ol vanil­la CSS). Spend­ing all these years work­ing with such fun tech­nolo­gies reminds me that just because you can do it, def­i­nite­ly means you should.
-
-In my spare time I listen to music, read, try to figure out that bug that's been haunting me, and waking at 4am with a solution from the fever dream that destroyed me.
+I've been fortunate enough to work with some amazing clients including The President of Ireland, a few third-level colleges, and countless local businesses.
 
 You can find me at the links below:
 

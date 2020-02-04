@@ -1,15 +1,12 @@
 ---
 layout: layouts/post.njk
 title: Contact
-eleventyNavigation:
-  key: Contact
-  order: 4
 ---
 
 If you have any questions, or just want to say hi, feel free to drop me a message via the form below. I’ll get back to you as soon as I can.
-  
+
 Alternatively, you can {% external-link "https://twitter.com/tj_fogarty", "find me on Twitter" %}, or send me an email at <a href="mailto:contact@tj.ie">contact@tj.ie</a>
-  
+
 <form method="post" action="/contact-thanks/" accept-charset="UTF-8" name="contact" netlify>
 
   <label for="name">Your Name</label>

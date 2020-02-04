@@ -16,6 +16,22 @@ from = "/category/"
 to = "/archive/"
 
 [[redirects]]
+from = "/contact/"
+to = "/about/"
+
+[[redirects]]
+from = "/contact-thanks/"
+to = "/about/"
+
+[[redirects]]
+from = "/projects/"
+to = "/about/"
+
+[[redirects]]
+from = "/projects/*"
+to = "/about/"
+
+[[redirects]]
 from = "/category/*"
 to = "/tags/:splat"
 

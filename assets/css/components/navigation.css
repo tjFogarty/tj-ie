@@ -15,4 +15,7 @@
   margin-left: 0;
 }
 
-.c-nav__item.is-active {}
+.c-nav__item.is-active a {
+  color: var(--accent-color);
+  text-decoration: underline solid var(--color);
+}
