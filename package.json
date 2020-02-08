@@ -29,12 +29,13 @@
     "@11ty/eleventy-plugin-rss": "^1.0.7",
     "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.1",
     "clean-css": "^4.2.1",
+    "encoding": "^0.1.12",
     "handlebars": "^4.7.3",
     "luxon": "^1.21.3",
     "markdown-it": "^8.4.2",
     "markdown-it-anchor": "^5.2.5",
-    "node-fetch": "^2.6.0",
     "netlify-lambda": "^1.6.3",
+    "node-fetch": "^2.6.0",
     "sparkpost": "^2.1.4"
   }
 }
