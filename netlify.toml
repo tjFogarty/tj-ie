@@ -1,9 +1,11 @@
 [build]
   publish = "_site"
   command = "npm run build"
+  functions = "./functions"
 
 [dev]
   command = "npm run serve"
+  autoLaunch = false
 
 [[redirects]]
 from = "/category/"
