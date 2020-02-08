@@ -70,7 +70,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addCollection("tagList", require("./_11ty/getTagList"));
 
   eleventyConfig.addPassthroughCopy("assets");
-  eleventyConfig.addPassthroughCopy("functions");
+  // eleventyConfig.addPassthroughCopy("pagespeed");
   eleventyConfig.addPassthroughCopy("favicon.ico");
   eleventyConfig.addPassthroughCopy("robots.txt");
   eleventyConfig.addPassthroughCopy("keybase.txt");
@@ -112,6 +112,8 @@ module.exports = function(eleventyConfig) {
       "html",
       "liquid"
     ],
+
+    passthroughFileCopy: true,
 
     // If your site lives in a different subdirectory, change this.
     // Leading or trailing slashes are all normalized away, so don’t worry about those.
