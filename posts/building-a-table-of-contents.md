@@ -2,7 +2,7 @@
 title: "Building a Table of Contents with the Intersection Observer API"
 date: 2018-09-08T11:31:17+01:00
 description: "How to build a live-updating table of contents using Intersection Observer."
-permalink: "/building-a-table-of-contents/"
+permalink: "/building-a-table-of-contents-with-the-intersection-observer-api/"
 layout: layouts/post.njk
 tags:
   - javascript
