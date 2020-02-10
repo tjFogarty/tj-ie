@@ -52,6 +52,14 @@ from = "/feed.rss"
 to = "/index.xml"
 
 [[redirects]]
+from = "/feed/feed.xml"
+to = "/index.xml"
+
+[[redirects]]
+from = "/avatars.io/"
+to = "/avatars-io/"
+
+[[redirects]]
 from = "https://awesome-northcutt-12634b.netlify.com/*"
 to = "https://tj.ie/:splat"
 
