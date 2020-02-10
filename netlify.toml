@@ -8,6 +8,14 @@
   autoLaunch = false
 
 [[redirects]]
+from = "/categories/"
+to = "/tags/"
+
+[[redirects]]
+from = "/page-visibility/"
+to = "/page-visibility-api/"
+
+[[redirects]]
 from = "/category/"
 to = "/archive/"
 
