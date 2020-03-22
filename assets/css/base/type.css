@@ -136,3 +136,11 @@ hr {
 	background: var(--accent-color);
 	color: white;
 }
+
+ol {
+  list-style-position: outside;
+}
+
+ol > li {
+  margin-bottom: 0.5rem;
+}
