@@ -38,7 +38,7 @@ Here's how it goes:
 
 Thanks to {% external-link "https://twitter.com/Mamboleoo", "Louis Hoebregts" %} for a great article. I had a bunch of fun and confusion getting this to work, but it was a welcome distraction.
 
-<p class="codepen" data-height="265" data-theme-id="light" data-default-tab="result" data-user="tjFogarty" data-slug-hash="mdJKNZM" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Particle Effects on Text Selection">
+<p class="codepen" data-height="565" data-theme-id="light" data-default-tab="result" data-user="tjFogarty" data-slug-hash="mdJKNZM" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Particle Effects on Text Selection">
   <span>See the Pen <a href="https://codepen.io/tjFogarty/pen/mdJKNZM">
   Particle Effects on Text Selection</a> by T.J. Fogarty (<a href="https://codepen.io/tjFogarty">@tjFogarty</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>
