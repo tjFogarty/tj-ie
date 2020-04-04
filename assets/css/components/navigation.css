@@ -16,6 +16,5 @@
 }
 
 .c-nav__item.is-active a {
-  color: var(--accent-color);
   text-decoration: underline solid var(--color);
 }

@@ -2,11 +2,6 @@
   font-size: var(--rem);
 }
 
-html,
-body {
-	height: 100%;
-}
-
 body {
 	background: var(--body-bg);
 	font-family: var(--font-family);

@@ -50,6 +50,7 @@
       {% include 'assets/css/base/type.css' %}
       {% include 'assets/css/base/code.css' %}
 
+      {% include 'assets/css/components/page.css' %}
       {% include 'assets/css/components/article.css' %}
       {% include 'assets/css/components/navigation.css' %}
       {% include 'assets/css/components/post-list.css' %}
@@ -60,7 +61,7 @@
       {{ css | cssmin | safe }}
     </style>
   </head>
-  <body class="l-page">
+  <body class="c-page">
     <header>
       <ul class="c-nav">
         <li class="c-nav__item">

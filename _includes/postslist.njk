@@ -4,16 +4,16 @@
     {% set postYear = post.date | year %}
     {% set isNewYear = year !== postYear %}
     {% if isNewYear and postslistYears !== 'off' %}
-      <li class="c-post-list__item c-post-list__sticky">
+      <li class="c-post-list__item">
         <h2>{{ postYear }}</h2>
       </li>
       {% set year = postYear %}
     {% endif %}
     <li class="c-post-list__item">
-      <time class="c-post-list__item-date" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
       <a href="{{ post.url | url }}" class="c-post-list__item-title">
         {% if post.data.title %}{{ post.data.title }}{% else %}<code>{{ post.url }}</code>{% endif %}
       </a>
+      {# <time class="c-post-list__item-date" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time> #}
       {% for tag in post.data.tags %}
         {%- if collections.tagList.indexOf(tag) != -1 -%}
         {% set tagUrl %}/tags/{{ tag }}/{% endset %}
