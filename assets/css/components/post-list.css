@@ -4,7 +4,7 @@
   padding: 0;
 }
 
-.c-post-list__sticky {
+.c-post-list__item--sticky {
   position: sticky;
   top: 0;
   background-color: var(--body-bg);

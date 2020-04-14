@@ -4,7 +4,7 @@
     {% set postYear = post.date | year %}
     {% set isNewYear = year !== postYear %}
     {% if isNewYear and postslistYears !== 'off' %}
-      <li class="c-post-list__item">
+      <li class="c-post-list__item c-post-list__item--sticky">
         <h2>{{ postYear }}</h2>
       </li>
       {% set year = postYear %}
