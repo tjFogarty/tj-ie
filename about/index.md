@@ -10,7 +10,7 @@ I’m TJ, a web devel­op­er from {% external-link "https://en.wikipedia.org/wi
 
 I'm a Senior Software Engineer at {% external-link "https://www.teamwork.com", "Teamwork" %}. Pre­vi­ous­ly, I’ve worked for {% external-link "https://resourcekraft.com", "ResourceKraft" %} as a Designer/​Developer, {% external-link "https://www.maverick-intl.com/", "Mav­er­ick" %} as the Lead Devel­op­er, {% external-link "https://emagine.ie/", "Emag­ine" %} as the Tech­ni­cal Lead, and {% external-link "https://stitcherads.com/", "StitcherAds" %} as a UI Devel­op­er.
 
-I've been fortunate enough to work with some amazing clients including The President of Ireland, a few third-level colleges, and countless local businesses.
+I've been fortunate enough to work with some amazing clients including The President of Ireland, some third-level colleges, and countless local and national businesses.
 
 You can find me at the links below:
 
