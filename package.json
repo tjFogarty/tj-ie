@@ -4,7 +4,8 @@
   "version": "1.0.0",
   "description": "A starter repository for a blog web site using the Eleventy static site generator.",
   "scripts": {
-    "build": "npm-run-all eleventy build:assets",
+    "build": "run-s build:assets build:site",
+    "build:site": "eleventy",
     "build:assets": "webpack --progress --env.production",
     "watch": "eleventy --watch",
     "watch:assets": "webpack --watch --progress --env.NODE_ENV=local",

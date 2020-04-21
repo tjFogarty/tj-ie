@@ -82,6 +82,8 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy('robots.txt')
   eleventyConfig.addPassthroughCopy('keybase.txt')
   eleventyConfig.addPassthroughCopy('googlea2c3a0ad5b2401f7.html')
+  eleventyConfig.addPassthroughCopy('sw.*.*')
+  eleventyConfig.addPassthroughCopy('workbox-*')
 
   /* Markdown Overrides */
   let markdownLibrary = markdownIt({

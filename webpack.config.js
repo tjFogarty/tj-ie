@@ -29,9 +29,11 @@ module.exports = env => {
         scriptLoading: 'defer',
         inject: false,
       }),
-      new WorkboxPlugin.InjectManifest({
-        swSrc: './src/sw.js',
-        swDest: '../sw.js'
+      new WorkboxPlugin.GenerateSW({
+        skipWaiting: true,
+        clientsClaim: true,
+        swDest: '../sw.js',
+        exclude: [/\.njk$/i, /\.css$/i]
       })
     ]
   }
