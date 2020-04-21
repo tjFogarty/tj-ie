@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ renderData.title or title or metadata.title }}</title>
+    <meta name="description" content="{{ renderData.description or description or metadata.description }}">
+    <link rel="alternate" href="{{ metadata.feed.path | url }}" type="application/atom+xml" title="{{ metadata.title }}">
+
+    <link rel="canonical" href="{{ page.url | url }}" />
+
+    <link rel="me" href="mailto:contact@tj.ie">
+    <link rel="me" href="https://github.com/tjFogarty">
+    <link rel="authorization_endpoint" href="https://indieauth.com/auth">
+
+    <link rel="webmention" href="https://webmention.io/tj.ie/webmention" />
+    <link rel="pingback" href="https://webmention.io/tj.ie/xmlrpc" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:description" content="{{ renderData.description or description or metadata.description }}" />
+    <meta name="twitter:title" content="{{ renderData.title or title or metadata.title }}" />
+    <meta name="twitter:site" content="@tj_fogarty" />
+    <meta name="twitter:creator" content="@tj_fogarty" />
+
+    <!-- OG data -->
+    <meta property="og:locale" content="en_IE" />
+    <meta property="og:type" content="article" />
+    <meta content="{{ renderData.title or title or metadata.title }}" property="og:title">
+    <meta content="{{ renderData.description or description or metadata.description }}" property="og:description">
+    <meta property="og:url" content="{{ page.url | url }}" />
+    <meta property="og:site_name" content="TJ Fogarty - Web Developer" />
+    {% for tag in post.data.tags %}
+    <meta property="article:section" content="{{ tag }}" />
+    {% endfor %}
+    {% if page.date %}
+    <meta property="article:published_time" content="{{ page.date }}" />
+    {% endif %}
+
+    {% if cover_image %}
+    <meta property="og:image" content="https://res.cloudinary.com/dab4jaczr/image/upload/w_1200,f_auto,q_auto/v1536498344/{{ cover_image }}">
+    {% endif %}
+
+    <%= htmlWebpackPlugin.tags.headTags %>
+
+    <style>
+      <% _.each(htmlWebpackPlugin.files.css, function(cssFile) { %>
+        <%= compilation.assets[cssFile.substr(htmlWebpackPlugin.files.publicPath.length)].source() %>
+      <% }); %>
+    </style>
+  </head>
+  <body class="c-page">
+    <header>
+      <ul class="c-nav">
+        <li class="c-nav__item">
+          <a href="{{ '/' | url }}">{{ metadata.title }}</a>
+        </li>
+      {%- for entry in collections.all | eleventyNavigation %}
+        <li class="c-nav__item{% if entry.url == page.url %} is-active{% endif %}">
+          <a href="{{ entry.url | url }}">{{ entry.title }}</a>
+        </li>
+      {%- endfor %}
+      </ul>
+    </header>
+
+    <main{% if templateClass %} class="{{ templateClass }}"{% endif %}>
+      {{ content | safe }}
+    </main>
+
+    <footer class="c-footer">
+      &copy; TJ Fogarty
+    </footer>
+
+    <!-- Current page: {{ page.url | url }} -->
+    <%= htmlWebpackPlugin.tags.bodyTags %>
+
+    <script>
+      if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/sw.js').then(registration => {
+          console.log('SW registered: ', registration);
+        }).catch(registrationError => {
+          console.log('SW registration failed: ', registrationError);
+        });
+      });
+    }
+    </script>
+  </body>
+</html>
