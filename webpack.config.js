@@ -21,7 +21,9 @@ module.exports = env => {
       }]
     },
     plugins: [
-      new CleanWebpackPlugin(),
+      new CleanWebpackPlugin({
+        cleanOnceBeforeBuildPatterns: ['workbox-*.*']
+      }),
       new MiniCssExtractPlugin(),
       new HtmlWebpackPlugin({
         filename: '../_includes/layouts/base.njk',
