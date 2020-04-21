@@ -6,7 +6,7 @@
   "scripts": {
     "build": "run-s build:assets build:site",
     "build:site": "eleventy",
-    "build:assets": "webpack --progress --env.production",
+    "build:assets": "webpack --progress --env.production --env.NODE_ENV=production",
     "watch": "eleventy --watch",
     "watch:assets": "webpack --watch --progress --env.NODE_ENV=local",
     "serve": "eleventy --serve",
