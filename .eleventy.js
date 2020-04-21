@@ -5,7 +5,6 @@ const pluginSyntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight')
 const pluginNavigation = require('@11ty/eleventy-navigation')
 const markdownIt = require('markdown-it')
 const markdownItAnchor = require('markdown-it-anchor')
-const CleanCSS = require('clean-css')
 const htmlmin = require('html-minifier')
 
 module.exports = function(eleventyConfig) {
@@ -76,10 +75,6 @@ module.exports = function(eleventyConfig) {
     return array.slice(0, n)
   })
 
-  eleventyConfig.addFilter('cssmin', (code) => {
-    return new CleanCSS({}).minify(code).styles
-  })
-
   eleventyConfig.addCollection('tagList', require('./_11ty/getTagList'))
 
   eleventyConfig.addPassthroughCopy('assets')
@@ -87,6 +82,9 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy('robots.txt')
   eleventyConfig.addPassthroughCopy('keybase.txt')
   eleventyConfig.addPassthroughCopy('googlea2c3a0ad5b2401f7.html')
+  eleventyConfig.addPassthroughCopy('sw.js')
+  eleventyConfig.addPassthroughCopy('sw.js.map')
+  eleventyConfig.addPassthroughCopy('workbox-*')
 
   /* Markdown Overrides */
   let markdownLibrary = markdownIt({

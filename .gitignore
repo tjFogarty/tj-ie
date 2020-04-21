@@ -144,3 +144,9 @@ temp/
 
 # Local Netlify folder
 .netlify
+
+/sw.js
+/sw.js.map
+/workbox-*
+/assets/
+/_includes/layouts/base.njk

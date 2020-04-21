@@ -1,3 +1,4 @@
+/* purgecss start ignore */
 /*
 Name: Duotone Space
 Author: Simurai, adapted from DuoTone themes for Atom (http://simurai.com/projects/2016/01/01/duotone-themes)
@@ -170,3 +171,4 @@ pre > code.highlight {
 	background: -webkit-linear-gradient(left, rgba(221, 103, 44, 0.2) 70%, rgba(221, 103, 44, 0));
 	background: linear-gradient(to right, rgba(221, 103, 44, 0.2) 70%, rgba(221, 103, 44, 0));
 }
+/* purgecss stop ignore */

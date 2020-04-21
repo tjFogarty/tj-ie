@@ -41,24 +41,10 @@
     <meta property="og:image" content="https://res.cloudinary.com/dab4jaczr/image/upload/w_1200,f_auto,q_auto/v1536498344/{{ cover_image }}">
     {% endif %}
 
-
-    <link rel="preload" href="/assets/js/index.js" as="script" crossorigin>
-
-    {% set css %}
-      {% include 'assets/css/base/reset.css' %}
-      {% include 'assets/css/base/variables.css' %}
-      {% include 'assets/css/base/type.css' %}
-      {% include 'assets/css/base/code.css' %}
-
-      {% include 'assets/css/components/page.css' %}
-      {% include 'assets/css/components/article.css' %}
-      {% include 'assets/css/components/navigation.css' %}
-      {% include 'assets/css/components/post-list.css' %}
-      {% include 'assets/css/components/footer.css' %}
-    {% endset %}
-
     <style>
-      {{ css | cssmin | safe }}
+      <% _.each(htmlWebpackPlugin.files.css, function(cssFile) { %>
+        <%= compilation.assets[cssFile.substr(htmlWebpackPlugin.files.publicPath.length)].source() %>
+      <% }); %>
     </style>
   </head>
   <body class="c-page">
@@ -84,7 +70,18 @@
     </footer>
 
     <!-- Current page: {{ page.url | url }} -->
+    <%= htmlWebpackPlugin.tags.bodyTags %>
 
-    <script src="/assets/js/index.js" type="module" defer></script>
+    <script>
+      if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/sw.js').then(registration => {
+          console.log('SW registered: ', registration);
+        }).catch(registrationError => {
+          console.log('SW registration failed: ', registrationError);
+        });
+      });
+    }
+    </script>
   </body>
 </html>
