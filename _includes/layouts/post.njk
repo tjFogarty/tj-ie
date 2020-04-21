@@ -3,9 +3,9 @@ layout: layouts/base.njk
 templateClass: tmpl-post
 ---
 
-<article class="c-article">
+<article>
   {% if date %}
-  <time class="c-article__meta" datetime="{{ date | htmlDateString }}">
+  <time datetime="{{ date | htmlDateString }}">
     {{ date | readableDate }}
   </time>
   {% endif %}

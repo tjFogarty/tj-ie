@@ -47,14 +47,14 @@
       <% }); %>
     </style>
   </head>
-  <body class="c-page">
+  <body>
     <header>
-      <ul class="c-nav">
-        <li class="c-nav__item">
+      <ul class="flex p-6">
+        <li class="mr-auto">
           <a href="{{ '/' | url }}">{{ metadata.title }}</a>
         </li>
       {%- for entry in collections.all | eleventyNavigation %}
-        <li class="c-nav__item{% if entry.url == page.url %} is-active{% endif %}">
+        <li class="mr-6{% if entry.url == page.url %} is-active{% endif %}">
           <a href="{{ entry.url | url }}">{{ entry.title }}</a>
         </li>
       {%- endfor %}
@@ -65,7 +65,7 @@
       {{ content | safe }}
     </main>
 
-    <footer class="c-footer">
+    <footer>
       &copy; TJ Fogarty
     </footer>
 
