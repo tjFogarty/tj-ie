@@ -35,7 +35,11 @@ module.exports = env => {
         skipWaiting: true,
         clientsClaim: true,
         swDest: '../sw.js',
-        exclude: [/\.njk$/i, /\.css$/i]
+        exclude: [/\.njk$/i, /\.css$/i],
+        runtimeCaching: [{
+          urlPattern: new RegExp('/$'),
+          handler: 'CacheFirst'
+        }]
       })
     ]
   }
