@@ -1,15 +1,3 @@
-/* purgecss start ignore */
 @import "tailwindcss/base";
 @import "tailwindcss/utilities";
-/* purgecss stop ignore */
 @import "tailwindcss/components";
-
-@import "base/variables.css";
-@import "base/reset.css";
-@import "base/code.css";
-@import "base/type.css";
-
-@import "components/navigation.css";
-@import "components/footer.css";
-@import "components/article.css";
-@import "components/post-list.css";

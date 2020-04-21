@@ -72,6 +72,7 @@
     <!-- Current page: {{ page.url | url }} -->
     <%= htmlWebpackPlugin.tags.bodyTags %>
 
+    <% if (webpackConfig.mode !== 'development') { %>
     <script>
       if ('serviceWorker' in navigator) {
       window.addEventListener('load', () => {
@@ -83,5 +84,6 @@
       });
     }
     </script>
+    <% } %>
   </body>
 </html>
