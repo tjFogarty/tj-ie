@@ -41,15 +41,9 @@
     <meta property="og:image" content="https://res.cloudinary.com/dab4jaczr/image/upload/w_1200,f_auto,q_auto/v1536498344/{{ cover_image }}">
     {% endif %}
 
-    <% if (webpackConfig.mode === 'development') { %>
-      <%= htmlWebpackPlugin.tags.headTags %>
-    <% } else { %>
-    <style>
-      <% _.each(htmlWebpackPlugin.files.css, function(cssFile) { %>
-        <%= compilation.assets[cssFile.substr(htmlWebpackPlugin.files.publicPath.length)].source() %>
-      <% }); %>
-    </style>
-    <% } %>
+    
+      <link href="../../assets/main.css" rel="stylesheet">
+    
   </head>
   <body>
     <header>
@@ -75,20 +69,8 @@
 
     <!-- Current page: {{ page.url | url }} -->
 
-    <%= htmlWebpackPlugin.tags.bodyTags %>
+    <script defer src="../../assets/main.edb35e43b9185df95504.js"></script>
 
-    <% if (webpackConfig.mode !== 'development') { %>
-    <script>
-      if ('serviceWorker' in navigator) {
-      window.addEventListener('load', () => {
-        navigator.serviceWorker.register('/sw.js').then(registration => {
-          console.log('SW registered: ', registration);
-        }).catch(registrationError => {
-          console.log('SW registration failed: ', registrationError);
-        });
-      });
-    }
-    </script>
-    <% } %>
+    
   </body>
 </html>

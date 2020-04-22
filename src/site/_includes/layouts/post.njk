@@ -3,7 +3,7 @@ layout: layouts/base.njk
 templateClass: tmpl-post
 ---
 
-<article>
+<article class="text-lg">
   {% if date %}
   <time datetime="{{ date | htmlDateString }}">
     {{ date | readableDate }}
