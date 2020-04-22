@@ -1,4 +1,3 @@
-const path = require('path')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
@@ -41,12 +40,15 @@ module.exports = {
   output: {
     filename: '[name].[hash].js',
     chunkFilename: '[name].[hash].bundle.js',
-    path: __dirname + '/src/site/assets'
+    path: __dirname + '/src/site/assets',
+    publicPath: '/assets/'
   },
   module: {
     rules: [{
       test: /\.css$/i,
       use: [MiniCssExtractPlugin.loader, 'css-loader', 'postcss-loader']
+    }, {
+      test: /\.(png|woff|woff2|eot|ttf|svg)$/, loader: 'url-loader?limit=false'
     }]
   },
   plugins

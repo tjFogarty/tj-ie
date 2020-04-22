@@ -16,17 +16,17 @@ module.exports = function(eleventyConfig) {
     return `<a href="${href}" target="_blank" rel="noopener noreferrer">${content}</a>`
   })
 
-  eleventyConfig.addTransform('htmlmin', (content, outputPath) => {
-    if (outputPath.endsWith('.html')) {
-      return htmlmin.minify(content, {
-        useShortDoctype: true,
-        removeComments: true,
-        collapseWhitespace: true,
-      })
-    }
+  // eleventyConfig.addTransform('htmlmin', (content, outputPath) => {
+  //   if (outputPath.endsWith('.html')) {
+  //     return htmlmin.minify(content, {
+  //       useShortDoctype: true,
+  //       removeComments: true,
+  //       collapseWhitespace: true,
+  //     })
+  //   }
 
-    return content
-  })
+  //   return content
+  // })
 
   eleventyConfig.addShortcode("cloudinary", function(
     src,
@@ -82,9 +82,9 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy('./robots.txt')
   eleventyConfig.addPassthroughCopy('./keybase.txt')
   eleventyConfig.addPassthroughCopy('./googlea2c3a0ad5b2401f7.html')
-  // eleventyConfig.addPassthroughCopy('sw.js')
-  // eleventyConfig.addPassthroughCopy('sw.js.map')
-  // eleventyConfig.addPassthroughCopy('workbox-*')
+  eleventyConfig.addPassthroughCopy('./src/site/sw.js')
+  eleventyConfig.addPassthroughCopy('./src/site/sw.js.map')
+  eleventyConfig.addPassthroughCopy('./src/site/workbox-*')
 
   /* Markdown Overrides */
   let markdownLibrary = markdownIt({
@@ -97,23 +97,6 @@ module.exports = function(eleventyConfig) {
     permalinkSymbol: '#'
   })
   eleventyConfig.setLibrary('md', markdownLibrary)
-
-  // Browsersync Overrides
-  // eleventyConfig.setBrowserSyncConfig({
-  //   callbacks: {
-  //     ready: function(err, browserSync) {
-  //       const content_404 = fs.readFileSync('_site/404.html')
-
-  //       browserSync.addMiddleware('*', (req, res) => {
-  //         // Provides the 404 content without redirect.
-  //         res.write(content_404)
-  //         res.end()
-  //       })
-  //     },
-  //   },
-  //   ui: false,
-  //   ghostMode: false
-  // })
 
   return {
     templateFormats: [

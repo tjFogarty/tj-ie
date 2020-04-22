@@ -1,3 +1,78 @@
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Source Sans Pro Regular'), local('SourceSansPro-Regular'),
+       url('../fonts/source-sans-pro-v13-latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Source Sans Pro Bold'), local('SourceSansPro-Bold'),
+       url('../fonts/source-sans-pro-v13-latin-700.woff2') format('woff2');
+}
+
 body {
-  @apply text-lg;
+  @apply font-sans;
+  @apply text-xl;
+  @apply leading-relaxed;
+  @apply subpixel-antialiased;
+  @apply text-gray-900;
+}
+
+code {
+  @apply text-green-700;
+}
+
+a {
+  @apply underline;
+}
+
+a:hover,
+a:focus {
+  @apply no-underline;
+  @apply text-green-600;
+}
+
+article {
+  max-width: 70ch;
+  @apply px-3;
+  @apply ml-auto;
+  @apply mr-auto;
+}
+
+article ul,
+article ol {
+  @apply list-outside;
+  @apply pl-5;
+}
+
+article ul {
+  @apply list-disc;
+}
+
+article ol {
+  @apply list-decimal;
+}
+
+p, ul, ol {
+  @apply mb-4;
+}
+
+h1 {
+  @apply text-3xl;
+  @apply font-bold;
+  @apply leading-tight;
+  @apply my-6;
+}
+
+h2 {
+  @apply text-2xl;
+  @apply font-bold;
+  @apply leading-tight;
+  @apply my-4;
 }

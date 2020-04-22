@@ -42,7 +42,7 @@
     {% endif %}
 
     
-      <link href="../../assets/main.css" rel="stylesheet">
+      <link href="/assets/main.css" rel="stylesheet">
     
   </head>
   <body>
@@ -56,6 +56,9 @@
           <a href="{{ entry.url | url }}">{{ entry.title }}</a>
         </li>
       {%- endfor %}
+        <li>
+          <button type="button" class="hidden" id="search">Search</button>
+        </li>
       </ul>
     </header>
 
@@ -63,13 +66,13 @@
       {{ content | safe }}
     </main>
 
-    <footer>
+    <footer class="p-6">
       &copy; TJ Fogarty
     </footer>
 
     <!-- Current page: {{ page.url | url }} -->
 
-    <script defer src="../../assets/main.edb35e43b9185df95504.js"></script>
+    <script defer src="/assets/main.3b0093332eb1e7c667f0.js"></script>
 
     
   </body>
