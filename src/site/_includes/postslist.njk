@@ -1,3 +1,7 @@
+{% if postslistYears === 'off' %}
+<ol class="p-0 list-none">
+{% endif %}
+
 {% set year = '' %}
   {% for post in postslist | reverse %}
     {% set postYear = post.date | year %}
@@ -18,17 +22,20 @@
     <ol class="p-0 list-none flex-grow">
       {% set year = postYear %}
     {% endif %}
-    <li class="border-b border-gray-300 {% if isNewYear %} pb-4 {% else %} py-4 {% endif %}">
+    <li class="border-b border-gray-300 {% if isNewYear %} pb-4 {% else %} py-4 {% endif %} {% if postslistYears === 'off' %} py-6 {% endif %}">
       <a href="{{ post.url | url }}" class="block">
         {% if post.data.title %}{{ post.data.title }}{% else %}<code>{{ post.url }}</code>{% endif %}
       </a>
       {% for tag in post.data.tags %}
         {%- if collections.tagList.indexOf(tag) != -1 -%}
         {% set tagUrl %}/tags/{{ tag }}/{% endset %}
-        <a href="{{ tagUrl | url }}" class="text-sm text-gray-600 mr-2" aria-label="See all {{ tag }} posts">
+        <a href="{{ tagUrl | url }}" class="text-sm text-gray-600 mr-2 no-underline" aria-label="See all {{ tag }} posts">
           {{ tag }}
         </a>
         {%- endif -%}
       {% endfor %}
     </li>
   {% endfor %}
+{% if postslistYears === 'off' %}
+</ol>
+{% endif %}

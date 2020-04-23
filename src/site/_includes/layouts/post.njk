@@ -5,7 +5,7 @@ templateClass: tmpl-post
 
 <article>
   {% if date %}
-  <time datetime="{{ date | htmlDateString }}">
+  <time datetime="{{ date | htmlDateString }}" class="text-gray-600 vr-normal-base">
     {{ date | readableDate }}
   </time>
   {% endif %}

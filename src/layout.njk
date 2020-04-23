@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="no-js">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -41,6 +41,14 @@
     <meta property="og:image" content="https://res.cloudinary.com/dab4jaczr/image/upload/w_1200,f_auto,q_auto/v1536498344/{{ cover_image }}">
     {% endif %}
 
+    <script>
+      (function() {
+        var htmlTag = document.querySelector('html');
+        htmlTag.classList.remove('no-js');
+        htmlTag.classList.add('js');
+      })();
+    </script>
+
     <% if (webpackConfig.mode === 'development') { %>
       <%= htmlWebpackPlugin.tags.headTags %>
     <% } else { %>
@@ -58,13 +66,10 @@
           <a href="{{ '/' | url }}">{{ metadata.title }}</a>
         </li>
       {%- for entry in collections.all | eleventyNavigation %}
-        <li class="mr-6{% if entry.url == page.url %} is-active{% endif %}">
-          <a href="{{ entry.url | url }}">{{ entry.title }}</a>
+        <li class="mr-6">
+          <a href="{{ entry.url | url }}"{% if entry.url == page.url %} class="no-underline text-accent"{% endif %}>{{ entry.title }}</a>
         </li>
       {%- endfor %}
-        <li>
-          <button type="button" class="hidden" id="search">Search</button>
-        </li>
       </ul>
     </header>
 

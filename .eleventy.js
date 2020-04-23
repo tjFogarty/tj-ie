@@ -16,17 +16,17 @@ module.exports = function(eleventyConfig) {
     return `<a href="${href}" target="_blank" rel="noopener noreferrer">${content}</a>`
   })
 
-  // eleventyConfig.addTransform('htmlmin', (content, outputPath) => {
-  //   if (outputPath.endsWith('.html')) {
-  //     return htmlmin.minify(content, {
-  //       useShortDoctype: true,
-  //       removeComments: true,
-  //       collapseWhitespace: true,
-  //     })
-  //   }
+  eleventyConfig.addTransform('htmlmin', (content, outputPath) => {
+    if (outputPath.endsWith('.html')) {
+      return htmlmin.minify(content, {
+        useShortDoctype: true,
+        removeComments: true,
+        collapseWhitespace: true,
+      })
+    }
 
-  //   return content
-  // })
+    return content
+  })
 
   eleventyConfig.addShortcode("cloudinary", function(
     src,
@@ -94,7 +94,8 @@ module.exports = function(eleventyConfig) {
   }).use(markdownItAnchor, {
     permalink: true,
     permalinkClass: 'direct-link',
-    permalinkSymbol: '#'
+    permalinkSymbol: '#',
+    permalinkBefore: true,
   })
   eleventyConfig.setLibrary('md', markdownLibrary)
 

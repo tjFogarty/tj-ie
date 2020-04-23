@@ -35,6 +35,7 @@
     "postcss-import": "^12.0.1",
     "postcss-loader": "^3.0.0",
     "postcss-preset-env": "^6.7.0",
+    "tailwind-vertical-rhythm": "^1.1.0",
     "url-loader": "^4.1.0",
     "webpack": "^4.42.1",
     "webpack-cli": "^3.3.11",
@@ -42,7 +43,7 @@
   },
   "dependencies": {
     "instant.page": "^3.0.0",
-    "lunr": "^2.3.8",
+    "netlify-plugin-search-index": "^0.1.0",
     "tailwindcss": "^1.3.4"
   }
 }

@@ -1,6 +1,13 @@
 [build]
   publish = "_site"
   command = "npm run build"
+  functions = "./src/functions"
+
+[[plugins]]
+  package = "netlify-plugin-search-index"
+  [plugin.inputs]
+    generatedFunctionName = "search"
+    publishDirJSONFileName = "null"
 
 [[redirects]]
 from = "/categories/"

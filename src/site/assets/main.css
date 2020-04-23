@@ -601,6 +601,165 @@ video {
   height: auto;
 }
 
+/* https://github.com/SaraVieira/prism-theme-night-owl */
+
+code[class*="language-"],
+pre[class*="language-"] {
+  color: #d6deeb;
+  font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.5;
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+  -webkit-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+pre[class*="language-"]::-moz-selection,
+pre[class*="language-"] ::-moz-selection,
+code[class*="language-"]::-moz-selection,
+code[class*="language-"] ::-moz-selection {
+  text-shadow: none;
+  background: rgba(29, 59, 83, 0.99);
+}
+
+pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection, code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
+  text-shadow: none;
+  background: rgba(29, 59, 83, 0.99);
+}
+
+pre[class*="language-"]::selection,
+pre[class*="language-"] ::selection,
+code[class*="language-"]::selection,
+code[class*="language-"] ::selection {
+  text-shadow: none;
+  background: rgba(29, 59, 83, 0.99);
+}
+
+@media print {
+  code[class*="language-"],
+  pre[class*="language-"] {
+    text-shadow: none;
+  }
+}
+
+/* Code blocks */
+
+pre[class*="language-"] {
+  margin-top: 1rem;
+  font-size: 1rem;
+  padding-top: .398rem;
+  margin-bottom: -.397rem;
+  line-height: 1.5rem;
+  padding: 1em;
+  overflow: auto;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+  color: white;
+  background: #011627;
+}
+
+:not(pre) > code[class*="language-"] {
+  padding: 0.1em;
+  border-radius: 0.3em;
+  white-space: normal;
+}
+
+.token.comment,
+.token.prolog,
+.token.cdata {
+  color: rgb(99, 119, 119);
+  font-style: italic;
+}
+
+.token.punctuation {
+  color: rgb(199, 146, 234);
+}
+
+.namespace {
+  color: rgb(178, 204, 214);
+}
+
+.token.deleted {
+  color: rgba(239, 83, 80, 0.56);
+  font-style: italic;
+}
+
+.token.symbol,
+.token.property {
+  color: rgb(128, 203, 196);
+}
+
+.token.tag,
+.token.operator,
+.token.keyword {
+  color: rgb(127, 219, 202);
+}
+
+.token.boolean {
+  color: rgb(255, 88, 116);
+}
+
+.token.number {
+  color: rgb(247, 140, 108);
+}
+
+.token.constant,
+.token.function,
+.token.builtin,
+.token.char {
+  color: rgb(130, 170, 255);
+}
+
+.token.selector,
+.token.doctype {
+  color: rgb(199, 146, 234);
+  font-style: italic;
+}
+
+.token.attr-name,
+.token.inserted {
+  color: rgb(173, 219, 103);
+  font-style: italic;
+}
+
+.token.string,
+.token.url,
+.token.entity,
+.language-css .token.string,
+.style .token.string {
+  color: rgb(173, 219, 103);
+}
+
+.token.class-name,
+.token.atrule,
+.token.attr-value {
+  color: rgb(255, 203, 139);
+}
+
+.token.regex,
+.token.important,
+.token.variable {
+  color: rgb(214, 222, 235);
+}
+
+.token.important,
+.token.bold {
+  font-weight: bold;
+}
+
+.token.italic {
+  font-style: italic;
+}
+
 /* purgecss end ignore */
 
 .space-y-0 > :not(template) ~ :not(template) {
@@ -1499,6 +1658,10 @@ video {
   border-color: #702459;
 }
 
+.divide-accent > :not(template) ~ :not(template) {
+  border-color: #c54545;
+}
+
 .sr-only {
   position: absolute;
   width: 1px;
@@ -1939,6 +2102,10 @@ video {
   background-color: #702459;
 }
 
+.bg-accent {
+  background-color: #c54545;
+}
+
 .hover\:bg-transparent:hover {
   background-color: transparent;
 }
@@ -2315,6 +2482,10 @@ video {
   background-color: #702459;
 }
 
+.hover\:bg-accent:hover {
+  background-color: #c54545;
+}
+
 .focus\:bg-transparent:focus {
   background-color: transparent;
 }
@@ -2689,6 +2860,10 @@ video {
 
 .focus\:bg-pink-900:focus {
   background-color: #702459;
+}
+
+.focus\:bg-accent:focus {
+  background-color: #c54545;
 }
 
 .bg-bottom {
@@ -3147,6 +3322,10 @@ video {
   border-color: #702459;
 }
 
+.border-accent {
+  border-color: #c54545;
+}
+
 .hover\:border-transparent:hover {
   border-color: transparent;
 }
@@ -3523,6 +3702,10 @@ video {
   border-color: #702459;
 }
 
+.hover\:border-accent:hover {
+  border-color: #c54545;
+}
+
 .focus\:border-transparent:focus {
   border-color: transparent;
 }
@@ -3897,6 +4080,10 @@ video {
 
 .focus\:border-pink-900:focus {
   border-color: #702459;
+}
+
+.focus\:border-accent:focus {
+  border-color: #c54545;
 }
 
 .rounded-none {
@@ -8893,6 +9080,26 @@ video {
   color: #702459;
 }
 
+.placeholder-accent::-webkit-input-placeholder {
+  color: #c54545;
+}
+
+.placeholder-accent::-moz-placeholder {
+  color: #c54545;
+}
+
+.placeholder-accent:-ms-input-placeholder {
+  color: #c54545;
+}
+
+.placeholder-accent::-ms-input-placeholder {
+  color: #c54545;
+}
+
+.placeholder-accent::placeholder {
+  color: #c54545;
+}
+
 .focus\:placeholder-transparent:focus::-webkit-input-placeholder {
   color: transparent;
 }
@@ -10773,6 +10980,26 @@ video {
   color: #702459;
 }
 
+.focus\:placeholder-accent:focus::-webkit-input-placeholder {
+  color: #c54545;
+}
+
+.focus\:placeholder-accent:focus::-moz-placeholder {
+  color: #c54545;
+}
+
+.focus\:placeholder-accent:focus:-ms-input-placeholder {
+  color: #c54545;
+}
+
+.focus\:placeholder-accent:focus::-ms-input-placeholder {
+  color: #c54545;
+}
+
+.focus\:placeholder-accent:focus::placeholder {
+  color: #c54545;
+}
+
 .pointer-events-none {
   pointer-events: none;
 }
@@ -11454,6 +11681,10 @@ video {
   color: #702459;
 }
 
+.text-accent {
+  color: #c54545;
+}
+
 .hover\:text-transparent:hover {
   color: transparent;
 }
@@ -11830,6 +12061,10 @@ video {
   color: #702459;
 }
 
+.hover\:text-accent:hover {
+  color: #c54545;
+}
+
 .focus\:text-transparent:focus {
   color: transparent;
 }
@@ -12204,6 +12439,10 @@ video {
 
 .focus\:text-pink-900:focus {
   color: #702459;
+}
+
+.focus\:text-accent:focus {
+  color: #c54545;
 }
 
 .italic {
@@ -15180,6 +15419,1061 @@ video {
           transition-delay: 1000ms;
 }
 
+.vr-debug {
+  background: linear-gradient(rgba(255, 0, 0, 0.15), rgba(255, 0, 0, 0.15) 1px, transparent 1px);
+  background-size: 1px 0.5rem;
+}
+
+.vr-none-xs {
+  font-size: .75rem;
+  padding-top: .236rem;
+  margin-bottom: -.236rem;
+  line-height: 1rem;
+}
+
+.vr-tight-xs {
+  font-size: .75rem;
+  padding-top: .236rem;
+  margin-bottom: -.236rem;
+  line-height: 1rem;
+}
+
+.vr-snug-xs {
+  font-size: .75rem;
+  padding-top: .236rem;
+  margin-bottom: -.236rem;
+  line-height: 1rem;
+}
+
+.vr-normal-xs {
+  font-size: .75rem;
+  padding-top: .236rem;
+  margin-bottom: -.236rem;
+  line-height: 1rem;
+}
+
+.vr-relaxed-xs {
+  font-size: .75rem;
+  padding-top: .236rem;
+  margin-bottom: -.236rem;
+  line-height: 1rem;
+}
+
+.vr-loose-xs {
+  font-size: .75rem;
+  padding-top: .486rem;
+  margin-bottom: -.486rem;
+  line-height: 1.5rem;
+}
+
+.vr-xs {
+  font-size: .75rem;
+  padding-top: .486rem;
+  margin-bottom: -.486rem;
+  line-height: 1.5rem;
+}
+
+.vr-none-sm {
+  font-size: .875rem;
+  padding-top: .192rem;
+  margin-bottom: -.192rem;
+  line-height: 1rem;
+}
+
+.vr-tight-sm {
+  font-size: .875rem;
+  padding-top: .192rem;
+  margin-bottom: -.192rem;
+  line-height: 1rem;
+}
+
+.vr-snug-sm {
+  font-size: .875rem;
+  padding-top: .192rem;
+  margin-bottom: -.192rem;
+  line-height: 1rem;
+}
+
+.vr-normal-sm {
+  font-size: .875rem;
+  padding-top: .442rem;
+  margin-bottom: -.442rem;
+  line-height: 1.5rem;
+}
+
+.vr-relaxed-sm {
+  font-size: .875rem;
+  padding-top: .442rem;
+  margin-bottom: -.442rem;
+  line-height: 1.5rem;
+}
+
+.vr-loose-sm {
+  font-size: .875rem;
+  padding-top: .692rem;
+  margin-bottom: -.692rem;
+  line-height: 2rem;
+}
+
+.vr-sm {
+  font-size: .875rem;
+  padding-top: .692rem;
+  margin-bottom: -.692rem;
+  line-height: 2rem;
+}
+
+.vr-none-base {
+  font-size: 1rem;
+  padding-top: .148rem;
+  margin-bottom: -.148rem;
+  line-height: 1rem;
+}
+
+.vr-tight-base {
+  font-size: 1rem;
+  padding-top: .398rem;
+  margin-bottom: -.397rem;
+  line-height: 1.5rem;
+}
+
+.vr-snug-base {
+  font-size: 1rem;
+  padding-top: .398rem;
+  margin-bottom: -.397rem;
+  line-height: 1.5rem;
+}
+
+.vr-normal-base {
+  font-size: 1rem;
+  padding-top: .398rem;
+  margin-bottom: -.397rem;
+  line-height: 1.5rem;
+}
+
+.vr-relaxed-base {
+  font-size: 1rem;
+  padding-top: .398rem;
+  margin-bottom: -.397rem;
+  line-height: 1.5rem;
+}
+
+.vr-loose-base {
+  font-size: 1rem;
+  padding-top: .648rem;
+  margin-bottom: -.647rem;
+  line-height: 2rem;
+}
+
+.vr-base {
+  font-size: 1rem;
+  padding-top: .648rem;
+  margin-bottom: -.647rem;
+  line-height: 2rem;
+}
+
+.vr-none-lg {
+  font-size: 1.125rem;
+  padding-top: .103rem;
+  margin-bottom: -.103rem;
+  line-height: 1rem;
+}
+
+.vr-tight-lg {
+  font-size: 1.125rem;
+  padding-top: .353rem;
+  margin-bottom: -.353rem;
+  line-height: 1.5rem;
+}
+
+.vr-snug-lg {
+  font-size: 1.125rem;
+  padding-top: .353rem;
+  margin-bottom: -.353rem;
+  line-height: 1.5rem;
+}
+
+.vr-normal-lg {
+  font-size: 1.125rem;
+  padding-top: .353rem;
+  margin-bottom: -.353rem;
+  line-height: 1.5rem;
+}
+
+.vr-relaxed-lg {
+  font-size: 1.125rem;
+  padding-top: .603rem;
+  margin-bottom: -.603rem;
+  line-height: 2rem;
+}
+
+.vr-loose-lg {
+  font-size: 1.125rem;
+  padding-top: .853rem;
+  margin-bottom: -.853rem;
+  line-height: 2.5rem;
+}
+
+.vr-lg {
+  font-size: 1.125rem;
+  padding-top: .853rem;
+  margin-bottom: -.853rem;
+  line-height: 2.5rem;
+}
+
+.vr-none-xl {
+  font-size: 1.25rem;
+  padding-top: .309rem;
+  margin-bottom: -.309rem;
+  line-height: 1.5rem;
+}
+
+.vr-tight-xl {
+  font-size: 1.25rem;
+  padding-top: .309rem;
+  margin-bottom: -.309rem;
+  line-height: 1.5rem;
+}
+
+.vr-snug-xl {
+  font-size: 1.25rem;
+  padding-top: .309rem;
+  margin-bottom: -.309rem;
+  line-height: 1.5rem;
+}
+
+.vr-normal-xl {
+  font-size: 1.25rem;
+  padding-top: .559rem;
+  margin-bottom: -.559rem;
+  line-height: 2rem;
+}
+
+.vr-relaxed-xl {
+  font-size: 1.25rem;
+  padding-top: .559rem;
+  margin-bottom: -.559rem;
+  line-height: 2rem;
+}
+
+.vr-loose-xl {
+  font-size: 1.25rem;
+  padding-top: .809rem;
+  margin-bottom: -.809rem;
+  line-height: 2.5rem;
+}
+
+.vr-xl {
+  font-size: 1.25rem;
+  padding-top: .809rem;
+  margin-bottom: -.809rem;
+  line-height: 2.5rem;
+}
+
+.vr-none-2xl {
+  font-size: 1.5rem;
+  padding-top: .221rem;
+  margin-bottom: -.221rem;
+  line-height: 1.5rem;
+}
+
+.vr-tight-2xl {
+  font-size: 1.5rem;
+  padding-top: .471rem;
+  margin-bottom: -.471rem;
+  line-height: 2rem;
+}
+
+.vr-snug-2xl {
+  font-size: 1.5rem;
+  padding-top: .471rem;
+  margin-bottom: -.471rem;
+  line-height: 2rem;
+}
+
+.vr-normal-2xl {
+  font-size: 1.5rem;
+  padding-top: .721rem;
+  margin-bottom: -.721rem;
+  line-height: 2.5rem;
+}
+
+.vr-relaxed-2xl {
+  font-size: 1.5rem;
+  padding-top: .721rem;
+  margin-bottom: -.721rem;
+  line-height: 2.5rem;
+}
+
+.vr-loose-2xl {
+  font-size: 1.5rem;
+  padding-top: .971rem;
+  margin-bottom: -.971rem;
+  line-height: 3rem;
+}
+
+.vr-2xl {
+  font-size: 1.5rem;
+  padding-top: .971rem;
+  margin-bottom: -.971rem;
+  line-height: 3rem;
+}
+
+.vr-none-3xl {
+  font-size: 1.875rem;
+  padding-top: .339rem;
+  margin-bottom: -.339rem;
+  line-height: 2rem;
+}
+
+.vr-tight-3xl {
+  font-size: 1.875rem;
+  padding-top: .589rem;
+  margin-bottom: -.589rem;
+  line-height: 2.5rem;
+}
+
+.vr-snug-3xl {
+  font-size: 1.875rem;
+  padding-top: .589rem;
+  margin-bottom: -.589rem;
+  line-height: 2.5rem;
+}
+
+.vr-normal-3xl {
+  font-size: 1.875rem;
+  padding-top: .839rem;
+  margin-bottom: -.839rem;
+  line-height: 3rem;
+}
+
+.vr-relaxed-3xl {
+  font-size: 1.875rem;
+  padding-top: .839rem;
+  margin-bottom: -.839rem;
+  line-height: 3rem;
+}
+
+.vr-loose-3xl {
+  font-size: 1.875rem;
+  padding-top: 1.339rem;
+  margin-bottom: -1.339rem;
+  line-height: 4rem;
+}
+
+.vr-3xl {
+  font-size: 1.875rem;
+  padding-top: 1.339rem;
+  margin-bottom: -1.339rem;
+  line-height: 4rem;
+}
+
+.vr-none-4xl {
+  font-size: 2.25rem;
+  padding-top: .457rem;
+  margin-bottom: -.457rem;
+  line-height: 2.5rem;
+}
+
+.vr-tight-4xl {
+  font-size: 2.25rem;
+  padding-top: .707rem;
+  margin-bottom: -.707rem;
+  line-height: 3rem;
+}
+
+.vr-snug-4xl {
+  font-size: 2.25rem;
+  padding-top: .707rem;
+  margin-bottom: -.707rem;
+  line-height: 3rem;
+}
+
+.vr-normal-4xl {
+  font-size: 2.25rem;
+  padding-top: .957rem;
+  margin-bottom: -.957rem;
+  line-height: 3.5rem;
+}
+
+.vr-relaxed-4xl {
+  font-size: 2.25rem;
+  padding-top: .957rem;
+  margin-bottom: -.957rem;
+  line-height: 3.5rem;
+}
+
+.vr-loose-4xl {
+  font-size: 2.25rem;
+  padding-top: 1.457rem;
+  margin-bottom: -1.457rem;
+  line-height: 4.5rem;
+}
+
+.vr-4xl {
+  font-size: 2.25rem;
+  padding-top: 1.457rem;
+  margin-bottom: -1.457rem;
+  line-height: 4.5rem;
+}
+
+.vr-none-5xl {
+  font-size: 3rem;
+  padding-top: .443rem;
+  margin-bottom: -.443rem;
+  line-height: 3rem;
+}
+
+.vr-tight-5xl {
+  font-size: 3rem;
+  padding-top: .943rem;
+  margin-bottom: -.943rem;
+  line-height: 4rem;
+}
+
+.vr-snug-5xl {
+  font-size: 3rem;
+  padding-top: .943rem;
+  margin-bottom: -.943rem;
+  line-height: 4rem;
+}
+
+.vr-normal-5xl {
+  font-size: 3rem;
+  padding-top: 1.193rem;
+  margin-bottom: -1.193rem;
+  line-height: 4.5rem;
+}
+
+.vr-relaxed-5xl {
+  font-size: 3rem;
+  padding-top: 1.443rem;
+  margin-bottom: -1.443rem;
+  line-height: 5rem;
+}
+
+.vr-loose-5xl {
+  font-size: 3rem;
+  padding-top: 1.943rem;
+  margin-bottom: -1.943rem;
+  line-height: 6rem;
+}
+
+.vr-5xl {
+  font-size: 3rem;
+  padding-top: 1.943rem;
+  margin-bottom: -1.943rem;
+  line-height: 6rem;
+}
+
+.vr-none-6xl {
+  font-size: 4rem;
+  padding-top: .59rem;
+  margin-bottom: -.59rem;
+  line-height: 4rem;
+}
+
+.vr-tight-6xl {
+  font-size: 4rem;
+  padding-top: 1.09rem;
+  margin-bottom: -1.09rem;
+  line-height: 5rem;
+}
+
+.vr-snug-6xl {
+  font-size: 4rem;
+  padding-top: 1.34rem;
+  margin-bottom: -1.34rem;
+  line-height: 5.5rem;
+}
+
+.vr-normal-6xl {
+  font-size: 4rem;
+  padding-top: 1.59rem;
+  margin-bottom: -1.59rem;
+  line-height: 6rem;
+}
+
+.vr-relaxed-6xl {
+  font-size: 4rem;
+  padding-top: 1.84rem;
+  margin-bottom: -1.84rem;
+  line-height: 6.5rem;
+}
+
+.vr-loose-6xl {
+  font-size: 4rem;
+  padding-top: 2.59rem;
+  margin-bottom: -2.59rem;
+  line-height: 8rem;
+}
+
+.vr-6xl {
+  font-size: 4rem;
+  padding-top: 2.59rem;
+  margin-bottom: -2.59rem;
+  line-height: 8rem;
+}
+
+.vr-source-sans\ pro-none-xs {
+  font-size: .75rem;
+  padding-top: .253rem;
+  margin-bottom: -.252rem;
+  line-height: 1rem;
+  font-family: Source Sans Pro;
+}
+
+.vr-source-sans\ pro-tight-xs {
+  font-size: .75rem;
+  padding-top: .253rem;
+  margin-bottom: -.252rem;
+  line-height: 1rem;
+  font-family: Source Sans Pro;
+}
+
+.vr-source-sans\ pro-snug-xs {
+  font-size: .75rem;
+  padding-top: .253rem;
+  margin-bottom: -.252rem;
+  line-height: 1rem;
+  font-family: Source Sans Pro;
+}
+
+.vr-source-sans\ pro-normal-xs {
+  font-size: .75rem;
+  padding-top: .253rem;
+  margin-bottom: -.252rem;
+  line-height: 1rem;
+  font-family: Source Sans Pro;
+}
+
+.vr-source-sans\ pro-relaxed-xs {
+  font-size: .75rem;
+  padding-top: .253rem;
+  margin-bottom: -.252rem;
+  line-height: 1rem;
+  font-family: Source Sans Pro;
+}
+
+.vr-source-sans\ pro-loose-xs {
+  font-size: .75rem;
+  padding-top: .502rem;
+  margin-bottom: -.502rem;
+  line-height: 1.5rem;
+  font-family: Source Sans Pro;
+}
+
+.vr-source-sans\ pro-xs {
+  font-size: .75rem;
+  padding-top: .502rem;
+  margin-bottom: -.502rem;
+  line-height: 1.5rem;
+  font-family: Source Sans Pro;
+}
+
+.vr-source-sans\ pro-none-sm {
+  font-size: .875rem;
+  padding-top: .211rem;
+  margin-bottom: -.211rem;
+  line-height: 1rem;
+  font-family: Source Sans Pro;
+}
+
+.vr-source-sans\ pro-tight-sm {
+  font-size: .875rem;
+  padding-top: .211rem;
+  margin-bottom: -.211rem;
+  line-height: 1rem;
+  font-family: Source Sans Pro;
+}
+
+.vr-source-sans\ pro-snug-sm {
+  font-size: .875rem;
+  padding-top: .211rem;
+  margin-bottom: -.211rem;
+  line-height: 1rem;
+  font-family: Source Sans Pro;
+}
+
+.vr-source-sans\ pro-normal-sm {
+  font-size: .875rem;
+  padding-top: .461rem;
+  margin-bottom: -.461rem;
+  line-height: 1.5rem;
+  font-family: Source Sans Pro;
+}
+
+.vr-source-sans\ pro-relaxed-sm {
+  font-size: .875rem;
+  padding-top: .461rem;
+  margin-bottom: -.461rem;
+  line-height: 1.5rem;
+  font-family: Source Sans Pro;
+}
+
+.vr-source-sans\ pro-loose-sm {
+  font-size: .875rem;
+  padding-top: .711rem;
+  margin-bottom: -.711rem;
+  line-height: 2rem;
+  font-family: Source Sans Pro;
+}
+
+.vr-source-sans\ pro-sm {
+  font-size: .875rem;
+  padding-top: .711rem;
+  margin-bottom: -.711rem;
+  line-height: 2rem;
+  font-family: Source Sans Pro;
+}
+
+.vr-source-sans\ pro-none-base {
+  font-size: 1rem;
+  padding-top: .17rem;
+  margin-bottom: -.17rem;
+  line-height: 1rem;
+  font-family: Source Sans Pro;
+}
+
+.vr-source-sans\ pro-tight-base {
+  font-size: 1rem;
+  padding-top: .42rem;
+  margin-bottom: -.42rem;
+  line-height: 1.5rem;
+  font-family: Source Sans Pro;
+}
+
+.vr-source-sans\ pro-snug-base {
+  font-size: 1rem;
+  padding-top: .42rem;
+  margin-bottom: -.42rem;
+  line-height: 1.5rem;
+  font-family: Source Sans Pro;
+}
+
+.vr-source-sans\ pro-normal-base {
+  font-size: 1rem;
+  padding-top: .42rem;
+  margin-bottom: -.42rem;
+  line-height: 1.5rem;
+  font-family: Source Sans Pro;
+}
+
+.vr-source-sans\ pro-relaxed-base {
+  font-size: 1rem;
+  padding-top: .42rem;
+  margin-bottom: -.42rem;
+  line-height: 1.5rem;
+  font-family: Source Sans Pro;
+}
+
+.vr-source-sans\ pro-loose-base {
+  font-size: 1rem;
+  padding-top: .67rem;
+  margin-bottom: -.67rem;
+  line-height: 2rem;
+  font-family: Source Sans Pro;
+}
+
+.vr-source-sans\ pro-base {
+  font-size: 1rem;
+  padding-top: .67rem;
+  margin-bottom: -.67rem;
+  line-height: 2rem;
+  font-family: Source Sans Pro;
+}
+
+.vr-source-sans\ pro-none-lg {
+  font-size: 1.125rem;
+  padding-top: .129rem;
+  margin-bottom: -.129rem;
+  line-height: 1rem;
+  font-family: Source Sans Pro;
+}
+
+.vr-source-sans\ pro-tight-lg {
+  font-size: 1.125rem;
+  padding-top: .379rem;
+  margin-bottom: -.379rem;
+  line-height: 1.5rem;
+  font-family: Source Sans Pro;
+}
+
+.vr-source-sans\ pro-snug-lg {
+  font-size: 1.125rem;
+  padding-top: .379rem;
+  margin-bottom: -.379rem;
+  line-height: 1.5rem;
+  font-family: Source Sans Pro;
+}
+
+.vr-source-sans\ pro-normal-lg {
+  font-size: 1.125rem;
+  padding-top: .379rem;
+  margin-bottom: -.379rem;
+  line-height: 1.5rem;
+  font-family: Source Sans Pro;
+}
+
+.vr-source-sans\ pro-relaxed-lg {
+  font-size: 1.125rem;
+  padding-top: .629rem;
+  margin-bottom: -.629rem;
+  line-height: 2rem;
+  font-family: Source Sans Pro;
+}
+
+.vr-source-sans\ pro-loose-lg {
+  font-size: 1.125rem;
+  padding-top: .879rem;
+  margin-bottom: -.879rem;
+  line-height: 2.5rem;
+  font-family: Source Sans Pro;
+}
+
+.vr-source-sans\ pro-lg {
+  font-size: 1.125rem;
+  padding-top: .879rem;
+  margin-bottom: -.879rem;
+  line-height: 2.5rem;
+  font-family: Source Sans Pro;
+}
+
+.vr-source-sans\ pro-none-xl {
+  font-size: 1.25rem;
+  padding-top: .337rem;
+  margin-bottom: -.337rem;
+  line-height: 1.5rem;
+  font-family: Source Sans Pro;
+}
+
+.vr-source-sans\ pro-tight-xl {
+  font-size: 1.25rem;
+  padding-top: .337rem;
+  margin-bottom: -.337rem;
+  line-height: 1.5rem;
+  font-family: Source Sans Pro;
+}
+
+.vr-source-sans\ pro-snug-xl {
+  font-size: 1.25rem;
+  padding-top: .337rem;
+  margin-bottom: -.337rem;
+  line-height: 1.5rem;
+  font-family: Source Sans Pro;
+}
+
+.vr-source-sans\ pro-normal-xl {
+  font-size: 1.25rem;
+  padding-top: .587rem;
+  margin-bottom: -.587rem;
+  line-height: 2rem;
+  font-family: Source Sans Pro;
+}
+
+.vr-source-sans\ pro-relaxed-xl {
+  font-size: 1.25rem;
+  padding-top: .587rem;
+  margin-bottom: -.587rem;
+  line-height: 2rem;
+  font-family: Source Sans Pro;
+}
+
+.vr-source-sans\ pro-loose-xl {
+  font-size: 1.25rem;
+  padding-top: .837rem;
+  margin-bottom: -.837rem;
+  line-height: 2.5rem;
+  font-family: Source Sans Pro;
+}
+
+.vr-source-sans\ pro-xl {
+  font-size: 1.25rem;
+  padding-top: .837rem;
+  margin-bottom: -.837rem;
+  line-height: 2.5rem;
+  font-family: Source Sans Pro;
+}
+
+.vr-source-sans\ pro-none-2xl {
+  font-size: 1.5rem;
+  padding-top: .255rem;
+  margin-bottom: -.255rem;
+  line-height: 1.5rem;
+  font-family: Source Sans Pro;
+}
+
+.vr-source-sans\ pro-tight-2xl {
+  font-size: 1.5rem;
+  padding-top: .505rem;
+  margin-bottom: -.505rem;
+  line-height: 2rem;
+  font-family: Source Sans Pro;
+}
+
+.vr-source-sans\ pro-snug-2xl {
+  font-size: 1.5rem;
+  padding-top: .505rem;
+  margin-bottom: -.505rem;
+  line-height: 2rem;
+  font-family: Source Sans Pro;
+}
+
+.vr-source-sans\ pro-normal-2xl {
+  font-size: 1.5rem;
+  padding-top: .755rem;
+  margin-bottom: -.755rem;
+  line-height: 2.5rem;
+  font-family: Source Sans Pro;
+}
+
+.vr-source-sans\ pro-relaxed-2xl {
+  font-size: 1.5rem;
+  padding-top: .755rem;
+  margin-bottom: -.755rem;
+  line-height: 2.5rem;
+  font-family: Source Sans Pro;
+}
+
+.vr-source-sans\ pro-loose-2xl {
+  font-size: 1.5rem;
+  padding-top: 1.005rem;
+  margin-bottom: -1.005rem;
+  line-height: 3rem;
+  font-family: Source Sans Pro;
+}
+
+.vr-source-sans\ pro-2xl {
+  font-size: 1.5rem;
+  padding-top: 1.005rem;
+  margin-bottom: -1.005rem;
+  line-height: 3rem;
+  font-family: Source Sans Pro;
+}
+
+.vr-source-sans\ pro-none-3xl {
+  font-size: 1.875rem;
+  padding-top: .381rem;
+  margin-bottom: -.381rem;
+  line-height: 2rem;
+  font-family: Source Sans Pro;
+}
+
+.vr-source-sans\ pro-tight-3xl {
+  font-size: 1.875rem;
+  padding-top: .631rem;
+  margin-bottom: -.631rem;
+  line-height: 2.5rem;
+  font-family: Source Sans Pro;
+}
+
+.vr-source-sans\ pro-snug-3xl {
+  font-size: 1.875rem;
+  padding-top: .631rem;
+  margin-bottom: -.631rem;
+  line-height: 2.5rem;
+  font-family: Source Sans Pro;
+}
+
+.vr-source-sans\ pro-normal-3xl {
+  font-size: 1.875rem;
+  padding-top: .881rem;
+  margin-bottom: -.881rem;
+  line-height: 3rem;
+  font-family: Source Sans Pro;
+}
+
+.vr-source-sans\ pro-relaxed-3xl {
+  font-size: 1.875rem;
+  padding-top: .881rem;
+  margin-bottom: -.881rem;
+  line-height: 3rem;
+  font-family: Source Sans Pro;
+}
+
+.vr-source-sans\ pro-loose-3xl {
+  font-size: 1.875rem;
+  padding-top: 1.381rem;
+  margin-bottom: -1.381rem;
+  line-height: 4rem;
+  font-family: Source Sans Pro;
+}
+
+.vr-source-sans\ pro-3xl {
+  font-size: 1.875rem;
+  padding-top: 1.381rem;
+  margin-bottom: -1.381rem;
+  line-height: 4rem;
+  font-family: Source Sans Pro;
+}
+
+.vr-source-sans\ pro-none-4xl {
+  font-size: 2.25rem;
+  padding-top: .507rem;
+  margin-bottom: -.507rem;
+  line-height: 2.5rem;
+  font-family: Source Sans Pro;
+}
+
+.vr-source-sans\ pro-tight-4xl {
+  font-size: 2.25rem;
+  padding-top: .758rem;
+  margin-bottom: -.757rem;
+  line-height: 3rem;
+  font-family: Source Sans Pro;
+}
+
+.vr-source-sans\ pro-snug-4xl {
+  font-size: 2.25rem;
+  padding-top: .758rem;
+  margin-bottom: -.757rem;
+  line-height: 3rem;
+  font-family: Source Sans Pro;
+}
+
+.vr-source-sans\ pro-normal-4xl {
+  font-size: 2.25rem;
+  padding-top: 1.007rem;
+  margin-bottom: -1.007rem;
+  line-height: 3.5rem;
+  font-family: Source Sans Pro;
+}
+
+.vr-source-sans\ pro-relaxed-4xl {
+  font-size: 2.25rem;
+  padding-top: 1.007rem;
+  margin-bottom: -1.007rem;
+  line-height: 3.5rem;
+  font-family: Source Sans Pro;
+}
+
+.vr-source-sans\ pro-loose-4xl {
+  font-size: 2.25rem;
+  padding-top: 1.507rem;
+  margin-bottom: -1.507rem;
+  line-height: 4.5rem;
+  font-family: Source Sans Pro;
+}
+
+.vr-source-sans\ pro-4xl {
+  font-size: 2.25rem;
+  padding-top: 1.507rem;
+  margin-bottom: -1.507rem;
+  line-height: 4.5rem;
+  font-family: Source Sans Pro;
+}
+
+.vr-source-sans\ pro-none-5xl {
+  font-size: 3rem;
+  padding-top: .51rem;
+  margin-bottom: -.51rem;
+  line-height: 3rem;
+  font-family: Source Sans Pro;
+}
+
+.vr-source-sans\ pro-tight-5xl {
+  font-size: 3rem;
+  padding-top: 1.01rem;
+  margin-bottom: -1.01rem;
+  line-height: 4rem;
+  font-family: Source Sans Pro;
+}
+
+.vr-source-sans\ pro-snug-5xl {
+  font-size: 3rem;
+  padding-top: 1.01rem;
+  margin-bottom: -1.01rem;
+  line-height: 4rem;
+  font-family: Source Sans Pro;
+}
+
+.vr-source-sans\ pro-normal-5xl {
+  font-size: 3rem;
+  padding-top: 1.26rem;
+  margin-bottom: -1.26rem;
+  line-height: 4.5rem;
+  font-family: Source Sans Pro;
+}
+
+.vr-source-sans\ pro-relaxed-5xl {
+  font-size: 3rem;
+  padding-top: 1.51rem;
+  margin-bottom: -1.51rem;
+  line-height: 5rem;
+  font-family: Source Sans Pro;
+}
+
+.vr-source-sans\ pro-loose-5xl {
+  font-size: 3rem;
+  padding-top: 2.01rem;
+  margin-bottom: -2.01rem;
+  line-height: 6rem;
+  font-family: Source Sans Pro;
+}
+
+.vr-source-sans\ pro-5xl {
+  font-size: 3rem;
+  padding-top: 2.01rem;
+  margin-bottom: -2.01rem;
+  line-height: 6rem;
+  font-family: Source Sans Pro;
+}
+
+.vr-source-sans\ pro-none-6xl {
+  font-size: 4rem;
+  padding-top: .68rem;
+  margin-bottom: -.68rem;
+  line-height: 4rem;
+  font-family: Source Sans Pro;
+}
+
+.vr-source-sans\ pro-tight-6xl {
+  font-size: 4rem;
+  padding-top: 1.18rem;
+  margin-bottom: -1.18rem;
+  line-height: 5rem;
+  font-family: Source Sans Pro;
+}
+
+.vr-source-sans\ pro-snug-6xl {
+  font-size: 4rem;
+  padding-top: 1.43rem;
+  margin-bottom: -1.43rem;
+  line-height: 5.5rem;
+  font-family: Source Sans Pro;
+}
+
+.vr-source-sans\ pro-normal-6xl {
+  font-size: 4rem;
+  padding-top: 1.68rem;
+  margin-bottom: -1.68rem;
+  line-height: 6rem;
+  font-family: Source Sans Pro;
+}
+
+.vr-source-sans\ pro-relaxed-6xl {
+  font-size: 4rem;
+  padding-top: 1.93rem;
+  margin-bottom: -1.93rem;
+  line-height: 6.5rem;
+  font-family: Source Sans Pro;
+}
+
+.vr-source-sans\ pro-loose-6xl {
+  font-size: 4rem;
+  padding-top: 2.68rem;
+  margin-bottom: -2.68rem;
+  line-height: 8rem;
+  font-family: Source Sans Pro;
+}
+
+.vr-source-sans\ pro-6xl {
+  font-size: 4rem;
+  padding-top: 2.68rem;
+  margin-bottom: -2.68rem;
+  line-height: 8rem;
+  font-family: Source Sans Pro;
+}
+
 .container {
   width: 100%;
 }
@@ -15241,6 +16535,7 @@ body {
   -webkit-font-smoothing: auto;
   -moz-osx-font-smoothing: auto;
   color: #1a202c;
+  background-color: #f7fafc;
 }
 
 code {
@@ -15254,13 +16549,17 @@ a {
 a:hover,
 a:focus {
   text-decoration: none;
-  color: #38a169;
+  color: #c54545;
+}
+
+iframe {
+  margin-top: 1rem;
 }
 
 article {
   max-width: 70ch;
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
   margin-left: auto;
   margin-right: auto;
 }
@@ -15269,6 +16568,7 @@ article ul,
 article ol {
   list-style-position: outside;
   padding-left: 1.25rem;
+  margin-top: 1rem;
 }
 
 article ul {
@@ -15279,24 +16579,57 @@ article ol {
   list-style-type: decimal;
 }
 
-p, ul, ol {
-  margin-bottom: 1rem;
+p {
+  font-size: 1.25rem;
+  padding-top: .559rem;
+  margin-bottom: -.559rem;
+  line-height: 2rem;
+  margin-top: 1rem;
 }
 
 h1 {
   font-size: 1.875rem;
+  padding-top: .839rem;
+  margin-bottom: -.839rem;
+  line-height: 3rem;
   font-weight: 700;
-  line-height: 1.25;
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
+}
+
+h1 + * {
+  margin-top: 3rem;
 }
 
 h2 {
   font-size: 1.5rem;
+  padding-top: .721rem;
+  margin-bottom: -.721rem;
+  line-height: 2.5rem;
   font-weight: 700;
-  line-height: 1.25;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  margin-top: 2.5rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+  padding-top: .559rem;
+  margin-bottom: -.559rem;
+  line-height: 2rem;
+  font-weight: 700;
+  margin-top: 2rem;
+}
+
+h4 {
+  font-size: 1.125rem;
+  padding-top: .353rem;
+  margin-bottom: -.353rem;
+  line-height: 1.5rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+}
+
+.direct-link {
+  text-decoration: none;
+  color: #cbd5e0;
+  margin-left: -17px;
 }
 
 @media (min-width: 640px) {
@@ -16196,6 +17529,10 @@ h2 {
     border-color: #702459;
   }
 
+  .sm\:divide-accent > :not(template) ~ :not(template) {
+    border-color: #c54545;
+  }
+
   .sm\:sr-only {
     position: absolute;
     width: 1px;
@@ -16636,6 +17973,10 @@ h2 {
     background-color: #702459;
   }
 
+  .sm\:bg-accent {
+    background-color: #c54545;
+  }
+
   .sm\:hover\:bg-transparent:hover {
     background-color: transparent;
   }
@@ -17012,6 +18353,10 @@ h2 {
     background-color: #702459;
   }
 
+  .sm\:hover\:bg-accent:hover {
+    background-color: #c54545;
+  }
+
   .sm\:focus\:bg-transparent:focus {
     background-color: transparent;
   }
@@ -17386,6 +18731,10 @@ h2 {
 
   .sm\:focus\:bg-pink-900:focus {
     background-color: #702459;
+  }
+
+  .sm\:focus\:bg-accent:focus {
+    background-color: #c54545;
   }
 
   .sm\:bg-bottom {
@@ -17844,6 +19193,10 @@ h2 {
     border-color: #702459;
   }
 
+  .sm\:border-accent {
+    border-color: #c54545;
+  }
+
   .sm\:hover\:border-transparent:hover {
     border-color: transparent;
   }
@@ -18220,6 +19573,10 @@ h2 {
     border-color: #702459;
   }
 
+  .sm\:hover\:border-accent:hover {
+    border-color: #c54545;
+  }
+
   .sm\:focus\:border-transparent:focus {
     border-color: transparent;
   }
@@ -18594,6 +19951,10 @@ h2 {
 
   .sm\:focus\:border-pink-900:focus {
     border-color: #702459;
+  }
+
+  .sm\:focus\:border-accent:focus {
+    border-color: #c54545;
   }
 
   .sm\:rounded-none {
@@ -23590,6 +24951,26 @@ h2 {
     color: #702459;
   }
 
+  .sm\:placeholder-accent::-webkit-input-placeholder {
+    color: #c54545;
+  }
+
+  .sm\:placeholder-accent::-moz-placeholder {
+    color: #c54545;
+  }
+
+  .sm\:placeholder-accent:-ms-input-placeholder {
+    color: #c54545;
+  }
+
+  .sm\:placeholder-accent::-ms-input-placeholder {
+    color: #c54545;
+  }
+
+  .sm\:placeholder-accent::placeholder {
+    color: #c54545;
+  }
+
   .sm\:focus\:placeholder-transparent:focus::-webkit-input-placeholder {
     color: transparent;
   }
@@ -25470,6 +26851,26 @@ h2 {
     color: #702459;
   }
 
+  .sm\:focus\:placeholder-accent:focus::-webkit-input-placeholder {
+    color: #c54545;
+  }
+
+  .sm\:focus\:placeholder-accent:focus::-moz-placeholder {
+    color: #c54545;
+  }
+
+  .sm\:focus\:placeholder-accent:focus:-ms-input-placeholder {
+    color: #c54545;
+  }
+
+  .sm\:focus\:placeholder-accent:focus::-ms-input-placeholder {
+    color: #c54545;
+  }
+
+  .sm\:focus\:placeholder-accent:focus::placeholder {
+    color: #c54545;
+  }
+
   .sm\:pointer-events-none {
     pointer-events: none;
   }
@@ -26151,6 +27552,10 @@ h2 {
     color: #702459;
   }
 
+  .sm\:text-accent {
+    color: #c54545;
+  }
+
   .sm\:hover\:text-transparent:hover {
     color: transparent;
   }
@@ -26527,6 +27932,10 @@ h2 {
     color: #702459;
   }
 
+  .sm\:hover\:text-accent:hover {
+    color: #c54545;
+  }
+
   .sm\:focus\:text-transparent:focus {
     color: transparent;
   }
@@ -26901,6 +28310,10 @@ h2 {
 
   .sm\:focus\:text-pink-900:focus {
     color: #702459;
+  }
+
+  .sm\:focus\:text-accent:focus {
+    color: #c54545;
   }
 
   .sm\:italic {
@@ -29876,6 +31289,1056 @@ h2 {
     -webkit-transition-delay: 1000ms;
             transition-delay: 1000ms;
   }
+
+  .sm\:vr-none-xs {
+    font-size: .75rem;
+    padding-top: .236rem;
+    margin-bottom: -.236rem;
+    line-height: 1rem;
+  }
+
+  .sm\:vr-tight-xs {
+    font-size: .75rem;
+    padding-top: .236rem;
+    margin-bottom: -.236rem;
+    line-height: 1rem;
+  }
+
+  .sm\:vr-snug-xs {
+    font-size: .75rem;
+    padding-top: .236rem;
+    margin-bottom: -.236rem;
+    line-height: 1rem;
+  }
+
+  .sm\:vr-normal-xs {
+    font-size: .75rem;
+    padding-top: .236rem;
+    margin-bottom: -.236rem;
+    line-height: 1rem;
+  }
+
+  .sm\:vr-relaxed-xs {
+    font-size: .75rem;
+    padding-top: .236rem;
+    margin-bottom: -.236rem;
+    line-height: 1rem;
+  }
+
+  .sm\:vr-loose-xs {
+    font-size: .75rem;
+    padding-top: .486rem;
+    margin-bottom: -.486rem;
+    line-height: 1.5rem;
+  }
+
+  .sm\:vr-xs {
+    font-size: .75rem;
+    padding-top: .486rem;
+    margin-bottom: -.486rem;
+    line-height: 1.5rem;
+  }
+
+  .sm\:vr-none-sm {
+    font-size: .875rem;
+    padding-top: .192rem;
+    margin-bottom: -.192rem;
+    line-height: 1rem;
+  }
+
+  .sm\:vr-tight-sm {
+    font-size: .875rem;
+    padding-top: .192rem;
+    margin-bottom: -.192rem;
+    line-height: 1rem;
+  }
+
+  .sm\:vr-snug-sm {
+    font-size: .875rem;
+    padding-top: .192rem;
+    margin-bottom: -.192rem;
+    line-height: 1rem;
+  }
+
+  .sm\:vr-normal-sm {
+    font-size: .875rem;
+    padding-top: .442rem;
+    margin-bottom: -.442rem;
+    line-height: 1.5rem;
+  }
+
+  .sm\:vr-relaxed-sm {
+    font-size: .875rem;
+    padding-top: .442rem;
+    margin-bottom: -.442rem;
+    line-height: 1.5rem;
+  }
+
+  .sm\:vr-loose-sm {
+    font-size: .875rem;
+    padding-top: .692rem;
+    margin-bottom: -.692rem;
+    line-height: 2rem;
+  }
+
+  .sm\:vr-sm {
+    font-size: .875rem;
+    padding-top: .692rem;
+    margin-bottom: -.692rem;
+    line-height: 2rem;
+  }
+
+  .sm\:vr-none-base {
+    font-size: 1rem;
+    padding-top: .148rem;
+    margin-bottom: -.148rem;
+    line-height: 1rem;
+  }
+
+  .sm\:vr-tight-base {
+    font-size: 1rem;
+    padding-top: .398rem;
+    margin-bottom: -.397rem;
+    line-height: 1.5rem;
+  }
+
+  .sm\:vr-snug-base {
+    font-size: 1rem;
+    padding-top: .398rem;
+    margin-bottom: -.397rem;
+    line-height: 1.5rem;
+  }
+
+  .sm\:vr-normal-base {
+    font-size: 1rem;
+    padding-top: .398rem;
+    margin-bottom: -.397rem;
+    line-height: 1.5rem;
+  }
+
+  .sm\:vr-relaxed-base {
+    font-size: 1rem;
+    padding-top: .398rem;
+    margin-bottom: -.397rem;
+    line-height: 1.5rem;
+  }
+
+  .sm\:vr-loose-base {
+    font-size: 1rem;
+    padding-top: .648rem;
+    margin-bottom: -.647rem;
+    line-height: 2rem;
+  }
+
+  .sm\:vr-base {
+    font-size: 1rem;
+    padding-top: .648rem;
+    margin-bottom: -.647rem;
+    line-height: 2rem;
+  }
+
+  .sm\:vr-none-lg {
+    font-size: 1.125rem;
+    padding-top: .103rem;
+    margin-bottom: -.103rem;
+    line-height: 1rem;
+  }
+
+  .sm\:vr-tight-lg {
+    font-size: 1.125rem;
+    padding-top: .353rem;
+    margin-bottom: -.353rem;
+    line-height: 1.5rem;
+  }
+
+  .sm\:vr-snug-lg {
+    font-size: 1.125rem;
+    padding-top: .353rem;
+    margin-bottom: -.353rem;
+    line-height: 1.5rem;
+  }
+
+  .sm\:vr-normal-lg {
+    font-size: 1.125rem;
+    padding-top: .353rem;
+    margin-bottom: -.353rem;
+    line-height: 1.5rem;
+  }
+
+  .sm\:vr-relaxed-lg {
+    font-size: 1.125rem;
+    padding-top: .603rem;
+    margin-bottom: -.603rem;
+    line-height: 2rem;
+  }
+
+  .sm\:vr-loose-lg {
+    font-size: 1.125rem;
+    padding-top: .853rem;
+    margin-bottom: -.853rem;
+    line-height: 2.5rem;
+  }
+
+  .sm\:vr-lg {
+    font-size: 1.125rem;
+    padding-top: .853rem;
+    margin-bottom: -.853rem;
+    line-height: 2.5rem;
+  }
+
+  .sm\:vr-none-xl {
+    font-size: 1.25rem;
+    padding-top: .309rem;
+    margin-bottom: -.309rem;
+    line-height: 1.5rem;
+  }
+
+  .sm\:vr-tight-xl {
+    font-size: 1.25rem;
+    padding-top: .309rem;
+    margin-bottom: -.309rem;
+    line-height: 1.5rem;
+  }
+
+  .sm\:vr-snug-xl {
+    font-size: 1.25rem;
+    padding-top: .309rem;
+    margin-bottom: -.309rem;
+    line-height: 1.5rem;
+  }
+
+  .sm\:vr-normal-xl {
+    font-size: 1.25rem;
+    padding-top: .559rem;
+    margin-bottom: -.559rem;
+    line-height: 2rem;
+  }
+
+  .sm\:vr-relaxed-xl {
+    font-size: 1.25rem;
+    padding-top: .559rem;
+    margin-bottom: -.559rem;
+    line-height: 2rem;
+  }
+
+  .sm\:vr-loose-xl {
+    font-size: 1.25rem;
+    padding-top: .809rem;
+    margin-bottom: -.809rem;
+    line-height: 2.5rem;
+  }
+
+  .sm\:vr-xl {
+    font-size: 1.25rem;
+    padding-top: .809rem;
+    margin-bottom: -.809rem;
+    line-height: 2.5rem;
+  }
+
+  .sm\:vr-none-2xl {
+    font-size: 1.5rem;
+    padding-top: .221rem;
+    margin-bottom: -.221rem;
+    line-height: 1.5rem;
+  }
+
+  .sm\:vr-tight-2xl {
+    font-size: 1.5rem;
+    padding-top: .471rem;
+    margin-bottom: -.471rem;
+    line-height: 2rem;
+  }
+
+  .sm\:vr-snug-2xl {
+    font-size: 1.5rem;
+    padding-top: .471rem;
+    margin-bottom: -.471rem;
+    line-height: 2rem;
+  }
+
+  .sm\:vr-normal-2xl {
+    font-size: 1.5rem;
+    padding-top: .721rem;
+    margin-bottom: -.721rem;
+    line-height: 2.5rem;
+  }
+
+  .sm\:vr-relaxed-2xl {
+    font-size: 1.5rem;
+    padding-top: .721rem;
+    margin-bottom: -.721rem;
+    line-height: 2.5rem;
+  }
+
+  .sm\:vr-loose-2xl {
+    font-size: 1.5rem;
+    padding-top: .971rem;
+    margin-bottom: -.971rem;
+    line-height: 3rem;
+  }
+
+  .sm\:vr-2xl {
+    font-size: 1.5rem;
+    padding-top: .971rem;
+    margin-bottom: -.971rem;
+    line-height: 3rem;
+  }
+
+  .sm\:vr-none-3xl {
+    font-size: 1.875rem;
+    padding-top: .339rem;
+    margin-bottom: -.339rem;
+    line-height: 2rem;
+  }
+
+  .sm\:vr-tight-3xl {
+    font-size: 1.875rem;
+    padding-top: .589rem;
+    margin-bottom: -.589rem;
+    line-height: 2.5rem;
+  }
+
+  .sm\:vr-snug-3xl {
+    font-size: 1.875rem;
+    padding-top: .589rem;
+    margin-bottom: -.589rem;
+    line-height: 2.5rem;
+  }
+
+  .sm\:vr-normal-3xl {
+    font-size: 1.875rem;
+    padding-top: .839rem;
+    margin-bottom: -.839rem;
+    line-height: 3rem;
+  }
+
+  .sm\:vr-relaxed-3xl {
+    font-size: 1.875rem;
+    padding-top: .839rem;
+    margin-bottom: -.839rem;
+    line-height: 3rem;
+  }
+
+  .sm\:vr-loose-3xl {
+    font-size: 1.875rem;
+    padding-top: 1.339rem;
+    margin-bottom: -1.339rem;
+    line-height: 4rem;
+  }
+
+  .sm\:vr-3xl {
+    font-size: 1.875rem;
+    padding-top: 1.339rem;
+    margin-bottom: -1.339rem;
+    line-height: 4rem;
+  }
+
+  .sm\:vr-none-4xl {
+    font-size: 2.25rem;
+    padding-top: .457rem;
+    margin-bottom: -.457rem;
+    line-height: 2.5rem;
+  }
+
+  .sm\:vr-tight-4xl {
+    font-size: 2.25rem;
+    padding-top: .707rem;
+    margin-bottom: -.707rem;
+    line-height: 3rem;
+  }
+
+  .sm\:vr-snug-4xl {
+    font-size: 2.25rem;
+    padding-top: .707rem;
+    margin-bottom: -.707rem;
+    line-height: 3rem;
+  }
+
+  .sm\:vr-normal-4xl {
+    font-size: 2.25rem;
+    padding-top: .957rem;
+    margin-bottom: -.957rem;
+    line-height: 3.5rem;
+  }
+
+  .sm\:vr-relaxed-4xl {
+    font-size: 2.25rem;
+    padding-top: .957rem;
+    margin-bottom: -.957rem;
+    line-height: 3.5rem;
+  }
+
+  .sm\:vr-loose-4xl {
+    font-size: 2.25rem;
+    padding-top: 1.457rem;
+    margin-bottom: -1.457rem;
+    line-height: 4.5rem;
+  }
+
+  .sm\:vr-4xl {
+    font-size: 2.25rem;
+    padding-top: 1.457rem;
+    margin-bottom: -1.457rem;
+    line-height: 4.5rem;
+  }
+
+  .sm\:vr-none-5xl {
+    font-size: 3rem;
+    padding-top: .443rem;
+    margin-bottom: -.443rem;
+    line-height: 3rem;
+  }
+
+  .sm\:vr-tight-5xl {
+    font-size: 3rem;
+    padding-top: .943rem;
+    margin-bottom: -.943rem;
+    line-height: 4rem;
+  }
+
+  .sm\:vr-snug-5xl {
+    font-size: 3rem;
+    padding-top: .943rem;
+    margin-bottom: -.943rem;
+    line-height: 4rem;
+  }
+
+  .sm\:vr-normal-5xl {
+    font-size: 3rem;
+    padding-top: 1.193rem;
+    margin-bottom: -1.193rem;
+    line-height: 4.5rem;
+  }
+
+  .sm\:vr-relaxed-5xl {
+    font-size: 3rem;
+    padding-top: 1.443rem;
+    margin-bottom: -1.443rem;
+    line-height: 5rem;
+  }
+
+  .sm\:vr-loose-5xl {
+    font-size: 3rem;
+    padding-top: 1.943rem;
+    margin-bottom: -1.943rem;
+    line-height: 6rem;
+  }
+
+  .sm\:vr-5xl {
+    font-size: 3rem;
+    padding-top: 1.943rem;
+    margin-bottom: -1.943rem;
+    line-height: 6rem;
+  }
+
+  .sm\:vr-none-6xl {
+    font-size: 4rem;
+    padding-top: .59rem;
+    margin-bottom: -.59rem;
+    line-height: 4rem;
+  }
+
+  .sm\:vr-tight-6xl {
+    font-size: 4rem;
+    padding-top: 1.09rem;
+    margin-bottom: -1.09rem;
+    line-height: 5rem;
+  }
+
+  .sm\:vr-snug-6xl {
+    font-size: 4rem;
+    padding-top: 1.34rem;
+    margin-bottom: -1.34rem;
+    line-height: 5.5rem;
+  }
+
+  .sm\:vr-normal-6xl {
+    font-size: 4rem;
+    padding-top: 1.59rem;
+    margin-bottom: -1.59rem;
+    line-height: 6rem;
+  }
+
+  .sm\:vr-relaxed-6xl {
+    font-size: 4rem;
+    padding-top: 1.84rem;
+    margin-bottom: -1.84rem;
+    line-height: 6.5rem;
+  }
+
+  .sm\:vr-loose-6xl {
+    font-size: 4rem;
+    padding-top: 2.59rem;
+    margin-bottom: -2.59rem;
+    line-height: 8rem;
+  }
+
+  .sm\:vr-6xl {
+    font-size: 4rem;
+    padding-top: 2.59rem;
+    margin-bottom: -2.59rem;
+    line-height: 8rem;
+  }
+
+  .sm\:vr-source-sans\ pro-none-xs {
+    font-size: .75rem;
+    padding-top: .253rem;
+    margin-bottom: -.252rem;
+    line-height: 1rem;
+    font-family: Source Sans Pro;
+  }
+
+  .sm\:vr-source-sans\ pro-tight-xs {
+    font-size: .75rem;
+    padding-top: .253rem;
+    margin-bottom: -.252rem;
+    line-height: 1rem;
+    font-family: Source Sans Pro;
+  }
+
+  .sm\:vr-source-sans\ pro-snug-xs {
+    font-size: .75rem;
+    padding-top: .253rem;
+    margin-bottom: -.252rem;
+    line-height: 1rem;
+    font-family: Source Sans Pro;
+  }
+
+  .sm\:vr-source-sans\ pro-normal-xs {
+    font-size: .75rem;
+    padding-top: .253rem;
+    margin-bottom: -.252rem;
+    line-height: 1rem;
+    font-family: Source Sans Pro;
+  }
+
+  .sm\:vr-source-sans\ pro-relaxed-xs {
+    font-size: .75rem;
+    padding-top: .253rem;
+    margin-bottom: -.252rem;
+    line-height: 1rem;
+    font-family: Source Sans Pro;
+  }
+
+  .sm\:vr-source-sans\ pro-loose-xs {
+    font-size: .75rem;
+    padding-top: .502rem;
+    margin-bottom: -.502rem;
+    line-height: 1.5rem;
+    font-family: Source Sans Pro;
+  }
+
+  .sm\:vr-source-sans\ pro-xs {
+    font-size: .75rem;
+    padding-top: .502rem;
+    margin-bottom: -.502rem;
+    line-height: 1.5rem;
+    font-family: Source Sans Pro;
+  }
+
+  .sm\:vr-source-sans\ pro-none-sm {
+    font-size: .875rem;
+    padding-top: .211rem;
+    margin-bottom: -.211rem;
+    line-height: 1rem;
+    font-family: Source Sans Pro;
+  }
+
+  .sm\:vr-source-sans\ pro-tight-sm {
+    font-size: .875rem;
+    padding-top: .211rem;
+    margin-bottom: -.211rem;
+    line-height: 1rem;
+    font-family: Source Sans Pro;
+  }
+
+  .sm\:vr-source-sans\ pro-snug-sm {
+    font-size: .875rem;
+    padding-top: .211rem;
+    margin-bottom: -.211rem;
+    line-height: 1rem;
+    font-family: Source Sans Pro;
+  }
+
+  .sm\:vr-source-sans\ pro-normal-sm {
+    font-size: .875rem;
+    padding-top: .461rem;
+    margin-bottom: -.461rem;
+    line-height: 1.5rem;
+    font-family: Source Sans Pro;
+  }
+
+  .sm\:vr-source-sans\ pro-relaxed-sm {
+    font-size: .875rem;
+    padding-top: .461rem;
+    margin-bottom: -.461rem;
+    line-height: 1.5rem;
+    font-family: Source Sans Pro;
+  }
+
+  .sm\:vr-source-sans\ pro-loose-sm {
+    font-size: .875rem;
+    padding-top: .711rem;
+    margin-bottom: -.711rem;
+    line-height: 2rem;
+    font-family: Source Sans Pro;
+  }
+
+  .sm\:vr-source-sans\ pro-sm {
+    font-size: .875rem;
+    padding-top: .711rem;
+    margin-bottom: -.711rem;
+    line-height: 2rem;
+    font-family: Source Sans Pro;
+  }
+
+  .sm\:vr-source-sans\ pro-none-base {
+    font-size: 1rem;
+    padding-top: .17rem;
+    margin-bottom: -.17rem;
+    line-height: 1rem;
+    font-family: Source Sans Pro;
+  }
+
+  .sm\:vr-source-sans\ pro-tight-base {
+    font-size: 1rem;
+    padding-top: .42rem;
+    margin-bottom: -.42rem;
+    line-height: 1.5rem;
+    font-family: Source Sans Pro;
+  }
+
+  .sm\:vr-source-sans\ pro-snug-base {
+    font-size: 1rem;
+    padding-top: .42rem;
+    margin-bottom: -.42rem;
+    line-height: 1.5rem;
+    font-family: Source Sans Pro;
+  }
+
+  .sm\:vr-source-sans\ pro-normal-base {
+    font-size: 1rem;
+    padding-top: .42rem;
+    margin-bottom: -.42rem;
+    line-height: 1.5rem;
+    font-family: Source Sans Pro;
+  }
+
+  .sm\:vr-source-sans\ pro-relaxed-base {
+    font-size: 1rem;
+    padding-top: .42rem;
+    margin-bottom: -.42rem;
+    line-height: 1.5rem;
+    font-family: Source Sans Pro;
+  }
+
+  .sm\:vr-source-sans\ pro-loose-base {
+    font-size: 1rem;
+    padding-top: .67rem;
+    margin-bottom: -.67rem;
+    line-height: 2rem;
+    font-family: Source Sans Pro;
+  }
+
+  .sm\:vr-source-sans\ pro-base {
+    font-size: 1rem;
+    padding-top: .67rem;
+    margin-bottom: -.67rem;
+    line-height: 2rem;
+    font-family: Source Sans Pro;
+  }
+
+  .sm\:vr-source-sans\ pro-none-lg {
+    font-size: 1.125rem;
+    padding-top: .129rem;
+    margin-bottom: -.129rem;
+    line-height: 1rem;
+    font-family: Source Sans Pro;
+  }
+
+  .sm\:vr-source-sans\ pro-tight-lg {
+    font-size: 1.125rem;
+    padding-top: .379rem;
+    margin-bottom: -.379rem;
+    line-height: 1.5rem;
+    font-family: Source Sans Pro;
+  }
+
+  .sm\:vr-source-sans\ pro-snug-lg {
+    font-size: 1.125rem;
+    padding-top: .379rem;
+    margin-bottom: -.379rem;
+    line-height: 1.5rem;
+    font-family: Source Sans Pro;
+  }
+
+  .sm\:vr-source-sans\ pro-normal-lg {
+    font-size: 1.125rem;
+    padding-top: .379rem;
+    margin-bottom: -.379rem;
+    line-height: 1.5rem;
+    font-family: Source Sans Pro;
+  }
+
+  .sm\:vr-source-sans\ pro-relaxed-lg {
+    font-size: 1.125rem;
+    padding-top: .629rem;
+    margin-bottom: -.629rem;
+    line-height: 2rem;
+    font-family: Source Sans Pro;
+  }
+
+  .sm\:vr-source-sans\ pro-loose-lg {
+    font-size: 1.125rem;
+    padding-top: .879rem;
+    margin-bottom: -.879rem;
+    line-height: 2.5rem;
+    font-family: Source Sans Pro;
+  }
+
+  .sm\:vr-source-sans\ pro-lg {
+    font-size: 1.125rem;
+    padding-top: .879rem;
+    margin-bottom: -.879rem;
+    line-height: 2.5rem;
+    font-family: Source Sans Pro;
+  }
+
+  .sm\:vr-source-sans\ pro-none-xl {
+    font-size: 1.25rem;
+    padding-top: .337rem;
+    margin-bottom: -.337rem;
+    line-height: 1.5rem;
+    font-family: Source Sans Pro;
+  }
+
+  .sm\:vr-source-sans\ pro-tight-xl {
+    font-size: 1.25rem;
+    padding-top: .337rem;
+    margin-bottom: -.337rem;
+    line-height: 1.5rem;
+    font-family: Source Sans Pro;
+  }
+
+  .sm\:vr-source-sans\ pro-snug-xl {
+    font-size: 1.25rem;
+    padding-top: .337rem;
+    margin-bottom: -.337rem;
+    line-height: 1.5rem;
+    font-family: Source Sans Pro;
+  }
+
+  .sm\:vr-source-sans\ pro-normal-xl {
+    font-size: 1.25rem;
+    padding-top: .587rem;
+    margin-bottom: -.587rem;
+    line-height: 2rem;
+    font-family: Source Sans Pro;
+  }
+
+  .sm\:vr-source-sans\ pro-relaxed-xl {
+    font-size: 1.25rem;
+    padding-top: .587rem;
+    margin-bottom: -.587rem;
+    line-height: 2rem;
+    font-family: Source Sans Pro;
+  }
+
+  .sm\:vr-source-sans\ pro-loose-xl {
+    font-size: 1.25rem;
+    padding-top: .837rem;
+    margin-bottom: -.837rem;
+    line-height: 2.5rem;
+    font-family: Source Sans Pro;
+  }
+
+  .sm\:vr-source-sans\ pro-xl {
+    font-size: 1.25rem;
+    padding-top: .837rem;
+    margin-bottom: -.837rem;
+    line-height: 2.5rem;
+    font-family: Source Sans Pro;
+  }
+
+  .sm\:vr-source-sans\ pro-none-2xl {
+    font-size: 1.5rem;
+    padding-top: .255rem;
+    margin-bottom: -.255rem;
+    line-height: 1.5rem;
+    font-family: Source Sans Pro;
+  }
+
+  .sm\:vr-source-sans\ pro-tight-2xl {
+    font-size: 1.5rem;
+    padding-top: .505rem;
+    margin-bottom: -.505rem;
+    line-height: 2rem;
+    font-family: Source Sans Pro;
+  }
+
+  .sm\:vr-source-sans\ pro-snug-2xl {
+    font-size: 1.5rem;
+    padding-top: .505rem;
+    margin-bottom: -.505rem;
+    line-height: 2rem;
+    font-family: Source Sans Pro;
+  }
+
+  .sm\:vr-source-sans\ pro-normal-2xl {
+    font-size: 1.5rem;
+    padding-top: .755rem;
+    margin-bottom: -.755rem;
+    line-height: 2.5rem;
+    font-family: Source Sans Pro;
+  }
+
+  .sm\:vr-source-sans\ pro-relaxed-2xl {
+    font-size: 1.5rem;
+    padding-top: .755rem;
+    margin-bottom: -.755rem;
+    line-height: 2.5rem;
+    font-family: Source Sans Pro;
+  }
+
+  .sm\:vr-source-sans\ pro-loose-2xl {
+    font-size: 1.5rem;
+    padding-top: 1.005rem;
+    margin-bottom: -1.005rem;
+    line-height: 3rem;
+    font-family: Source Sans Pro;
+  }
+
+  .sm\:vr-source-sans\ pro-2xl {
+    font-size: 1.5rem;
+    padding-top: 1.005rem;
+    margin-bottom: -1.005rem;
+    line-height: 3rem;
+    font-family: Source Sans Pro;
+  }
+
+  .sm\:vr-source-sans\ pro-none-3xl {
+    font-size: 1.875rem;
+    padding-top: .381rem;
+    margin-bottom: -.381rem;
+    line-height: 2rem;
+    font-family: Source Sans Pro;
+  }
+
+  .sm\:vr-source-sans\ pro-tight-3xl {
+    font-size: 1.875rem;
+    padding-top: .631rem;
+    margin-bottom: -.631rem;
+    line-height: 2.5rem;
+    font-family: Source Sans Pro;
+  }
+
+  .sm\:vr-source-sans\ pro-snug-3xl {
+    font-size: 1.875rem;
+    padding-top: .631rem;
+    margin-bottom: -.631rem;
+    line-height: 2.5rem;
+    font-family: Source Sans Pro;
+  }
+
+  .sm\:vr-source-sans\ pro-normal-3xl {
+    font-size: 1.875rem;
+    padding-top: .881rem;
+    margin-bottom: -.881rem;
+    line-height: 3rem;
+    font-family: Source Sans Pro;
+  }
+
+  .sm\:vr-source-sans\ pro-relaxed-3xl {
+    font-size: 1.875rem;
+    padding-top: .881rem;
+    margin-bottom: -.881rem;
+    line-height: 3rem;
+    font-family: Source Sans Pro;
+  }
+
+  .sm\:vr-source-sans\ pro-loose-3xl {
+    font-size: 1.875rem;
+    padding-top: 1.381rem;
+    margin-bottom: -1.381rem;
+    line-height: 4rem;
+    font-family: Source Sans Pro;
+  }
+
+  .sm\:vr-source-sans\ pro-3xl {
+    font-size: 1.875rem;
+    padding-top: 1.381rem;
+    margin-bottom: -1.381rem;
+    line-height: 4rem;
+    font-family: Source Sans Pro;
+  }
+
+  .sm\:vr-source-sans\ pro-none-4xl {
+    font-size: 2.25rem;
+    padding-top: .507rem;
+    margin-bottom: -.507rem;
+    line-height: 2.5rem;
+    font-family: Source Sans Pro;
+  }
+
+  .sm\:vr-source-sans\ pro-tight-4xl {
+    font-size: 2.25rem;
+    padding-top: .758rem;
+    margin-bottom: -.757rem;
+    line-height: 3rem;
+    font-family: Source Sans Pro;
+  }
+
+  .sm\:vr-source-sans\ pro-snug-4xl {
+    font-size: 2.25rem;
+    padding-top: .758rem;
+    margin-bottom: -.757rem;
+    line-height: 3rem;
+    font-family: Source Sans Pro;
+  }
+
+  .sm\:vr-source-sans\ pro-normal-4xl {
+    font-size: 2.25rem;
+    padding-top: 1.007rem;
+    margin-bottom: -1.007rem;
+    line-height: 3.5rem;
+    font-family: Source Sans Pro;
+  }
+
+  .sm\:vr-source-sans\ pro-relaxed-4xl {
+    font-size: 2.25rem;
+    padding-top: 1.007rem;
+    margin-bottom: -1.007rem;
+    line-height: 3.5rem;
+    font-family: Source Sans Pro;
+  }
+
+  .sm\:vr-source-sans\ pro-loose-4xl {
+    font-size: 2.25rem;
+    padding-top: 1.507rem;
+    margin-bottom: -1.507rem;
+    line-height: 4.5rem;
+    font-family: Source Sans Pro;
+  }
+
+  .sm\:vr-source-sans\ pro-4xl {
+    font-size: 2.25rem;
+    padding-top: 1.507rem;
+    margin-bottom: -1.507rem;
+    line-height: 4.5rem;
+    font-family: Source Sans Pro;
+  }
+
+  .sm\:vr-source-sans\ pro-none-5xl {
+    font-size: 3rem;
+    padding-top: .51rem;
+    margin-bottom: -.51rem;
+    line-height: 3rem;
+    font-family: Source Sans Pro;
+  }
+
+  .sm\:vr-source-sans\ pro-tight-5xl {
+    font-size: 3rem;
+    padding-top: 1.01rem;
+    margin-bottom: -1.01rem;
+    line-height: 4rem;
+    font-family: Source Sans Pro;
+  }
+
+  .sm\:vr-source-sans\ pro-snug-5xl {
+    font-size: 3rem;
+    padding-top: 1.01rem;
+    margin-bottom: -1.01rem;
+    line-height: 4rem;
+    font-family: Source Sans Pro;
+  }
+
+  .sm\:vr-source-sans\ pro-normal-5xl {
+    font-size: 3rem;
+    padding-top: 1.26rem;
+    margin-bottom: -1.26rem;
+    line-height: 4.5rem;
+    font-family: Source Sans Pro;
+  }
+
+  .sm\:vr-source-sans\ pro-relaxed-5xl {
+    font-size: 3rem;
+    padding-top: 1.51rem;
+    margin-bottom: -1.51rem;
+    line-height: 5rem;
+    font-family: Source Sans Pro;
+  }
+
+  .sm\:vr-source-sans\ pro-loose-5xl {
+    font-size: 3rem;
+    padding-top: 2.01rem;
+    margin-bottom: -2.01rem;
+    line-height: 6rem;
+    font-family: Source Sans Pro;
+  }
+
+  .sm\:vr-source-sans\ pro-5xl {
+    font-size: 3rem;
+    padding-top: 2.01rem;
+    margin-bottom: -2.01rem;
+    line-height: 6rem;
+    font-family: Source Sans Pro;
+  }
+
+  .sm\:vr-source-sans\ pro-none-6xl {
+    font-size: 4rem;
+    padding-top: .68rem;
+    margin-bottom: -.68rem;
+    line-height: 4rem;
+    font-family: Source Sans Pro;
+  }
+
+  .sm\:vr-source-sans\ pro-tight-6xl {
+    font-size: 4rem;
+    padding-top: 1.18rem;
+    margin-bottom: -1.18rem;
+    line-height: 5rem;
+    font-family: Source Sans Pro;
+  }
+
+  .sm\:vr-source-sans\ pro-snug-6xl {
+    font-size: 4rem;
+    padding-top: 1.43rem;
+    margin-bottom: -1.43rem;
+    line-height: 5.5rem;
+    font-family: Source Sans Pro;
+  }
+
+  .sm\:vr-source-sans\ pro-normal-6xl {
+    font-size: 4rem;
+    padding-top: 1.68rem;
+    margin-bottom: -1.68rem;
+    line-height: 6rem;
+    font-family: Source Sans Pro;
+  }
+
+  .sm\:vr-source-sans\ pro-relaxed-6xl {
+    font-size: 4rem;
+    padding-top: 1.93rem;
+    margin-bottom: -1.93rem;
+    line-height: 6.5rem;
+    font-family: Source Sans Pro;
+  }
+
+  .sm\:vr-source-sans\ pro-loose-6xl {
+    font-size: 4rem;
+    padding-top: 2.68rem;
+    margin-bottom: -2.68rem;
+    line-height: 8rem;
+    font-family: Source Sans Pro;
+  }
+
+  .sm\:vr-source-sans\ pro-6xl {
+    font-size: 4rem;
+    padding-top: 2.68rem;
+    margin-bottom: -2.68rem;
+    line-height: 8rem;
+    font-family: Source Sans Pro;
+  }
 }
 
 @media (min-width: 768px) {
@@ -30775,6 +33238,10 @@ h2 {
     border-color: #702459;
   }
 
+  .md\:divide-accent > :not(template) ~ :not(template) {
+    border-color: #c54545;
+  }
+
   .md\:sr-only {
     position: absolute;
     width: 1px;
@@ -31215,6 +33682,10 @@ h2 {
     background-color: #702459;
   }
 
+  .md\:bg-accent {
+    background-color: #c54545;
+  }
+
   .md\:hover\:bg-transparent:hover {
     background-color: transparent;
   }
@@ -31591,6 +34062,10 @@ h2 {
     background-color: #702459;
   }
 
+  .md\:hover\:bg-accent:hover {
+    background-color: #c54545;
+  }
+
   .md\:focus\:bg-transparent:focus {
     background-color: transparent;
   }
@@ -31965,6 +34440,10 @@ h2 {
 
   .md\:focus\:bg-pink-900:focus {
     background-color: #702459;
+  }
+
+  .md\:focus\:bg-accent:focus {
+    background-color: #c54545;
   }
 
   .md\:bg-bottom {
@@ -32423,6 +34902,10 @@ h2 {
     border-color: #702459;
   }
 
+  .md\:border-accent {
+    border-color: #c54545;
+  }
+
   .md\:hover\:border-transparent:hover {
     border-color: transparent;
   }
@@ -32799,6 +35282,10 @@ h2 {
     border-color: #702459;
   }
 
+  .md\:hover\:border-accent:hover {
+    border-color: #c54545;
+  }
+
   .md\:focus\:border-transparent:focus {
     border-color: transparent;
   }
@@ -33173,6 +35660,10 @@ h2 {
 
   .md\:focus\:border-pink-900:focus {
     border-color: #702459;
+  }
+
+  .md\:focus\:border-accent:focus {
+    border-color: #c54545;
   }
 
   .md\:rounded-none {
@@ -38169,6 +40660,26 @@ h2 {
     color: #702459;
   }
 
+  .md\:placeholder-accent::-webkit-input-placeholder {
+    color: #c54545;
+  }
+
+  .md\:placeholder-accent::-moz-placeholder {
+    color: #c54545;
+  }
+
+  .md\:placeholder-accent:-ms-input-placeholder {
+    color: #c54545;
+  }
+
+  .md\:placeholder-accent::-ms-input-placeholder {
+    color: #c54545;
+  }
+
+  .md\:placeholder-accent::placeholder {
+    color: #c54545;
+  }
+
   .md\:focus\:placeholder-transparent:focus::-webkit-input-placeholder {
     color: transparent;
   }
@@ -40049,6 +42560,26 @@ h2 {
     color: #702459;
   }
 
+  .md\:focus\:placeholder-accent:focus::-webkit-input-placeholder {
+    color: #c54545;
+  }
+
+  .md\:focus\:placeholder-accent:focus::-moz-placeholder {
+    color: #c54545;
+  }
+
+  .md\:focus\:placeholder-accent:focus:-ms-input-placeholder {
+    color: #c54545;
+  }
+
+  .md\:focus\:placeholder-accent:focus::-ms-input-placeholder {
+    color: #c54545;
+  }
+
+  .md\:focus\:placeholder-accent:focus::placeholder {
+    color: #c54545;
+  }
+
   .md\:pointer-events-none {
     pointer-events: none;
   }
@@ -40730,6 +43261,10 @@ h2 {
     color: #702459;
   }
 
+  .md\:text-accent {
+    color: #c54545;
+  }
+
   .md\:hover\:text-transparent:hover {
     color: transparent;
   }
@@ -41106,6 +43641,10 @@ h2 {
     color: #702459;
   }
 
+  .md\:hover\:text-accent:hover {
+    color: #c54545;
+  }
+
   .md\:focus\:text-transparent:focus {
     color: transparent;
   }
@@ -41480,6 +44019,10 @@ h2 {
 
   .md\:focus\:text-pink-900:focus {
     color: #702459;
+  }
+
+  .md\:focus\:text-accent:focus {
+    color: #c54545;
   }
 
   .md\:italic {
@@ -44455,6 +46998,1056 @@ h2 {
     -webkit-transition-delay: 1000ms;
             transition-delay: 1000ms;
   }
+
+  .md\:vr-none-xs {
+    font-size: .75rem;
+    padding-top: .236rem;
+    margin-bottom: -.236rem;
+    line-height: 1rem;
+  }
+
+  .md\:vr-tight-xs {
+    font-size: .75rem;
+    padding-top: .236rem;
+    margin-bottom: -.236rem;
+    line-height: 1rem;
+  }
+
+  .md\:vr-snug-xs {
+    font-size: .75rem;
+    padding-top: .236rem;
+    margin-bottom: -.236rem;
+    line-height: 1rem;
+  }
+
+  .md\:vr-normal-xs {
+    font-size: .75rem;
+    padding-top: .236rem;
+    margin-bottom: -.236rem;
+    line-height: 1rem;
+  }
+
+  .md\:vr-relaxed-xs {
+    font-size: .75rem;
+    padding-top: .236rem;
+    margin-bottom: -.236rem;
+    line-height: 1rem;
+  }
+
+  .md\:vr-loose-xs {
+    font-size: .75rem;
+    padding-top: .486rem;
+    margin-bottom: -.486rem;
+    line-height: 1.5rem;
+  }
+
+  .md\:vr-xs {
+    font-size: .75rem;
+    padding-top: .486rem;
+    margin-bottom: -.486rem;
+    line-height: 1.5rem;
+  }
+
+  .md\:vr-none-sm {
+    font-size: .875rem;
+    padding-top: .192rem;
+    margin-bottom: -.192rem;
+    line-height: 1rem;
+  }
+
+  .md\:vr-tight-sm {
+    font-size: .875rem;
+    padding-top: .192rem;
+    margin-bottom: -.192rem;
+    line-height: 1rem;
+  }
+
+  .md\:vr-snug-sm {
+    font-size: .875rem;
+    padding-top: .192rem;
+    margin-bottom: -.192rem;
+    line-height: 1rem;
+  }
+
+  .md\:vr-normal-sm {
+    font-size: .875rem;
+    padding-top: .442rem;
+    margin-bottom: -.442rem;
+    line-height: 1.5rem;
+  }
+
+  .md\:vr-relaxed-sm {
+    font-size: .875rem;
+    padding-top: .442rem;
+    margin-bottom: -.442rem;
+    line-height: 1.5rem;
+  }
+
+  .md\:vr-loose-sm {
+    font-size: .875rem;
+    padding-top: .692rem;
+    margin-bottom: -.692rem;
+    line-height: 2rem;
+  }
+
+  .md\:vr-sm {
+    font-size: .875rem;
+    padding-top: .692rem;
+    margin-bottom: -.692rem;
+    line-height: 2rem;
+  }
+
+  .md\:vr-none-base {
+    font-size: 1rem;
+    padding-top: .148rem;
+    margin-bottom: -.148rem;
+    line-height: 1rem;
+  }
+
+  .md\:vr-tight-base {
+    font-size: 1rem;
+    padding-top: .398rem;
+    margin-bottom: -.397rem;
+    line-height: 1.5rem;
+  }
+
+  .md\:vr-snug-base {
+    font-size: 1rem;
+    padding-top: .398rem;
+    margin-bottom: -.397rem;
+    line-height: 1.5rem;
+  }
+
+  .md\:vr-normal-base {
+    font-size: 1rem;
+    padding-top: .398rem;
+    margin-bottom: -.397rem;
+    line-height: 1.5rem;
+  }
+
+  .md\:vr-relaxed-base {
+    font-size: 1rem;
+    padding-top: .398rem;
+    margin-bottom: -.397rem;
+    line-height: 1.5rem;
+  }
+
+  .md\:vr-loose-base {
+    font-size: 1rem;
+    padding-top: .648rem;
+    margin-bottom: -.647rem;
+    line-height: 2rem;
+  }
+
+  .md\:vr-base {
+    font-size: 1rem;
+    padding-top: .648rem;
+    margin-bottom: -.647rem;
+    line-height: 2rem;
+  }
+
+  .md\:vr-none-lg {
+    font-size: 1.125rem;
+    padding-top: .103rem;
+    margin-bottom: -.103rem;
+    line-height: 1rem;
+  }
+
+  .md\:vr-tight-lg {
+    font-size: 1.125rem;
+    padding-top: .353rem;
+    margin-bottom: -.353rem;
+    line-height: 1.5rem;
+  }
+
+  .md\:vr-snug-lg {
+    font-size: 1.125rem;
+    padding-top: .353rem;
+    margin-bottom: -.353rem;
+    line-height: 1.5rem;
+  }
+
+  .md\:vr-normal-lg {
+    font-size: 1.125rem;
+    padding-top: .353rem;
+    margin-bottom: -.353rem;
+    line-height: 1.5rem;
+  }
+
+  .md\:vr-relaxed-lg {
+    font-size: 1.125rem;
+    padding-top: .603rem;
+    margin-bottom: -.603rem;
+    line-height: 2rem;
+  }
+
+  .md\:vr-loose-lg {
+    font-size: 1.125rem;
+    padding-top: .853rem;
+    margin-bottom: -.853rem;
+    line-height: 2.5rem;
+  }
+
+  .md\:vr-lg {
+    font-size: 1.125rem;
+    padding-top: .853rem;
+    margin-bottom: -.853rem;
+    line-height: 2.5rem;
+  }
+
+  .md\:vr-none-xl {
+    font-size: 1.25rem;
+    padding-top: .309rem;
+    margin-bottom: -.309rem;
+    line-height: 1.5rem;
+  }
+
+  .md\:vr-tight-xl {
+    font-size: 1.25rem;
+    padding-top: .309rem;
+    margin-bottom: -.309rem;
+    line-height: 1.5rem;
+  }
+
+  .md\:vr-snug-xl {
+    font-size: 1.25rem;
+    padding-top: .309rem;
+    margin-bottom: -.309rem;
+    line-height: 1.5rem;
+  }
+
+  .md\:vr-normal-xl {
+    font-size: 1.25rem;
+    padding-top: .559rem;
+    margin-bottom: -.559rem;
+    line-height: 2rem;
+  }
+
+  .md\:vr-relaxed-xl {
+    font-size: 1.25rem;
+    padding-top: .559rem;
+    margin-bottom: -.559rem;
+    line-height: 2rem;
+  }
+
+  .md\:vr-loose-xl {
+    font-size: 1.25rem;
+    padding-top: .809rem;
+    margin-bottom: -.809rem;
+    line-height: 2.5rem;
+  }
+
+  .md\:vr-xl {
+    font-size: 1.25rem;
+    padding-top: .809rem;
+    margin-bottom: -.809rem;
+    line-height: 2.5rem;
+  }
+
+  .md\:vr-none-2xl {
+    font-size: 1.5rem;
+    padding-top: .221rem;
+    margin-bottom: -.221rem;
+    line-height: 1.5rem;
+  }
+
+  .md\:vr-tight-2xl {
+    font-size: 1.5rem;
+    padding-top: .471rem;
+    margin-bottom: -.471rem;
+    line-height: 2rem;
+  }
+
+  .md\:vr-snug-2xl {
+    font-size: 1.5rem;
+    padding-top: .471rem;
+    margin-bottom: -.471rem;
+    line-height: 2rem;
+  }
+
+  .md\:vr-normal-2xl {
+    font-size: 1.5rem;
+    padding-top: .721rem;
+    margin-bottom: -.721rem;
+    line-height: 2.5rem;
+  }
+
+  .md\:vr-relaxed-2xl {
+    font-size: 1.5rem;
+    padding-top: .721rem;
+    margin-bottom: -.721rem;
+    line-height: 2.5rem;
+  }
+
+  .md\:vr-loose-2xl {
+    font-size: 1.5rem;
+    padding-top: .971rem;
+    margin-bottom: -.971rem;
+    line-height: 3rem;
+  }
+
+  .md\:vr-2xl {
+    font-size: 1.5rem;
+    padding-top: .971rem;
+    margin-bottom: -.971rem;
+    line-height: 3rem;
+  }
+
+  .md\:vr-none-3xl {
+    font-size: 1.875rem;
+    padding-top: .339rem;
+    margin-bottom: -.339rem;
+    line-height: 2rem;
+  }
+
+  .md\:vr-tight-3xl {
+    font-size: 1.875rem;
+    padding-top: .589rem;
+    margin-bottom: -.589rem;
+    line-height: 2.5rem;
+  }
+
+  .md\:vr-snug-3xl {
+    font-size: 1.875rem;
+    padding-top: .589rem;
+    margin-bottom: -.589rem;
+    line-height: 2.5rem;
+  }
+
+  .md\:vr-normal-3xl {
+    font-size: 1.875rem;
+    padding-top: .839rem;
+    margin-bottom: -.839rem;
+    line-height: 3rem;
+  }
+
+  .md\:vr-relaxed-3xl {
+    font-size: 1.875rem;
+    padding-top: .839rem;
+    margin-bottom: -.839rem;
+    line-height: 3rem;
+  }
+
+  .md\:vr-loose-3xl {
+    font-size: 1.875rem;
+    padding-top: 1.339rem;
+    margin-bottom: -1.339rem;
+    line-height: 4rem;
+  }
+
+  .md\:vr-3xl {
+    font-size: 1.875rem;
+    padding-top: 1.339rem;
+    margin-bottom: -1.339rem;
+    line-height: 4rem;
+  }
+
+  .md\:vr-none-4xl {
+    font-size: 2.25rem;
+    padding-top: .457rem;
+    margin-bottom: -.457rem;
+    line-height: 2.5rem;
+  }
+
+  .md\:vr-tight-4xl {
+    font-size: 2.25rem;
+    padding-top: .707rem;
+    margin-bottom: -.707rem;
+    line-height: 3rem;
+  }
+
+  .md\:vr-snug-4xl {
+    font-size: 2.25rem;
+    padding-top: .707rem;
+    margin-bottom: -.707rem;
+    line-height: 3rem;
+  }
+
+  .md\:vr-normal-4xl {
+    font-size: 2.25rem;
+    padding-top: .957rem;
+    margin-bottom: -.957rem;
+    line-height: 3.5rem;
+  }
+
+  .md\:vr-relaxed-4xl {
+    font-size: 2.25rem;
+    padding-top: .957rem;
+    margin-bottom: -.957rem;
+    line-height: 3.5rem;
+  }
+
+  .md\:vr-loose-4xl {
+    font-size: 2.25rem;
+    padding-top: 1.457rem;
+    margin-bottom: -1.457rem;
+    line-height: 4.5rem;
+  }
+
+  .md\:vr-4xl {
+    font-size: 2.25rem;
+    padding-top: 1.457rem;
+    margin-bottom: -1.457rem;
+    line-height: 4.5rem;
+  }
+
+  .md\:vr-none-5xl {
+    font-size: 3rem;
+    padding-top: .443rem;
+    margin-bottom: -.443rem;
+    line-height: 3rem;
+  }
+
+  .md\:vr-tight-5xl {
+    font-size: 3rem;
+    padding-top: .943rem;
+    margin-bottom: -.943rem;
+    line-height: 4rem;
+  }
+
+  .md\:vr-snug-5xl {
+    font-size: 3rem;
+    padding-top: .943rem;
+    margin-bottom: -.943rem;
+    line-height: 4rem;
+  }
+
+  .md\:vr-normal-5xl {
+    font-size: 3rem;
+    padding-top: 1.193rem;
+    margin-bottom: -1.193rem;
+    line-height: 4.5rem;
+  }
+
+  .md\:vr-relaxed-5xl {
+    font-size: 3rem;
+    padding-top: 1.443rem;
+    margin-bottom: -1.443rem;
+    line-height: 5rem;
+  }
+
+  .md\:vr-loose-5xl {
+    font-size: 3rem;
+    padding-top: 1.943rem;
+    margin-bottom: -1.943rem;
+    line-height: 6rem;
+  }
+
+  .md\:vr-5xl {
+    font-size: 3rem;
+    padding-top: 1.943rem;
+    margin-bottom: -1.943rem;
+    line-height: 6rem;
+  }
+
+  .md\:vr-none-6xl {
+    font-size: 4rem;
+    padding-top: .59rem;
+    margin-bottom: -.59rem;
+    line-height: 4rem;
+  }
+
+  .md\:vr-tight-6xl {
+    font-size: 4rem;
+    padding-top: 1.09rem;
+    margin-bottom: -1.09rem;
+    line-height: 5rem;
+  }
+
+  .md\:vr-snug-6xl {
+    font-size: 4rem;
+    padding-top: 1.34rem;
+    margin-bottom: -1.34rem;
+    line-height: 5.5rem;
+  }
+
+  .md\:vr-normal-6xl {
+    font-size: 4rem;
+    padding-top: 1.59rem;
+    margin-bottom: -1.59rem;
+    line-height: 6rem;
+  }
+
+  .md\:vr-relaxed-6xl {
+    font-size: 4rem;
+    padding-top: 1.84rem;
+    margin-bottom: -1.84rem;
+    line-height: 6.5rem;
+  }
+
+  .md\:vr-loose-6xl {
+    font-size: 4rem;
+    padding-top: 2.59rem;
+    margin-bottom: -2.59rem;
+    line-height: 8rem;
+  }
+
+  .md\:vr-6xl {
+    font-size: 4rem;
+    padding-top: 2.59rem;
+    margin-bottom: -2.59rem;
+    line-height: 8rem;
+  }
+
+  .md\:vr-source-sans\ pro-none-xs {
+    font-size: .75rem;
+    padding-top: .253rem;
+    margin-bottom: -.252rem;
+    line-height: 1rem;
+    font-family: Source Sans Pro;
+  }
+
+  .md\:vr-source-sans\ pro-tight-xs {
+    font-size: .75rem;
+    padding-top: .253rem;
+    margin-bottom: -.252rem;
+    line-height: 1rem;
+    font-family: Source Sans Pro;
+  }
+
+  .md\:vr-source-sans\ pro-snug-xs {
+    font-size: .75rem;
+    padding-top: .253rem;
+    margin-bottom: -.252rem;
+    line-height: 1rem;
+    font-family: Source Sans Pro;
+  }
+
+  .md\:vr-source-sans\ pro-normal-xs {
+    font-size: .75rem;
+    padding-top: .253rem;
+    margin-bottom: -.252rem;
+    line-height: 1rem;
+    font-family: Source Sans Pro;
+  }
+
+  .md\:vr-source-sans\ pro-relaxed-xs {
+    font-size: .75rem;
+    padding-top: .253rem;
+    margin-bottom: -.252rem;
+    line-height: 1rem;
+    font-family: Source Sans Pro;
+  }
+
+  .md\:vr-source-sans\ pro-loose-xs {
+    font-size: .75rem;
+    padding-top: .502rem;
+    margin-bottom: -.502rem;
+    line-height: 1.5rem;
+    font-family: Source Sans Pro;
+  }
+
+  .md\:vr-source-sans\ pro-xs {
+    font-size: .75rem;
+    padding-top: .502rem;
+    margin-bottom: -.502rem;
+    line-height: 1.5rem;
+    font-family: Source Sans Pro;
+  }
+
+  .md\:vr-source-sans\ pro-none-sm {
+    font-size: .875rem;
+    padding-top: .211rem;
+    margin-bottom: -.211rem;
+    line-height: 1rem;
+    font-family: Source Sans Pro;
+  }
+
+  .md\:vr-source-sans\ pro-tight-sm {
+    font-size: .875rem;
+    padding-top: .211rem;
+    margin-bottom: -.211rem;
+    line-height: 1rem;
+    font-family: Source Sans Pro;
+  }
+
+  .md\:vr-source-sans\ pro-snug-sm {
+    font-size: .875rem;
+    padding-top: .211rem;
+    margin-bottom: -.211rem;
+    line-height: 1rem;
+    font-family: Source Sans Pro;
+  }
+
+  .md\:vr-source-sans\ pro-normal-sm {
+    font-size: .875rem;
+    padding-top: .461rem;
+    margin-bottom: -.461rem;
+    line-height: 1.5rem;
+    font-family: Source Sans Pro;
+  }
+
+  .md\:vr-source-sans\ pro-relaxed-sm {
+    font-size: .875rem;
+    padding-top: .461rem;
+    margin-bottom: -.461rem;
+    line-height: 1.5rem;
+    font-family: Source Sans Pro;
+  }
+
+  .md\:vr-source-sans\ pro-loose-sm {
+    font-size: .875rem;
+    padding-top: .711rem;
+    margin-bottom: -.711rem;
+    line-height: 2rem;
+    font-family: Source Sans Pro;
+  }
+
+  .md\:vr-source-sans\ pro-sm {
+    font-size: .875rem;
+    padding-top: .711rem;
+    margin-bottom: -.711rem;
+    line-height: 2rem;
+    font-family: Source Sans Pro;
+  }
+
+  .md\:vr-source-sans\ pro-none-base {
+    font-size: 1rem;
+    padding-top: .17rem;
+    margin-bottom: -.17rem;
+    line-height: 1rem;
+    font-family: Source Sans Pro;
+  }
+
+  .md\:vr-source-sans\ pro-tight-base {
+    font-size: 1rem;
+    padding-top: .42rem;
+    margin-bottom: -.42rem;
+    line-height: 1.5rem;
+    font-family: Source Sans Pro;
+  }
+
+  .md\:vr-source-sans\ pro-snug-base {
+    font-size: 1rem;
+    padding-top: .42rem;
+    margin-bottom: -.42rem;
+    line-height: 1.5rem;
+    font-family: Source Sans Pro;
+  }
+
+  .md\:vr-source-sans\ pro-normal-base {
+    font-size: 1rem;
+    padding-top: .42rem;
+    margin-bottom: -.42rem;
+    line-height: 1.5rem;
+    font-family: Source Sans Pro;
+  }
+
+  .md\:vr-source-sans\ pro-relaxed-base {
+    font-size: 1rem;
+    padding-top: .42rem;
+    margin-bottom: -.42rem;
+    line-height: 1.5rem;
+    font-family: Source Sans Pro;
+  }
+
+  .md\:vr-source-sans\ pro-loose-base {
+    font-size: 1rem;
+    padding-top: .67rem;
+    margin-bottom: -.67rem;
+    line-height: 2rem;
+    font-family: Source Sans Pro;
+  }
+
+  .md\:vr-source-sans\ pro-base {
+    font-size: 1rem;
+    padding-top: .67rem;
+    margin-bottom: -.67rem;
+    line-height: 2rem;
+    font-family: Source Sans Pro;
+  }
+
+  .md\:vr-source-sans\ pro-none-lg {
+    font-size: 1.125rem;
+    padding-top: .129rem;
+    margin-bottom: -.129rem;
+    line-height: 1rem;
+    font-family: Source Sans Pro;
+  }
+
+  .md\:vr-source-sans\ pro-tight-lg {
+    font-size: 1.125rem;
+    padding-top: .379rem;
+    margin-bottom: -.379rem;
+    line-height: 1.5rem;
+    font-family: Source Sans Pro;
+  }
+
+  .md\:vr-source-sans\ pro-snug-lg {
+    font-size: 1.125rem;
+    padding-top: .379rem;
+    margin-bottom: -.379rem;
+    line-height: 1.5rem;
+    font-family: Source Sans Pro;
+  }
+
+  .md\:vr-source-sans\ pro-normal-lg {
+    font-size: 1.125rem;
+    padding-top: .379rem;
+    margin-bottom: -.379rem;
+    line-height: 1.5rem;
+    font-family: Source Sans Pro;
+  }
+
+  .md\:vr-source-sans\ pro-relaxed-lg {
+    font-size: 1.125rem;
+    padding-top: .629rem;
+    margin-bottom: -.629rem;
+    line-height: 2rem;
+    font-family: Source Sans Pro;
+  }
+
+  .md\:vr-source-sans\ pro-loose-lg {
+    font-size: 1.125rem;
+    padding-top: .879rem;
+    margin-bottom: -.879rem;
+    line-height: 2.5rem;
+    font-family: Source Sans Pro;
+  }
+
+  .md\:vr-source-sans\ pro-lg {
+    font-size: 1.125rem;
+    padding-top: .879rem;
+    margin-bottom: -.879rem;
+    line-height: 2.5rem;
+    font-family: Source Sans Pro;
+  }
+
+  .md\:vr-source-sans\ pro-none-xl {
+    font-size: 1.25rem;
+    padding-top: .337rem;
+    margin-bottom: -.337rem;
+    line-height: 1.5rem;
+    font-family: Source Sans Pro;
+  }
+
+  .md\:vr-source-sans\ pro-tight-xl {
+    font-size: 1.25rem;
+    padding-top: .337rem;
+    margin-bottom: -.337rem;
+    line-height: 1.5rem;
+    font-family: Source Sans Pro;
+  }
+
+  .md\:vr-source-sans\ pro-snug-xl {
+    font-size: 1.25rem;
+    padding-top: .337rem;
+    margin-bottom: -.337rem;
+    line-height: 1.5rem;
+    font-family: Source Sans Pro;
+  }
+
+  .md\:vr-source-sans\ pro-normal-xl {
+    font-size: 1.25rem;
+    padding-top: .587rem;
+    margin-bottom: -.587rem;
+    line-height: 2rem;
+    font-family: Source Sans Pro;
+  }
+
+  .md\:vr-source-sans\ pro-relaxed-xl {
+    font-size: 1.25rem;
+    padding-top: .587rem;
+    margin-bottom: -.587rem;
+    line-height: 2rem;
+    font-family: Source Sans Pro;
+  }
+
+  .md\:vr-source-sans\ pro-loose-xl {
+    font-size: 1.25rem;
+    padding-top: .837rem;
+    margin-bottom: -.837rem;
+    line-height: 2.5rem;
+    font-family: Source Sans Pro;
+  }
+
+  .md\:vr-source-sans\ pro-xl {
+    font-size: 1.25rem;
+    padding-top: .837rem;
+    margin-bottom: -.837rem;
+    line-height: 2.5rem;
+    font-family: Source Sans Pro;
+  }
+
+  .md\:vr-source-sans\ pro-none-2xl {
+    font-size: 1.5rem;
+    padding-top: .255rem;
+    margin-bottom: -.255rem;
+    line-height: 1.5rem;
+    font-family: Source Sans Pro;
+  }
+
+  .md\:vr-source-sans\ pro-tight-2xl {
+    font-size: 1.5rem;
+    padding-top: .505rem;
+    margin-bottom: -.505rem;
+    line-height: 2rem;
+    font-family: Source Sans Pro;
+  }
+
+  .md\:vr-source-sans\ pro-snug-2xl {
+    font-size: 1.5rem;
+    padding-top: .505rem;
+    margin-bottom: -.505rem;
+    line-height: 2rem;
+    font-family: Source Sans Pro;
+  }
+
+  .md\:vr-source-sans\ pro-normal-2xl {
+    font-size: 1.5rem;
+    padding-top: .755rem;
+    margin-bottom: -.755rem;
+    line-height: 2.5rem;
+    font-family: Source Sans Pro;
+  }
+
+  .md\:vr-source-sans\ pro-relaxed-2xl {
+    font-size: 1.5rem;
+    padding-top: .755rem;
+    margin-bottom: -.755rem;
+    line-height: 2.5rem;
+    font-family: Source Sans Pro;
+  }
+
+  .md\:vr-source-sans\ pro-loose-2xl {
+    font-size: 1.5rem;
+    padding-top: 1.005rem;
+    margin-bottom: -1.005rem;
+    line-height: 3rem;
+    font-family: Source Sans Pro;
+  }
+
+  .md\:vr-source-sans\ pro-2xl {
+    font-size: 1.5rem;
+    padding-top: 1.005rem;
+    margin-bottom: -1.005rem;
+    line-height: 3rem;
+    font-family: Source Sans Pro;
+  }
+
+  .md\:vr-source-sans\ pro-none-3xl {
+    font-size: 1.875rem;
+    padding-top: .381rem;
+    margin-bottom: -.381rem;
+    line-height: 2rem;
+    font-family: Source Sans Pro;
+  }
+
+  .md\:vr-source-sans\ pro-tight-3xl {
+    font-size: 1.875rem;
+    padding-top: .631rem;
+    margin-bottom: -.631rem;
+    line-height: 2.5rem;
+    font-family: Source Sans Pro;
+  }
+
+  .md\:vr-source-sans\ pro-snug-3xl {
+    font-size: 1.875rem;
+    padding-top: .631rem;
+    margin-bottom: -.631rem;
+    line-height: 2.5rem;
+    font-family: Source Sans Pro;
+  }
+
+  .md\:vr-source-sans\ pro-normal-3xl {
+    font-size: 1.875rem;
+    padding-top: .881rem;
+    margin-bottom: -.881rem;
+    line-height: 3rem;
+    font-family: Source Sans Pro;
+  }
+
+  .md\:vr-source-sans\ pro-relaxed-3xl {
+    font-size: 1.875rem;
+    padding-top: .881rem;
+    margin-bottom: -.881rem;
+    line-height: 3rem;
+    font-family: Source Sans Pro;
+  }
+
+  .md\:vr-source-sans\ pro-loose-3xl {
+    font-size: 1.875rem;
+    padding-top: 1.381rem;
+    margin-bottom: -1.381rem;
+    line-height: 4rem;
+    font-family: Source Sans Pro;
+  }
+
+  .md\:vr-source-sans\ pro-3xl {
+    font-size: 1.875rem;
+    padding-top: 1.381rem;
+    margin-bottom: -1.381rem;
+    line-height: 4rem;
+    font-family: Source Sans Pro;
+  }
+
+  .md\:vr-source-sans\ pro-none-4xl {
+    font-size: 2.25rem;
+    padding-top: .507rem;
+    margin-bottom: -.507rem;
+    line-height: 2.5rem;
+    font-family: Source Sans Pro;
+  }
+
+  .md\:vr-source-sans\ pro-tight-4xl {
+    font-size: 2.25rem;
+    padding-top: .758rem;
+    margin-bottom: -.757rem;
+    line-height: 3rem;
+    font-family: Source Sans Pro;
+  }
+
+  .md\:vr-source-sans\ pro-snug-4xl {
+    font-size: 2.25rem;
+    padding-top: .758rem;
+    margin-bottom: -.757rem;
+    line-height: 3rem;
+    font-family: Source Sans Pro;
+  }
+
+  .md\:vr-source-sans\ pro-normal-4xl {
+    font-size: 2.25rem;
+    padding-top: 1.007rem;
+    margin-bottom: -1.007rem;
+    line-height: 3.5rem;
+    font-family: Source Sans Pro;
+  }
+
+  .md\:vr-source-sans\ pro-relaxed-4xl {
+    font-size: 2.25rem;
+    padding-top: 1.007rem;
+    margin-bottom: -1.007rem;
+    line-height: 3.5rem;
+    font-family: Source Sans Pro;
+  }
+
+  .md\:vr-source-sans\ pro-loose-4xl {
+    font-size: 2.25rem;
+    padding-top: 1.507rem;
+    margin-bottom: -1.507rem;
+    line-height: 4.5rem;
+    font-family: Source Sans Pro;
+  }
+
+  .md\:vr-source-sans\ pro-4xl {
+    font-size: 2.25rem;
+    padding-top: 1.507rem;
+    margin-bottom: -1.507rem;
+    line-height: 4.5rem;
+    font-family: Source Sans Pro;
+  }
+
+  .md\:vr-source-sans\ pro-none-5xl {
+    font-size: 3rem;
+    padding-top: .51rem;
+    margin-bottom: -.51rem;
+    line-height: 3rem;
+    font-family: Source Sans Pro;
+  }
+
+  .md\:vr-source-sans\ pro-tight-5xl {
+    font-size: 3rem;
+    padding-top: 1.01rem;
+    margin-bottom: -1.01rem;
+    line-height: 4rem;
+    font-family: Source Sans Pro;
+  }
+
+  .md\:vr-source-sans\ pro-snug-5xl {
+    font-size: 3rem;
+    padding-top: 1.01rem;
+    margin-bottom: -1.01rem;
+    line-height: 4rem;
+    font-family: Source Sans Pro;
+  }
+
+  .md\:vr-source-sans\ pro-normal-5xl {
+    font-size: 3rem;
+    padding-top: 1.26rem;
+    margin-bottom: -1.26rem;
+    line-height: 4.5rem;
+    font-family: Source Sans Pro;
+  }
+
+  .md\:vr-source-sans\ pro-relaxed-5xl {
+    font-size: 3rem;
+    padding-top: 1.51rem;
+    margin-bottom: -1.51rem;
+    line-height: 5rem;
+    font-family: Source Sans Pro;
+  }
+
+  .md\:vr-source-sans\ pro-loose-5xl {
+    font-size: 3rem;
+    padding-top: 2.01rem;
+    margin-bottom: -2.01rem;
+    line-height: 6rem;
+    font-family: Source Sans Pro;
+  }
+
+  .md\:vr-source-sans\ pro-5xl {
+    font-size: 3rem;
+    padding-top: 2.01rem;
+    margin-bottom: -2.01rem;
+    line-height: 6rem;
+    font-family: Source Sans Pro;
+  }
+
+  .md\:vr-source-sans\ pro-none-6xl {
+    font-size: 4rem;
+    padding-top: .68rem;
+    margin-bottom: -.68rem;
+    line-height: 4rem;
+    font-family: Source Sans Pro;
+  }
+
+  .md\:vr-source-sans\ pro-tight-6xl {
+    font-size: 4rem;
+    padding-top: 1.18rem;
+    margin-bottom: -1.18rem;
+    line-height: 5rem;
+    font-family: Source Sans Pro;
+  }
+
+  .md\:vr-source-sans\ pro-snug-6xl {
+    font-size: 4rem;
+    padding-top: 1.43rem;
+    margin-bottom: -1.43rem;
+    line-height: 5.5rem;
+    font-family: Source Sans Pro;
+  }
+
+  .md\:vr-source-sans\ pro-normal-6xl {
+    font-size: 4rem;
+    padding-top: 1.68rem;
+    margin-bottom: -1.68rem;
+    line-height: 6rem;
+    font-family: Source Sans Pro;
+  }
+
+  .md\:vr-source-sans\ pro-relaxed-6xl {
+    font-size: 4rem;
+    padding-top: 1.93rem;
+    margin-bottom: -1.93rem;
+    line-height: 6.5rem;
+    font-family: Source Sans Pro;
+  }
+
+  .md\:vr-source-sans\ pro-loose-6xl {
+    font-size: 4rem;
+    padding-top: 2.68rem;
+    margin-bottom: -2.68rem;
+    line-height: 8rem;
+    font-family: Source Sans Pro;
+  }
+
+  .md\:vr-source-sans\ pro-6xl {
+    font-size: 4rem;
+    padding-top: 2.68rem;
+    margin-bottom: -2.68rem;
+    line-height: 8rem;
+    font-family: Source Sans Pro;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -45354,6 +48947,10 @@ h2 {
     border-color: #702459;
   }
 
+  .lg\:divide-accent > :not(template) ~ :not(template) {
+    border-color: #c54545;
+  }
+
   .lg\:sr-only {
     position: absolute;
     width: 1px;
@@ -45794,6 +49391,10 @@ h2 {
     background-color: #702459;
   }
 
+  .lg\:bg-accent {
+    background-color: #c54545;
+  }
+
   .lg\:hover\:bg-transparent:hover {
     background-color: transparent;
   }
@@ -46170,6 +49771,10 @@ h2 {
     background-color: #702459;
   }
 
+  .lg\:hover\:bg-accent:hover {
+    background-color: #c54545;
+  }
+
   .lg\:focus\:bg-transparent:focus {
     background-color: transparent;
   }
@@ -46544,6 +50149,10 @@ h2 {
 
   .lg\:focus\:bg-pink-900:focus {
     background-color: #702459;
+  }
+
+  .lg\:focus\:bg-accent:focus {
+    background-color: #c54545;
   }
 
   .lg\:bg-bottom {
@@ -47002,6 +50611,10 @@ h2 {
     border-color: #702459;
   }
 
+  .lg\:border-accent {
+    border-color: #c54545;
+  }
+
   .lg\:hover\:border-transparent:hover {
     border-color: transparent;
   }
@@ -47378,6 +50991,10 @@ h2 {
     border-color: #702459;
   }
 
+  .lg\:hover\:border-accent:hover {
+    border-color: #c54545;
+  }
+
   .lg\:focus\:border-transparent:focus {
     border-color: transparent;
   }
@@ -47752,6 +51369,10 @@ h2 {
 
   .lg\:focus\:border-pink-900:focus {
     border-color: #702459;
+  }
+
+  .lg\:focus\:border-accent:focus {
+    border-color: #c54545;
   }
 
   .lg\:rounded-none {
@@ -52748,6 +56369,26 @@ h2 {
     color: #702459;
   }
 
+  .lg\:placeholder-accent::-webkit-input-placeholder {
+    color: #c54545;
+  }
+
+  .lg\:placeholder-accent::-moz-placeholder {
+    color: #c54545;
+  }
+
+  .lg\:placeholder-accent:-ms-input-placeholder {
+    color: #c54545;
+  }
+
+  .lg\:placeholder-accent::-ms-input-placeholder {
+    color: #c54545;
+  }
+
+  .lg\:placeholder-accent::placeholder {
+    color: #c54545;
+  }
+
   .lg\:focus\:placeholder-transparent:focus::-webkit-input-placeholder {
     color: transparent;
   }
@@ -54628,6 +58269,26 @@ h2 {
     color: #702459;
   }
 
+  .lg\:focus\:placeholder-accent:focus::-webkit-input-placeholder {
+    color: #c54545;
+  }
+
+  .lg\:focus\:placeholder-accent:focus::-moz-placeholder {
+    color: #c54545;
+  }
+
+  .lg\:focus\:placeholder-accent:focus:-ms-input-placeholder {
+    color: #c54545;
+  }
+
+  .lg\:focus\:placeholder-accent:focus::-ms-input-placeholder {
+    color: #c54545;
+  }
+
+  .lg\:focus\:placeholder-accent:focus::placeholder {
+    color: #c54545;
+  }
+
   .lg\:pointer-events-none {
     pointer-events: none;
   }
@@ -55309,6 +58970,10 @@ h2 {
     color: #702459;
   }
 
+  .lg\:text-accent {
+    color: #c54545;
+  }
+
   .lg\:hover\:text-transparent:hover {
     color: transparent;
   }
@@ -55685,6 +59350,10 @@ h2 {
     color: #702459;
   }
 
+  .lg\:hover\:text-accent:hover {
+    color: #c54545;
+  }
+
   .lg\:focus\:text-transparent:focus {
     color: transparent;
   }
@@ -56059,6 +59728,10 @@ h2 {
 
   .lg\:focus\:text-pink-900:focus {
     color: #702459;
+  }
+
+  .lg\:focus\:text-accent:focus {
+    color: #c54545;
   }
 
   .lg\:italic {
@@ -59034,6 +62707,1056 @@ h2 {
     -webkit-transition-delay: 1000ms;
             transition-delay: 1000ms;
   }
+
+  .lg\:vr-none-xs {
+    font-size: .75rem;
+    padding-top: .236rem;
+    margin-bottom: -.236rem;
+    line-height: 1rem;
+  }
+
+  .lg\:vr-tight-xs {
+    font-size: .75rem;
+    padding-top: .236rem;
+    margin-bottom: -.236rem;
+    line-height: 1rem;
+  }
+
+  .lg\:vr-snug-xs {
+    font-size: .75rem;
+    padding-top: .236rem;
+    margin-bottom: -.236rem;
+    line-height: 1rem;
+  }
+
+  .lg\:vr-normal-xs {
+    font-size: .75rem;
+    padding-top: .236rem;
+    margin-bottom: -.236rem;
+    line-height: 1rem;
+  }
+
+  .lg\:vr-relaxed-xs {
+    font-size: .75rem;
+    padding-top: .236rem;
+    margin-bottom: -.236rem;
+    line-height: 1rem;
+  }
+
+  .lg\:vr-loose-xs {
+    font-size: .75rem;
+    padding-top: .486rem;
+    margin-bottom: -.486rem;
+    line-height: 1.5rem;
+  }
+
+  .lg\:vr-xs {
+    font-size: .75rem;
+    padding-top: .486rem;
+    margin-bottom: -.486rem;
+    line-height: 1.5rem;
+  }
+
+  .lg\:vr-none-sm {
+    font-size: .875rem;
+    padding-top: .192rem;
+    margin-bottom: -.192rem;
+    line-height: 1rem;
+  }
+
+  .lg\:vr-tight-sm {
+    font-size: .875rem;
+    padding-top: .192rem;
+    margin-bottom: -.192rem;
+    line-height: 1rem;
+  }
+
+  .lg\:vr-snug-sm {
+    font-size: .875rem;
+    padding-top: .192rem;
+    margin-bottom: -.192rem;
+    line-height: 1rem;
+  }
+
+  .lg\:vr-normal-sm {
+    font-size: .875rem;
+    padding-top: .442rem;
+    margin-bottom: -.442rem;
+    line-height: 1.5rem;
+  }
+
+  .lg\:vr-relaxed-sm {
+    font-size: .875rem;
+    padding-top: .442rem;
+    margin-bottom: -.442rem;
+    line-height: 1.5rem;
+  }
+
+  .lg\:vr-loose-sm {
+    font-size: .875rem;
+    padding-top: .692rem;
+    margin-bottom: -.692rem;
+    line-height: 2rem;
+  }
+
+  .lg\:vr-sm {
+    font-size: .875rem;
+    padding-top: .692rem;
+    margin-bottom: -.692rem;
+    line-height: 2rem;
+  }
+
+  .lg\:vr-none-base {
+    font-size: 1rem;
+    padding-top: .148rem;
+    margin-bottom: -.148rem;
+    line-height: 1rem;
+  }
+
+  .lg\:vr-tight-base {
+    font-size: 1rem;
+    padding-top: .398rem;
+    margin-bottom: -.397rem;
+    line-height: 1.5rem;
+  }
+
+  .lg\:vr-snug-base {
+    font-size: 1rem;
+    padding-top: .398rem;
+    margin-bottom: -.397rem;
+    line-height: 1.5rem;
+  }
+
+  .lg\:vr-normal-base {
+    font-size: 1rem;
+    padding-top: .398rem;
+    margin-bottom: -.397rem;
+    line-height: 1.5rem;
+  }
+
+  .lg\:vr-relaxed-base {
+    font-size: 1rem;
+    padding-top: .398rem;
+    margin-bottom: -.397rem;
+    line-height: 1.5rem;
+  }
+
+  .lg\:vr-loose-base {
+    font-size: 1rem;
+    padding-top: .648rem;
+    margin-bottom: -.647rem;
+    line-height: 2rem;
+  }
+
+  .lg\:vr-base {
+    font-size: 1rem;
+    padding-top: .648rem;
+    margin-bottom: -.647rem;
+    line-height: 2rem;
+  }
+
+  .lg\:vr-none-lg {
+    font-size: 1.125rem;
+    padding-top: .103rem;
+    margin-bottom: -.103rem;
+    line-height: 1rem;
+  }
+
+  .lg\:vr-tight-lg {
+    font-size: 1.125rem;
+    padding-top: .353rem;
+    margin-bottom: -.353rem;
+    line-height: 1.5rem;
+  }
+
+  .lg\:vr-snug-lg {
+    font-size: 1.125rem;
+    padding-top: .353rem;
+    margin-bottom: -.353rem;
+    line-height: 1.5rem;
+  }
+
+  .lg\:vr-normal-lg {
+    font-size: 1.125rem;
+    padding-top: .353rem;
+    margin-bottom: -.353rem;
+    line-height: 1.5rem;
+  }
+
+  .lg\:vr-relaxed-lg {
+    font-size: 1.125rem;
+    padding-top: .603rem;
+    margin-bottom: -.603rem;
+    line-height: 2rem;
+  }
+
+  .lg\:vr-loose-lg {
+    font-size: 1.125rem;
+    padding-top: .853rem;
+    margin-bottom: -.853rem;
+    line-height: 2.5rem;
+  }
+
+  .lg\:vr-lg {
+    font-size: 1.125rem;
+    padding-top: .853rem;
+    margin-bottom: -.853rem;
+    line-height: 2.5rem;
+  }
+
+  .lg\:vr-none-xl {
+    font-size: 1.25rem;
+    padding-top: .309rem;
+    margin-bottom: -.309rem;
+    line-height: 1.5rem;
+  }
+
+  .lg\:vr-tight-xl {
+    font-size: 1.25rem;
+    padding-top: .309rem;
+    margin-bottom: -.309rem;
+    line-height: 1.5rem;
+  }
+
+  .lg\:vr-snug-xl {
+    font-size: 1.25rem;
+    padding-top: .309rem;
+    margin-bottom: -.309rem;
+    line-height: 1.5rem;
+  }
+
+  .lg\:vr-normal-xl {
+    font-size: 1.25rem;
+    padding-top: .559rem;
+    margin-bottom: -.559rem;
+    line-height: 2rem;
+  }
+
+  .lg\:vr-relaxed-xl {
+    font-size: 1.25rem;
+    padding-top: .559rem;
+    margin-bottom: -.559rem;
+    line-height: 2rem;
+  }
+
+  .lg\:vr-loose-xl {
+    font-size: 1.25rem;
+    padding-top: .809rem;
+    margin-bottom: -.809rem;
+    line-height: 2.5rem;
+  }
+
+  .lg\:vr-xl {
+    font-size: 1.25rem;
+    padding-top: .809rem;
+    margin-bottom: -.809rem;
+    line-height: 2.5rem;
+  }
+
+  .lg\:vr-none-2xl {
+    font-size: 1.5rem;
+    padding-top: .221rem;
+    margin-bottom: -.221rem;
+    line-height: 1.5rem;
+  }
+
+  .lg\:vr-tight-2xl {
+    font-size: 1.5rem;
+    padding-top: .471rem;
+    margin-bottom: -.471rem;
+    line-height: 2rem;
+  }
+
+  .lg\:vr-snug-2xl {
+    font-size: 1.5rem;
+    padding-top: .471rem;
+    margin-bottom: -.471rem;
+    line-height: 2rem;
+  }
+
+  .lg\:vr-normal-2xl {
+    font-size: 1.5rem;
+    padding-top: .721rem;
+    margin-bottom: -.721rem;
+    line-height: 2.5rem;
+  }
+
+  .lg\:vr-relaxed-2xl {
+    font-size: 1.5rem;
+    padding-top: .721rem;
+    margin-bottom: -.721rem;
+    line-height: 2.5rem;
+  }
+
+  .lg\:vr-loose-2xl {
+    font-size: 1.5rem;
+    padding-top: .971rem;
+    margin-bottom: -.971rem;
+    line-height: 3rem;
+  }
+
+  .lg\:vr-2xl {
+    font-size: 1.5rem;
+    padding-top: .971rem;
+    margin-bottom: -.971rem;
+    line-height: 3rem;
+  }
+
+  .lg\:vr-none-3xl {
+    font-size: 1.875rem;
+    padding-top: .339rem;
+    margin-bottom: -.339rem;
+    line-height: 2rem;
+  }
+
+  .lg\:vr-tight-3xl {
+    font-size: 1.875rem;
+    padding-top: .589rem;
+    margin-bottom: -.589rem;
+    line-height: 2.5rem;
+  }
+
+  .lg\:vr-snug-3xl {
+    font-size: 1.875rem;
+    padding-top: .589rem;
+    margin-bottom: -.589rem;
+    line-height: 2.5rem;
+  }
+
+  .lg\:vr-normal-3xl {
+    font-size: 1.875rem;
+    padding-top: .839rem;
+    margin-bottom: -.839rem;
+    line-height: 3rem;
+  }
+
+  .lg\:vr-relaxed-3xl {
+    font-size: 1.875rem;
+    padding-top: .839rem;
+    margin-bottom: -.839rem;
+    line-height: 3rem;
+  }
+
+  .lg\:vr-loose-3xl {
+    font-size: 1.875rem;
+    padding-top: 1.339rem;
+    margin-bottom: -1.339rem;
+    line-height: 4rem;
+  }
+
+  .lg\:vr-3xl {
+    font-size: 1.875rem;
+    padding-top: 1.339rem;
+    margin-bottom: -1.339rem;
+    line-height: 4rem;
+  }
+
+  .lg\:vr-none-4xl {
+    font-size: 2.25rem;
+    padding-top: .457rem;
+    margin-bottom: -.457rem;
+    line-height: 2.5rem;
+  }
+
+  .lg\:vr-tight-4xl {
+    font-size: 2.25rem;
+    padding-top: .707rem;
+    margin-bottom: -.707rem;
+    line-height: 3rem;
+  }
+
+  .lg\:vr-snug-4xl {
+    font-size: 2.25rem;
+    padding-top: .707rem;
+    margin-bottom: -.707rem;
+    line-height: 3rem;
+  }
+
+  .lg\:vr-normal-4xl {
+    font-size: 2.25rem;
+    padding-top: .957rem;
+    margin-bottom: -.957rem;
+    line-height: 3.5rem;
+  }
+
+  .lg\:vr-relaxed-4xl {
+    font-size: 2.25rem;
+    padding-top: .957rem;
+    margin-bottom: -.957rem;
+    line-height: 3.5rem;
+  }
+
+  .lg\:vr-loose-4xl {
+    font-size: 2.25rem;
+    padding-top: 1.457rem;
+    margin-bottom: -1.457rem;
+    line-height: 4.5rem;
+  }
+
+  .lg\:vr-4xl {
+    font-size: 2.25rem;
+    padding-top: 1.457rem;
+    margin-bottom: -1.457rem;
+    line-height: 4.5rem;
+  }
+
+  .lg\:vr-none-5xl {
+    font-size: 3rem;
+    padding-top: .443rem;
+    margin-bottom: -.443rem;
+    line-height: 3rem;
+  }
+
+  .lg\:vr-tight-5xl {
+    font-size: 3rem;
+    padding-top: .943rem;
+    margin-bottom: -.943rem;
+    line-height: 4rem;
+  }
+
+  .lg\:vr-snug-5xl {
+    font-size: 3rem;
+    padding-top: .943rem;
+    margin-bottom: -.943rem;
+    line-height: 4rem;
+  }
+
+  .lg\:vr-normal-5xl {
+    font-size: 3rem;
+    padding-top: 1.193rem;
+    margin-bottom: -1.193rem;
+    line-height: 4.5rem;
+  }
+
+  .lg\:vr-relaxed-5xl {
+    font-size: 3rem;
+    padding-top: 1.443rem;
+    margin-bottom: -1.443rem;
+    line-height: 5rem;
+  }
+
+  .lg\:vr-loose-5xl {
+    font-size: 3rem;
+    padding-top: 1.943rem;
+    margin-bottom: -1.943rem;
+    line-height: 6rem;
+  }
+
+  .lg\:vr-5xl {
+    font-size: 3rem;
+    padding-top: 1.943rem;
+    margin-bottom: -1.943rem;
+    line-height: 6rem;
+  }
+
+  .lg\:vr-none-6xl {
+    font-size: 4rem;
+    padding-top: .59rem;
+    margin-bottom: -.59rem;
+    line-height: 4rem;
+  }
+
+  .lg\:vr-tight-6xl {
+    font-size: 4rem;
+    padding-top: 1.09rem;
+    margin-bottom: -1.09rem;
+    line-height: 5rem;
+  }
+
+  .lg\:vr-snug-6xl {
+    font-size: 4rem;
+    padding-top: 1.34rem;
+    margin-bottom: -1.34rem;
+    line-height: 5.5rem;
+  }
+
+  .lg\:vr-normal-6xl {
+    font-size: 4rem;
+    padding-top: 1.59rem;
+    margin-bottom: -1.59rem;
+    line-height: 6rem;
+  }
+
+  .lg\:vr-relaxed-6xl {
+    font-size: 4rem;
+    padding-top: 1.84rem;
+    margin-bottom: -1.84rem;
+    line-height: 6.5rem;
+  }
+
+  .lg\:vr-loose-6xl {
+    font-size: 4rem;
+    padding-top: 2.59rem;
+    margin-bottom: -2.59rem;
+    line-height: 8rem;
+  }
+
+  .lg\:vr-6xl {
+    font-size: 4rem;
+    padding-top: 2.59rem;
+    margin-bottom: -2.59rem;
+    line-height: 8rem;
+  }
+
+  .lg\:vr-source-sans\ pro-none-xs {
+    font-size: .75rem;
+    padding-top: .253rem;
+    margin-bottom: -.252rem;
+    line-height: 1rem;
+    font-family: Source Sans Pro;
+  }
+
+  .lg\:vr-source-sans\ pro-tight-xs {
+    font-size: .75rem;
+    padding-top: .253rem;
+    margin-bottom: -.252rem;
+    line-height: 1rem;
+    font-family: Source Sans Pro;
+  }
+
+  .lg\:vr-source-sans\ pro-snug-xs {
+    font-size: .75rem;
+    padding-top: .253rem;
+    margin-bottom: -.252rem;
+    line-height: 1rem;
+    font-family: Source Sans Pro;
+  }
+
+  .lg\:vr-source-sans\ pro-normal-xs {
+    font-size: .75rem;
+    padding-top: .253rem;
+    margin-bottom: -.252rem;
+    line-height: 1rem;
+    font-family: Source Sans Pro;
+  }
+
+  .lg\:vr-source-sans\ pro-relaxed-xs {
+    font-size: .75rem;
+    padding-top: .253rem;
+    margin-bottom: -.252rem;
+    line-height: 1rem;
+    font-family: Source Sans Pro;
+  }
+
+  .lg\:vr-source-sans\ pro-loose-xs {
+    font-size: .75rem;
+    padding-top: .502rem;
+    margin-bottom: -.502rem;
+    line-height: 1.5rem;
+    font-family: Source Sans Pro;
+  }
+
+  .lg\:vr-source-sans\ pro-xs {
+    font-size: .75rem;
+    padding-top: .502rem;
+    margin-bottom: -.502rem;
+    line-height: 1.5rem;
+    font-family: Source Sans Pro;
+  }
+
+  .lg\:vr-source-sans\ pro-none-sm {
+    font-size: .875rem;
+    padding-top: .211rem;
+    margin-bottom: -.211rem;
+    line-height: 1rem;
+    font-family: Source Sans Pro;
+  }
+
+  .lg\:vr-source-sans\ pro-tight-sm {
+    font-size: .875rem;
+    padding-top: .211rem;
+    margin-bottom: -.211rem;
+    line-height: 1rem;
+    font-family: Source Sans Pro;
+  }
+
+  .lg\:vr-source-sans\ pro-snug-sm {
+    font-size: .875rem;
+    padding-top: .211rem;
+    margin-bottom: -.211rem;
+    line-height: 1rem;
+    font-family: Source Sans Pro;
+  }
+
+  .lg\:vr-source-sans\ pro-normal-sm {
+    font-size: .875rem;
+    padding-top: .461rem;
+    margin-bottom: -.461rem;
+    line-height: 1.5rem;
+    font-family: Source Sans Pro;
+  }
+
+  .lg\:vr-source-sans\ pro-relaxed-sm {
+    font-size: .875rem;
+    padding-top: .461rem;
+    margin-bottom: -.461rem;
+    line-height: 1.5rem;
+    font-family: Source Sans Pro;
+  }
+
+  .lg\:vr-source-sans\ pro-loose-sm {
+    font-size: .875rem;
+    padding-top: .711rem;
+    margin-bottom: -.711rem;
+    line-height: 2rem;
+    font-family: Source Sans Pro;
+  }
+
+  .lg\:vr-source-sans\ pro-sm {
+    font-size: .875rem;
+    padding-top: .711rem;
+    margin-bottom: -.711rem;
+    line-height: 2rem;
+    font-family: Source Sans Pro;
+  }
+
+  .lg\:vr-source-sans\ pro-none-base {
+    font-size: 1rem;
+    padding-top: .17rem;
+    margin-bottom: -.17rem;
+    line-height: 1rem;
+    font-family: Source Sans Pro;
+  }
+
+  .lg\:vr-source-sans\ pro-tight-base {
+    font-size: 1rem;
+    padding-top: .42rem;
+    margin-bottom: -.42rem;
+    line-height: 1.5rem;
+    font-family: Source Sans Pro;
+  }
+
+  .lg\:vr-source-sans\ pro-snug-base {
+    font-size: 1rem;
+    padding-top: .42rem;
+    margin-bottom: -.42rem;
+    line-height: 1.5rem;
+    font-family: Source Sans Pro;
+  }
+
+  .lg\:vr-source-sans\ pro-normal-base {
+    font-size: 1rem;
+    padding-top: .42rem;
+    margin-bottom: -.42rem;
+    line-height: 1.5rem;
+    font-family: Source Sans Pro;
+  }
+
+  .lg\:vr-source-sans\ pro-relaxed-base {
+    font-size: 1rem;
+    padding-top: .42rem;
+    margin-bottom: -.42rem;
+    line-height: 1.5rem;
+    font-family: Source Sans Pro;
+  }
+
+  .lg\:vr-source-sans\ pro-loose-base {
+    font-size: 1rem;
+    padding-top: .67rem;
+    margin-bottom: -.67rem;
+    line-height: 2rem;
+    font-family: Source Sans Pro;
+  }
+
+  .lg\:vr-source-sans\ pro-base {
+    font-size: 1rem;
+    padding-top: .67rem;
+    margin-bottom: -.67rem;
+    line-height: 2rem;
+    font-family: Source Sans Pro;
+  }
+
+  .lg\:vr-source-sans\ pro-none-lg {
+    font-size: 1.125rem;
+    padding-top: .129rem;
+    margin-bottom: -.129rem;
+    line-height: 1rem;
+    font-family: Source Sans Pro;
+  }
+
+  .lg\:vr-source-sans\ pro-tight-lg {
+    font-size: 1.125rem;
+    padding-top: .379rem;
+    margin-bottom: -.379rem;
+    line-height: 1.5rem;
+    font-family: Source Sans Pro;
+  }
+
+  .lg\:vr-source-sans\ pro-snug-lg {
+    font-size: 1.125rem;
+    padding-top: .379rem;
+    margin-bottom: -.379rem;
+    line-height: 1.5rem;
+    font-family: Source Sans Pro;
+  }
+
+  .lg\:vr-source-sans\ pro-normal-lg {
+    font-size: 1.125rem;
+    padding-top: .379rem;
+    margin-bottom: -.379rem;
+    line-height: 1.5rem;
+    font-family: Source Sans Pro;
+  }
+
+  .lg\:vr-source-sans\ pro-relaxed-lg {
+    font-size: 1.125rem;
+    padding-top: .629rem;
+    margin-bottom: -.629rem;
+    line-height: 2rem;
+    font-family: Source Sans Pro;
+  }
+
+  .lg\:vr-source-sans\ pro-loose-lg {
+    font-size: 1.125rem;
+    padding-top: .879rem;
+    margin-bottom: -.879rem;
+    line-height: 2.5rem;
+    font-family: Source Sans Pro;
+  }
+
+  .lg\:vr-source-sans\ pro-lg {
+    font-size: 1.125rem;
+    padding-top: .879rem;
+    margin-bottom: -.879rem;
+    line-height: 2.5rem;
+    font-family: Source Sans Pro;
+  }
+
+  .lg\:vr-source-sans\ pro-none-xl {
+    font-size: 1.25rem;
+    padding-top: .337rem;
+    margin-bottom: -.337rem;
+    line-height: 1.5rem;
+    font-family: Source Sans Pro;
+  }
+
+  .lg\:vr-source-sans\ pro-tight-xl {
+    font-size: 1.25rem;
+    padding-top: .337rem;
+    margin-bottom: -.337rem;
+    line-height: 1.5rem;
+    font-family: Source Sans Pro;
+  }
+
+  .lg\:vr-source-sans\ pro-snug-xl {
+    font-size: 1.25rem;
+    padding-top: .337rem;
+    margin-bottom: -.337rem;
+    line-height: 1.5rem;
+    font-family: Source Sans Pro;
+  }
+
+  .lg\:vr-source-sans\ pro-normal-xl {
+    font-size: 1.25rem;
+    padding-top: .587rem;
+    margin-bottom: -.587rem;
+    line-height: 2rem;
+    font-family: Source Sans Pro;
+  }
+
+  .lg\:vr-source-sans\ pro-relaxed-xl {
+    font-size: 1.25rem;
+    padding-top: .587rem;
+    margin-bottom: -.587rem;
+    line-height: 2rem;
+    font-family: Source Sans Pro;
+  }
+
+  .lg\:vr-source-sans\ pro-loose-xl {
+    font-size: 1.25rem;
+    padding-top: .837rem;
+    margin-bottom: -.837rem;
+    line-height: 2.5rem;
+    font-family: Source Sans Pro;
+  }
+
+  .lg\:vr-source-sans\ pro-xl {
+    font-size: 1.25rem;
+    padding-top: .837rem;
+    margin-bottom: -.837rem;
+    line-height: 2.5rem;
+    font-family: Source Sans Pro;
+  }
+
+  .lg\:vr-source-sans\ pro-none-2xl {
+    font-size: 1.5rem;
+    padding-top: .255rem;
+    margin-bottom: -.255rem;
+    line-height: 1.5rem;
+    font-family: Source Sans Pro;
+  }
+
+  .lg\:vr-source-sans\ pro-tight-2xl {
+    font-size: 1.5rem;
+    padding-top: .505rem;
+    margin-bottom: -.505rem;
+    line-height: 2rem;
+    font-family: Source Sans Pro;
+  }
+
+  .lg\:vr-source-sans\ pro-snug-2xl {
+    font-size: 1.5rem;
+    padding-top: .505rem;
+    margin-bottom: -.505rem;
+    line-height: 2rem;
+    font-family: Source Sans Pro;
+  }
+
+  .lg\:vr-source-sans\ pro-normal-2xl {
+    font-size: 1.5rem;
+    padding-top: .755rem;
+    margin-bottom: -.755rem;
+    line-height: 2.5rem;
+    font-family: Source Sans Pro;
+  }
+
+  .lg\:vr-source-sans\ pro-relaxed-2xl {
+    font-size: 1.5rem;
+    padding-top: .755rem;
+    margin-bottom: -.755rem;
+    line-height: 2.5rem;
+    font-family: Source Sans Pro;
+  }
+
+  .lg\:vr-source-sans\ pro-loose-2xl {
+    font-size: 1.5rem;
+    padding-top: 1.005rem;
+    margin-bottom: -1.005rem;
+    line-height: 3rem;
+    font-family: Source Sans Pro;
+  }
+
+  .lg\:vr-source-sans\ pro-2xl {
+    font-size: 1.5rem;
+    padding-top: 1.005rem;
+    margin-bottom: -1.005rem;
+    line-height: 3rem;
+    font-family: Source Sans Pro;
+  }
+
+  .lg\:vr-source-sans\ pro-none-3xl {
+    font-size: 1.875rem;
+    padding-top: .381rem;
+    margin-bottom: -.381rem;
+    line-height: 2rem;
+    font-family: Source Sans Pro;
+  }
+
+  .lg\:vr-source-sans\ pro-tight-3xl {
+    font-size: 1.875rem;
+    padding-top: .631rem;
+    margin-bottom: -.631rem;
+    line-height: 2.5rem;
+    font-family: Source Sans Pro;
+  }
+
+  .lg\:vr-source-sans\ pro-snug-3xl {
+    font-size: 1.875rem;
+    padding-top: .631rem;
+    margin-bottom: -.631rem;
+    line-height: 2.5rem;
+    font-family: Source Sans Pro;
+  }
+
+  .lg\:vr-source-sans\ pro-normal-3xl {
+    font-size: 1.875rem;
+    padding-top: .881rem;
+    margin-bottom: -.881rem;
+    line-height: 3rem;
+    font-family: Source Sans Pro;
+  }
+
+  .lg\:vr-source-sans\ pro-relaxed-3xl {
+    font-size: 1.875rem;
+    padding-top: .881rem;
+    margin-bottom: -.881rem;
+    line-height: 3rem;
+    font-family: Source Sans Pro;
+  }
+
+  .lg\:vr-source-sans\ pro-loose-3xl {
+    font-size: 1.875rem;
+    padding-top: 1.381rem;
+    margin-bottom: -1.381rem;
+    line-height: 4rem;
+    font-family: Source Sans Pro;
+  }
+
+  .lg\:vr-source-sans\ pro-3xl {
+    font-size: 1.875rem;
+    padding-top: 1.381rem;
+    margin-bottom: -1.381rem;
+    line-height: 4rem;
+    font-family: Source Sans Pro;
+  }
+
+  .lg\:vr-source-sans\ pro-none-4xl {
+    font-size: 2.25rem;
+    padding-top: .507rem;
+    margin-bottom: -.507rem;
+    line-height: 2.5rem;
+    font-family: Source Sans Pro;
+  }
+
+  .lg\:vr-source-sans\ pro-tight-4xl {
+    font-size: 2.25rem;
+    padding-top: .758rem;
+    margin-bottom: -.757rem;
+    line-height: 3rem;
+    font-family: Source Sans Pro;
+  }
+
+  .lg\:vr-source-sans\ pro-snug-4xl {
+    font-size: 2.25rem;
+    padding-top: .758rem;
+    margin-bottom: -.757rem;
+    line-height: 3rem;
+    font-family: Source Sans Pro;
+  }
+
+  .lg\:vr-source-sans\ pro-normal-4xl {
+    font-size: 2.25rem;
+    padding-top: 1.007rem;
+    margin-bottom: -1.007rem;
+    line-height: 3.5rem;
+    font-family: Source Sans Pro;
+  }
+
+  .lg\:vr-source-sans\ pro-relaxed-4xl {
+    font-size: 2.25rem;
+    padding-top: 1.007rem;
+    margin-bottom: -1.007rem;
+    line-height: 3.5rem;
+    font-family: Source Sans Pro;
+  }
+
+  .lg\:vr-source-sans\ pro-loose-4xl {
+    font-size: 2.25rem;
+    padding-top: 1.507rem;
+    margin-bottom: -1.507rem;
+    line-height: 4.5rem;
+    font-family: Source Sans Pro;
+  }
+
+  .lg\:vr-source-sans\ pro-4xl {
+    font-size: 2.25rem;
+    padding-top: 1.507rem;
+    margin-bottom: -1.507rem;
+    line-height: 4.5rem;
+    font-family: Source Sans Pro;
+  }
+
+  .lg\:vr-source-sans\ pro-none-5xl {
+    font-size: 3rem;
+    padding-top: .51rem;
+    margin-bottom: -.51rem;
+    line-height: 3rem;
+    font-family: Source Sans Pro;
+  }
+
+  .lg\:vr-source-sans\ pro-tight-5xl {
+    font-size: 3rem;
+    padding-top: 1.01rem;
+    margin-bottom: -1.01rem;
+    line-height: 4rem;
+    font-family: Source Sans Pro;
+  }
+
+  .lg\:vr-source-sans\ pro-snug-5xl {
+    font-size: 3rem;
+    padding-top: 1.01rem;
+    margin-bottom: -1.01rem;
+    line-height: 4rem;
+    font-family: Source Sans Pro;
+  }
+
+  .lg\:vr-source-sans\ pro-normal-5xl {
+    font-size: 3rem;
+    padding-top: 1.26rem;
+    margin-bottom: -1.26rem;
+    line-height: 4.5rem;
+    font-family: Source Sans Pro;
+  }
+
+  .lg\:vr-source-sans\ pro-relaxed-5xl {
+    font-size: 3rem;
+    padding-top: 1.51rem;
+    margin-bottom: -1.51rem;
+    line-height: 5rem;
+    font-family: Source Sans Pro;
+  }
+
+  .lg\:vr-source-sans\ pro-loose-5xl {
+    font-size: 3rem;
+    padding-top: 2.01rem;
+    margin-bottom: -2.01rem;
+    line-height: 6rem;
+    font-family: Source Sans Pro;
+  }
+
+  .lg\:vr-source-sans\ pro-5xl {
+    font-size: 3rem;
+    padding-top: 2.01rem;
+    margin-bottom: -2.01rem;
+    line-height: 6rem;
+    font-family: Source Sans Pro;
+  }
+
+  .lg\:vr-source-sans\ pro-none-6xl {
+    font-size: 4rem;
+    padding-top: .68rem;
+    margin-bottom: -.68rem;
+    line-height: 4rem;
+    font-family: Source Sans Pro;
+  }
+
+  .lg\:vr-source-sans\ pro-tight-6xl {
+    font-size: 4rem;
+    padding-top: 1.18rem;
+    margin-bottom: -1.18rem;
+    line-height: 5rem;
+    font-family: Source Sans Pro;
+  }
+
+  .lg\:vr-source-sans\ pro-snug-6xl {
+    font-size: 4rem;
+    padding-top: 1.43rem;
+    margin-bottom: -1.43rem;
+    line-height: 5.5rem;
+    font-family: Source Sans Pro;
+  }
+
+  .lg\:vr-source-sans\ pro-normal-6xl {
+    font-size: 4rem;
+    padding-top: 1.68rem;
+    margin-bottom: -1.68rem;
+    line-height: 6rem;
+    font-family: Source Sans Pro;
+  }
+
+  .lg\:vr-source-sans\ pro-relaxed-6xl {
+    font-size: 4rem;
+    padding-top: 1.93rem;
+    margin-bottom: -1.93rem;
+    line-height: 6.5rem;
+    font-family: Source Sans Pro;
+  }
+
+  .lg\:vr-source-sans\ pro-loose-6xl {
+    font-size: 4rem;
+    padding-top: 2.68rem;
+    margin-bottom: -2.68rem;
+    line-height: 8rem;
+    font-family: Source Sans Pro;
+  }
+
+  .lg\:vr-source-sans\ pro-6xl {
+    font-size: 4rem;
+    padding-top: 2.68rem;
+    margin-bottom: -2.68rem;
+    line-height: 8rem;
+    font-family: Source Sans Pro;
+  }
 }
 
 @media (min-width: 1280px) {
@@ -59933,6 +64656,10 @@ h2 {
     border-color: #702459;
   }
 
+  .xl\:divide-accent > :not(template) ~ :not(template) {
+    border-color: #c54545;
+  }
+
   .xl\:sr-only {
     position: absolute;
     width: 1px;
@@ -60373,6 +65100,10 @@ h2 {
     background-color: #702459;
   }
 
+  .xl\:bg-accent {
+    background-color: #c54545;
+  }
+
   .xl\:hover\:bg-transparent:hover {
     background-color: transparent;
   }
@@ -60749,6 +65480,10 @@ h2 {
     background-color: #702459;
   }
 
+  .xl\:hover\:bg-accent:hover {
+    background-color: #c54545;
+  }
+
   .xl\:focus\:bg-transparent:focus {
     background-color: transparent;
   }
@@ -61123,6 +65858,10 @@ h2 {
 
   .xl\:focus\:bg-pink-900:focus {
     background-color: #702459;
+  }
+
+  .xl\:focus\:bg-accent:focus {
+    background-color: #c54545;
   }
 
   .xl\:bg-bottom {
@@ -61581,6 +66320,10 @@ h2 {
     border-color: #702459;
   }
 
+  .xl\:border-accent {
+    border-color: #c54545;
+  }
+
   .xl\:hover\:border-transparent:hover {
     border-color: transparent;
   }
@@ -61957,6 +66700,10 @@ h2 {
     border-color: #702459;
   }
 
+  .xl\:hover\:border-accent:hover {
+    border-color: #c54545;
+  }
+
   .xl\:focus\:border-transparent:focus {
     border-color: transparent;
   }
@@ -62331,6 +67078,10 @@ h2 {
 
   .xl\:focus\:border-pink-900:focus {
     border-color: #702459;
+  }
+
+  .xl\:focus\:border-accent:focus {
+    border-color: #c54545;
   }
 
   .xl\:rounded-none {
@@ -67327,6 +72078,26 @@ h2 {
     color: #702459;
   }
 
+  .xl\:placeholder-accent::-webkit-input-placeholder {
+    color: #c54545;
+  }
+
+  .xl\:placeholder-accent::-moz-placeholder {
+    color: #c54545;
+  }
+
+  .xl\:placeholder-accent:-ms-input-placeholder {
+    color: #c54545;
+  }
+
+  .xl\:placeholder-accent::-ms-input-placeholder {
+    color: #c54545;
+  }
+
+  .xl\:placeholder-accent::placeholder {
+    color: #c54545;
+  }
+
   .xl\:focus\:placeholder-transparent:focus::-webkit-input-placeholder {
     color: transparent;
   }
@@ -69207,6 +73978,26 @@ h2 {
     color: #702459;
   }
 
+  .xl\:focus\:placeholder-accent:focus::-webkit-input-placeholder {
+    color: #c54545;
+  }
+
+  .xl\:focus\:placeholder-accent:focus::-moz-placeholder {
+    color: #c54545;
+  }
+
+  .xl\:focus\:placeholder-accent:focus:-ms-input-placeholder {
+    color: #c54545;
+  }
+
+  .xl\:focus\:placeholder-accent:focus::-ms-input-placeholder {
+    color: #c54545;
+  }
+
+  .xl\:focus\:placeholder-accent:focus::placeholder {
+    color: #c54545;
+  }
+
   .xl\:pointer-events-none {
     pointer-events: none;
   }
@@ -69888,6 +74679,10 @@ h2 {
     color: #702459;
   }
 
+  .xl\:text-accent {
+    color: #c54545;
+  }
+
   .xl\:hover\:text-transparent:hover {
     color: transparent;
   }
@@ -70264,6 +75059,10 @@ h2 {
     color: #702459;
   }
 
+  .xl\:hover\:text-accent:hover {
+    color: #c54545;
+  }
+
   .xl\:focus\:text-transparent:focus {
     color: transparent;
   }
@@ -70638,6 +75437,10 @@ h2 {
 
   .xl\:focus\:text-pink-900:focus {
     color: #702459;
+  }
+
+  .xl\:focus\:text-accent:focus {
+    color: #c54545;
   }
 
   .xl\:italic {
@@ -73612,6 +78415,1056 @@ h2 {
   .xl\:delay-1000 {
     -webkit-transition-delay: 1000ms;
             transition-delay: 1000ms;
+  }
+
+  .xl\:vr-none-xs {
+    font-size: .75rem;
+    padding-top: .236rem;
+    margin-bottom: -.236rem;
+    line-height: 1rem;
+  }
+
+  .xl\:vr-tight-xs {
+    font-size: .75rem;
+    padding-top: .236rem;
+    margin-bottom: -.236rem;
+    line-height: 1rem;
+  }
+
+  .xl\:vr-snug-xs {
+    font-size: .75rem;
+    padding-top: .236rem;
+    margin-bottom: -.236rem;
+    line-height: 1rem;
+  }
+
+  .xl\:vr-normal-xs {
+    font-size: .75rem;
+    padding-top: .236rem;
+    margin-bottom: -.236rem;
+    line-height: 1rem;
+  }
+
+  .xl\:vr-relaxed-xs {
+    font-size: .75rem;
+    padding-top: .236rem;
+    margin-bottom: -.236rem;
+    line-height: 1rem;
+  }
+
+  .xl\:vr-loose-xs {
+    font-size: .75rem;
+    padding-top: .486rem;
+    margin-bottom: -.486rem;
+    line-height: 1.5rem;
+  }
+
+  .xl\:vr-xs {
+    font-size: .75rem;
+    padding-top: .486rem;
+    margin-bottom: -.486rem;
+    line-height: 1.5rem;
+  }
+
+  .xl\:vr-none-sm {
+    font-size: .875rem;
+    padding-top: .192rem;
+    margin-bottom: -.192rem;
+    line-height: 1rem;
+  }
+
+  .xl\:vr-tight-sm {
+    font-size: .875rem;
+    padding-top: .192rem;
+    margin-bottom: -.192rem;
+    line-height: 1rem;
+  }
+
+  .xl\:vr-snug-sm {
+    font-size: .875rem;
+    padding-top: .192rem;
+    margin-bottom: -.192rem;
+    line-height: 1rem;
+  }
+
+  .xl\:vr-normal-sm {
+    font-size: .875rem;
+    padding-top: .442rem;
+    margin-bottom: -.442rem;
+    line-height: 1.5rem;
+  }
+
+  .xl\:vr-relaxed-sm {
+    font-size: .875rem;
+    padding-top: .442rem;
+    margin-bottom: -.442rem;
+    line-height: 1.5rem;
+  }
+
+  .xl\:vr-loose-sm {
+    font-size: .875rem;
+    padding-top: .692rem;
+    margin-bottom: -.692rem;
+    line-height: 2rem;
+  }
+
+  .xl\:vr-sm {
+    font-size: .875rem;
+    padding-top: .692rem;
+    margin-bottom: -.692rem;
+    line-height: 2rem;
+  }
+
+  .xl\:vr-none-base {
+    font-size: 1rem;
+    padding-top: .148rem;
+    margin-bottom: -.148rem;
+    line-height: 1rem;
+  }
+
+  .xl\:vr-tight-base {
+    font-size: 1rem;
+    padding-top: .398rem;
+    margin-bottom: -.397rem;
+    line-height: 1.5rem;
+  }
+
+  .xl\:vr-snug-base {
+    font-size: 1rem;
+    padding-top: .398rem;
+    margin-bottom: -.397rem;
+    line-height: 1.5rem;
+  }
+
+  .xl\:vr-normal-base {
+    font-size: 1rem;
+    padding-top: .398rem;
+    margin-bottom: -.397rem;
+    line-height: 1.5rem;
+  }
+
+  .xl\:vr-relaxed-base {
+    font-size: 1rem;
+    padding-top: .398rem;
+    margin-bottom: -.397rem;
+    line-height: 1.5rem;
+  }
+
+  .xl\:vr-loose-base {
+    font-size: 1rem;
+    padding-top: .648rem;
+    margin-bottom: -.647rem;
+    line-height: 2rem;
+  }
+
+  .xl\:vr-base {
+    font-size: 1rem;
+    padding-top: .648rem;
+    margin-bottom: -.647rem;
+    line-height: 2rem;
+  }
+
+  .xl\:vr-none-lg {
+    font-size: 1.125rem;
+    padding-top: .103rem;
+    margin-bottom: -.103rem;
+    line-height: 1rem;
+  }
+
+  .xl\:vr-tight-lg {
+    font-size: 1.125rem;
+    padding-top: .353rem;
+    margin-bottom: -.353rem;
+    line-height: 1.5rem;
+  }
+
+  .xl\:vr-snug-lg {
+    font-size: 1.125rem;
+    padding-top: .353rem;
+    margin-bottom: -.353rem;
+    line-height: 1.5rem;
+  }
+
+  .xl\:vr-normal-lg {
+    font-size: 1.125rem;
+    padding-top: .353rem;
+    margin-bottom: -.353rem;
+    line-height: 1.5rem;
+  }
+
+  .xl\:vr-relaxed-lg {
+    font-size: 1.125rem;
+    padding-top: .603rem;
+    margin-bottom: -.603rem;
+    line-height: 2rem;
+  }
+
+  .xl\:vr-loose-lg {
+    font-size: 1.125rem;
+    padding-top: .853rem;
+    margin-bottom: -.853rem;
+    line-height: 2.5rem;
+  }
+
+  .xl\:vr-lg {
+    font-size: 1.125rem;
+    padding-top: .853rem;
+    margin-bottom: -.853rem;
+    line-height: 2.5rem;
+  }
+
+  .xl\:vr-none-xl {
+    font-size: 1.25rem;
+    padding-top: .309rem;
+    margin-bottom: -.309rem;
+    line-height: 1.5rem;
+  }
+
+  .xl\:vr-tight-xl {
+    font-size: 1.25rem;
+    padding-top: .309rem;
+    margin-bottom: -.309rem;
+    line-height: 1.5rem;
+  }
+
+  .xl\:vr-snug-xl {
+    font-size: 1.25rem;
+    padding-top: .309rem;
+    margin-bottom: -.309rem;
+    line-height: 1.5rem;
+  }
+
+  .xl\:vr-normal-xl {
+    font-size: 1.25rem;
+    padding-top: .559rem;
+    margin-bottom: -.559rem;
+    line-height: 2rem;
+  }
+
+  .xl\:vr-relaxed-xl {
+    font-size: 1.25rem;
+    padding-top: .559rem;
+    margin-bottom: -.559rem;
+    line-height: 2rem;
+  }
+
+  .xl\:vr-loose-xl {
+    font-size: 1.25rem;
+    padding-top: .809rem;
+    margin-bottom: -.809rem;
+    line-height: 2.5rem;
+  }
+
+  .xl\:vr-xl {
+    font-size: 1.25rem;
+    padding-top: .809rem;
+    margin-bottom: -.809rem;
+    line-height: 2.5rem;
+  }
+
+  .xl\:vr-none-2xl {
+    font-size: 1.5rem;
+    padding-top: .221rem;
+    margin-bottom: -.221rem;
+    line-height: 1.5rem;
+  }
+
+  .xl\:vr-tight-2xl {
+    font-size: 1.5rem;
+    padding-top: .471rem;
+    margin-bottom: -.471rem;
+    line-height: 2rem;
+  }
+
+  .xl\:vr-snug-2xl {
+    font-size: 1.5rem;
+    padding-top: .471rem;
+    margin-bottom: -.471rem;
+    line-height: 2rem;
+  }
+
+  .xl\:vr-normal-2xl {
+    font-size: 1.5rem;
+    padding-top: .721rem;
+    margin-bottom: -.721rem;
+    line-height: 2.5rem;
+  }
+
+  .xl\:vr-relaxed-2xl {
+    font-size: 1.5rem;
+    padding-top: .721rem;
+    margin-bottom: -.721rem;
+    line-height: 2.5rem;
+  }
+
+  .xl\:vr-loose-2xl {
+    font-size: 1.5rem;
+    padding-top: .971rem;
+    margin-bottom: -.971rem;
+    line-height: 3rem;
+  }
+
+  .xl\:vr-2xl {
+    font-size: 1.5rem;
+    padding-top: .971rem;
+    margin-bottom: -.971rem;
+    line-height: 3rem;
+  }
+
+  .xl\:vr-none-3xl {
+    font-size: 1.875rem;
+    padding-top: .339rem;
+    margin-bottom: -.339rem;
+    line-height: 2rem;
+  }
+
+  .xl\:vr-tight-3xl {
+    font-size: 1.875rem;
+    padding-top: .589rem;
+    margin-bottom: -.589rem;
+    line-height: 2.5rem;
+  }
+
+  .xl\:vr-snug-3xl {
+    font-size: 1.875rem;
+    padding-top: .589rem;
+    margin-bottom: -.589rem;
+    line-height: 2.5rem;
+  }
+
+  .xl\:vr-normal-3xl {
+    font-size: 1.875rem;
+    padding-top: .839rem;
+    margin-bottom: -.839rem;
+    line-height: 3rem;
+  }
+
+  .xl\:vr-relaxed-3xl {
+    font-size: 1.875rem;
+    padding-top: .839rem;
+    margin-bottom: -.839rem;
+    line-height: 3rem;
+  }
+
+  .xl\:vr-loose-3xl {
+    font-size: 1.875rem;
+    padding-top: 1.339rem;
+    margin-bottom: -1.339rem;
+    line-height: 4rem;
+  }
+
+  .xl\:vr-3xl {
+    font-size: 1.875rem;
+    padding-top: 1.339rem;
+    margin-bottom: -1.339rem;
+    line-height: 4rem;
+  }
+
+  .xl\:vr-none-4xl {
+    font-size: 2.25rem;
+    padding-top: .457rem;
+    margin-bottom: -.457rem;
+    line-height: 2.5rem;
+  }
+
+  .xl\:vr-tight-4xl {
+    font-size: 2.25rem;
+    padding-top: .707rem;
+    margin-bottom: -.707rem;
+    line-height: 3rem;
+  }
+
+  .xl\:vr-snug-4xl {
+    font-size: 2.25rem;
+    padding-top: .707rem;
+    margin-bottom: -.707rem;
+    line-height: 3rem;
+  }
+
+  .xl\:vr-normal-4xl {
+    font-size: 2.25rem;
+    padding-top: .957rem;
+    margin-bottom: -.957rem;
+    line-height: 3.5rem;
+  }
+
+  .xl\:vr-relaxed-4xl {
+    font-size: 2.25rem;
+    padding-top: .957rem;
+    margin-bottom: -.957rem;
+    line-height: 3.5rem;
+  }
+
+  .xl\:vr-loose-4xl {
+    font-size: 2.25rem;
+    padding-top: 1.457rem;
+    margin-bottom: -1.457rem;
+    line-height: 4.5rem;
+  }
+
+  .xl\:vr-4xl {
+    font-size: 2.25rem;
+    padding-top: 1.457rem;
+    margin-bottom: -1.457rem;
+    line-height: 4.5rem;
+  }
+
+  .xl\:vr-none-5xl {
+    font-size: 3rem;
+    padding-top: .443rem;
+    margin-bottom: -.443rem;
+    line-height: 3rem;
+  }
+
+  .xl\:vr-tight-5xl {
+    font-size: 3rem;
+    padding-top: .943rem;
+    margin-bottom: -.943rem;
+    line-height: 4rem;
+  }
+
+  .xl\:vr-snug-5xl {
+    font-size: 3rem;
+    padding-top: .943rem;
+    margin-bottom: -.943rem;
+    line-height: 4rem;
+  }
+
+  .xl\:vr-normal-5xl {
+    font-size: 3rem;
+    padding-top: 1.193rem;
+    margin-bottom: -1.193rem;
+    line-height: 4.5rem;
+  }
+
+  .xl\:vr-relaxed-5xl {
+    font-size: 3rem;
+    padding-top: 1.443rem;
+    margin-bottom: -1.443rem;
+    line-height: 5rem;
+  }
+
+  .xl\:vr-loose-5xl {
+    font-size: 3rem;
+    padding-top: 1.943rem;
+    margin-bottom: -1.943rem;
+    line-height: 6rem;
+  }
+
+  .xl\:vr-5xl {
+    font-size: 3rem;
+    padding-top: 1.943rem;
+    margin-bottom: -1.943rem;
+    line-height: 6rem;
+  }
+
+  .xl\:vr-none-6xl {
+    font-size: 4rem;
+    padding-top: .59rem;
+    margin-bottom: -.59rem;
+    line-height: 4rem;
+  }
+
+  .xl\:vr-tight-6xl {
+    font-size: 4rem;
+    padding-top: 1.09rem;
+    margin-bottom: -1.09rem;
+    line-height: 5rem;
+  }
+
+  .xl\:vr-snug-6xl {
+    font-size: 4rem;
+    padding-top: 1.34rem;
+    margin-bottom: -1.34rem;
+    line-height: 5.5rem;
+  }
+
+  .xl\:vr-normal-6xl {
+    font-size: 4rem;
+    padding-top: 1.59rem;
+    margin-bottom: -1.59rem;
+    line-height: 6rem;
+  }
+
+  .xl\:vr-relaxed-6xl {
+    font-size: 4rem;
+    padding-top: 1.84rem;
+    margin-bottom: -1.84rem;
+    line-height: 6.5rem;
+  }
+
+  .xl\:vr-loose-6xl {
+    font-size: 4rem;
+    padding-top: 2.59rem;
+    margin-bottom: -2.59rem;
+    line-height: 8rem;
+  }
+
+  .xl\:vr-6xl {
+    font-size: 4rem;
+    padding-top: 2.59rem;
+    margin-bottom: -2.59rem;
+    line-height: 8rem;
+  }
+
+  .xl\:vr-source-sans\ pro-none-xs {
+    font-size: .75rem;
+    padding-top: .253rem;
+    margin-bottom: -.252rem;
+    line-height: 1rem;
+    font-family: Source Sans Pro;
+  }
+
+  .xl\:vr-source-sans\ pro-tight-xs {
+    font-size: .75rem;
+    padding-top: .253rem;
+    margin-bottom: -.252rem;
+    line-height: 1rem;
+    font-family: Source Sans Pro;
+  }
+
+  .xl\:vr-source-sans\ pro-snug-xs {
+    font-size: .75rem;
+    padding-top: .253rem;
+    margin-bottom: -.252rem;
+    line-height: 1rem;
+    font-family: Source Sans Pro;
+  }
+
+  .xl\:vr-source-sans\ pro-normal-xs {
+    font-size: .75rem;
+    padding-top: .253rem;
+    margin-bottom: -.252rem;
+    line-height: 1rem;
+    font-family: Source Sans Pro;
+  }
+
+  .xl\:vr-source-sans\ pro-relaxed-xs {
+    font-size: .75rem;
+    padding-top: .253rem;
+    margin-bottom: -.252rem;
+    line-height: 1rem;
+    font-family: Source Sans Pro;
+  }
+
+  .xl\:vr-source-sans\ pro-loose-xs {
+    font-size: .75rem;
+    padding-top: .502rem;
+    margin-bottom: -.502rem;
+    line-height: 1.5rem;
+    font-family: Source Sans Pro;
+  }
+
+  .xl\:vr-source-sans\ pro-xs {
+    font-size: .75rem;
+    padding-top: .502rem;
+    margin-bottom: -.502rem;
+    line-height: 1.5rem;
+    font-family: Source Sans Pro;
+  }
+
+  .xl\:vr-source-sans\ pro-none-sm {
+    font-size: .875rem;
+    padding-top: .211rem;
+    margin-bottom: -.211rem;
+    line-height: 1rem;
+    font-family: Source Sans Pro;
+  }
+
+  .xl\:vr-source-sans\ pro-tight-sm {
+    font-size: .875rem;
+    padding-top: .211rem;
+    margin-bottom: -.211rem;
+    line-height: 1rem;
+    font-family: Source Sans Pro;
+  }
+
+  .xl\:vr-source-sans\ pro-snug-sm {
+    font-size: .875rem;
+    padding-top: .211rem;
+    margin-bottom: -.211rem;
+    line-height: 1rem;
+    font-family: Source Sans Pro;
+  }
+
+  .xl\:vr-source-sans\ pro-normal-sm {
+    font-size: .875rem;
+    padding-top: .461rem;
+    margin-bottom: -.461rem;
+    line-height: 1.5rem;
+    font-family: Source Sans Pro;
+  }
+
+  .xl\:vr-source-sans\ pro-relaxed-sm {
+    font-size: .875rem;
+    padding-top: .461rem;
+    margin-bottom: -.461rem;
+    line-height: 1.5rem;
+    font-family: Source Sans Pro;
+  }
+
+  .xl\:vr-source-sans\ pro-loose-sm {
+    font-size: .875rem;
+    padding-top: .711rem;
+    margin-bottom: -.711rem;
+    line-height: 2rem;
+    font-family: Source Sans Pro;
+  }
+
+  .xl\:vr-source-sans\ pro-sm {
+    font-size: .875rem;
+    padding-top: .711rem;
+    margin-bottom: -.711rem;
+    line-height: 2rem;
+    font-family: Source Sans Pro;
+  }
+
+  .xl\:vr-source-sans\ pro-none-base {
+    font-size: 1rem;
+    padding-top: .17rem;
+    margin-bottom: -.17rem;
+    line-height: 1rem;
+    font-family: Source Sans Pro;
+  }
+
+  .xl\:vr-source-sans\ pro-tight-base {
+    font-size: 1rem;
+    padding-top: .42rem;
+    margin-bottom: -.42rem;
+    line-height: 1.5rem;
+    font-family: Source Sans Pro;
+  }
+
+  .xl\:vr-source-sans\ pro-snug-base {
+    font-size: 1rem;
+    padding-top: .42rem;
+    margin-bottom: -.42rem;
+    line-height: 1.5rem;
+    font-family: Source Sans Pro;
+  }
+
+  .xl\:vr-source-sans\ pro-normal-base {
+    font-size: 1rem;
+    padding-top: .42rem;
+    margin-bottom: -.42rem;
+    line-height: 1.5rem;
+    font-family: Source Sans Pro;
+  }
+
+  .xl\:vr-source-sans\ pro-relaxed-base {
+    font-size: 1rem;
+    padding-top: .42rem;
+    margin-bottom: -.42rem;
+    line-height: 1.5rem;
+    font-family: Source Sans Pro;
+  }
+
+  .xl\:vr-source-sans\ pro-loose-base {
+    font-size: 1rem;
+    padding-top: .67rem;
+    margin-bottom: -.67rem;
+    line-height: 2rem;
+    font-family: Source Sans Pro;
+  }
+
+  .xl\:vr-source-sans\ pro-base {
+    font-size: 1rem;
+    padding-top: .67rem;
+    margin-bottom: -.67rem;
+    line-height: 2rem;
+    font-family: Source Sans Pro;
+  }
+
+  .xl\:vr-source-sans\ pro-none-lg {
+    font-size: 1.125rem;
+    padding-top: .129rem;
+    margin-bottom: -.129rem;
+    line-height: 1rem;
+    font-family: Source Sans Pro;
+  }
+
+  .xl\:vr-source-sans\ pro-tight-lg {
+    font-size: 1.125rem;
+    padding-top: .379rem;
+    margin-bottom: -.379rem;
+    line-height: 1.5rem;
+    font-family: Source Sans Pro;
+  }
+
+  .xl\:vr-source-sans\ pro-snug-lg {
+    font-size: 1.125rem;
+    padding-top: .379rem;
+    margin-bottom: -.379rem;
+    line-height: 1.5rem;
+    font-family: Source Sans Pro;
+  }
+
+  .xl\:vr-source-sans\ pro-normal-lg {
+    font-size: 1.125rem;
+    padding-top: .379rem;
+    margin-bottom: -.379rem;
+    line-height: 1.5rem;
+    font-family: Source Sans Pro;
+  }
+
+  .xl\:vr-source-sans\ pro-relaxed-lg {
+    font-size: 1.125rem;
+    padding-top: .629rem;
+    margin-bottom: -.629rem;
+    line-height: 2rem;
+    font-family: Source Sans Pro;
+  }
+
+  .xl\:vr-source-sans\ pro-loose-lg {
+    font-size: 1.125rem;
+    padding-top: .879rem;
+    margin-bottom: -.879rem;
+    line-height: 2.5rem;
+    font-family: Source Sans Pro;
+  }
+
+  .xl\:vr-source-sans\ pro-lg {
+    font-size: 1.125rem;
+    padding-top: .879rem;
+    margin-bottom: -.879rem;
+    line-height: 2.5rem;
+    font-family: Source Sans Pro;
+  }
+
+  .xl\:vr-source-sans\ pro-none-xl {
+    font-size: 1.25rem;
+    padding-top: .337rem;
+    margin-bottom: -.337rem;
+    line-height: 1.5rem;
+    font-family: Source Sans Pro;
+  }
+
+  .xl\:vr-source-sans\ pro-tight-xl {
+    font-size: 1.25rem;
+    padding-top: .337rem;
+    margin-bottom: -.337rem;
+    line-height: 1.5rem;
+    font-family: Source Sans Pro;
+  }
+
+  .xl\:vr-source-sans\ pro-snug-xl {
+    font-size: 1.25rem;
+    padding-top: .337rem;
+    margin-bottom: -.337rem;
+    line-height: 1.5rem;
+    font-family: Source Sans Pro;
+  }
+
+  .xl\:vr-source-sans\ pro-normal-xl {
+    font-size: 1.25rem;
+    padding-top: .587rem;
+    margin-bottom: -.587rem;
+    line-height: 2rem;
+    font-family: Source Sans Pro;
+  }
+
+  .xl\:vr-source-sans\ pro-relaxed-xl {
+    font-size: 1.25rem;
+    padding-top: .587rem;
+    margin-bottom: -.587rem;
+    line-height: 2rem;
+    font-family: Source Sans Pro;
+  }
+
+  .xl\:vr-source-sans\ pro-loose-xl {
+    font-size: 1.25rem;
+    padding-top: .837rem;
+    margin-bottom: -.837rem;
+    line-height: 2.5rem;
+    font-family: Source Sans Pro;
+  }
+
+  .xl\:vr-source-sans\ pro-xl {
+    font-size: 1.25rem;
+    padding-top: .837rem;
+    margin-bottom: -.837rem;
+    line-height: 2.5rem;
+    font-family: Source Sans Pro;
+  }
+
+  .xl\:vr-source-sans\ pro-none-2xl {
+    font-size: 1.5rem;
+    padding-top: .255rem;
+    margin-bottom: -.255rem;
+    line-height: 1.5rem;
+    font-family: Source Sans Pro;
+  }
+
+  .xl\:vr-source-sans\ pro-tight-2xl {
+    font-size: 1.5rem;
+    padding-top: .505rem;
+    margin-bottom: -.505rem;
+    line-height: 2rem;
+    font-family: Source Sans Pro;
+  }
+
+  .xl\:vr-source-sans\ pro-snug-2xl {
+    font-size: 1.5rem;
+    padding-top: .505rem;
+    margin-bottom: -.505rem;
+    line-height: 2rem;
+    font-family: Source Sans Pro;
+  }
+
+  .xl\:vr-source-sans\ pro-normal-2xl {
+    font-size: 1.5rem;
+    padding-top: .755rem;
+    margin-bottom: -.755rem;
+    line-height: 2.5rem;
+    font-family: Source Sans Pro;
+  }
+
+  .xl\:vr-source-sans\ pro-relaxed-2xl {
+    font-size: 1.5rem;
+    padding-top: .755rem;
+    margin-bottom: -.755rem;
+    line-height: 2.5rem;
+    font-family: Source Sans Pro;
+  }
+
+  .xl\:vr-source-sans\ pro-loose-2xl {
+    font-size: 1.5rem;
+    padding-top: 1.005rem;
+    margin-bottom: -1.005rem;
+    line-height: 3rem;
+    font-family: Source Sans Pro;
+  }
+
+  .xl\:vr-source-sans\ pro-2xl {
+    font-size: 1.5rem;
+    padding-top: 1.005rem;
+    margin-bottom: -1.005rem;
+    line-height: 3rem;
+    font-family: Source Sans Pro;
+  }
+
+  .xl\:vr-source-sans\ pro-none-3xl {
+    font-size: 1.875rem;
+    padding-top: .381rem;
+    margin-bottom: -.381rem;
+    line-height: 2rem;
+    font-family: Source Sans Pro;
+  }
+
+  .xl\:vr-source-sans\ pro-tight-3xl {
+    font-size: 1.875rem;
+    padding-top: .631rem;
+    margin-bottom: -.631rem;
+    line-height: 2.5rem;
+    font-family: Source Sans Pro;
+  }
+
+  .xl\:vr-source-sans\ pro-snug-3xl {
+    font-size: 1.875rem;
+    padding-top: .631rem;
+    margin-bottom: -.631rem;
+    line-height: 2.5rem;
+    font-family: Source Sans Pro;
+  }
+
+  .xl\:vr-source-sans\ pro-normal-3xl {
+    font-size: 1.875rem;
+    padding-top: .881rem;
+    margin-bottom: -.881rem;
+    line-height: 3rem;
+    font-family: Source Sans Pro;
+  }
+
+  .xl\:vr-source-sans\ pro-relaxed-3xl {
+    font-size: 1.875rem;
+    padding-top: .881rem;
+    margin-bottom: -.881rem;
+    line-height: 3rem;
+    font-family: Source Sans Pro;
+  }
+
+  .xl\:vr-source-sans\ pro-loose-3xl {
+    font-size: 1.875rem;
+    padding-top: 1.381rem;
+    margin-bottom: -1.381rem;
+    line-height: 4rem;
+    font-family: Source Sans Pro;
+  }
+
+  .xl\:vr-source-sans\ pro-3xl {
+    font-size: 1.875rem;
+    padding-top: 1.381rem;
+    margin-bottom: -1.381rem;
+    line-height: 4rem;
+    font-family: Source Sans Pro;
+  }
+
+  .xl\:vr-source-sans\ pro-none-4xl {
+    font-size: 2.25rem;
+    padding-top: .507rem;
+    margin-bottom: -.507rem;
+    line-height: 2.5rem;
+    font-family: Source Sans Pro;
+  }
+
+  .xl\:vr-source-sans\ pro-tight-4xl {
+    font-size: 2.25rem;
+    padding-top: .758rem;
+    margin-bottom: -.757rem;
+    line-height: 3rem;
+    font-family: Source Sans Pro;
+  }
+
+  .xl\:vr-source-sans\ pro-snug-4xl {
+    font-size: 2.25rem;
+    padding-top: .758rem;
+    margin-bottom: -.757rem;
+    line-height: 3rem;
+    font-family: Source Sans Pro;
+  }
+
+  .xl\:vr-source-sans\ pro-normal-4xl {
+    font-size: 2.25rem;
+    padding-top: 1.007rem;
+    margin-bottom: -1.007rem;
+    line-height: 3.5rem;
+    font-family: Source Sans Pro;
+  }
+
+  .xl\:vr-source-sans\ pro-relaxed-4xl {
+    font-size: 2.25rem;
+    padding-top: 1.007rem;
+    margin-bottom: -1.007rem;
+    line-height: 3.5rem;
+    font-family: Source Sans Pro;
+  }
+
+  .xl\:vr-source-sans\ pro-loose-4xl {
+    font-size: 2.25rem;
+    padding-top: 1.507rem;
+    margin-bottom: -1.507rem;
+    line-height: 4.5rem;
+    font-family: Source Sans Pro;
+  }
+
+  .xl\:vr-source-sans\ pro-4xl {
+    font-size: 2.25rem;
+    padding-top: 1.507rem;
+    margin-bottom: -1.507rem;
+    line-height: 4.5rem;
+    font-family: Source Sans Pro;
+  }
+
+  .xl\:vr-source-sans\ pro-none-5xl {
+    font-size: 3rem;
+    padding-top: .51rem;
+    margin-bottom: -.51rem;
+    line-height: 3rem;
+    font-family: Source Sans Pro;
+  }
+
+  .xl\:vr-source-sans\ pro-tight-5xl {
+    font-size: 3rem;
+    padding-top: 1.01rem;
+    margin-bottom: -1.01rem;
+    line-height: 4rem;
+    font-family: Source Sans Pro;
+  }
+
+  .xl\:vr-source-sans\ pro-snug-5xl {
+    font-size: 3rem;
+    padding-top: 1.01rem;
+    margin-bottom: -1.01rem;
+    line-height: 4rem;
+    font-family: Source Sans Pro;
+  }
+
+  .xl\:vr-source-sans\ pro-normal-5xl {
+    font-size: 3rem;
+    padding-top: 1.26rem;
+    margin-bottom: -1.26rem;
+    line-height: 4.5rem;
+    font-family: Source Sans Pro;
+  }
+
+  .xl\:vr-source-sans\ pro-relaxed-5xl {
+    font-size: 3rem;
+    padding-top: 1.51rem;
+    margin-bottom: -1.51rem;
+    line-height: 5rem;
+    font-family: Source Sans Pro;
+  }
+
+  .xl\:vr-source-sans\ pro-loose-5xl {
+    font-size: 3rem;
+    padding-top: 2.01rem;
+    margin-bottom: -2.01rem;
+    line-height: 6rem;
+    font-family: Source Sans Pro;
+  }
+
+  .xl\:vr-source-sans\ pro-5xl {
+    font-size: 3rem;
+    padding-top: 2.01rem;
+    margin-bottom: -2.01rem;
+    line-height: 6rem;
+    font-family: Source Sans Pro;
+  }
+
+  .xl\:vr-source-sans\ pro-none-6xl {
+    font-size: 4rem;
+    padding-top: .68rem;
+    margin-bottom: -.68rem;
+    line-height: 4rem;
+    font-family: Source Sans Pro;
+  }
+
+  .xl\:vr-source-sans\ pro-tight-6xl {
+    font-size: 4rem;
+    padding-top: 1.18rem;
+    margin-bottom: -1.18rem;
+    line-height: 5rem;
+    font-family: Source Sans Pro;
+  }
+
+  .xl\:vr-source-sans\ pro-snug-6xl {
+    font-size: 4rem;
+    padding-top: 1.43rem;
+    margin-bottom: -1.43rem;
+    line-height: 5.5rem;
+    font-family: Source Sans Pro;
+  }
+
+  .xl\:vr-source-sans\ pro-normal-6xl {
+    font-size: 4rem;
+    padding-top: 1.68rem;
+    margin-bottom: -1.68rem;
+    line-height: 6rem;
+    font-family: Source Sans Pro;
+  }
+
+  .xl\:vr-source-sans\ pro-relaxed-6xl {
+    font-size: 4rem;
+    padding-top: 1.93rem;
+    margin-bottom: -1.93rem;
+    line-height: 6.5rem;
+    font-family: Source Sans Pro;
+  }
+
+  .xl\:vr-source-sans\ pro-loose-6xl {
+    font-size: 4rem;
+    padding-top: 2.68rem;
+    margin-bottom: -2.68rem;
+    line-height: 8rem;
+    font-family: Source Sans Pro;
+  }
+
+  .xl\:vr-source-sans\ pro-6xl {
+    font-size: 4rem;
+    padding-top: 2.68rem;
+    margin-bottom: -2.68rem;
+    line-height: 8rem;
+    font-family: Source Sans Pro;
   }
 }
 
