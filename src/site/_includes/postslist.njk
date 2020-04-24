@@ -15,7 +15,7 @@
     {% endif %}
 
     <div class="md:flex">
-    <div class="sticky self-start bg-white md:bg-transparent top-0 md:mr-6">
+    <div class="sticky self-start bg-gray-100 md:bg-transparent top-0 md:mr-6">
       <h2 class="mt-1">{{ postYear }}</h2>
     </div>
 
@@ -28,17 +28,7 @@
         {% if isNewYear %} pb-4 {% else %} py-4 {% endif %}
         {% if postslistYears === 'off' %} py-6 {% endif %}
         {% if not post.data.description %} pb-8 {% endif %}">
-      <a href="{{ post.url | url }}" class="block no-underline">
-        <time datetime="{{ post.date | htmlDateString }}" class="text-gray-600 vr-normal-sm mt-0 inline-block">
-          {{ post.date | readableDate }}
-        </time>
-
-        <h2 class="mt-0 pt-0">{% if post.data.title %}{{ post.data.title }}{% else %}<code>{{ post.url }}</code>{% endif %}</h2>
-
-        {% if post.data.description %}
-        <p class="mt-2 vr-normal-base text-gray-900 pb-6">{{ post.data.description }}</p>
-        {% endif %}
-      </a>
+      {% include 'components/post-teaser.njk' %}
     </li>
   {% endfor %}
 {% if postslistYears === 'off' %}

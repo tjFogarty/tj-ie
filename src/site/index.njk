@@ -12,20 +12,11 @@ eleventyNavigation:
   <h2>Latest 3 Posts</h2>
 
   {% set postslist = collections.posts | head(-3) %}
+  {% set hlevel = '3' %}
   <ol class="list-none p-0">
     {% for post in postslist | reverse %}
     <li>
-      <a href="{{ post.url | url }}" class="block no-underline">
-        <time datetime="{{ post.date | htmlDateString }}" class="text-gray-600 vr-normal-sm mt-0 inline-block">
-          {{ post.date | readableDate }}
-        </time>
-
-        <h3 class="mt-0 pt-0">{% if post.data.title %}{{ post.data.title }}{% else %}<code>{{ post.url }}</code>{% endif %}</h3>
-
-        {% if post.data.description %}
-        <p class="mt-2 vr-normal-base text-gray-900 pb-6">{{ post.data.description }}</p>
-        {% endif %}
-      </a>
+      {% include 'components/post-teaser.njk' %}
     </li>
     {% endfor %}
   </ol>
