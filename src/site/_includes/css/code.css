@@ -1,4 +1,5 @@
 /* https://github.com/SaraVieira/prism-theme-night-owl */
+/* purgecss start ignore */
 code[class*="language-"],
 pre[class*="language-"] {
   color: #d6deeb;
@@ -149,3 +150,4 @@ pre[class*="language-"] {
 .token.italic {
   font-style: italic;
 }
+/* purgecss end ignore */

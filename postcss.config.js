@@ -1,5 +1,6 @@
 const purgecss = require('@fullhuman/postcss-purgecss')
-const isDev = process.env.NODE_ENV === 'development'
+const mode = process.env.ELEVENTY_ENV || 'development'
+const isDev = mode === 'development'
 
 const plugins = [
   require('postcss-import'),
@@ -14,9 +15,8 @@ if (!isDev) {
     preset: 'default',
   }));
   plugins.push(purgecss({
-    content: ['./posts/**/*.md', './_includes/**/*.*', './about/index.md', './*.njk'],
-    variables: false,
-    defaultExtractor: content => content.match(/[\w-/.:]+(?<!:)/g) || []
+    content: ['./src/site/posts/**/*.md', './src/site/_includes/**/*.*', './src/site/about/index.md', './*.njk'],
+    defaultExtractor: content => content.match(/[\w-/:]+(?<!:)/g) || [],
   }));
 }
 
