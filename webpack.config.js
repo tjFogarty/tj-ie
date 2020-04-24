@@ -3,7 +3,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const WorkboxPlugin = require('workbox-webpack-plugin')
 
-const mode = process.env.ELEVENTY_DEV || 'development'
+const mode = process.env.ELEVENTY_ENV || 'development'
 const isDev = mode === 'development'
 
 const plugins = [
@@ -16,6 +16,7 @@ const plugins = [
     template: __dirname + '/src/layout.njk',
     scriptLoading: 'defer',
     inject: false,
+    minify: false,
   }),
 ];
 

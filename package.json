@@ -6,10 +6,10 @@
   "scripts": {
     "build": "npm-run-all build:assets build:html",
     "build:html": "eleventy",
-    "build:assets": "webpack --progress",
+    "build:assets": "ELEVENTY_ENV=production webpack --progress",
     "watch": "npm-run-all --parallel watch:assets watch:html",
     "watch:html": "eleventy --serve",
-    "watch:assets": "webpack --watch --progress --env.NODE_ENV=local",
+    "watch:assets": "ELEVENTY_ENV=development webpack --watch --progress",
     "start": "npm run watch",
     "debug": "DEBUG=* eleventy"
   },
