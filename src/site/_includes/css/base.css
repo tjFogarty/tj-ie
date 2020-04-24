@@ -1,5 +1,5 @@
 @font-face {
-  font-family: 'Source Sans Pro';
+  font-family: 'Source Sans';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
@@ -8,7 +8,7 @@
 }
 
 @font-face {
-  font-family: 'Source Sans Pro';
+  font-family: 'Source Sans';
   font-style: normal;
   font-weight: 700;
   font-display: swap;
@@ -18,15 +18,24 @@
 
 body {
   @apply font-sans;
-  @apply text-xl;
-  @apply leading-relaxed;
+  @apply vr-source-sans-normal-xl;
   @apply subpixel-antialiased;
   @apply text-gray-900;
   @apply bg-gray-100;
+  @apply m-0;
+  @apply p-0;
 }
 
 code {
-  @apply text-green-700;
+  @apply bg-gray-200;
+  @apply p-1;
+  @apply vr-normal-base;
+}
+
+pre code {
+  @apply bg-transparent;
+  @apply p-0;
+  @apply vr-normal-base;
 }
 
 a {
@@ -36,7 +45,7 @@ a {
 a:hover,
 a:focus {
   @apply no-underline;
-  @apply text-accent;
+  @apply text-accent-500;
 }
 
 iframe {
@@ -66,12 +75,11 @@ article ol {
 }
 
 p {
-  @apply vr-normal-xl;
   @apply mt-4;
 }
 
 h1 {
-  @apply vr-normal-3xl;
+  @apply vr-source-sans-normal-3xl;
   @apply font-bold;
 }
 
@@ -80,19 +88,19 @@ h1 + * {
 }
 
 h2 {
-  @apply vr-normal-2xl;
+  @apply vr-source-sans-normal-2xl;
   @apply font-bold;
   @apply mt-10;
 }
 
 h3 {
-  @apply vr-normal-xl;
+  @apply vr-source-sans-normal-xl;
   @apply font-bold;
   @apply mt-8;
 }
 
 h4 {
-  @apply vr-normal-lg;
+  @apply vr-source-sans-normal-lg;
   @apply font-bold;
   @apply mt-6;
 }
@@ -101,4 +109,32 @@ h4 {
   @apply no-underline;
   @apply text-gray-400;
   margin-left: -17px;
+}
+
+blockquote {
+  @apply font-serif;
+  @apply bg-gray-200;
+  @apply italic;
+  @apply p-3;
+  @apply mt-3;
+  @apply border-l-4;
+}
+
+blockquote > * {
+  @apply m-0;
+}
+
+blockquote p {
+  display: inline;
+}
+
+blockquote:before {
+  content: open-quote;
+  @apply vr-normal-6xl;
+  @apply m-0;
+  @apply mr-2;
+  @apply p-0;
+  @apply text-accent-400;
+  line-height: 0;
+  vertical-align: -25px;
 }

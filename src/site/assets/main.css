@@ -420,7 +420,7 @@ ul {
  */
 
 html {
-  font-family: "Source Sans Pro", system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, "Segoe UI", "Roboto", "Ubuntu", "Cantarell", "Noto Sans", sans-serif; /* 1 */
+  font-family: "Source Sans", system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, "Segoe UI", "Roboto", "Ubuntu", "Cantarell", "Noto Sans", sans-serif; /* 1 */
   line-height: 1.5; /* 2 */
 }
 
@@ -1658,8 +1658,40 @@ pre[class*="language-"] {
   border-color: #702459;
 }
 
-.divide-accent > :not(template) ~ :not(template) {
-  border-color: #c54545;
+.divide-accent-100 > :not(template) ~ :not(template) {
+  border-color: #FBE6F2;
+}
+
+.divide-accent-200 > :not(template) ~ :not(template) {
+  border-color: #F5BFDF;
+}
+
+.divide-accent-300 > :not(template) ~ :not(template) {
+  border-color: #EF99CC;
+}
+
+.divide-accent-400 > :not(template) ~ :not(template) {
+  border-color: #E24DA6;
+}
+
+.divide-accent-500 > :not(template) ~ :not(template) {
+  border-color: #D60080;
+}
+
+.divide-accent-600 > :not(template) ~ :not(template) {
+  border-color: #C10073;
+}
+
+.divide-accent-700 > :not(template) ~ :not(template) {
+  border-color: #80004D;
+}
+
+.divide-accent-800 > :not(template) ~ :not(template) {
+  border-color: #60003A;
+}
+
+.divide-accent-900 > :not(template) ~ :not(template) {
+  border-color: #400026;
 }
 
 .sr-only {
@@ -2102,8 +2134,40 @@ pre[class*="language-"] {
   background-color: #702459;
 }
 
-.bg-accent {
-  background-color: #c54545;
+.bg-accent-100 {
+  background-color: #FBE6F2;
+}
+
+.bg-accent-200 {
+  background-color: #F5BFDF;
+}
+
+.bg-accent-300 {
+  background-color: #EF99CC;
+}
+
+.bg-accent-400 {
+  background-color: #E24DA6;
+}
+
+.bg-accent-500 {
+  background-color: #D60080;
+}
+
+.bg-accent-600 {
+  background-color: #C10073;
+}
+
+.bg-accent-700 {
+  background-color: #80004D;
+}
+
+.bg-accent-800 {
+  background-color: #60003A;
+}
+
+.bg-accent-900 {
+  background-color: #400026;
 }
 
 .hover\:bg-transparent:hover {
@@ -2482,8 +2546,40 @@ pre[class*="language-"] {
   background-color: #702459;
 }
 
-.hover\:bg-accent:hover {
-  background-color: #c54545;
+.hover\:bg-accent-100:hover {
+  background-color: #FBE6F2;
+}
+
+.hover\:bg-accent-200:hover {
+  background-color: #F5BFDF;
+}
+
+.hover\:bg-accent-300:hover {
+  background-color: #EF99CC;
+}
+
+.hover\:bg-accent-400:hover {
+  background-color: #E24DA6;
+}
+
+.hover\:bg-accent-500:hover {
+  background-color: #D60080;
+}
+
+.hover\:bg-accent-600:hover {
+  background-color: #C10073;
+}
+
+.hover\:bg-accent-700:hover {
+  background-color: #80004D;
+}
+
+.hover\:bg-accent-800:hover {
+  background-color: #60003A;
+}
+
+.hover\:bg-accent-900:hover {
+  background-color: #400026;
 }
 
 .focus\:bg-transparent:focus {
@@ -2862,8 +2958,40 @@ pre[class*="language-"] {
   background-color: #702459;
 }
 
-.focus\:bg-accent:focus {
-  background-color: #c54545;
+.focus\:bg-accent-100:focus {
+  background-color: #FBE6F2;
+}
+
+.focus\:bg-accent-200:focus {
+  background-color: #F5BFDF;
+}
+
+.focus\:bg-accent-300:focus {
+  background-color: #EF99CC;
+}
+
+.focus\:bg-accent-400:focus {
+  background-color: #E24DA6;
+}
+
+.focus\:bg-accent-500:focus {
+  background-color: #D60080;
+}
+
+.focus\:bg-accent-600:focus {
+  background-color: #C10073;
+}
+
+.focus\:bg-accent-700:focus {
+  background-color: #80004D;
+}
+
+.focus\:bg-accent-800:focus {
+  background-color: #60003A;
+}
+
+.focus\:bg-accent-900:focus {
+  background-color: #400026;
 }
 
 .bg-bottom {
@@ -3322,8 +3450,40 @@ pre[class*="language-"] {
   border-color: #702459;
 }
 
-.border-accent {
-  border-color: #c54545;
+.border-accent-100 {
+  border-color: #FBE6F2;
+}
+
+.border-accent-200 {
+  border-color: #F5BFDF;
+}
+
+.border-accent-300 {
+  border-color: #EF99CC;
+}
+
+.border-accent-400 {
+  border-color: #E24DA6;
+}
+
+.border-accent-500 {
+  border-color: #D60080;
+}
+
+.border-accent-600 {
+  border-color: #C10073;
+}
+
+.border-accent-700 {
+  border-color: #80004D;
+}
+
+.border-accent-800 {
+  border-color: #60003A;
+}
+
+.border-accent-900 {
+  border-color: #400026;
 }
 
 .hover\:border-transparent:hover {
@@ -3702,8 +3862,40 @@ pre[class*="language-"] {
   border-color: #702459;
 }
 
-.hover\:border-accent:hover {
-  border-color: #c54545;
+.hover\:border-accent-100:hover {
+  border-color: #FBE6F2;
+}
+
+.hover\:border-accent-200:hover {
+  border-color: #F5BFDF;
+}
+
+.hover\:border-accent-300:hover {
+  border-color: #EF99CC;
+}
+
+.hover\:border-accent-400:hover {
+  border-color: #E24DA6;
+}
+
+.hover\:border-accent-500:hover {
+  border-color: #D60080;
+}
+
+.hover\:border-accent-600:hover {
+  border-color: #C10073;
+}
+
+.hover\:border-accent-700:hover {
+  border-color: #80004D;
+}
+
+.hover\:border-accent-800:hover {
+  border-color: #60003A;
+}
+
+.hover\:border-accent-900:hover {
+  border-color: #400026;
 }
 
 .focus\:border-transparent:focus {
@@ -4082,8 +4274,40 @@ pre[class*="language-"] {
   border-color: #702459;
 }
 
-.focus\:border-accent:focus {
-  border-color: #c54545;
+.focus\:border-accent-100:focus {
+  border-color: #FBE6F2;
+}
+
+.focus\:border-accent-200:focus {
+  border-color: #F5BFDF;
+}
+
+.focus\:border-accent-300:focus {
+  border-color: #EF99CC;
+}
+
+.focus\:border-accent-400:focus {
+  border-color: #E24DA6;
+}
+
+.focus\:border-accent-500:focus {
+  border-color: #D60080;
+}
+
+.focus\:border-accent-600:focus {
+  border-color: #C10073;
+}
+
+.focus\:border-accent-700:focus {
+  border-color: #80004D;
+}
+
+.focus\:border-accent-800:focus {
+  border-color: #60003A;
+}
+
+.focus\:border-accent-900:focus {
+  border-color: #400026;
 }
 
 .rounded-none {
@@ -4889,7 +5113,11 @@ pre[class*="language-"] {
 }
 
 .font-sans {
-  font-family: "Source Sans Pro", system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, "Segoe UI", "Roboto", "Ubuntu", "Cantarell", "Noto Sans", sans-serif;
+  font-family: "Source Sans", system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, "Segoe UI", "Roboto", "Ubuntu", "Cantarell", "Noto Sans", sans-serif;
+}
+
+.font-serif {
+  font-family: "Georgia", serif;
 }
 
 .font-hairline {
@@ -9080,24 +9308,184 @@ pre[class*="language-"] {
   color: #702459;
 }
 
-.placeholder-accent::-webkit-input-placeholder {
-  color: #c54545;
+.placeholder-accent-100::-webkit-input-placeholder {
+  color: #FBE6F2;
 }
 
-.placeholder-accent::-moz-placeholder {
-  color: #c54545;
+.placeholder-accent-100::-moz-placeholder {
+  color: #FBE6F2;
 }
 
-.placeholder-accent:-ms-input-placeholder {
-  color: #c54545;
+.placeholder-accent-100:-ms-input-placeholder {
+  color: #FBE6F2;
 }
 
-.placeholder-accent::-ms-input-placeholder {
-  color: #c54545;
+.placeholder-accent-100::-ms-input-placeholder {
+  color: #FBE6F2;
 }
 
-.placeholder-accent::placeholder {
-  color: #c54545;
+.placeholder-accent-100::placeholder {
+  color: #FBE6F2;
+}
+
+.placeholder-accent-200::-webkit-input-placeholder {
+  color: #F5BFDF;
+}
+
+.placeholder-accent-200::-moz-placeholder {
+  color: #F5BFDF;
+}
+
+.placeholder-accent-200:-ms-input-placeholder {
+  color: #F5BFDF;
+}
+
+.placeholder-accent-200::-ms-input-placeholder {
+  color: #F5BFDF;
+}
+
+.placeholder-accent-200::placeholder {
+  color: #F5BFDF;
+}
+
+.placeholder-accent-300::-webkit-input-placeholder {
+  color: #EF99CC;
+}
+
+.placeholder-accent-300::-moz-placeholder {
+  color: #EF99CC;
+}
+
+.placeholder-accent-300:-ms-input-placeholder {
+  color: #EF99CC;
+}
+
+.placeholder-accent-300::-ms-input-placeholder {
+  color: #EF99CC;
+}
+
+.placeholder-accent-300::placeholder {
+  color: #EF99CC;
+}
+
+.placeholder-accent-400::-webkit-input-placeholder {
+  color: #E24DA6;
+}
+
+.placeholder-accent-400::-moz-placeholder {
+  color: #E24DA6;
+}
+
+.placeholder-accent-400:-ms-input-placeholder {
+  color: #E24DA6;
+}
+
+.placeholder-accent-400::-ms-input-placeholder {
+  color: #E24DA6;
+}
+
+.placeholder-accent-400::placeholder {
+  color: #E24DA6;
+}
+
+.placeholder-accent-500::-webkit-input-placeholder {
+  color: #D60080;
+}
+
+.placeholder-accent-500::-moz-placeholder {
+  color: #D60080;
+}
+
+.placeholder-accent-500:-ms-input-placeholder {
+  color: #D60080;
+}
+
+.placeholder-accent-500::-ms-input-placeholder {
+  color: #D60080;
+}
+
+.placeholder-accent-500::placeholder {
+  color: #D60080;
+}
+
+.placeholder-accent-600::-webkit-input-placeholder {
+  color: #C10073;
+}
+
+.placeholder-accent-600::-moz-placeholder {
+  color: #C10073;
+}
+
+.placeholder-accent-600:-ms-input-placeholder {
+  color: #C10073;
+}
+
+.placeholder-accent-600::-ms-input-placeholder {
+  color: #C10073;
+}
+
+.placeholder-accent-600::placeholder {
+  color: #C10073;
+}
+
+.placeholder-accent-700::-webkit-input-placeholder {
+  color: #80004D;
+}
+
+.placeholder-accent-700::-moz-placeholder {
+  color: #80004D;
+}
+
+.placeholder-accent-700:-ms-input-placeholder {
+  color: #80004D;
+}
+
+.placeholder-accent-700::-ms-input-placeholder {
+  color: #80004D;
+}
+
+.placeholder-accent-700::placeholder {
+  color: #80004D;
+}
+
+.placeholder-accent-800::-webkit-input-placeholder {
+  color: #60003A;
+}
+
+.placeholder-accent-800::-moz-placeholder {
+  color: #60003A;
+}
+
+.placeholder-accent-800:-ms-input-placeholder {
+  color: #60003A;
+}
+
+.placeholder-accent-800::-ms-input-placeholder {
+  color: #60003A;
+}
+
+.placeholder-accent-800::placeholder {
+  color: #60003A;
+}
+
+.placeholder-accent-900::-webkit-input-placeholder {
+  color: #400026;
+}
+
+.placeholder-accent-900::-moz-placeholder {
+  color: #400026;
+}
+
+.placeholder-accent-900:-ms-input-placeholder {
+  color: #400026;
+}
+
+.placeholder-accent-900::-ms-input-placeholder {
+  color: #400026;
+}
+
+.placeholder-accent-900::placeholder {
+  color: #400026;
 }
 
 .focus\:placeholder-transparent:focus::-webkit-input-placeholder {
@@ -10980,24 +11368,184 @@ pre[class*="language-"] {
   color: #702459;
 }
 
-.focus\:placeholder-accent:focus::-webkit-input-placeholder {
-  color: #c54545;
+.focus\:placeholder-accent-100:focus::-webkit-input-placeholder {
+  color: #FBE6F2;
 }
 
-.focus\:placeholder-accent:focus::-moz-placeholder {
-  color: #c54545;
+.focus\:placeholder-accent-100:focus::-moz-placeholder {
+  color: #FBE6F2;
 }
 
-.focus\:placeholder-accent:focus:-ms-input-placeholder {
-  color: #c54545;
+.focus\:placeholder-accent-100:focus:-ms-input-placeholder {
+  color: #FBE6F2;
 }
 
-.focus\:placeholder-accent:focus::-ms-input-placeholder {
-  color: #c54545;
+.focus\:placeholder-accent-100:focus::-ms-input-placeholder {
+  color: #FBE6F2;
 }
 
-.focus\:placeholder-accent:focus::placeholder {
-  color: #c54545;
+.focus\:placeholder-accent-100:focus::placeholder {
+  color: #FBE6F2;
+}
+
+.focus\:placeholder-accent-200:focus::-webkit-input-placeholder {
+  color: #F5BFDF;
+}
+
+.focus\:placeholder-accent-200:focus::-moz-placeholder {
+  color: #F5BFDF;
+}
+
+.focus\:placeholder-accent-200:focus:-ms-input-placeholder {
+  color: #F5BFDF;
+}
+
+.focus\:placeholder-accent-200:focus::-ms-input-placeholder {
+  color: #F5BFDF;
+}
+
+.focus\:placeholder-accent-200:focus::placeholder {
+  color: #F5BFDF;
+}
+
+.focus\:placeholder-accent-300:focus::-webkit-input-placeholder {
+  color: #EF99CC;
+}
+
+.focus\:placeholder-accent-300:focus::-moz-placeholder {
+  color: #EF99CC;
+}
+
+.focus\:placeholder-accent-300:focus:-ms-input-placeholder {
+  color: #EF99CC;
+}
+
+.focus\:placeholder-accent-300:focus::-ms-input-placeholder {
+  color: #EF99CC;
+}
+
+.focus\:placeholder-accent-300:focus::placeholder {
+  color: #EF99CC;
+}
+
+.focus\:placeholder-accent-400:focus::-webkit-input-placeholder {
+  color: #E24DA6;
+}
+
+.focus\:placeholder-accent-400:focus::-moz-placeholder {
+  color: #E24DA6;
+}
+
+.focus\:placeholder-accent-400:focus:-ms-input-placeholder {
+  color: #E24DA6;
+}
+
+.focus\:placeholder-accent-400:focus::-ms-input-placeholder {
+  color: #E24DA6;
+}
+
+.focus\:placeholder-accent-400:focus::placeholder {
+  color: #E24DA6;
+}
+
+.focus\:placeholder-accent-500:focus::-webkit-input-placeholder {
+  color: #D60080;
+}
+
+.focus\:placeholder-accent-500:focus::-moz-placeholder {
+  color: #D60080;
+}
+
+.focus\:placeholder-accent-500:focus:-ms-input-placeholder {
+  color: #D60080;
+}
+
+.focus\:placeholder-accent-500:focus::-ms-input-placeholder {
+  color: #D60080;
+}
+
+.focus\:placeholder-accent-500:focus::placeholder {
+  color: #D60080;
+}
+
+.focus\:placeholder-accent-600:focus::-webkit-input-placeholder {
+  color: #C10073;
+}
+
+.focus\:placeholder-accent-600:focus::-moz-placeholder {
+  color: #C10073;
+}
+
+.focus\:placeholder-accent-600:focus:-ms-input-placeholder {
+  color: #C10073;
+}
+
+.focus\:placeholder-accent-600:focus::-ms-input-placeholder {
+  color: #C10073;
+}
+
+.focus\:placeholder-accent-600:focus::placeholder {
+  color: #C10073;
+}
+
+.focus\:placeholder-accent-700:focus::-webkit-input-placeholder {
+  color: #80004D;
+}
+
+.focus\:placeholder-accent-700:focus::-moz-placeholder {
+  color: #80004D;
+}
+
+.focus\:placeholder-accent-700:focus:-ms-input-placeholder {
+  color: #80004D;
+}
+
+.focus\:placeholder-accent-700:focus::-ms-input-placeholder {
+  color: #80004D;
+}
+
+.focus\:placeholder-accent-700:focus::placeholder {
+  color: #80004D;
+}
+
+.focus\:placeholder-accent-800:focus::-webkit-input-placeholder {
+  color: #60003A;
+}
+
+.focus\:placeholder-accent-800:focus::-moz-placeholder {
+  color: #60003A;
+}
+
+.focus\:placeholder-accent-800:focus:-ms-input-placeholder {
+  color: #60003A;
+}
+
+.focus\:placeholder-accent-800:focus::-ms-input-placeholder {
+  color: #60003A;
+}
+
+.focus\:placeholder-accent-800:focus::placeholder {
+  color: #60003A;
+}
+
+.focus\:placeholder-accent-900:focus::-webkit-input-placeholder {
+  color: #400026;
+}
+
+.focus\:placeholder-accent-900:focus::-moz-placeholder {
+  color: #400026;
+}
+
+.focus\:placeholder-accent-900:focus:-ms-input-placeholder {
+  color: #400026;
+}
+
+.focus\:placeholder-accent-900:focus::-ms-input-placeholder {
+  color: #400026;
+}
+
+.focus\:placeholder-accent-900:focus::placeholder {
+  color: #400026;
 }
 
 .pointer-events-none {
@@ -11681,8 +12229,40 @@ pre[class*="language-"] {
   color: #702459;
 }
 
-.text-accent {
-  color: #c54545;
+.text-accent-100 {
+  color: #FBE6F2;
+}
+
+.text-accent-200 {
+  color: #F5BFDF;
+}
+
+.text-accent-300 {
+  color: #EF99CC;
+}
+
+.text-accent-400 {
+  color: #E24DA6;
+}
+
+.text-accent-500 {
+  color: #D60080;
+}
+
+.text-accent-600 {
+  color: #C10073;
+}
+
+.text-accent-700 {
+  color: #80004D;
+}
+
+.text-accent-800 {
+  color: #60003A;
+}
+
+.text-accent-900 {
+  color: #400026;
 }
 
 .hover\:text-transparent:hover {
@@ -12061,8 +12641,40 @@ pre[class*="language-"] {
   color: #702459;
 }
 
-.hover\:text-accent:hover {
-  color: #c54545;
+.hover\:text-accent-100:hover {
+  color: #FBE6F2;
+}
+
+.hover\:text-accent-200:hover {
+  color: #F5BFDF;
+}
+
+.hover\:text-accent-300:hover {
+  color: #EF99CC;
+}
+
+.hover\:text-accent-400:hover {
+  color: #E24DA6;
+}
+
+.hover\:text-accent-500:hover {
+  color: #D60080;
+}
+
+.hover\:text-accent-600:hover {
+  color: #C10073;
+}
+
+.hover\:text-accent-700:hover {
+  color: #80004D;
+}
+
+.hover\:text-accent-800:hover {
+  color: #60003A;
+}
+
+.hover\:text-accent-900:hover {
+  color: #400026;
 }
 
 .focus\:text-transparent:focus {
@@ -12441,8 +13053,40 @@ pre[class*="language-"] {
   color: #702459;
 }
 
-.focus\:text-accent:focus {
-  color: #c54545;
+.focus\:text-accent-100:focus {
+  color: #FBE6F2;
+}
+
+.focus\:text-accent-200:focus {
+  color: #F5BFDF;
+}
+
+.focus\:text-accent-300:focus {
+  color: #EF99CC;
+}
+
+.focus\:text-accent-400:focus {
+  color: #E24DA6;
+}
+
+.focus\:text-accent-500:focus {
+  color: #D60080;
+}
+
+.focus\:text-accent-600:focus {
+  color: #C10073;
+}
+
+.focus\:text-accent-700:focus {
+  color: #80004D;
+}
+
+.focus\:text-accent-800:focus {
+  color: #60003A;
+}
+
+.focus\:text-accent-900:focus {
+  color: #400026;
 }
 
 .italic {
@@ -15914,564 +16558,564 @@ pre[class*="language-"] {
   line-height: 8rem;
 }
 
-.vr-source-sans\ pro-none-xs {
+.vr-source-sans-none-xs {
   font-size: .75rem;
   padding-top: .253rem;
   margin-bottom: -.252rem;
   line-height: 1rem;
-  font-family: Source Sans Pro;
+  font-family: Source Sans;
 }
 
-.vr-source-sans\ pro-tight-xs {
+.vr-source-sans-tight-xs {
   font-size: .75rem;
   padding-top: .253rem;
   margin-bottom: -.252rem;
   line-height: 1rem;
-  font-family: Source Sans Pro;
+  font-family: Source Sans;
 }
 
-.vr-source-sans\ pro-snug-xs {
+.vr-source-sans-snug-xs {
   font-size: .75rem;
   padding-top: .253rem;
   margin-bottom: -.252rem;
   line-height: 1rem;
-  font-family: Source Sans Pro;
+  font-family: Source Sans;
 }
 
-.vr-source-sans\ pro-normal-xs {
+.vr-source-sans-normal-xs {
   font-size: .75rem;
   padding-top: .253rem;
   margin-bottom: -.252rem;
   line-height: 1rem;
-  font-family: Source Sans Pro;
+  font-family: Source Sans;
 }
 
-.vr-source-sans\ pro-relaxed-xs {
+.vr-source-sans-relaxed-xs {
   font-size: .75rem;
   padding-top: .253rem;
   margin-bottom: -.252rem;
   line-height: 1rem;
-  font-family: Source Sans Pro;
+  font-family: Source Sans;
 }
 
-.vr-source-sans\ pro-loose-xs {
+.vr-source-sans-loose-xs {
   font-size: .75rem;
   padding-top: .502rem;
   margin-bottom: -.502rem;
   line-height: 1.5rem;
-  font-family: Source Sans Pro;
+  font-family: Source Sans;
 }
 
-.vr-source-sans\ pro-xs {
+.vr-source-sans-xs {
   font-size: .75rem;
   padding-top: .502rem;
   margin-bottom: -.502rem;
   line-height: 1.5rem;
-  font-family: Source Sans Pro;
+  font-family: Source Sans;
 }
 
-.vr-source-sans\ pro-none-sm {
+.vr-source-sans-none-sm {
   font-size: .875rem;
   padding-top: .211rem;
   margin-bottom: -.211rem;
   line-height: 1rem;
-  font-family: Source Sans Pro;
+  font-family: Source Sans;
 }
 
-.vr-source-sans\ pro-tight-sm {
+.vr-source-sans-tight-sm {
   font-size: .875rem;
   padding-top: .211rem;
   margin-bottom: -.211rem;
   line-height: 1rem;
-  font-family: Source Sans Pro;
+  font-family: Source Sans;
 }
 
-.vr-source-sans\ pro-snug-sm {
+.vr-source-sans-snug-sm {
   font-size: .875rem;
   padding-top: .211rem;
   margin-bottom: -.211rem;
   line-height: 1rem;
-  font-family: Source Sans Pro;
+  font-family: Source Sans;
 }
 
-.vr-source-sans\ pro-normal-sm {
+.vr-source-sans-normal-sm {
   font-size: .875rem;
   padding-top: .461rem;
   margin-bottom: -.461rem;
   line-height: 1.5rem;
-  font-family: Source Sans Pro;
+  font-family: Source Sans;
 }
 
-.vr-source-sans\ pro-relaxed-sm {
+.vr-source-sans-relaxed-sm {
   font-size: .875rem;
   padding-top: .461rem;
   margin-bottom: -.461rem;
   line-height: 1.5rem;
-  font-family: Source Sans Pro;
+  font-family: Source Sans;
 }
 
-.vr-source-sans\ pro-loose-sm {
+.vr-source-sans-loose-sm {
   font-size: .875rem;
   padding-top: .711rem;
   margin-bottom: -.711rem;
   line-height: 2rem;
-  font-family: Source Sans Pro;
+  font-family: Source Sans;
 }
 
-.vr-source-sans\ pro-sm {
+.vr-source-sans-sm {
   font-size: .875rem;
   padding-top: .711rem;
   margin-bottom: -.711rem;
   line-height: 2rem;
-  font-family: Source Sans Pro;
+  font-family: Source Sans;
 }
 
-.vr-source-sans\ pro-none-base {
+.vr-source-sans-none-base {
   font-size: 1rem;
   padding-top: .17rem;
   margin-bottom: -.17rem;
   line-height: 1rem;
-  font-family: Source Sans Pro;
+  font-family: Source Sans;
 }
 
-.vr-source-sans\ pro-tight-base {
+.vr-source-sans-tight-base {
   font-size: 1rem;
   padding-top: .42rem;
   margin-bottom: -.42rem;
   line-height: 1.5rem;
-  font-family: Source Sans Pro;
+  font-family: Source Sans;
 }
 
-.vr-source-sans\ pro-snug-base {
+.vr-source-sans-snug-base {
   font-size: 1rem;
   padding-top: .42rem;
   margin-bottom: -.42rem;
   line-height: 1.5rem;
-  font-family: Source Sans Pro;
+  font-family: Source Sans;
 }
 
-.vr-source-sans\ pro-normal-base {
+.vr-source-sans-normal-base {
   font-size: 1rem;
   padding-top: .42rem;
   margin-bottom: -.42rem;
   line-height: 1.5rem;
-  font-family: Source Sans Pro;
+  font-family: Source Sans;
 }
 
-.vr-source-sans\ pro-relaxed-base {
+.vr-source-sans-relaxed-base {
   font-size: 1rem;
   padding-top: .42rem;
   margin-bottom: -.42rem;
   line-height: 1.5rem;
-  font-family: Source Sans Pro;
+  font-family: Source Sans;
 }
 
-.vr-source-sans\ pro-loose-base {
+.vr-source-sans-loose-base {
   font-size: 1rem;
   padding-top: .67rem;
   margin-bottom: -.67rem;
   line-height: 2rem;
-  font-family: Source Sans Pro;
+  font-family: Source Sans;
 }
 
-.vr-source-sans\ pro-base {
+.vr-source-sans-base {
   font-size: 1rem;
   padding-top: .67rem;
   margin-bottom: -.67rem;
   line-height: 2rem;
-  font-family: Source Sans Pro;
+  font-family: Source Sans;
 }
 
-.vr-source-sans\ pro-none-lg {
+.vr-source-sans-none-lg {
   font-size: 1.125rem;
   padding-top: .129rem;
   margin-bottom: -.129rem;
   line-height: 1rem;
-  font-family: Source Sans Pro;
+  font-family: Source Sans;
 }
 
-.vr-source-sans\ pro-tight-lg {
+.vr-source-sans-tight-lg {
   font-size: 1.125rem;
   padding-top: .379rem;
   margin-bottom: -.379rem;
   line-height: 1.5rem;
-  font-family: Source Sans Pro;
+  font-family: Source Sans;
 }
 
-.vr-source-sans\ pro-snug-lg {
+.vr-source-sans-snug-lg {
   font-size: 1.125rem;
   padding-top: .379rem;
   margin-bottom: -.379rem;
   line-height: 1.5rem;
-  font-family: Source Sans Pro;
+  font-family: Source Sans;
 }
 
-.vr-source-sans\ pro-normal-lg {
+.vr-source-sans-normal-lg {
   font-size: 1.125rem;
   padding-top: .379rem;
   margin-bottom: -.379rem;
   line-height: 1.5rem;
-  font-family: Source Sans Pro;
+  font-family: Source Sans;
 }
 
-.vr-source-sans\ pro-relaxed-lg {
+.vr-source-sans-relaxed-lg {
   font-size: 1.125rem;
   padding-top: .629rem;
   margin-bottom: -.629rem;
   line-height: 2rem;
-  font-family: Source Sans Pro;
+  font-family: Source Sans;
 }
 
-.vr-source-sans\ pro-loose-lg {
+.vr-source-sans-loose-lg {
   font-size: 1.125rem;
   padding-top: .879rem;
   margin-bottom: -.879rem;
   line-height: 2.5rem;
-  font-family: Source Sans Pro;
+  font-family: Source Sans;
 }
 
-.vr-source-sans\ pro-lg {
+.vr-source-sans-lg {
   font-size: 1.125rem;
   padding-top: .879rem;
   margin-bottom: -.879rem;
   line-height: 2.5rem;
-  font-family: Source Sans Pro;
+  font-family: Source Sans;
 }
 
-.vr-source-sans\ pro-none-xl {
+.vr-source-sans-none-xl {
   font-size: 1.25rem;
   padding-top: .337rem;
   margin-bottom: -.337rem;
   line-height: 1.5rem;
-  font-family: Source Sans Pro;
+  font-family: Source Sans;
 }
 
-.vr-source-sans\ pro-tight-xl {
+.vr-source-sans-tight-xl {
   font-size: 1.25rem;
   padding-top: .337rem;
   margin-bottom: -.337rem;
   line-height: 1.5rem;
-  font-family: Source Sans Pro;
+  font-family: Source Sans;
 }
 
-.vr-source-sans\ pro-snug-xl {
+.vr-source-sans-snug-xl {
   font-size: 1.25rem;
   padding-top: .337rem;
   margin-bottom: -.337rem;
   line-height: 1.5rem;
-  font-family: Source Sans Pro;
+  font-family: Source Sans;
 }
 
-.vr-source-sans\ pro-normal-xl {
+.vr-source-sans-normal-xl {
   font-size: 1.25rem;
   padding-top: .587rem;
   margin-bottom: -.587rem;
   line-height: 2rem;
-  font-family: Source Sans Pro;
+  font-family: Source Sans;
 }
 
-.vr-source-sans\ pro-relaxed-xl {
+.vr-source-sans-relaxed-xl {
   font-size: 1.25rem;
   padding-top: .587rem;
   margin-bottom: -.587rem;
   line-height: 2rem;
-  font-family: Source Sans Pro;
+  font-family: Source Sans;
 }
 
-.vr-source-sans\ pro-loose-xl {
+.vr-source-sans-loose-xl {
   font-size: 1.25rem;
   padding-top: .837rem;
   margin-bottom: -.837rem;
   line-height: 2.5rem;
-  font-family: Source Sans Pro;
+  font-family: Source Sans;
 }
 
-.vr-source-sans\ pro-xl {
+.vr-source-sans-xl {
   font-size: 1.25rem;
   padding-top: .837rem;
   margin-bottom: -.837rem;
   line-height: 2.5rem;
-  font-family: Source Sans Pro;
+  font-family: Source Sans;
 }
 
-.vr-source-sans\ pro-none-2xl {
+.vr-source-sans-none-2xl {
   font-size: 1.5rem;
   padding-top: .255rem;
   margin-bottom: -.255rem;
   line-height: 1.5rem;
-  font-family: Source Sans Pro;
+  font-family: Source Sans;
 }
 
-.vr-source-sans\ pro-tight-2xl {
+.vr-source-sans-tight-2xl {
   font-size: 1.5rem;
   padding-top: .505rem;
   margin-bottom: -.505rem;
   line-height: 2rem;
-  font-family: Source Sans Pro;
+  font-family: Source Sans;
 }
 
-.vr-source-sans\ pro-snug-2xl {
+.vr-source-sans-snug-2xl {
   font-size: 1.5rem;
   padding-top: .505rem;
   margin-bottom: -.505rem;
   line-height: 2rem;
-  font-family: Source Sans Pro;
+  font-family: Source Sans;
 }
 
-.vr-source-sans\ pro-normal-2xl {
+.vr-source-sans-normal-2xl {
   font-size: 1.5rem;
   padding-top: .755rem;
   margin-bottom: -.755rem;
   line-height: 2.5rem;
-  font-family: Source Sans Pro;
+  font-family: Source Sans;
 }
 
-.vr-source-sans\ pro-relaxed-2xl {
+.vr-source-sans-relaxed-2xl {
   font-size: 1.5rem;
   padding-top: .755rem;
   margin-bottom: -.755rem;
   line-height: 2.5rem;
-  font-family: Source Sans Pro;
+  font-family: Source Sans;
 }
 
-.vr-source-sans\ pro-loose-2xl {
+.vr-source-sans-loose-2xl {
   font-size: 1.5rem;
   padding-top: 1.005rem;
   margin-bottom: -1.005rem;
   line-height: 3rem;
-  font-family: Source Sans Pro;
+  font-family: Source Sans;
 }
 
-.vr-source-sans\ pro-2xl {
+.vr-source-sans-2xl {
   font-size: 1.5rem;
   padding-top: 1.005rem;
   margin-bottom: -1.005rem;
   line-height: 3rem;
-  font-family: Source Sans Pro;
+  font-family: Source Sans;
 }
 
-.vr-source-sans\ pro-none-3xl {
+.vr-source-sans-none-3xl {
   font-size: 1.875rem;
   padding-top: .381rem;
   margin-bottom: -.381rem;
   line-height: 2rem;
-  font-family: Source Sans Pro;
+  font-family: Source Sans;
 }
 
-.vr-source-sans\ pro-tight-3xl {
+.vr-source-sans-tight-3xl {
   font-size: 1.875rem;
   padding-top: .631rem;
   margin-bottom: -.631rem;
   line-height: 2.5rem;
-  font-family: Source Sans Pro;
+  font-family: Source Sans;
 }
 
-.vr-source-sans\ pro-snug-3xl {
+.vr-source-sans-snug-3xl {
   font-size: 1.875rem;
   padding-top: .631rem;
   margin-bottom: -.631rem;
   line-height: 2.5rem;
-  font-family: Source Sans Pro;
+  font-family: Source Sans;
 }
 
-.vr-source-sans\ pro-normal-3xl {
+.vr-source-sans-normal-3xl {
   font-size: 1.875rem;
   padding-top: .881rem;
   margin-bottom: -.881rem;
   line-height: 3rem;
-  font-family: Source Sans Pro;
+  font-family: Source Sans;
 }
 
-.vr-source-sans\ pro-relaxed-3xl {
+.vr-source-sans-relaxed-3xl {
   font-size: 1.875rem;
   padding-top: .881rem;
   margin-bottom: -.881rem;
   line-height: 3rem;
-  font-family: Source Sans Pro;
+  font-family: Source Sans;
 }
 
-.vr-source-sans\ pro-loose-3xl {
+.vr-source-sans-loose-3xl {
   font-size: 1.875rem;
   padding-top: 1.381rem;
   margin-bottom: -1.381rem;
   line-height: 4rem;
-  font-family: Source Sans Pro;
+  font-family: Source Sans;
 }
 
-.vr-source-sans\ pro-3xl {
+.vr-source-sans-3xl {
   font-size: 1.875rem;
   padding-top: 1.381rem;
   margin-bottom: -1.381rem;
   line-height: 4rem;
-  font-family: Source Sans Pro;
+  font-family: Source Sans;
 }
 
-.vr-source-sans\ pro-none-4xl {
+.vr-source-sans-none-4xl {
   font-size: 2.25rem;
   padding-top: .507rem;
   margin-bottom: -.507rem;
   line-height: 2.5rem;
-  font-family: Source Sans Pro;
+  font-family: Source Sans;
 }
 
-.vr-source-sans\ pro-tight-4xl {
+.vr-source-sans-tight-4xl {
   font-size: 2.25rem;
   padding-top: .758rem;
   margin-bottom: -.757rem;
   line-height: 3rem;
-  font-family: Source Sans Pro;
+  font-family: Source Sans;
 }
 
-.vr-source-sans\ pro-snug-4xl {
+.vr-source-sans-snug-4xl {
   font-size: 2.25rem;
   padding-top: .758rem;
   margin-bottom: -.757rem;
   line-height: 3rem;
-  font-family: Source Sans Pro;
+  font-family: Source Sans;
 }
 
-.vr-source-sans\ pro-normal-4xl {
+.vr-source-sans-normal-4xl {
   font-size: 2.25rem;
   padding-top: 1.007rem;
   margin-bottom: -1.007rem;
   line-height: 3.5rem;
-  font-family: Source Sans Pro;
+  font-family: Source Sans;
 }
 
-.vr-source-sans\ pro-relaxed-4xl {
+.vr-source-sans-relaxed-4xl {
   font-size: 2.25rem;
   padding-top: 1.007rem;
   margin-bottom: -1.007rem;
   line-height: 3.5rem;
-  font-family: Source Sans Pro;
+  font-family: Source Sans;
 }
 
-.vr-source-sans\ pro-loose-4xl {
+.vr-source-sans-loose-4xl {
   font-size: 2.25rem;
   padding-top: 1.507rem;
   margin-bottom: -1.507rem;
   line-height: 4.5rem;
-  font-family: Source Sans Pro;
+  font-family: Source Sans;
 }
 
-.vr-source-sans\ pro-4xl {
+.vr-source-sans-4xl {
   font-size: 2.25rem;
   padding-top: 1.507rem;
   margin-bottom: -1.507rem;
   line-height: 4.5rem;
-  font-family: Source Sans Pro;
+  font-family: Source Sans;
 }
 
-.vr-source-sans\ pro-none-5xl {
+.vr-source-sans-none-5xl {
   font-size: 3rem;
   padding-top: .51rem;
   margin-bottom: -.51rem;
   line-height: 3rem;
-  font-family: Source Sans Pro;
+  font-family: Source Sans;
 }
 
-.vr-source-sans\ pro-tight-5xl {
+.vr-source-sans-tight-5xl {
   font-size: 3rem;
   padding-top: 1.01rem;
   margin-bottom: -1.01rem;
   line-height: 4rem;
-  font-family: Source Sans Pro;
+  font-family: Source Sans;
 }
 
-.vr-source-sans\ pro-snug-5xl {
+.vr-source-sans-snug-5xl {
   font-size: 3rem;
   padding-top: 1.01rem;
   margin-bottom: -1.01rem;
   line-height: 4rem;
-  font-family: Source Sans Pro;
+  font-family: Source Sans;
 }
 
-.vr-source-sans\ pro-normal-5xl {
+.vr-source-sans-normal-5xl {
   font-size: 3rem;
   padding-top: 1.26rem;
   margin-bottom: -1.26rem;
   line-height: 4.5rem;
-  font-family: Source Sans Pro;
+  font-family: Source Sans;
 }
 
-.vr-source-sans\ pro-relaxed-5xl {
+.vr-source-sans-relaxed-5xl {
   font-size: 3rem;
   padding-top: 1.51rem;
   margin-bottom: -1.51rem;
   line-height: 5rem;
-  font-family: Source Sans Pro;
+  font-family: Source Sans;
 }
 
-.vr-source-sans\ pro-loose-5xl {
+.vr-source-sans-loose-5xl {
   font-size: 3rem;
   padding-top: 2.01rem;
   margin-bottom: -2.01rem;
   line-height: 6rem;
-  font-family: Source Sans Pro;
+  font-family: Source Sans;
 }
 
-.vr-source-sans\ pro-5xl {
+.vr-source-sans-5xl {
   font-size: 3rem;
   padding-top: 2.01rem;
   margin-bottom: -2.01rem;
   line-height: 6rem;
-  font-family: Source Sans Pro;
+  font-family: Source Sans;
 }
 
-.vr-source-sans\ pro-none-6xl {
+.vr-source-sans-none-6xl {
   font-size: 4rem;
   padding-top: .68rem;
   margin-bottom: -.68rem;
   line-height: 4rem;
-  font-family: Source Sans Pro;
+  font-family: Source Sans;
 }
 
-.vr-source-sans\ pro-tight-6xl {
+.vr-source-sans-tight-6xl {
   font-size: 4rem;
   padding-top: 1.18rem;
   margin-bottom: -1.18rem;
   line-height: 5rem;
-  font-family: Source Sans Pro;
+  font-family: Source Sans;
 }
 
-.vr-source-sans\ pro-snug-6xl {
+.vr-source-sans-snug-6xl {
   font-size: 4rem;
   padding-top: 1.43rem;
   margin-bottom: -1.43rem;
   line-height: 5.5rem;
-  font-family: Source Sans Pro;
+  font-family: Source Sans;
 }
 
-.vr-source-sans\ pro-normal-6xl {
+.vr-source-sans-normal-6xl {
   font-size: 4rem;
   padding-top: 1.68rem;
   margin-bottom: -1.68rem;
   line-height: 6rem;
-  font-family: Source Sans Pro;
+  font-family: Source Sans;
 }
 
-.vr-source-sans\ pro-relaxed-6xl {
+.vr-source-sans-relaxed-6xl {
   font-size: 4rem;
   padding-top: 1.93rem;
   margin-bottom: -1.93rem;
   line-height: 6.5rem;
-  font-family: Source Sans Pro;
+  font-family: Source Sans;
 }
 
-.vr-source-sans\ pro-loose-6xl {
+.vr-source-sans-loose-6xl {
   font-size: 4rem;
   padding-top: 2.68rem;
   margin-bottom: -2.68rem;
   line-height: 8rem;
-  font-family: Source Sans Pro;
+  font-family: Source Sans;
 }
 
-.vr-source-sans\ pro-6xl {
+.vr-source-sans-6xl {
   font-size: 4rem;
   padding-top: 2.68rem;
   margin-bottom: -2.68rem;
   line-height: 8rem;
-  font-family: Source Sans Pro;
+  font-family: Source Sans;
 }
 
 .container {
@@ -16503,7 +17147,7 @@ pre[class*="language-"] {
 }
 
 @font-face {
-  font-family: 'Source Sans Pro';
+  font-family: 'Source Sans';
 
   font-style: normal;
 
@@ -16516,7 +17160,7 @@ pre[class*="language-"] {
 }
 
 @font-face {
-  font-family: 'Source Sans Pro';
+  font-family: 'Source Sans';
 
   font-style: normal;
 
@@ -16529,17 +17173,36 @@ pre[class*="language-"] {
 }
 
 body {
-  font-family: "Source Sans Pro", system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, "Segoe UI", "Roboto", "Ubuntu", "Cantarell", "Noto Sans", sans-serif;
+  font-family: "Source Sans", system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, "Segoe UI", "Roboto", "Ubuntu", "Cantarell", "Noto Sans", sans-serif;
   font-size: 1.25rem;
-  line-height: 1.625;
+  padding-top: .587rem;
+  margin-bottom: -.587rem;
+  line-height: 2rem;
+  font-family: Source Sans;
   -webkit-font-smoothing: auto;
   -moz-osx-font-smoothing: auto;
   color: #1a202c;
   background-color: #f7fafc;
+  margin: 0;
+  padding: 0;
 }
 
 code {
-  color: #2f855a;
+  background-color: #edf2f7;
+  padding: 0.25rem;
+  font-size: 1rem;
+  padding-top: .398rem;
+  margin-bottom: -.397rem;
+  line-height: 1.5rem;
+}
+
+pre code {
+  background-color: transparent;
+  padding: 0;
+  font-size: 1rem;
+  padding-top: .398rem;
+  margin-bottom: -.397rem;
+  line-height: 1.5rem;
 }
 
 a {
@@ -16549,7 +17212,7 @@ a {
 a:hover,
 a:focus {
   text-decoration: none;
-  color: #c54545;
+  color: #D60080;
 }
 
 iframe {
@@ -16580,18 +17243,15 @@ article ol {
 }
 
 p {
-  font-size: 1.25rem;
-  padding-top: .559rem;
-  margin-bottom: -.559rem;
-  line-height: 2rem;
   margin-top: 1rem;
 }
 
 h1 {
   font-size: 1.875rem;
-  padding-top: .839rem;
-  margin-bottom: -.839rem;
+  padding-top: .881rem;
+  margin-bottom: -.881rem;
   line-height: 3rem;
+  font-family: Source Sans;
   font-weight: 700;
 }
 
@@ -16601,27 +17261,30 @@ h1 + * {
 
 h2 {
   font-size: 1.5rem;
-  padding-top: .721rem;
-  margin-bottom: -.721rem;
+  padding-top: .755rem;
+  margin-bottom: -.755rem;
   line-height: 2.5rem;
+  font-family: Source Sans;
   font-weight: 700;
   margin-top: 2.5rem;
 }
 
 h3 {
   font-size: 1.25rem;
-  padding-top: .559rem;
-  margin-bottom: -.559rem;
+  padding-top: .587rem;
+  margin-bottom: -.587rem;
   line-height: 2rem;
+  font-family: Source Sans;
   font-weight: 700;
   margin-top: 2rem;
 }
 
 h4 {
   font-size: 1.125rem;
-  padding-top: .353rem;
-  margin-bottom: -.353rem;
+  padding-top: .379rem;
+  margin-bottom: -.379rem;
   line-height: 1.5rem;
+  font-family: Source Sans;
   font-weight: 700;
   margin-top: 1.5rem;
 }
@@ -16630,6 +17293,37 @@ h4 {
   text-decoration: none;
   color: #cbd5e0;
   margin-left: -17px;
+}
+
+blockquote {
+  font-family: "Georgia", serif;
+  background-color: #edf2f7;
+  font-style: italic;
+  padding: 0.75rem;
+  margin-top: 0.75rem;
+  border-left-width: 4px;
+}
+
+blockquote > * {
+  margin: 0;
+}
+
+blockquote p {
+  display: inline;
+}
+
+blockquote:before {
+  content: open-quote;
+  font-size: 4rem;
+  padding-top: 1.59rem;
+  margin-bottom: -1.59rem;
+  line-height: 6rem;
+  margin: 0;
+  margin-right: 0.5rem;
+  padding: 0;
+  color: #E24DA6;
+  line-height: 0;
+  vertical-align: -25px;
 }
 
 @media (min-width: 640px) {
@@ -17529,8 +18223,40 @@ h4 {
     border-color: #702459;
   }
 
-  .sm\:divide-accent > :not(template) ~ :not(template) {
-    border-color: #c54545;
+  .sm\:divide-accent-100 > :not(template) ~ :not(template) {
+    border-color: #FBE6F2;
+  }
+
+  .sm\:divide-accent-200 > :not(template) ~ :not(template) {
+    border-color: #F5BFDF;
+  }
+
+  .sm\:divide-accent-300 > :not(template) ~ :not(template) {
+    border-color: #EF99CC;
+  }
+
+  .sm\:divide-accent-400 > :not(template) ~ :not(template) {
+    border-color: #E24DA6;
+  }
+
+  .sm\:divide-accent-500 > :not(template) ~ :not(template) {
+    border-color: #D60080;
+  }
+
+  .sm\:divide-accent-600 > :not(template) ~ :not(template) {
+    border-color: #C10073;
+  }
+
+  .sm\:divide-accent-700 > :not(template) ~ :not(template) {
+    border-color: #80004D;
+  }
+
+  .sm\:divide-accent-800 > :not(template) ~ :not(template) {
+    border-color: #60003A;
+  }
+
+  .sm\:divide-accent-900 > :not(template) ~ :not(template) {
+    border-color: #400026;
   }
 
   .sm\:sr-only {
@@ -17973,8 +18699,40 @@ h4 {
     background-color: #702459;
   }
 
-  .sm\:bg-accent {
-    background-color: #c54545;
+  .sm\:bg-accent-100 {
+    background-color: #FBE6F2;
+  }
+
+  .sm\:bg-accent-200 {
+    background-color: #F5BFDF;
+  }
+
+  .sm\:bg-accent-300 {
+    background-color: #EF99CC;
+  }
+
+  .sm\:bg-accent-400 {
+    background-color: #E24DA6;
+  }
+
+  .sm\:bg-accent-500 {
+    background-color: #D60080;
+  }
+
+  .sm\:bg-accent-600 {
+    background-color: #C10073;
+  }
+
+  .sm\:bg-accent-700 {
+    background-color: #80004D;
+  }
+
+  .sm\:bg-accent-800 {
+    background-color: #60003A;
+  }
+
+  .sm\:bg-accent-900 {
+    background-color: #400026;
   }
 
   .sm\:hover\:bg-transparent:hover {
@@ -18353,8 +19111,40 @@ h4 {
     background-color: #702459;
   }
 
-  .sm\:hover\:bg-accent:hover {
-    background-color: #c54545;
+  .sm\:hover\:bg-accent-100:hover {
+    background-color: #FBE6F2;
+  }
+
+  .sm\:hover\:bg-accent-200:hover {
+    background-color: #F5BFDF;
+  }
+
+  .sm\:hover\:bg-accent-300:hover {
+    background-color: #EF99CC;
+  }
+
+  .sm\:hover\:bg-accent-400:hover {
+    background-color: #E24DA6;
+  }
+
+  .sm\:hover\:bg-accent-500:hover {
+    background-color: #D60080;
+  }
+
+  .sm\:hover\:bg-accent-600:hover {
+    background-color: #C10073;
+  }
+
+  .sm\:hover\:bg-accent-700:hover {
+    background-color: #80004D;
+  }
+
+  .sm\:hover\:bg-accent-800:hover {
+    background-color: #60003A;
+  }
+
+  .sm\:hover\:bg-accent-900:hover {
+    background-color: #400026;
   }
 
   .sm\:focus\:bg-transparent:focus {
@@ -18733,8 +19523,40 @@ h4 {
     background-color: #702459;
   }
 
-  .sm\:focus\:bg-accent:focus {
-    background-color: #c54545;
+  .sm\:focus\:bg-accent-100:focus {
+    background-color: #FBE6F2;
+  }
+
+  .sm\:focus\:bg-accent-200:focus {
+    background-color: #F5BFDF;
+  }
+
+  .sm\:focus\:bg-accent-300:focus {
+    background-color: #EF99CC;
+  }
+
+  .sm\:focus\:bg-accent-400:focus {
+    background-color: #E24DA6;
+  }
+
+  .sm\:focus\:bg-accent-500:focus {
+    background-color: #D60080;
+  }
+
+  .sm\:focus\:bg-accent-600:focus {
+    background-color: #C10073;
+  }
+
+  .sm\:focus\:bg-accent-700:focus {
+    background-color: #80004D;
+  }
+
+  .sm\:focus\:bg-accent-800:focus {
+    background-color: #60003A;
+  }
+
+  .sm\:focus\:bg-accent-900:focus {
+    background-color: #400026;
   }
 
   .sm\:bg-bottom {
@@ -19193,8 +20015,40 @@ h4 {
     border-color: #702459;
   }
 
-  .sm\:border-accent {
-    border-color: #c54545;
+  .sm\:border-accent-100 {
+    border-color: #FBE6F2;
+  }
+
+  .sm\:border-accent-200 {
+    border-color: #F5BFDF;
+  }
+
+  .sm\:border-accent-300 {
+    border-color: #EF99CC;
+  }
+
+  .sm\:border-accent-400 {
+    border-color: #E24DA6;
+  }
+
+  .sm\:border-accent-500 {
+    border-color: #D60080;
+  }
+
+  .sm\:border-accent-600 {
+    border-color: #C10073;
+  }
+
+  .sm\:border-accent-700 {
+    border-color: #80004D;
+  }
+
+  .sm\:border-accent-800 {
+    border-color: #60003A;
+  }
+
+  .sm\:border-accent-900 {
+    border-color: #400026;
   }
 
   .sm\:hover\:border-transparent:hover {
@@ -19573,8 +20427,40 @@ h4 {
     border-color: #702459;
   }
 
-  .sm\:hover\:border-accent:hover {
-    border-color: #c54545;
+  .sm\:hover\:border-accent-100:hover {
+    border-color: #FBE6F2;
+  }
+
+  .sm\:hover\:border-accent-200:hover {
+    border-color: #F5BFDF;
+  }
+
+  .sm\:hover\:border-accent-300:hover {
+    border-color: #EF99CC;
+  }
+
+  .sm\:hover\:border-accent-400:hover {
+    border-color: #E24DA6;
+  }
+
+  .sm\:hover\:border-accent-500:hover {
+    border-color: #D60080;
+  }
+
+  .sm\:hover\:border-accent-600:hover {
+    border-color: #C10073;
+  }
+
+  .sm\:hover\:border-accent-700:hover {
+    border-color: #80004D;
+  }
+
+  .sm\:hover\:border-accent-800:hover {
+    border-color: #60003A;
+  }
+
+  .sm\:hover\:border-accent-900:hover {
+    border-color: #400026;
   }
 
   .sm\:focus\:border-transparent:focus {
@@ -19953,8 +20839,40 @@ h4 {
     border-color: #702459;
   }
 
-  .sm\:focus\:border-accent:focus {
-    border-color: #c54545;
+  .sm\:focus\:border-accent-100:focus {
+    border-color: #FBE6F2;
+  }
+
+  .sm\:focus\:border-accent-200:focus {
+    border-color: #F5BFDF;
+  }
+
+  .sm\:focus\:border-accent-300:focus {
+    border-color: #EF99CC;
+  }
+
+  .sm\:focus\:border-accent-400:focus {
+    border-color: #E24DA6;
+  }
+
+  .sm\:focus\:border-accent-500:focus {
+    border-color: #D60080;
+  }
+
+  .sm\:focus\:border-accent-600:focus {
+    border-color: #C10073;
+  }
+
+  .sm\:focus\:border-accent-700:focus {
+    border-color: #80004D;
+  }
+
+  .sm\:focus\:border-accent-800:focus {
+    border-color: #60003A;
+  }
+
+  .sm\:focus\:border-accent-900:focus {
+    border-color: #400026;
   }
 
   .sm\:rounded-none {
@@ -20760,7 +21678,11 @@ h4 {
   }
 
   .sm\:font-sans {
-    font-family: "Source Sans Pro", system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, "Segoe UI", "Roboto", "Ubuntu", "Cantarell", "Noto Sans", sans-serif;
+    font-family: "Source Sans", system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, "Segoe UI", "Roboto", "Ubuntu", "Cantarell", "Noto Sans", sans-serif;
+  }
+
+  .sm\:font-serif {
+    font-family: "Georgia", serif;
   }
 
   .sm\:font-hairline {
@@ -24951,24 +25873,184 @@ h4 {
     color: #702459;
   }
 
-  .sm\:placeholder-accent::-webkit-input-placeholder {
-    color: #c54545;
+  .sm\:placeholder-accent-100::-webkit-input-placeholder {
+    color: #FBE6F2;
   }
 
-  .sm\:placeholder-accent::-moz-placeholder {
-    color: #c54545;
+  .sm\:placeholder-accent-100::-moz-placeholder {
+    color: #FBE6F2;
   }
 
-  .sm\:placeholder-accent:-ms-input-placeholder {
-    color: #c54545;
+  .sm\:placeholder-accent-100:-ms-input-placeholder {
+    color: #FBE6F2;
   }
 
-  .sm\:placeholder-accent::-ms-input-placeholder {
-    color: #c54545;
+  .sm\:placeholder-accent-100::-ms-input-placeholder {
+    color: #FBE6F2;
   }
 
-  .sm\:placeholder-accent::placeholder {
-    color: #c54545;
+  .sm\:placeholder-accent-100::placeholder {
+    color: #FBE6F2;
+  }
+
+  .sm\:placeholder-accent-200::-webkit-input-placeholder {
+    color: #F5BFDF;
+  }
+
+  .sm\:placeholder-accent-200::-moz-placeholder {
+    color: #F5BFDF;
+  }
+
+  .sm\:placeholder-accent-200:-ms-input-placeholder {
+    color: #F5BFDF;
+  }
+
+  .sm\:placeholder-accent-200::-ms-input-placeholder {
+    color: #F5BFDF;
+  }
+
+  .sm\:placeholder-accent-200::placeholder {
+    color: #F5BFDF;
+  }
+
+  .sm\:placeholder-accent-300::-webkit-input-placeholder {
+    color: #EF99CC;
+  }
+
+  .sm\:placeholder-accent-300::-moz-placeholder {
+    color: #EF99CC;
+  }
+
+  .sm\:placeholder-accent-300:-ms-input-placeholder {
+    color: #EF99CC;
+  }
+
+  .sm\:placeholder-accent-300::-ms-input-placeholder {
+    color: #EF99CC;
+  }
+
+  .sm\:placeholder-accent-300::placeholder {
+    color: #EF99CC;
+  }
+
+  .sm\:placeholder-accent-400::-webkit-input-placeholder {
+    color: #E24DA6;
+  }
+
+  .sm\:placeholder-accent-400::-moz-placeholder {
+    color: #E24DA6;
+  }
+
+  .sm\:placeholder-accent-400:-ms-input-placeholder {
+    color: #E24DA6;
+  }
+
+  .sm\:placeholder-accent-400::-ms-input-placeholder {
+    color: #E24DA6;
+  }
+
+  .sm\:placeholder-accent-400::placeholder {
+    color: #E24DA6;
+  }
+
+  .sm\:placeholder-accent-500::-webkit-input-placeholder {
+    color: #D60080;
+  }
+
+  .sm\:placeholder-accent-500::-moz-placeholder {
+    color: #D60080;
+  }
+
+  .sm\:placeholder-accent-500:-ms-input-placeholder {
+    color: #D60080;
+  }
+
+  .sm\:placeholder-accent-500::-ms-input-placeholder {
+    color: #D60080;
+  }
+
+  .sm\:placeholder-accent-500::placeholder {
+    color: #D60080;
+  }
+
+  .sm\:placeholder-accent-600::-webkit-input-placeholder {
+    color: #C10073;
+  }
+
+  .sm\:placeholder-accent-600::-moz-placeholder {
+    color: #C10073;
+  }
+
+  .sm\:placeholder-accent-600:-ms-input-placeholder {
+    color: #C10073;
+  }
+
+  .sm\:placeholder-accent-600::-ms-input-placeholder {
+    color: #C10073;
+  }
+
+  .sm\:placeholder-accent-600::placeholder {
+    color: #C10073;
+  }
+
+  .sm\:placeholder-accent-700::-webkit-input-placeholder {
+    color: #80004D;
+  }
+
+  .sm\:placeholder-accent-700::-moz-placeholder {
+    color: #80004D;
+  }
+
+  .sm\:placeholder-accent-700:-ms-input-placeholder {
+    color: #80004D;
+  }
+
+  .sm\:placeholder-accent-700::-ms-input-placeholder {
+    color: #80004D;
+  }
+
+  .sm\:placeholder-accent-700::placeholder {
+    color: #80004D;
+  }
+
+  .sm\:placeholder-accent-800::-webkit-input-placeholder {
+    color: #60003A;
+  }
+
+  .sm\:placeholder-accent-800::-moz-placeholder {
+    color: #60003A;
+  }
+
+  .sm\:placeholder-accent-800:-ms-input-placeholder {
+    color: #60003A;
+  }
+
+  .sm\:placeholder-accent-800::-ms-input-placeholder {
+    color: #60003A;
+  }
+
+  .sm\:placeholder-accent-800::placeholder {
+    color: #60003A;
+  }
+
+  .sm\:placeholder-accent-900::-webkit-input-placeholder {
+    color: #400026;
+  }
+
+  .sm\:placeholder-accent-900::-moz-placeholder {
+    color: #400026;
+  }
+
+  .sm\:placeholder-accent-900:-ms-input-placeholder {
+    color: #400026;
+  }
+
+  .sm\:placeholder-accent-900::-ms-input-placeholder {
+    color: #400026;
+  }
+
+  .sm\:placeholder-accent-900::placeholder {
+    color: #400026;
   }
 
   .sm\:focus\:placeholder-transparent:focus::-webkit-input-placeholder {
@@ -26851,24 +27933,184 @@ h4 {
     color: #702459;
   }
 
-  .sm\:focus\:placeholder-accent:focus::-webkit-input-placeholder {
-    color: #c54545;
+  .sm\:focus\:placeholder-accent-100:focus::-webkit-input-placeholder {
+    color: #FBE6F2;
   }
 
-  .sm\:focus\:placeholder-accent:focus::-moz-placeholder {
-    color: #c54545;
+  .sm\:focus\:placeholder-accent-100:focus::-moz-placeholder {
+    color: #FBE6F2;
   }
 
-  .sm\:focus\:placeholder-accent:focus:-ms-input-placeholder {
-    color: #c54545;
+  .sm\:focus\:placeholder-accent-100:focus:-ms-input-placeholder {
+    color: #FBE6F2;
   }
 
-  .sm\:focus\:placeholder-accent:focus::-ms-input-placeholder {
-    color: #c54545;
+  .sm\:focus\:placeholder-accent-100:focus::-ms-input-placeholder {
+    color: #FBE6F2;
   }
 
-  .sm\:focus\:placeholder-accent:focus::placeholder {
-    color: #c54545;
+  .sm\:focus\:placeholder-accent-100:focus::placeholder {
+    color: #FBE6F2;
+  }
+
+  .sm\:focus\:placeholder-accent-200:focus::-webkit-input-placeholder {
+    color: #F5BFDF;
+  }
+
+  .sm\:focus\:placeholder-accent-200:focus::-moz-placeholder {
+    color: #F5BFDF;
+  }
+
+  .sm\:focus\:placeholder-accent-200:focus:-ms-input-placeholder {
+    color: #F5BFDF;
+  }
+
+  .sm\:focus\:placeholder-accent-200:focus::-ms-input-placeholder {
+    color: #F5BFDF;
+  }
+
+  .sm\:focus\:placeholder-accent-200:focus::placeholder {
+    color: #F5BFDF;
+  }
+
+  .sm\:focus\:placeholder-accent-300:focus::-webkit-input-placeholder {
+    color: #EF99CC;
+  }
+
+  .sm\:focus\:placeholder-accent-300:focus::-moz-placeholder {
+    color: #EF99CC;
+  }
+
+  .sm\:focus\:placeholder-accent-300:focus:-ms-input-placeholder {
+    color: #EF99CC;
+  }
+
+  .sm\:focus\:placeholder-accent-300:focus::-ms-input-placeholder {
+    color: #EF99CC;
+  }
+
+  .sm\:focus\:placeholder-accent-300:focus::placeholder {
+    color: #EF99CC;
+  }
+
+  .sm\:focus\:placeholder-accent-400:focus::-webkit-input-placeholder {
+    color: #E24DA6;
+  }
+
+  .sm\:focus\:placeholder-accent-400:focus::-moz-placeholder {
+    color: #E24DA6;
+  }
+
+  .sm\:focus\:placeholder-accent-400:focus:-ms-input-placeholder {
+    color: #E24DA6;
+  }
+
+  .sm\:focus\:placeholder-accent-400:focus::-ms-input-placeholder {
+    color: #E24DA6;
+  }
+
+  .sm\:focus\:placeholder-accent-400:focus::placeholder {
+    color: #E24DA6;
+  }
+
+  .sm\:focus\:placeholder-accent-500:focus::-webkit-input-placeholder {
+    color: #D60080;
+  }
+
+  .sm\:focus\:placeholder-accent-500:focus::-moz-placeholder {
+    color: #D60080;
+  }
+
+  .sm\:focus\:placeholder-accent-500:focus:-ms-input-placeholder {
+    color: #D60080;
+  }
+
+  .sm\:focus\:placeholder-accent-500:focus::-ms-input-placeholder {
+    color: #D60080;
+  }
+
+  .sm\:focus\:placeholder-accent-500:focus::placeholder {
+    color: #D60080;
+  }
+
+  .sm\:focus\:placeholder-accent-600:focus::-webkit-input-placeholder {
+    color: #C10073;
+  }
+
+  .sm\:focus\:placeholder-accent-600:focus::-moz-placeholder {
+    color: #C10073;
+  }
+
+  .sm\:focus\:placeholder-accent-600:focus:-ms-input-placeholder {
+    color: #C10073;
+  }
+
+  .sm\:focus\:placeholder-accent-600:focus::-ms-input-placeholder {
+    color: #C10073;
+  }
+
+  .sm\:focus\:placeholder-accent-600:focus::placeholder {
+    color: #C10073;
+  }
+
+  .sm\:focus\:placeholder-accent-700:focus::-webkit-input-placeholder {
+    color: #80004D;
+  }
+
+  .sm\:focus\:placeholder-accent-700:focus::-moz-placeholder {
+    color: #80004D;
+  }
+
+  .sm\:focus\:placeholder-accent-700:focus:-ms-input-placeholder {
+    color: #80004D;
+  }
+
+  .sm\:focus\:placeholder-accent-700:focus::-ms-input-placeholder {
+    color: #80004D;
+  }
+
+  .sm\:focus\:placeholder-accent-700:focus::placeholder {
+    color: #80004D;
+  }
+
+  .sm\:focus\:placeholder-accent-800:focus::-webkit-input-placeholder {
+    color: #60003A;
+  }
+
+  .sm\:focus\:placeholder-accent-800:focus::-moz-placeholder {
+    color: #60003A;
+  }
+
+  .sm\:focus\:placeholder-accent-800:focus:-ms-input-placeholder {
+    color: #60003A;
+  }
+
+  .sm\:focus\:placeholder-accent-800:focus::-ms-input-placeholder {
+    color: #60003A;
+  }
+
+  .sm\:focus\:placeholder-accent-800:focus::placeholder {
+    color: #60003A;
+  }
+
+  .sm\:focus\:placeholder-accent-900:focus::-webkit-input-placeholder {
+    color: #400026;
+  }
+
+  .sm\:focus\:placeholder-accent-900:focus::-moz-placeholder {
+    color: #400026;
+  }
+
+  .sm\:focus\:placeholder-accent-900:focus:-ms-input-placeholder {
+    color: #400026;
+  }
+
+  .sm\:focus\:placeholder-accent-900:focus::-ms-input-placeholder {
+    color: #400026;
+  }
+
+  .sm\:focus\:placeholder-accent-900:focus::placeholder {
+    color: #400026;
   }
 
   .sm\:pointer-events-none {
@@ -27552,8 +28794,40 @@ h4 {
     color: #702459;
   }
 
-  .sm\:text-accent {
-    color: #c54545;
+  .sm\:text-accent-100 {
+    color: #FBE6F2;
+  }
+
+  .sm\:text-accent-200 {
+    color: #F5BFDF;
+  }
+
+  .sm\:text-accent-300 {
+    color: #EF99CC;
+  }
+
+  .sm\:text-accent-400 {
+    color: #E24DA6;
+  }
+
+  .sm\:text-accent-500 {
+    color: #D60080;
+  }
+
+  .sm\:text-accent-600 {
+    color: #C10073;
+  }
+
+  .sm\:text-accent-700 {
+    color: #80004D;
+  }
+
+  .sm\:text-accent-800 {
+    color: #60003A;
+  }
+
+  .sm\:text-accent-900 {
+    color: #400026;
   }
 
   .sm\:hover\:text-transparent:hover {
@@ -27932,8 +29206,40 @@ h4 {
     color: #702459;
   }
 
-  .sm\:hover\:text-accent:hover {
-    color: #c54545;
+  .sm\:hover\:text-accent-100:hover {
+    color: #FBE6F2;
+  }
+
+  .sm\:hover\:text-accent-200:hover {
+    color: #F5BFDF;
+  }
+
+  .sm\:hover\:text-accent-300:hover {
+    color: #EF99CC;
+  }
+
+  .sm\:hover\:text-accent-400:hover {
+    color: #E24DA6;
+  }
+
+  .sm\:hover\:text-accent-500:hover {
+    color: #D60080;
+  }
+
+  .sm\:hover\:text-accent-600:hover {
+    color: #C10073;
+  }
+
+  .sm\:hover\:text-accent-700:hover {
+    color: #80004D;
+  }
+
+  .sm\:hover\:text-accent-800:hover {
+    color: #60003A;
+  }
+
+  .sm\:hover\:text-accent-900:hover {
+    color: #400026;
   }
 
   .sm\:focus\:text-transparent:focus {
@@ -28312,8 +29618,40 @@ h4 {
     color: #702459;
   }
 
-  .sm\:focus\:text-accent:focus {
-    color: #c54545;
+  .sm\:focus\:text-accent-100:focus {
+    color: #FBE6F2;
+  }
+
+  .sm\:focus\:text-accent-200:focus {
+    color: #F5BFDF;
+  }
+
+  .sm\:focus\:text-accent-300:focus {
+    color: #EF99CC;
+  }
+
+  .sm\:focus\:text-accent-400:focus {
+    color: #E24DA6;
+  }
+
+  .sm\:focus\:text-accent-500:focus {
+    color: #D60080;
+  }
+
+  .sm\:focus\:text-accent-600:focus {
+    color: #C10073;
+  }
+
+  .sm\:focus\:text-accent-700:focus {
+    color: #80004D;
+  }
+
+  .sm\:focus\:text-accent-800:focus {
+    color: #60003A;
+  }
+
+  .sm\:focus\:text-accent-900:focus {
+    color: #400026;
   }
 
   .sm\:italic {
@@ -31780,564 +33118,564 @@ h4 {
     line-height: 8rem;
   }
 
-  .sm\:vr-source-sans\ pro-none-xs {
+  .sm\:vr-source-sans-none-xs {
     font-size: .75rem;
     padding-top: .253rem;
     margin-bottom: -.252rem;
     line-height: 1rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .sm\:vr-source-sans\ pro-tight-xs {
+  .sm\:vr-source-sans-tight-xs {
     font-size: .75rem;
     padding-top: .253rem;
     margin-bottom: -.252rem;
     line-height: 1rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .sm\:vr-source-sans\ pro-snug-xs {
+  .sm\:vr-source-sans-snug-xs {
     font-size: .75rem;
     padding-top: .253rem;
     margin-bottom: -.252rem;
     line-height: 1rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .sm\:vr-source-sans\ pro-normal-xs {
+  .sm\:vr-source-sans-normal-xs {
     font-size: .75rem;
     padding-top: .253rem;
     margin-bottom: -.252rem;
     line-height: 1rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .sm\:vr-source-sans\ pro-relaxed-xs {
+  .sm\:vr-source-sans-relaxed-xs {
     font-size: .75rem;
     padding-top: .253rem;
     margin-bottom: -.252rem;
     line-height: 1rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .sm\:vr-source-sans\ pro-loose-xs {
+  .sm\:vr-source-sans-loose-xs {
     font-size: .75rem;
     padding-top: .502rem;
     margin-bottom: -.502rem;
     line-height: 1.5rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .sm\:vr-source-sans\ pro-xs {
+  .sm\:vr-source-sans-xs {
     font-size: .75rem;
     padding-top: .502rem;
     margin-bottom: -.502rem;
     line-height: 1.5rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .sm\:vr-source-sans\ pro-none-sm {
+  .sm\:vr-source-sans-none-sm {
     font-size: .875rem;
     padding-top: .211rem;
     margin-bottom: -.211rem;
     line-height: 1rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .sm\:vr-source-sans\ pro-tight-sm {
+  .sm\:vr-source-sans-tight-sm {
     font-size: .875rem;
     padding-top: .211rem;
     margin-bottom: -.211rem;
     line-height: 1rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .sm\:vr-source-sans\ pro-snug-sm {
+  .sm\:vr-source-sans-snug-sm {
     font-size: .875rem;
     padding-top: .211rem;
     margin-bottom: -.211rem;
     line-height: 1rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .sm\:vr-source-sans\ pro-normal-sm {
+  .sm\:vr-source-sans-normal-sm {
     font-size: .875rem;
     padding-top: .461rem;
     margin-bottom: -.461rem;
     line-height: 1.5rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .sm\:vr-source-sans\ pro-relaxed-sm {
+  .sm\:vr-source-sans-relaxed-sm {
     font-size: .875rem;
     padding-top: .461rem;
     margin-bottom: -.461rem;
     line-height: 1.5rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .sm\:vr-source-sans\ pro-loose-sm {
+  .sm\:vr-source-sans-loose-sm {
     font-size: .875rem;
     padding-top: .711rem;
     margin-bottom: -.711rem;
     line-height: 2rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .sm\:vr-source-sans\ pro-sm {
+  .sm\:vr-source-sans-sm {
     font-size: .875rem;
     padding-top: .711rem;
     margin-bottom: -.711rem;
     line-height: 2rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .sm\:vr-source-sans\ pro-none-base {
+  .sm\:vr-source-sans-none-base {
     font-size: 1rem;
     padding-top: .17rem;
     margin-bottom: -.17rem;
     line-height: 1rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .sm\:vr-source-sans\ pro-tight-base {
+  .sm\:vr-source-sans-tight-base {
     font-size: 1rem;
     padding-top: .42rem;
     margin-bottom: -.42rem;
     line-height: 1.5rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .sm\:vr-source-sans\ pro-snug-base {
+  .sm\:vr-source-sans-snug-base {
     font-size: 1rem;
     padding-top: .42rem;
     margin-bottom: -.42rem;
     line-height: 1.5rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .sm\:vr-source-sans\ pro-normal-base {
+  .sm\:vr-source-sans-normal-base {
     font-size: 1rem;
     padding-top: .42rem;
     margin-bottom: -.42rem;
     line-height: 1.5rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .sm\:vr-source-sans\ pro-relaxed-base {
+  .sm\:vr-source-sans-relaxed-base {
     font-size: 1rem;
     padding-top: .42rem;
     margin-bottom: -.42rem;
     line-height: 1.5rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .sm\:vr-source-sans\ pro-loose-base {
+  .sm\:vr-source-sans-loose-base {
     font-size: 1rem;
     padding-top: .67rem;
     margin-bottom: -.67rem;
     line-height: 2rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .sm\:vr-source-sans\ pro-base {
+  .sm\:vr-source-sans-base {
     font-size: 1rem;
     padding-top: .67rem;
     margin-bottom: -.67rem;
     line-height: 2rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .sm\:vr-source-sans\ pro-none-lg {
+  .sm\:vr-source-sans-none-lg {
     font-size: 1.125rem;
     padding-top: .129rem;
     margin-bottom: -.129rem;
     line-height: 1rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .sm\:vr-source-sans\ pro-tight-lg {
+  .sm\:vr-source-sans-tight-lg {
     font-size: 1.125rem;
     padding-top: .379rem;
     margin-bottom: -.379rem;
     line-height: 1.5rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .sm\:vr-source-sans\ pro-snug-lg {
+  .sm\:vr-source-sans-snug-lg {
     font-size: 1.125rem;
     padding-top: .379rem;
     margin-bottom: -.379rem;
     line-height: 1.5rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .sm\:vr-source-sans\ pro-normal-lg {
+  .sm\:vr-source-sans-normal-lg {
     font-size: 1.125rem;
     padding-top: .379rem;
     margin-bottom: -.379rem;
     line-height: 1.5rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .sm\:vr-source-sans\ pro-relaxed-lg {
+  .sm\:vr-source-sans-relaxed-lg {
     font-size: 1.125rem;
     padding-top: .629rem;
     margin-bottom: -.629rem;
     line-height: 2rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .sm\:vr-source-sans\ pro-loose-lg {
+  .sm\:vr-source-sans-loose-lg {
     font-size: 1.125rem;
     padding-top: .879rem;
     margin-bottom: -.879rem;
     line-height: 2.5rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .sm\:vr-source-sans\ pro-lg {
+  .sm\:vr-source-sans-lg {
     font-size: 1.125rem;
     padding-top: .879rem;
     margin-bottom: -.879rem;
     line-height: 2.5rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .sm\:vr-source-sans\ pro-none-xl {
+  .sm\:vr-source-sans-none-xl {
     font-size: 1.25rem;
     padding-top: .337rem;
     margin-bottom: -.337rem;
     line-height: 1.5rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .sm\:vr-source-sans\ pro-tight-xl {
+  .sm\:vr-source-sans-tight-xl {
     font-size: 1.25rem;
     padding-top: .337rem;
     margin-bottom: -.337rem;
     line-height: 1.5rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .sm\:vr-source-sans\ pro-snug-xl {
+  .sm\:vr-source-sans-snug-xl {
     font-size: 1.25rem;
     padding-top: .337rem;
     margin-bottom: -.337rem;
     line-height: 1.5rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .sm\:vr-source-sans\ pro-normal-xl {
+  .sm\:vr-source-sans-normal-xl {
     font-size: 1.25rem;
     padding-top: .587rem;
     margin-bottom: -.587rem;
     line-height: 2rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .sm\:vr-source-sans\ pro-relaxed-xl {
+  .sm\:vr-source-sans-relaxed-xl {
     font-size: 1.25rem;
     padding-top: .587rem;
     margin-bottom: -.587rem;
     line-height: 2rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .sm\:vr-source-sans\ pro-loose-xl {
+  .sm\:vr-source-sans-loose-xl {
     font-size: 1.25rem;
     padding-top: .837rem;
     margin-bottom: -.837rem;
     line-height: 2.5rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .sm\:vr-source-sans\ pro-xl {
+  .sm\:vr-source-sans-xl {
     font-size: 1.25rem;
     padding-top: .837rem;
     margin-bottom: -.837rem;
     line-height: 2.5rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .sm\:vr-source-sans\ pro-none-2xl {
+  .sm\:vr-source-sans-none-2xl {
     font-size: 1.5rem;
     padding-top: .255rem;
     margin-bottom: -.255rem;
     line-height: 1.5rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .sm\:vr-source-sans\ pro-tight-2xl {
+  .sm\:vr-source-sans-tight-2xl {
     font-size: 1.5rem;
     padding-top: .505rem;
     margin-bottom: -.505rem;
     line-height: 2rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .sm\:vr-source-sans\ pro-snug-2xl {
+  .sm\:vr-source-sans-snug-2xl {
     font-size: 1.5rem;
     padding-top: .505rem;
     margin-bottom: -.505rem;
     line-height: 2rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .sm\:vr-source-sans\ pro-normal-2xl {
+  .sm\:vr-source-sans-normal-2xl {
     font-size: 1.5rem;
     padding-top: .755rem;
     margin-bottom: -.755rem;
     line-height: 2.5rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .sm\:vr-source-sans\ pro-relaxed-2xl {
+  .sm\:vr-source-sans-relaxed-2xl {
     font-size: 1.5rem;
     padding-top: .755rem;
     margin-bottom: -.755rem;
     line-height: 2.5rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .sm\:vr-source-sans\ pro-loose-2xl {
+  .sm\:vr-source-sans-loose-2xl {
     font-size: 1.5rem;
     padding-top: 1.005rem;
     margin-bottom: -1.005rem;
     line-height: 3rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .sm\:vr-source-sans\ pro-2xl {
+  .sm\:vr-source-sans-2xl {
     font-size: 1.5rem;
     padding-top: 1.005rem;
     margin-bottom: -1.005rem;
     line-height: 3rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .sm\:vr-source-sans\ pro-none-3xl {
+  .sm\:vr-source-sans-none-3xl {
     font-size: 1.875rem;
     padding-top: .381rem;
     margin-bottom: -.381rem;
     line-height: 2rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .sm\:vr-source-sans\ pro-tight-3xl {
+  .sm\:vr-source-sans-tight-3xl {
     font-size: 1.875rem;
     padding-top: .631rem;
     margin-bottom: -.631rem;
     line-height: 2.5rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .sm\:vr-source-sans\ pro-snug-3xl {
+  .sm\:vr-source-sans-snug-3xl {
     font-size: 1.875rem;
     padding-top: .631rem;
     margin-bottom: -.631rem;
     line-height: 2.5rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .sm\:vr-source-sans\ pro-normal-3xl {
+  .sm\:vr-source-sans-normal-3xl {
     font-size: 1.875rem;
     padding-top: .881rem;
     margin-bottom: -.881rem;
     line-height: 3rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .sm\:vr-source-sans\ pro-relaxed-3xl {
+  .sm\:vr-source-sans-relaxed-3xl {
     font-size: 1.875rem;
     padding-top: .881rem;
     margin-bottom: -.881rem;
     line-height: 3rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .sm\:vr-source-sans\ pro-loose-3xl {
+  .sm\:vr-source-sans-loose-3xl {
     font-size: 1.875rem;
     padding-top: 1.381rem;
     margin-bottom: -1.381rem;
     line-height: 4rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .sm\:vr-source-sans\ pro-3xl {
+  .sm\:vr-source-sans-3xl {
     font-size: 1.875rem;
     padding-top: 1.381rem;
     margin-bottom: -1.381rem;
     line-height: 4rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .sm\:vr-source-sans\ pro-none-4xl {
+  .sm\:vr-source-sans-none-4xl {
     font-size: 2.25rem;
     padding-top: .507rem;
     margin-bottom: -.507rem;
     line-height: 2.5rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .sm\:vr-source-sans\ pro-tight-4xl {
+  .sm\:vr-source-sans-tight-4xl {
     font-size: 2.25rem;
     padding-top: .758rem;
     margin-bottom: -.757rem;
     line-height: 3rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .sm\:vr-source-sans\ pro-snug-4xl {
+  .sm\:vr-source-sans-snug-4xl {
     font-size: 2.25rem;
     padding-top: .758rem;
     margin-bottom: -.757rem;
     line-height: 3rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .sm\:vr-source-sans\ pro-normal-4xl {
+  .sm\:vr-source-sans-normal-4xl {
     font-size: 2.25rem;
     padding-top: 1.007rem;
     margin-bottom: -1.007rem;
     line-height: 3.5rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .sm\:vr-source-sans\ pro-relaxed-4xl {
+  .sm\:vr-source-sans-relaxed-4xl {
     font-size: 2.25rem;
     padding-top: 1.007rem;
     margin-bottom: -1.007rem;
     line-height: 3.5rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .sm\:vr-source-sans\ pro-loose-4xl {
+  .sm\:vr-source-sans-loose-4xl {
     font-size: 2.25rem;
     padding-top: 1.507rem;
     margin-bottom: -1.507rem;
     line-height: 4.5rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .sm\:vr-source-sans\ pro-4xl {
+  .sm\:vr-source-sans-4xl {
     font-size: 2.25rem;
     padding-top: 1.507rem;
     margin-bottom: -1.507rem;
     line-height: 4.5rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .sm\:vr-source-sans\ pro-none-5xl {
+  .sm\:vr-source-sans-none-5xl {
     font-size: 3rem;
     padding-top: .51rem;
     margin-bottom: -.51rem;
     line-height: 3rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .sm\:vr-source-sans\ pro-tight-5xl {
+  .sm\:vr-source-sans-tight-5xl {
     font-size: 3rem;
     padding-top: 1.01rem;
     margin-bottom: -1.01rem;
     line-height: 4rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .sm\:vr-source-sans\ pro-snug-5xl {
+  .sm\:vr-source-sans-snug-5xl {
     font-size: 3rem;
     padding-top: 1.01rem;
     margin-bottom: -1.01rem;
     line-height: 4rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .sm\:vr-source-sans\ pro-normal-5xl {
+  .sm\:vr-source-sans-normal-5xl {
     font-size: 3rem;
     padding-top: 1.26rem;
     margin-bottom: -1.26rem;
     line-height: 4.5rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .sm\:vr-source-sans\ pro-relaxed-5xl {
+  .sm\:vr-source-sans-relaxed-5xl {
     font-size: 3rem;
     padding-top: 1.51rem;
     margin-bottom: -1.51rem;
     line-height: 5rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .sm\:vr-source-sans\ pro-loose-5xl {
+  .sm\:vr-source-sans-loose-5xl {
     font-size: 3rem;
     padding-top: 2.01rem;
     margin-bottom: -2.01rem;
     line-height: 6rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .sm\:vr-source-sans\ pro-5xl {
+  .sm\:vr-source-sans-5xl {
     font-size: 3rem;
     padding-top: 2.01rem;
     margin-bottom: -2.01rem;
     line-height: 6rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .sm\:vr-source-sans\ pro-none-6xl {
+  .sm\:vr-source-sans-none-6xl {
     font-size: 4rem;
     padding-top: .68rem;
     margin-bottom: -.68rem;
     line-height: 4rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .sm\:vr-source-sans\ pro-tight-6xl {
+  .sm\:vr-source-sans-tight-6xl {
     font-size: 4rem;
     padding-top: 1.18rem;
     margin-bottom: -1.18rem;
     line-height: 5rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .sm\:vr-source-sans\ pro-snug-6xl {
+  .sm\:vr-source-sans-snug-6xl {
     font-size: 4rem;
     padding-top: 1.43rem;
     margin-bottom: -1.43rem;
     line-height: 5.5rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .sm\:vr-source-sans\ pro-normal-6xl {
+  .sm\:vr-source-sans-normal-6xl {
     font-size: 4rem;
     padding-top: 1.68rem;
     margin-bottom: -1.68rem;
     line-height: 6rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .sm\:vr-source-sans\ pro-relaxed-6xl {
+  .sm\:vr-source-sans-relaxed-6xl {
     font-size: 4rem;
     padding-top: 1.93rem;
     margin-bottom: -1.93rem;
     line-height: 6.5rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .sm\:vr-source-sans\ pro-loose-6xl {
+  .sm\:vr-source-sans-loose-6xl {
     font-size: 4rem;
     padding-top: 2.68rem;
     margin-bottom: -2.68rem;
     line-height: 8rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .sm\:vr-source-sans\ pro-6xl {
+  .sm\:vr-source-sans-6xl {
     font-size: 4rem;
     padding-top: 2.68rem;
     margin-bottom: -2.68rem;
     line-height: 8rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 }
 
@@ -33238,8 +34576,40 @@ h4 {
     border-color: #702459;
   }
 
-  .md\:divide-accent > :not(template) ~ :not(template) {
-    border-color: #c54545;
+  .md\:divide-accent-100 > :not(template) ~ :not(template) {
+    border-color: #FBE6F2;
+  }
+
+  .md\:divide-accent-200 > :not(template) ~ :not(template) {
+    border-color: #F5BFDF;
+  }
+
+  .md\:divide-accent-300 > :not(template) ~ :not(template) {
+    border-color: #EF99CC;
+  }
+
+  .md\:divide-accent-400 > :not(template) ~ :not(template) {
+    border-color: #E24DA6;
+  }
+
+  .md\:divide-accent-500 > :not(template) ~ :not(template) {
+    border-color: #D60080;
+  }
+
+  .md\:divide-accent-600 > :not(template) ~ :not(template) {
+    border-color: #C10073;
+  }
+
+  .md\:divide-accent-700 > :not(template) ~ :not(template) {
+    border-color: #80004D;
+  }
+
+  .md\:divide-accent-800 > :not(template) ~ :not(template) {
+    border-color: #60003A;
+  }
+
+  .md\:divide-accent-900 > :not(template) ~ :not(template) {
+    border-color: #400026;
   }
 
   .md\:sr-only {
@@ -33682,8 +35052,40 @@ h4 {
     background-color: #702459;
   }
 
-  .md\:bg-accent {
-    background-color: #c54545;
+  .md\:bg-accent-100 {
+    background-color: #FBE6F2;
+  }
+
+  .md\:bg-accent-200 {
+    background-color: #F5BFDF;
+  }
+
+  .md\:bg-accent-300 {
+    background-color: #EF99CC;
+  }
+
+  .md\:bg-accent-400 {
+    background-color: #E24DA6;
+  }
+
+  .md\:bg-accent-500 {
+    background-color: #D60080;
+  }
+
+  .md\:bg-accent-600 {
+    background-color: #C10073;
+  }
+
+  .md\:bg-accent-700 {
+    background-color: #80004D;
+  }
+
+  .md\:bg-accent-800 {
+    background-color: #60003A;
+  }
+
+  .md\:bg-accent-900 {
+    background-color: #400026;
   }
 
   .md\:hover\:bg-transparent:hover {
@@ -34062,8 +35464,40 @@ h4 {
     background-color: #702459;
   }
 
-  .md\:hover\:bg-accent:hover {
-    background-color: #c54545;
+  .md\:hover\:bg-accent-100:hover {
+    background-color: #FBE6F2;
+  }
+
+  .md\:hover\:bg-accent-200:hover {
+    background-color: #F5BFDF;
+  }
+
+  .md\:hover\:bg-accent-300:hover {
+    background-color: #EF99CC;
+  }
+
+  .md\:hover\:bg-accent-400:hover {
+    background-color: #E24DA6;
+  }
+
+  .md\:hover\:bg-accent-500:hover {
+    background-color: #D60080;
+  }
+
+  .md\:hover\:bg-accent-600:hover {
+    background-color: #C10073;
+  }
+
+  .md\:hover\:bg-accent-700:hover {
+    background-color: #80004D;
+  }
+
+  .md\:hover\:bg-accent-800:hover {
+    background-color: #60003A;
+  }
+
+  .md\:hover\:bg-accent-900:hover {
+    background-color: #400026;
   }
 
   .md\:focus\:bg-transparent:focus {
@@ -34442,8 +35876,40 @@ h4 {
     background-color: #702459;
   }
 
-  .md\:focus\:bg-accent:focus {
-    background-color: #c54545;
+  .md\:focus\:bg-accent-100:focus {
+    background-color: #FBE6F2;
+  }
+
+  .md\:focus\:bg-accent-200:focus {
+    background-color: #F5BFDF;
+  }
+
+  .md\:focus\:bg-accent-300:focus {
+    background-color: #EF99CC;
+  }
+
+  .md\:focus\:bg-accent-400:focus {
+    background-color: #E24DA6;
+  }
+
+  .md\:focus\:bg-accent-500:focus {
+    background-color: #D60080;
+  }
+
+  .md\:focus\:bg-accent-600:focus {
+    background-color: #C10073;
+  }
+
+  .md\:focus\:bg-accent-700:focus {
+    background-color: #80004D;
+  }
+
+  .md\:focus\:bg-accent-800:focus {
+    background-color: #60003A;
+  }
+
+  .md\:focus\:bg-accent-900:focus {
+    background-color: #400026;
   }
 
   .md\:bg-bottom {
@@ -34902,8 +36368,40 @@ h4 {
     border-color: #702459;
   }
 
-  .md\:border-accent {
-    border-color: #c54545;
+  .md\:border-accent-100 {
+    border-color: #FBE6F2;
+  }
+
+  .md\:border-accent-200 {
+    border-color: #F5BFDF;
+  }
+
+  .md\:border-accent-300 {
+    border-color: #EF99CC;
+  }
+
+  .md\:border-accent-400 {
+    border-color: #E24DA6;
+  }
+
+  .md\:border-accent-500 {
+    border-color: #D60080;
+  }
+
+  .md\:border-accent-600 {
+    border-color: #C10073;
+  }
+
+  .md\:border-accent-700 {
+    border-color: #80004D;
+  }
+
+  .md\:border-accent-800 {
+    border-color: #60003A;
+  }
+
+  .md\:border-accent-900 {
+    border-color: #400026;
   }
 
   .md\:hover\:border-transparent:hover {
@@ -35282,8 +36780,40 @@ h4 {
     border-color: #702459;
   }
 
-  .md\:hover\:border-accent:hover {
-    border-color: #c54545;
+  .md\:hover\:border-accent-100:hover {
+    border-color: #FBE6F2;
+  }
+
+  .md\:hover\:border-accent-200:hover {
+    border-color: #F5BFDF;
+  }
+
+  .md\:hover\:border-accent-300:hover {
+    border-color: #EF99CC;
+  }
+
+  .md\:hover\:border-accent-400:hover {
+    border-color: #E24DA6;
+  }
+
+  .md\:hover\:border-accent-500:hover {
+    border-color: #D60080;
+  }
+
+  .md\:hover\:border-accent-600:hover {
+    border-color: #C10073;
+  }
+
+  .md\:hover\:border-accent-700:hover {
+    border-color: #80004D;
+  }
+
+  .md\:hover\:border-accent-800:hover {
+    border-color: #60003A;
+  }
+
+  .md\:hover\:border-accent-900:hover {
+    border-color: #400026;
   }
 
   .md\:focus\:border-transparent:focus {
@@ -35662,8 +37192,40 @@ h4 {
     border-color: #702459;
   }
 
-  .md\:focus\:border-accent:focus {
-    border-color: #c54545;
+  .md\:focus\:border-accent-100:focus {
+    border-color: #FBE6F2;
+  }
+
+  .md\:focus\:border-accent-200:focus {
+    border-color: #F5BFDF;
+  }
+
+  .md\:focus\:border-accent-300:focus {
+    border-color: #EF99CC;
+  }
+
+  .md\:focus\:border-accent-400:focus {
+    border-color: #E24DA6;
+  }
+
+  .md\:focus\:border-accent-500:focus {
+    border-color: #D60080;
+  }
+
+  .md\:focus\:border-accent-600:focus {
+    border-color: #C10073;
+  }
+
+  .md\:focus\:border-accent-700:focus {
+    border-color: #80004D;
+  }
+
+  .md\:focus\:border-accent-800:focus {
+    border-color: #60003A;
+  }
+
+  .md\:focus\:border-accent-900:focus {
+    border-color: #400026;
   }
 
   .md\:rounded-none {
@@ -36469,7 +38031,11 @@ h4 {
   }
 
   .md\:font-sans {
-    font-family: "Source Sans Pro", system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, "Segoe UI", "Roboto", "Ubuntu", "Cantarell", "Noto Sans", sans-serif;
+    font-family: "Source Sans", system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, "Segoe UI", "Roboto", "Ubuntu", "Cantarell", "Noto Sans", sans-serif;
+  }
+
+  .md\:font-serif {
+    font-family: "Georgia", serif;
   }
 
   .md\:font-hairline {
@@ -40660,24 +42226,184 @@ h4 {
     color: #702459;
   }
 
-  .md\:placeholder-accent::-webkit-input-placeholder {
-    color: #c54545;
+  .md\:placeholder-accent-100::-webkit-input-placeholder {
+    color: #FBE6F2;
   }
 
-  .md\:placeholder-accent::-moz-placeholder {
-    color: #c54545;
+  .md\:placeholder-accent-100::-moz-placeholder {
+    color: #FBE6F2;
   }
 
-  .md\:placeholder-accent:-ms-input-placeholder {
-    color: #c54545;
+  .md\:placeholder-accent-100:-ms-input-placeholder {
+    color: #FBE6F2;
   }
 
-  .md\:placeholder-accent::-ms-input-placeholder {
-    color: #c54545;
+  .md\:placeholder-accent-100::-ms-input-placeholder {
+    color: #FBE6F2;
   }
 
-  .md\:placeholder-accent::placeholder {
-    color: #c54545;
+  .md\:placeholder-accent-100::placeholder {
+    color: #FBE6F2;
+  }
+
+  .md\:placeholder-accent-200::-webkit-input-placeholder {
+    color: #F5BFDF;
+  }
+
+  .md\:placeholder-accent-200::-moz-placeholder {
+    color: #F5BFDF;
+  }
+
+  .md\:placeholder-accent-200:-ms-input-placeholder {
+    color: #F5BFDF;
+  }
+
+  .md\:placeholder-accent-200::-ms-input-placeholder {
+    color: #F5BFDF;
+  }
+
+  .md\:placeholder-accent-200::placeholder {
+    color: #F5BFDF;
+  }
+
+  .md\:placeholder-accent-300::-webkit-input-placeholder {
+    color: #EF99CC;
+  }
+
+  .md\:placeholder-accent-300::-moz-placeholder {
+    color: #EF99CC;
+  }
+
+  .md\:placeholder-accent-300:-ms-input-placeholder {
+    color: #EF99CC;
+  }
+
+  .md\:placeholder-accent-300::-ms-input-placeholder {
+    color: #EF99CC;
+  }
+
+  .md\:placeholder-accent-300::placeholder {
+    color: #EF99CC;
+  }
+
+  .md\:placeholder-accent-400::-webkit-input-placeholder {
+    color: #E24DA6;
+  }
+
+  .md\:placeholder-accent-400::-moz-placeholder {
+    color: #E24DA6;
+  }
+
+  .md\:placeholder-accent-400:-ms-input-placeholder {
+    color: #E24DA6;
+  }
+
+  .md\:placeholder-accent-400::-ms-input-placeholder {
+    color: #E24DA6;
+  }
+
+  .md\:placeholder-accent-400::placeholder {
+    color: #E24DA6;
+  }
+
+  .md\:placeholder-accent-500::-webkit-input-placeholder {
+    color: #D60080;
+  }
+
+  .md\:placeholder-accent-500::-moz-placeholder {
+    color: #D60080;
+  }
+
+  .md\:placeholder-accent-500:-ms-input-placeholder {
+    color: #D60080;
+  }
+
+  .md\:placeholder-accent-500::-ms-input-placeholder {
+    color: #D60080;
+  }
+
+  .md\:placeholder-accent-500::placeholder {
+    color: #D60080;
+  }
+
+  .md\:placeholder-accent-600::-webkit-input-placeholder {
+    color: #C10073;
+  }
+
+  .md\:placeholder-accent-600::-moz-placeholder {
+    color: #C10073;
+  }
+
+  .md\:placeholder-accent-600:-ms-input-placeholder {
+    color: #C10073;
+  }
+
+  .md\:placeholder-accent-600::-ms-input-placeholder {
+    color: #C10073;
+  }
+
+  .md\:placeholder-accent-600::placeholder {
+    color: #C10073;
+  }
+
+  .md\:placeholder-accent-700::-webkit-input-placeholder {
+    color: #80004D;
+  }
+
+  .md\:placeholder-accent-700::-moz-placeholder {
+    color: #80004D;
+  }
+
+  .md\:placeholder-accent-700:-ms-input-placeholder {
+    color: #80004D;
+  }
+
+  .md\:placeholder-accent-700::-ms-input-placeholder {
+    color: #80004D;
+  }
+
+  .md\:placeholder-accent-700::placeholder {
+    color: #80004D;
+  }
+
+  .md\:placeholder-accent-800::-webkit-input-placeholder {
+    color: #60003A;
+  }
+
+  .md\:placeholder-accent-800::-moz-placeholder {
+    color: #60003A;
+  }
+
+  .md\:placeholder-accent-800:-ms-input-placeholder {
+    color: #60003A;
+  }
+
+  .md\:placeholder-accent-800::-ms-input-placeholder {
+    color: #60003A;
+  }
+
+  .md\:placeholder-accent-800::placeholder {
+    color: #60003A;
+  }
+
+  .md\:placeholder-accent-900::-webkit-input-placeholder {
+    color: #400026;
+  }
+
+  .md\:placeholder-accent-900::-moz-placeholder {
+    color: #400026;
+  }
+
+  .md\:placeholder-accent-900:-ms-input-placeholder {
+    color: #400026;
+  }
+
+  .md\:placeholder-accent-900::-ms-input-placeholder {
+    color: #400026;
+  }
+
+  .md\:placeholder-accent-900::placeholder {
+    color: #400026;
   }
 
   .md\:focus\:placeholder-transparent:focus::-webkit-input-placeholder {
@@ -42560,24 +44286,184 @@ h4 {
     color: #702459;
   }
 
-  .md\:focus\:placeholder-accent:focus::-webkit-input-placeholder {
-    color: #c54545;
+  .md\:focus\:placeholder-accent-100:focus::-webkit-input-placeholder {
+    color: #FBE6F2;
   }
 
-  .md\:focus\:placeholder-accent:focus::-moz-placeholder {
-    color: #c54545;
+  .md\:focus\:placeholder-accent-100:focus::-moz-placeholder {
+    color: #FBE6F2;
   }
 
-  .md\:focus\:placeholder-accent:focus:-ms-input-placeholder {
-    color: #c54545;
+  .md\:focus\:placeholder-accent-100:focus:-ms-input-placeholder {
+    color: #FBE6F2;
   }
 
-  .md\:focus\:placeholder-accent:focus::-ms-input-placeholder {
-    color: #c54545;
+  .md\:focus\:placeholder-accent-100:focus::-ms-input-placeholder {
+    color: #FBE6F2;
   }
 
-  .md\:focus\:placeholder-accent:focus::placeholder {
-    color: #c54545;
+  .md\:focus\:placeholder-accent-100:focus::placeholder {
+    color: #FBE6F2;
+  }
+
+  .md\:focus\:placeholder-accent-200:focus::-webkit-input-placeholder {
+    color: #F5BFDF;
+  }
+
+  .md\:focus\:placeholder-accent-200:focus::-moz-placeholder {
+    color: #F5BFDF;
+  }
+
+  .md\:focus\:placeholder-accent-200:focus:-ms-input-placeholder {
+    color: #F5BFDF;
+  }
+
+  .md\:focus\:placeholder-accent-200:focus::-ms-input-placeholder {
+    color: #F5BFDF;
+  }
+
+  .md\:focus\:placeholder-accent-200:focus::placeholder {
+    color: #F5BFDF;
+  }
+
+  .md\:focus\:placeholder-accent-300:focus::-webkit-input-placeholder {
+    color: #EF99CC;
+  }
+
+  .md\:focus\:placeholder-accent-300:focus::-moz-placeholder {
+    color: #EF99CC;
+  }
+
+  .md\:focus\:placeholder-accent-300:focus:-ms-input-placeholder {
+    color: #EF99CC;
+  }
+
+  .md\:focus\:placeholder-accent-300:focus::-ms-input-placeholder {
+    color: #EF99CC;
+  }
+
+  .md\:focus\:placeholder-accent-300:focus::placeholder {
+    color: #EF99CC;
+  }
+
+  .md\:focus\:placeholder-accent-400:focus::-webkit-input-placeholder {
+    color: #E24DA6;
+  }
+
+  .md\:focus\:placeholder-accent-400:focus::-moz-placeholder {
+    color: #E24DA6;
+  }
+
+  .md\:focus\:placeholder-accent-400:focus:-ms-input-placeholder {
+    color: #E24DA6;
+  }
+
+  .md\:focus\:placeholder-accent-400:focus::-ms-input-placeholder {
+    color: #E24DA6;
+  }
+
+  .md\:focus\:placeholder-accent-400:focus::placeholder {
+    color: #E24DA6;
+  }
+
+  .md\:focus\:placeholder-accent-500:focus::-webkit-input-placeholder {
+    color: #D60080;
+  }
+
+  .md\:focus\:placeholder-accent-500:focus::-moz-placeholder {
+    color: #D60080;
+  }
+
+  .md\:focus\:placeholder-accent-500:focus:-ms-input-placeholder {
+    color: #D60080;
+  }
+
+  .md\:focus\:placeholder-accent-500:focus::-ms-input-placeholder {
+    color: #D60080;
+  }
+
+  .md\:focus\:placeholder-accent-500:focus::placeholder {
+    color: #D60080;
+  }
+
+  .md\:focus\:placeholder-accent-600:focus::-webkit-input-placeholder {
+    color: #C10073;
+  }
+
+  .md\:focus\:placeholder-accent-600:focus::-moz-placeholder {
+    color: #C10073;
+  }
+
+  .md\:focus\:placeholder-accent-600:focus:-ms-input-placeholder {
+    color: #C10073;
+  }
+
+  .md\:focus\:placeholder-accent-600:focus::-ms-input-placeholder {
+    color: #C10073;
+  }
+
+  .md\:focus\:placeholder-accent-600:focus::placeholder {
+    color: #C10073;
+  }
+
+  .md\:focus\:placeholder-accent-700:focus::-webkit-input-placeholder {
+    color: #80004D;
+  }
+
+  .md\:focus\:placeholder-accent-700:focus::-moz-placeholder {
+    color: #80004D;
+  }
+
+  .md\:focus\:placeholder-accent-700:focus:-ms-input-placeholder {
+    color: #80004D;
+  }
+
+  .md\:focus\:placeholder-accent-700:focus::-ms-input-placeholder {
+    color: #80004D;
+  }
+
+  .md\:focus\:placeholder-accent-700:focus::placeholder {
+    color: #80004D;
+  }
+
+  .md\:focus\:placeholder-accent-800:focus::-webkit-input-placeholder {
+    color: #60003A;
+  }
+
+  .md\:focus\:placeholder-accent-800:focus::-moz-placeholder {
+    color: #60003A;
+  }
+
+  .md\:focus\:placeholder-accent-800:focus:-ms-input-placeholder {
+    color: #60003A;
+  }
+
+  .md\:focus\:placeholder-accent-800:focus::-ms-input-placeholder {
+    color: #60003A;
+  }
+
+  .md\:focus\:placeholder-accent-800:focus::placeholder {
+    color: #60003A;
+  }
+
+  .md\:focus\:placeholder-accent-900:focus::-webkit-input-placeholder {
+    color: #400026;
+  }
+
+  .md\:focus\:placeholder-accent-900:focus::-moz-placeholder {
+    color: #400026;
+  }
+
+  .md\:focus\:placeholder-accent-900:focus:-ms-input-placeholder {
+    color: #400026;
+  }
+
+  .md\:focus\:placeholder-accent-900:focus::-ms-input-placeholder {
+    color: #400026;
+  }
+
+  .md\:focus\:placeholder-accent-900:focus::placeholder {
+    color: #400026;
   }
 
   .md\:pointer-events-none {
@@ -43261,8 +45147,40 @@ h4 {
     color: #702459;
   }
 
-  .md\:text-accent {
-    color: #c54545;
+  .md\:text-accent-100 {
+    color: #FBE6F2;
+  }
+
+  .md\:text-accent-200 {
+    color: #F5BFDF;
+  }
+
+  .md\:text-accent-300 {
+    color: #EF99CC;
+  }
+
+  .md\:text-accent-400 {
+    color: #E24DA6;
+  }
+
+  .md\:text-accent-500 {
+    color: #D60080;
+  }
+
+  .md\:text-accent-600 {
+    color: #C10073;
+  }
+
+  .md\:text-accent-700 {
+    color: #80004D;
+  }
+
+  .md\:text-accent-800 {
+    color: #60003A;
+  }
+
+  .md\:text-accent-900 {
+    color: #400026;
   }
 
   .md\:hover\:text-transparent:hover {
@@ -43641,8 +45559,40 @@ h4 {
     color: #702459;
   }
 
-  .md\:hover\:text-accent:hover {
-    color: #c54545;
+  .md\:hover\:text-accent-100:hover {
+    color: #FBE6F2;
+  }
+
+  .md\:hover\:text-accent-200:hover {
+    color: #F5BFDF;
+  }
+
+  .md\:hover\:text-accent-300:hover {
+    color: #EF99CC;
+  }
+
+  .md\:hover\:text-accent-400:hover {
+    color: #E24DA6;
+  }
+
+  .md\:hover\:text-accent-500:hover {
+    color: #D60080;
+  }
+
+  .md\:hover\:text-accent-600:hover {
+    color: #C10073;
+  }
+
+  .md\:hover\:text-accent-700:hover {
+    color: #80004D;
+  }
+
+  .md\:hover\:text-accent-800:hover {
+    color: #60003A;
+  }
+
+  .md\:hover\:text-accent-900:hover {
+    color: #400026;
   }
 
   .md\:focus\:text-transparent:focus {
@@ -44021,8 +45971,40 @@ h4 {
     color: #702459;
   }
 
-  .md\:focus\:text-accent:focus {
-    color: #c54545;
+  .md\:focus\:text-accent-100:focus {
+    color: #FBE6F2;
+  }
+
+  .md\:focus\:text-accent-200:focus {
+    color: #F5BFDF;
+  }
+
+  .md\:focus\:text-accent-300:focus {
+    color: #EF99CC;
+  }
+
+  .md\:focus\:text-accent-400:focus {
+    color: #E24DA6;
+  }
+
+  .md\:focus\:text-accent-500:focus {
+    color: #D60080;
+  }
+
+  .md\:focus\:text-accent-600:focus {
+    color: #C10073;
+  }
+
+  .md\:focus\:text-accent-700:focus {
+    color: #80004D;
+  }
+
+  .md\:focus\:text-accent-800:focus {
+    color: #60003A;
+  }
+
+  .md\:focus\:text-accent-900:focus {
+    color: #400026;
   }
 
   .md\:italic {
@@ -47489,564 +49471,564 @@ h4 {
     line-height: 8rem;
   }
 
-  .md\:vr-source-sans\ pro-none-xs {
+  .md\:vr-source-sans-none-xs {
     font-size: .75rem;
     padding-top: .253rem;
     margin-bottom: -.252rem;
     line-height: 1rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .md\:vr-source-sans\ pro-tight-xs {
+  .md\:vr-source-sans-tight-xs {
     font-size: .75rem;
     padding-top: .253rem;
     margin-bottom: -.252rem;
     line-height: 1rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .md\:vr-source-sans\ pro-snug-xs {
+  .md\:vr-source-sans-snug-xs {
     font-size: .75rem;
     padding-top: .253rem;
     margin-bottom: -.252rem;
     line-height: 1rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .md\:vr-source-sans\ pro-normal-xs {
+  .md\:vr-source-sans-normal-xs {
     font-size: .75rem;
     padding-top: .253rem;
     margin-bottom: -.252rem;
     line-height: 1rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .md\:vr-source-sans\ pro-relaxed-xs {
+  .md\:vr-source-sans-relaxed-xs {
     font-size: .75rem;
     padding-top: .253rem;
     margin-bottom: -.252rem;
     line-height: 1rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .md\:vr-source-sans\ pro-loose-xs {
+  .md\:vr-source-sans-loose-xs {
     font-size: .75rem;
     padding-top: .502rem;
     margin-bottom: -.502rem;
     line-height: 1.5rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .md\:vr-source-sans\ pro-xs {
+  .md\:vr-source-sans-xs {
     font-size: .75rem;
     padding-top: .502rem;
     margin-bottom: -.502rem;
     line-height: 1.5rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .md\:vr-source-sans\ pro-none-sm {
+  .md\:vr-source-sans-none-sm {
     font-size: .875rem;
     padding-top: .211rem;
     margin-bottom: -.211rem;
     line-height: 1rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .md\:vr-source-sans\ pro-tight-sm {
+  .md\:vr-source-sans-tight-sm {
     font-size: .875rem;
     padding-top: .211rem;
     margin-bottom: -.211rem;
     line-height: 1rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .md\:vr-source-sans\ pro-snug-sm {
+  .md\:vr-source-sans-snug-sm {
     font-size: .875rem;
     padding-top: .211rem;
     margin-bottom: -.211rem;
     line-height: 1rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .md\:vr-source-sans\ pro-normal-sm {
+  .md\:vr-source-sans-normal-sm {
     font-size: .875rem;
     padding-top: .461rem;
     margin-bottom: -.461rem;
     line-height: 1.5rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .md\:vr-source-sans\ pro-relaxed-sm {
+  .md\:vr-source-sans-relaxed-sm {
     font-size: .875rem;
     padding-top: .461rem;
     margin-bottom: -.461rem;
     line-height: 1.5rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .md\:vr-source-sans\ pro-loose-sm {
+  .md\:vr-source-sans-loose-sm {
     font-size: .875rem;
     padding-top: .711rem;
     margin-bottom: -.711rem;
     line-height: 2rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .md\:vr-source-sans\ pro-sm {
+  .md\:vr-source-sans-sm {
     font-size: .875rem;
     padding-top: .711rem;
     margin-bottom: -.711rem;
     line-height: 2rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .md\:vr-source-sans\ pro-none-base {
+  .md\:vr-source-sans-none-base {
     font-size: 1rem;
     padding-top: .17rem;
     margin-bottom: -.17rem;
     line-height: 1rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .md\:vr-source-sans\ pro-tight-base {
+  .md\:vr-source-sans-tight-base {
     font-size: 1rem;
     padding-top: .42rem;
     margin-bottom: -.42rem;
     line-height: 1.5rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .md\:vr-source-sans\ pro-snug-base {
+  .md\:vr-source-sans-snug-base {
     font-size: 1rem;
     padding-top: .42rem;
     margin-bottom: -.42rem;
     line-height: 1.5rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .md\:vr-source-sans\ pro-normal-base {
+  .md\:vr-source-sans-normal-base {
     font-size: 1rem;
     padding-top: .42rem;
     margin-bottom: -.42rem;
     line-height: 1.5rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .md\:vr-source-sans\ pro-relaxed-base {
+  .md\:vr-source-sans-relaxed-base {
     font-size: 1rem;
     padding-top: .42rem;
     margin-bottom: -.42rem;
     line-height: 1.5rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .md\:vr-source-sans\ pro-loose-base {
+  .md\:vr-source-sans-loose-base {
     font-size: 1rem;
     padding-top: .67rem;
     margin-bottom: -.67rem;
     line-height: 2rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .md\:vr-source-sans\ pro-base {
+  .md\:vr-source-sans-base {
     font-size: 1rem;
     padding-top: .67rem;
     margin-bottom: -.67rem;
     line-height: 2rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .md\:vr-source-sans\ pro-none-lg {
+  .md\:vr-source-sans-none-lg {
     font-size: 1.125rem;
     padding-top: .129rem;
     margin-bottom: -.129rem;
     line-height: 1rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .md\:vr-source-sans\ pro-tight-lg {
+  .md\:vr-source-sans-tight-lg {
     font-size: 1.125rem;
     padding-top: .379rem;
     margin-bottom: -.379rem;
     line-height: 1.5rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .md\:vr-source-sans\ pro-snug-lg {
+  .md\:vr-source-sans-snug-lg {
     font-size: 1.125rem;
     padding-top: .379rem;
     margin-bottom: -.379rem;
     line-height: 1.5rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .md\:vr-source-sans\ pro-normal-lg {
+  .md\:vr-source-sans-normal-lg {
     font-size: 1.125rem;
     padding-top: .379rem;
     margin-bottom: -.379rem;
     line-height: 1.5rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .md\:vr-source-sans\ pro-relaxed-lg {
+  .md\:vr-source-sans-relaxed-lg {
     font-size: 1.125rem;
     padding-top: .629rem;
     margin-bottom: -.629rem;
     line-height: 2rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .md\:vr-source-sans\ pro-loose-lg {
+  .md\:vr-source-sans-loose-lg {
     font-size: 1.125rem;
     padding-top: .879rem;
     margin-bottom: -.879rem;
     line-height: 2.5rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .md\:vr-source-sans\ pro-lg {
+  .md\:vr-source-sans-lg {
     font-size: 1.125rem;
     padding-top: .879rem;
     margin-bottom: -.879rem;
     line-height: 2.5rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .md\:vr-source-sans\ pro-none-xl {
+  .md\:vr-source-sans-none-xl {
     font-size: 1.25rem;
     padding-top: .337rem;
     margin-bottom: -.337rem;
     line-height: 1.5rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .md\:vr-source-sans\ pro-tight-xl {
+  .md\:vr-source-sans-tight-xl {
     font-size: 1.25rem;
     padding-top: .337rem;
     margin-bottom: -.337rem;
     line-height: 1.5rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .md\:vr-source-sans\ pro-snug-xl {
+  .md\:vr-source-sans-snug-xl {
     font-size: 1.25rem;
     padding-top: .337rem;
     margin-bottom: -.337rem;
     line-height: 1.5rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .md\:vr-source-sans\ pro-normal-xl {
+  .md\:vr-source-sans-normal-xl {
     font-size: 1.25rem;
     padding-top: .587rem;
     margin-bottom: -.587rem;
     line-height: 2rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .md\:vr-source-sans\ pro-relaxed-xl {
+  .md\:vr-source-sans-relaxed-xl {
     font-size: 1.25rem;
     padding-top: .587rem;
     margin-bottom: -.587rem;
     line-height: 2rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .md\:vr-source-sans\ pro-loose-xl {
+  .md\:vr-source-sans-loose-xl {
     font-size: 1.25rem;
     padding-top: .837rem;
     margin-bottom: -.837rem;
     line-height: 2.5rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .md\:vr-source-sans\ pro-xl {
+  .md\:vr-source-sans-xl {
     font-size: 1.25rem;
     padding-top: .837rem;
     margin-bottom: -.837rem;
     line-height: 2.5rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .md\:vr-source-sans\ pro-none-2xl {
+  .md\:vr-source-sans-none-2xl {
     font-size: 1.5rem;
     padding-top: .255rem;
     margin-bottom: -.255rem;
     line-height: 1.5rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .md\:vr-source-sans\ pro-tight-2xl {
+  .md\:vr-source-sans-tight-2xl {
     font-size: 1.5rem;
     padding-top: .505rem;
     margin-bottom: -.505rem;
     line-height: 2rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .md\:vr-source-sans\ pro-snug-2xl {
+  .md\:vr-source-sans-snug-2xl {
     font-size: 1.5rem;
     padding-top: .505rem;
     margin-bottom: -.505rem;
     line-height: 2rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .md\:vr-source-sans\ pro-normal-2xl {
+  .md\:vr-source-sans-normal-2xl {
     font-size: 1.5rem;
     padding-top: .755rem;
     margin-bottom: -.755rem;
     line-height: 2.5rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .md\:vr-source-sans\ pro-relaxed-2xl {
+  .md\:vr-source-sans-relaxed-2xl {
     font-size: 1.5rem;
     padding-top: .755rem;
     margin-bottom: -.755rem;
     line-height: 2.5rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .md\:vr-source-sans\ pro-loose-2xl {
+  .md\:vr-source-sans-loose-2xl {
     font-size: 1.5rem;
     padding-top: 1.005rem;
     margin-bottom: -1.005rem;
     line-height: 3rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .md\:vr-source-sans\ pro-2xl {
+  .md\:vr-source-sans-2xl {
     font-size: 1.5rem;
     padding-top: 1.005rem;
     margin-bottom: -1.005rem;
     line-height: 3rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .md\:vr-source-sans\ pro-none-3xl {
+  .md\:vr-source-sans-none-3xl {
     font-size: 1.875rem;
     padding-top: .381rem;
     margin-bottom: -.381rem;
     line-height: 2rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .md\:vr-source-sans\ pro-tight-3xl {
+  .md\:vr-source-sans-tight-3xl {
     font-size: 1.875rem;
     padding-top: .631rem;
     margin-bottom: -.631rem;
     line-height: 2.5rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .md\:vr-source-sans\ pro-snug-3xl {
+  .md\:vr-source-sans-snug-3xl {
     font-size: 1.875rem;
     padding-top: .631rem;
     margin-bottom: -.631rem;
     line-height: 2.5rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .md\:vr-source-sans\ pro-normal-3xl {
+  .md\:vr-source-sans-normal-3xl {
     font-size: 1.875rem;
     padding-top: .881rem;
     margin-bottom: -.881rem;
     line-height: 3rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .md\:vr-source-sans\ pro-relaxed-3xl {
+  .md\:vr-source-sans-relaxed-3xl {
     font-size: 1.875rem;
     padding-top: .881rem;
     margin-bottom: -.881rem;
     line-height: 3rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .md\:vr-source-sans\ pro-loose-3xl {
+  .md\:vr-source-sans-loose-3xl {
     font-size: 1.875rem;
     padding-top: 1.381rem;
     margin-bottom: -1.381rem;
     line-height: 4rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .md\:vr-source-sans\ pro-3xl {
+  .md\:vr-source-sans-3xl {
     font-size: 1.875rem;
     padding-top: 1.381rem;
     margin-bottom: -1.381rem;
     line-height: 4rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .md\:vr-source-sans\ pro-none-4xl {
+  .md\:vr-source-sans-none-4xl {
     font-size: 2.25rem;
     padding-top: .507rem;
     margin-bottom: -.507rem;
     line-height: 2.5rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .md\:vr-source-sans\ pro-tight-4xl {
+  .md\:vr-source-sans-tight-4xl {
     font-size: 2.25rem;
     padding-top: .758rem;
     margin-bottom: -.757rem;
     line-height: 3rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .md\:vr-source-sans\ pro-snug-4xl {
+  .md\:vr-source-sans-snug-4xl {
     font-size: 2.25rem;
     padding-top: .758rem;
     margin-bottom: -.757rem;
     line-height: 3rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .md\:vr-source-sans\ pro-normal-4xl {
+  .md\:vr-source-sans-normal-4xl {
     font-size: 2.25rem;
     padding-top: 1.007rem;
     margin-bottom: -1.007rem;
     line-height: 3.5rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .md\:vr-source-sans\ pro-relaxed-4xl {
+  .md\:vr-source-sans-relaxed-4xl {
     font-size: 2.25rem;
     padding-top: 1.007rem;
     margin-bottom: -1.007rem;
     line-height: 3.5rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .md\:vr-source-sans\ pro-loose-4xl {
+  .md\:vr-source-sans-loose-4xl {
     font-size: 2.25rem;
     padding-top: 1.507rem;
     margin-bottom: -1.507rem;
     line-height: 4.5rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .md\:vr-source-sans\ pro-4xl {
+  .md\:vr-source-sans-4xl {
     font-size: 2.25rem;
     padding-top: 1.507rem;
     margin-bottom: -1.507rem;
     line-height: 4.5rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .md\:vr-source-sans\ pro-none-5xl {
+  .md\:vr-source-sans-none-5xl {
     font-size: 3rem;
     padding-top: .51rem;
     margin-bottom: -.51rem;
     line-height: 3rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .md\:vr-source-sans\ pro-tight-5xl {
+  .md\:vr-source-sans-tight-5xl {
     font-size: 3rem;
     padding-top: 1.01rem;
     margin-bottom: -1.01rem;
     line-height: 4rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .md\:vr-source-sans\ pro-snug-5xl {
+  .md\:vr-source-sans-snug-5xl {
     font-size: 3rem;
     padding-top: 1.01rem;
     margin-bottom: -1.01rem;
     line-height: 4rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .md\:vr-source-sans\ pro-normal-5xl {
+  .md\:vr-source-sans-normal-5xl {
     font-size: 3rem;
     padding-top: 1.26rem;
     margin-bottom: -1.26rem;
     line-height: 4.5rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .md\:vr-source-sans\ pro-relaxed-5xl {
+  .md\:vr-source-sans-relaxed-5xl {
     font-size: 3rem;
     padding-top: 1.51rem;
     margin-bottom: -1.51rem;
     line-height: 5rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .md\:vr-source-sans\ pro-loose-5xl {
+  .md\:vr-source-sans-loose-5xl {
     font-size: 3rem;
     padding-top: 2.01rem;
     margin-bottom: -2.01rem;
     line-height: 6rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .md\:vr-source-sans\ pro-5xl {
+  .md\:vr-source-sans-5xl {
     font-size: 3rem;
     padding-top: 2.01rem;
     margin-bottom: -2.01rem;
     line-height: 6rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .md\:vr-source-sans\ pro-none-6xl {
+  .md\:vr-source-sans-none-6xl {
     font-size: 4rem;
     padding-top: .68rem;
     margin-bottom: -.68rem;
     line-height: 4rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .md\:vr-source-sans\ pro-tight-6xl {
+  .md\:vr-source-sans-tight-6xl {
     font-size: 4rem;
     padding-top: 1.18rem;
     margin-bottom: -1.18rem;
     line-height: 5rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .md\:vr-source-sans\ pro-snug-6xl {
+  .md\:vr-source-sans-snug-6xl {
     font-size: 4rem;
     padding-top: 1.43rem;
     margin-bottom: -1.43rem;
     line-height: 5.5rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .md\:vr-source-sans\ pro-normal-6xl {
+  .md\:vr-source-sans-normal-6xl {
     font-size: 4rem;
     padding-top: 1.68rem;
     margin-bottom: -1.68rem;
     line-height: 6rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .md\:vr-source-sans\ pro-relaxed-6xl {
+  .md\:vr-source-sans-relaxed-6xl {
     font-size: 4rem;
     padding-top: 1.93rem;
     margin-bottom: -1.93rem;
     line-height: 6.5rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .md\:vr-source-sans\ pro-loose-6xl {
+  .md\:vr-source-sans-loose-6xl {
     font-size: 4rem;
     padding-top: 2.68rem;
     margin-bottom: -2.68rem;
     line-height: 8rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .md\:vr-source-sans\ pro-6xl {
+  .md\:vr-source-sans-6xl {
     font-size: 4rem;
     padding-top: 2.68rem;
     margin-bottom: -2.68rem;
     line-height: 8rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 }
 
@@ -48947,8 +50929,40 @@ h4 {
     border-color: #702459;
   }
 
-  .lg\:divide-accent > :not(template) ~ :not(template) {
-    border-color: #c54545;
+  .lg\:divide-accent-100 > :not(template) ~ :not(template) {
+    border-color: #FBE6F2;
+  }
+
+  .lg\:divide-accent-200 > :not(template) ~ :not(template) {
+    border-color: #F5BFDF;
+  }
+
+  .lg\:divide-accent-300 > :not(template) ~ :not(template) {
+    border-color: #EF99CC;
+  }
+
+  .lg\:divide-accent-400 > :not(template) ~ :not(template) {
+    border-color: #E24DA6;
+  }
+
+  .lg\:divide-accent-500 > :not(template) ~ :not(template) {
+    border-color: #D60080;
+  }
+
+  .lg\:divide-accent-600 > :not(template) ~ :not(template) {
+    border-color: #C10073;
+  }
+
+  .lg\:divide-accent-700 > :not(template) ~ :not(template) {
+    border-color: #80004D;
+  }
+
+  .lg\:divide-accent-800 > :not(template) ~ :not(template) {
+    border-color: #60003A;
+  }
+
+  .lg\:divide-accent-900 > :not(template) ~ :not(template) {
+    border-color: #400026;
   }
 
   .lg\:sr-only {
@@ -49391,8 +51405,40 @@ h4 {
     background-color: #702459;
   }
 
-  .lg\:bg-accent {
-    background-color: #c54545;
+  .lg\:bg-accent-100 {
+    background-color: #FBE6F2;
+  }
+
+  .lg\:bg-accent-200 {
+    background-color: #F5BFDF;
+  }
+
+  .lg\:bg-accent-300 {
+    background-color: #EF99CC;
+  }
+
+  .lg\:bg-accent-400 {
+    background-color: #E24DA6;
+  }
+
+  .lg\:bg-accent-500 {
+    background-color: #D60080;
+  }
+
+  .lg\:bg-accent-600 {
+    background-color: #C10073;
+  }
+
+  .lg\:bg-accent-700 {
+    background-color: #80004D;
+  }
+
+  .lg\:bg-accent-800 {
+    background-color: #60003A;
+  }
+
+  .lg\:bg-accent-900 {
+    background-color: #400026;
   }
 
   .lg\:hover\:bg-transparent:hover {
@@ -49771,8 +51817,40 @@ h4 {
     background-color: #702459;
   }
 
-  .lg\:hover\:bg-accent:hover {
-    background-color: #c54545;
+  .lg\:hover\:bg-accent-100:hover {
+    background-color: #FBE6F2;
+  }
+
+  .lg\:hover\:bg-accent-200:hover {
+    background-color: #F5BFDF;
+  }
+
+  .lg\:hover\:bg-accent-300:hover {
+    background-color: #EF99CC;
+  }
+
+  .lg\:hover\:bg-accent-400:hover {
+    background-color: #E24DA6;
+  }
+
+  .lg\:hover\:bg-accent-500:hover {
+    background-color: #D60080;
+  }
+
+  .lg\:hover\:bg-accent-600:hover {
+    background-color: #C10073;
+  }
+
+  .lg\:hover\:bg-accent-700:hover {
+    background-color: #80004D;
+  }
+
+  .lg\:hover\:bg-accent-800:hover {
+    background-color: #60003A;
+  }
+
+  .lg\:hover\:bg-accent-900:hover {
+    background-color: #400026;
   }
 
   .lg\:focus\:bg-transparent:focus {
@@ -50151,8 +52229,40 @@ h4 {
     background-color: #702459;
   }
 
-  .lg\:focus\:bg-accent:focus {
-    background-color: #c54545;
+  .lg\:focus\:bg-accent-100:focus {
+    background-color: #FBE6F2;
+  }
+
+  .lg\:focus\:bg-accent-200:focus {
+    background-color: #F5BFDF;
+  }
+
+  .lg\:focus\:bg-accent-300:focus {
+    background-color: #EF99CC;
+  }
+
+  .lg\:focus\:bg-accent-400:focus {
+    background-color: #E24DA6;
+  }
+
+  .lg\:focus\:bg-accent-500:focus {
+    background-color: #D60080;
+  }
+
+  .lg\:focus\:bg-accent-600:focus {
+    background-color: #C10073;
+  }
+
+  .lg\:focus\:bg-accent-700:focus {
+    background-color: #80004D;
+  }
+
+  .lg\:focus\:bg-accent-800:focus {
+    background-color: #60003A;
+  }
+
+  .lg\:focus\:bg-accent-900:focus {
+    background-color: #400026;
   }
 
   .lg\:bg-bottom {
@@ -50611,8 +52721,40 @@ h4 {
     border-color: #702459;
   }
 
-  .lg\:border-accent {
-    border-color: #c54545;
+  .lg\:border-accent-100 {
+    border-color: #FBE6F2;
+  }
+
+  .lg\:border-accent-200 {
+    border-color: #F5BFDF;
+  }
+
+  .lg\:border-accent-300 {
+    border-color: #EF99CC;
+  }
+
+  .lg\:border-accent-400 {
+    border-color: #E24DA6;
+  }
+
+  .lg\:border-accent-500 {
+    border-color: #D60080;
+  }
+
+  .lg\:border-accent-600 {
+    border-color: #C10073;
+  }
+
+  .lg\:border-accent-700 {
+    border-color: #80004D;
+  }
+
+  .lg\:border-accent-800 {
+    border-color: #60003A;
+  }
+
+  .lg\:border-accent-900 {
+    border-color: #400026;
   }
 
   .lg\:hover\:border-transparent:hover {
@@ -50991,8 +53133,40 @@ h4 {
     border-color: #702459;
   }
 
-  .lg\:hover\:border-accent:hover {
-    border-color: #c54545;
+  .lg\:hover\:border-accent-100:hover {
+    border-color: #FBE6F2;
+  }
+
+  .lg\:hover\:border-accent-200:hover {
+    border-color: #F5BFDF;
+  }
+
+  .lg\:hover\:border-accent-300:hover {
+    border-color: #EF99CC;
+  }
+
+  .lg\:hover\:border-accent-400:hover {
+    border-color: #E24DA6;
+  }
+
+  .lg\:hover\:border-accent-500:hover {
+    border-color: #D60080;
+  }
+
+  .lg\:hover\:border-accent-600:hover {
+    border-color: #C10073;
+  }
+
+  .lg\:hover\:border-accent-700:hover {
+    border-color: #80004D;
+  }
+
+  .lg\:hover\:border-accent-800:hover {
+    border-color: #60003A;
+  }
+
+  .lg\:hover\:border-accent-900:hover {
+    border-color: #400026;
   }
 
   .lg\:focus\:border-transparent:focus {
@@ -51371,8 +53545,40 @@ h4 {
     border-color: #702459;
   }
 
-  .lg\:focus\:border-accent:focus {
-    border-color: #c54545;
+  .lg\:focus\:border-accent-100:focus {
+    border-color: #FBE6F2;
+  }
+
+  .lg\:focus\:border-accent-200:focus {
+    border-color: #F5BFDF;
+  }
+
+  .lg\:focus\:border-accent-300:focus {
+    border-color: #EF99CC;
+  }
+
+  .lg\:focus\:border-accent-400:focus {
+    border-color: #E24DA6;
+  }
+
+  .lg\:focus\:border-accent-500:focus {
+    border-color: #D60080;
+  }
+
+  .lg\:focus\:border-accent-600:focus {
+    border-color: #C10073;
+  }
+
+  .lg\:focus\:border-accent-700:focus {
+    border-color: #80004D;
+  }
+
+  .lg\:focus\:border-accent-800:focus {
+    border-color: #60003A;
+  }
+
+  .lg\:focus\:border-accent-900:focus {
+    border-color: #400026;
   }
 
   .lg\:rounded-none {
@@ -52178,7 +54384,11 @@ h4 {
   }
 
   .lg\:font-sans {
-    font-family: "Source Sans Pro", system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, "Segoe UI", "Roboto", "Ubuntu", "Cantarell", "Noto Sans", sans-serif;
+    font-family: "Source Sans", system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, "Segoe UI", "Roboto", "Ubuntu", "Cantarell", "Noto Sans", sans-serif;
+  }
+
+  .lg\:font-serif {
+    font-family: "Georgia", serif;
   }
 
   .lg\:font-hairline {
@@ -56369,24 +58579,184 @@ h4 {
     color: #702459;
   }
 
-  .lg\:placeholder-accent::-webkit-input-placeholder {
-    color: #c54545;
+  .lg\:placeholder-accent-100::-webkit-input-placeholder {
+    color: #FBE6F2;
   }
 
-  .lg\:placeholder-accent::-moz-placeholder {
-    color: #c54545;
+  .lg\:placeholder-accent-100::-moz-placeholder {
+    color: #FBE6F2;
   }
 
-  .lg\:placeholder-accent:-ms-input-placeholder {
-    color: #c54545;
+  .lg\:placeholder-accent-100:-ms-input-placeholder {
+    color: #FBE6F2;
   }
 
-  .lg\:placeholder-accent::-ms-input-placeholder {
-    color: #c54545;
+  .lg\:placeholder-accent-100::-ms-input-placeholder {
+    color: #FBE6F2;
   }
 
-  .lg\:placeholder-accent::placeholder {
-    color: #c54545;
+  .lg\:placeholder-accent-100::placeholder {
+    color: #FBE6F2;
+  }
+
+  .lg\:placeholder-accent-200::-webkit-input-placeholder {
+    color: #F5BFDF;
+  }
+
+  .lg\:placeholder-accent-200::-moz-placeholder {
+    color: #F5BFDF;
+  }
+
+  .lg\:placeholder-accent-200:-ms-input-placeholder {
+    color: #F5BFDF;
+  }
+
+  .lg\:placeholder-accent-200::-ms-input-placeholder {
+    color: #F5BFDF;
+  }
+
+  .lg\:placeholder-accent-200::placeholder {
+    color: #F5BFDF;
+  }
+
+  .lg\:placeholder-accent-300::-webkit-input-placeholder {
+    color: #EF99CC;
+  }
+
+  .lg\:placeholder-accent-300::-moz-placeholder {
+    color: #EF99CC;
+  }
+
+  .lg\:placeholder-accent-300:-ms-input-placeholder {
+    color: #EF99CC;
+  }
+
+  .lg\:placeholder-accent-300::-ms-input-placeholder {
+    color: #EF99CC;
+  }
+
+  .lg\:placeholder-accent-300::placeholder {
+    color: #EF99CC;
+  }
+
+  .lg\:placeholder-accent-400::-webkit-input-placeholder {
+    color: #E24DA6;
+  }
+
+  .lg\:placeholder-accent-400::-moz-placeholder {
+    color: #E24DA6;
+  }
+
+  .lg\:placeholder-accent-400:-ms-input-placeholder {
+    color: #E24DA6;
+  }
+
+  .lg\:placeholder-accent-400::-ms-input-placeholder {
+    color: #E24DA6;
+  }
+
+  .lg\:placeholder-accent-400::placeholder {
+    color: #E24DA6;
+  }
+
+  .lg\:placeholder-accent-500::-webkit-input-placeholder {
+    color: #D60080;
+  }
+
+  .lg\:placeholder-accent-500::-moz-placeholder {
+    color: #D60080;
+  }
+
+  .lg\:placeholder-accent-500:-ms-input-placeholder {
+    color: #D60080;
+  }
+
+  .lg\:placeholder-accent-500::-ms-input-placeholder {
+    color: #D60080;
+  }
+
+  .lg\:placeholder-accent-500::placeholder {
+    color: #D60080;
+  }
+
+  .lg\:placeholder-accent-600::-webkit-input-placeholder {
+    color: #C10073;
+  }
+
+  .lg\:placeholder-accent-600::-moz-placeholder {
+    color: #C10073;
+  }
+
+  .lg\:placeholder-accent-600:-ms-input-placeholder {
+    color: #C10073;
+  }
+
+  .lg\:placeholder-accent-600::-ms-input-placeholder {
+    color: #C10073;
+  }
+
+  .lg\:placeholder-accent-600::placeholder {
+    color: #C10073;
+  }
+
+  .lg\:placeholder-accent-700::-webkit-input-placeholder {
+    color: #80004D;
+  }
+
+  .lg\:placeholder-accent-700::-moz-placeholder {
+    color: #80004D;
+  }
+
+  .lg\:placeholder-accent-700:-ms-input-placeholder {
+    color: #80004D;
+  }
+
+  .lg\:placeholder-accent-700::-ms-input-placeholder {
+    color: #80004D;
+  }
+
+  .lg\:placeholder-accent-700::placeholder {
+    color: #80004D;
+  }
+
+  .lg\:placeholder-accent-800::-webkit-input-placeholder {
+    color: #60003A;
+  }
+
+  .lg\:placeholder-accent-800::-moz-placeholder {
+    color: #60003A;
+  }
+
+  .lg\:placeholder-accent-800:-ms-input-placeholder {
+    color: #60003A;
+  }
+
+  .lg\:placeholder-accent-800::-ms-input-placeholder {
+    color: #60003A;
+  }
+
+  .lg\:placeholder-accent-800::placeholder {
+    color: #60003A;
+  }
+
+  .lg\:placeholder-accent-900::-webkit-input-placeholder {
+    color: #400026;
+  }
+
+  .lg\:placeholder-accent-900::-moz-placeholder {
+    color: #400026;
+  }
+
+  .lg\:placeholder-accent-900:-ms-input-placeholder {
+    color: #400026;
+  }
+
+  .lg\:placeholder-accent-900::-ms-input-placeholder {
+    color: #400026;
+  }
+
+  .lg\:placeholder-accent-900::placeholder {
+    color: #400026;
   }
 
   .lg\:focus\:placeholder-transparent:focus::-webkit-input-placeholder {
@@ -58269,24 +60639,184 @@ h4 {
     color: #702459;
   }
 
-  .lg\:focus\:placeholder-accent:focus::-webkit-input-placeholder {
-    color: #c54545;
+  .lg\:focus\:placeholder-accent-100:focus::-webkit-input-placeholder {
+    color: #FBE6F2;
   }
 
-  .lg\:focus\:placeholder-accent:focus::-moz-placeholder {
-    color: #c54545;
+  .lg\:focus\:placeholder-accent-100:focus::-moz-placeholder {
+    color: #FBE6F2;
   }
 
-  .lg\:focus\:placeholder-accent:focus:-ms-input-placeholder {
-    color: #c54545;
+  .lg\:focus\:placeholder-accent-100:focus:-ms-input-placeholder {
+    color: #FBE6F2;
   }
 
-  .lg\:focus\:placeholder-accent:focus::-ms-input-placeholder {
-    color: #c54545;
+  .lg\:focus\:placeholder-accent-100:focus::-ms-input-placeholder {
+    color: #FBE6F2;
   }
 
-  .lg\:focus\:placeholder-accent:focus::placeholder {
-    color: #c54545;
+  .lg\:focus\:placeholder-accent-100:focus::placeholder {
+    color: #FBE6F2;
+  }
+
+  .lg\:focus\:placeholder-accent-200:focus::-webkit-input-placeholder {
+    color: #F5BFDF;
+  }
+
+  .lg\:focus\:placeholder-accent-200:focus::-moz-placeholder {
+    color: #F5BFDF;
+  }
+
+  .lg\:focus\:placeholder-accent-200:focus:-ms-input-placeholder {
+    color: #F5BFDF;
+  }
+
+  .lg\:focus\:placeholder-accent-200:focus::-ms-input-placeholder {
+    color: #F5BFDF;
+  }
+
+  .lg\:focus\:placeholder-accent-200:focus::placeholder {
+    color: #F5BFDF;
+  }
+
+  .lg\:focus\:placeholder-accent-300:focus::-webkit-input-placeholder {
+    color: #EF99CC;
+  }
+
+  .lg\:focus\:placeholder-accent-300:focus::-moz-placeholder {
+    color: #EF99CC;
+  }
+
+  .lg\:focus\:placeholder-accent-300:focus:-ms-input-placeholder {
+    color: #EF99CC;
+  }
+
+  .lg\:focus\:placeholder-accent-300:focus::-ms-input-placeholder {
+    color: #EF99CC;
+  }
+
+  .lg\:focus\:placeholder-accent-300:focus::placeholder {
+    color: #EF99CC;
+  }
+
+  .lg\:focus\:placeholder-accent-400:focus::-webkit-input-placeholder {
+    color: #E24DA6;
+  }
+
+  .lg\:focus\:placeholder-accent-400:focus::-moz-placeholder {
+    color: #E24DA6;
+  }
+
+  .lg\:focus\:placeholder-accent-400:focus:-ms-input-placeholder {
+    color: #E24DA6;
+  }
+
+  .lg\:focus\:placeholder-accent-400:focus::-ms-input-placeholder {
+    color: #E24DA6;
+  }
+
+  .lg\:focus\:placeholder-accent-400:focus::placeholder {
+    color: #E24DA6;
+  }
+
+  .lg\:focus\:placeholder-accent-500:focus::-webkit-input-placeholder {
+    color: #D60080;
+  }
+
+  .lg\:focus\:placeholder-accent-500:focus::-moz-placeholder {
+    color: #D60080;
+  }
+
+  .lg\:focus\:placeholder-accent-500:focus:-ms-input-placeholder {
+    color: #D60080;
+  }
+
+  .lg\:focus\:placeholder-accent-500:focus::-ms-input-placeholder {
+    color: #D60080;
+  }
+
+  .lg\:focus\:placeholder-accent-500:focus::placeholder {
+    color: #D60080;
+  }
+
+  .lg\:focus\:placeholder-accent-600:focus::-webkit-input-placeholder {
+    color: #C10073;
+  }
+
+  .lg\:focus\:placeholder-accent-600:focus::-moz-placeholder {
+    color: #C10073;
+  }
+
+  .lg\:focus\:placeholder-accent-600:focus:-ms-input-placeholder {
+    color: #C10073;
+  }
+
+  .lg\:focus\:placeholder-accent-600:focus::-ms-input-placeholder {
+    color: #C10073;
+  }
+
+  .lg\:focus\:placeholder-accent-600:focus::placeholder {
+    color: #C10073;
+  }
+
+  .lg\:focus\:placeholder-accent-700:focus::-webkit-input-placeholder {
+    color: #80004D;
+  }
+
+  .lg\:focus\:placeholder-accent-700:focus::-moz-placeholder {
+    color: #80004D;
+  }
+
+  .lg\:focus\:placeholder-accent-700:focus:-ms-input-placeholder {
+    color: #80004D;
+  }
+
+  .lg\:focus\:placeholder-accent-700:focus::-ms-input-placeholder {
+    color: #80004D;
+  }
+
+  .lg\:focus\:placeholder-accent-700:focus::placeholder {
+    color: #80004D;
+  }
+
+  .lg\:focus\:placeholder-accent-800:focus::-webkit-input-placeholder {
+    color: #60003A;
+  }
+
+  .lg\:focus\:placeholder-accent-800:focus::-moz-placeholder {
+    color: #60003A;
+  }
+
+  .lg\:focus\:placeholder-accent-800:focus:-ms-input-placeholder {
+    color: #60003A;
+  }
+
+  .lg\:focus\:placeholder-accent-800:focus::-ms-input-placeholder {
+    color: #60003A;
+  }
+
+  .lg\:focus\:placeholder-accent-800:focus::placeholder {
+    color: #60003A;
+  }
+
+  .lg\:focus\:placeholder-accent-900:focus::-webkit-input-placeholder {
+    color: #400026;
+  }
+
+  .lg\:focus\:placeholder-accent-900:focus::-moz-placeholder {
+    color: #400026;
+  }
+
+  .lg\:focus\:placeholder-accent-900:focus:-ms-input-placeholder {
+    color: #400026;
+  }
+
+  .lg\:focus\:placeholder-accent-900:focus::-ms-input-placeholder {
+    color: #400026;
+  }
+
+  .lg\:focus\:placeholder-accent-900:focus::placeholder {
+    color: #400026;
   }
 
   .lg\:pointer-events-none {
@@ -58970,8 +61500,40 @@ h4 {
     color: #702459;
   }
 
-  .lg\:text-accent {
-    color: #c54545;
+  .lg\:text-accent-100 {
+    color: #FBE6F2;
+  }
+
+  .lg\:text-accent-200 {
+    color: #F5BFDF;
+  }
+
+  .lg\:text-accent-300 {
+    color: #EF99CC;
+  }
+
+  .lg\:text-accent-400 {
+    color: #E24DA6;
+  }
+
+  .lg\:text-accent-500 {
+    color: #D60080;
+  }
+
+  .lg\:text-accent-600 {
+    color: #C10073;
+  }
+
+  .lg\:text-accent-700 {
+    color: #80004D;
+  }
+
+  .lg\:text-accent-800 {
+    color: #60003A;
+  }
+
+  .lg\:text-accent-900 {
+    color: #400026;
   }
 
   .lg\:hover\:text-transparent:hover {
@@ -59350,8 +61912,40 @@ h4 {
     color: #702459;
   }
 
-  .lg\:hover\:text-accent:hover {
-    color: #c54545;
+  .lg\:hover\:text-accent-100:hover {
+    color: #FBE6F2;
+  }
+
+  .lg\:hover\:text-accent-200:hover {
+    color: #F5BFDF;
+  }
+
+  .lg\:hover\:text-accent-300:hover {
+    color: #EF99CC;
+  }
+
+  .lg\:hover\:text-accent-400:hover {
+    color: #E24DA6;
+  }
+
+  .lg\:hover\:text-accent-500:hover {
+    color: #D60080;
+  }
+
+  .lg\:hover\:text-accent-600:hover {
+    color: #C10073;
+  }
+
+  .lg\:hover\:text-accent-700:hover {
+    color: #80004D;
+  }
+
+  .lg\:hover\:text-accent-800:hover {
+    color: #60003A;
+  }
+
+  .lg\:hover\:text-accent-900:hover {
+    color: #400026;
   }
 
   .lg\:focus\:text-transparent:focus {
@@ -59730,8 +62324,40 @@ h4 {
     color: #702459;
   }
 
-  .lg\:focus\:text-accent:focus {
-    color: #c54545;
+  .lg\:focus\:text-accent-100:focus {
+    color: #FBE6F2;
+  }
+
+  .lg\:focus\:text-accent-200:focus {
+    color: #F5BFDF;
+  }
+
+  .lg\:focus\:text-accent-300:focus {
+    color: #EF99CC;
+  }
+
+  .lg\:focus\:text-accent-400:focus {
+    color: #E24DA6;
+  }
+
+  .lg\:focus\:text-accent-500:focus {
+    color: #D60080;
+  }
+
+  .lg\:focus\:text-accent-600:focus {
+    color: #C10073;
+  }
+
+  .lg\:focus\:text-accent-700:focus {
+    color: #80004D;
+  }
+
+  .lg\:focus\:text-accent-800:focus {
+    color: #60003A;
+  }
+
+  .lg\:focus\:text-accent-900:focus {
+    color: #400026;
   }
 
   .lg\:italic {
@@ -63198,564 +65824,564 @@ h4 {
     line-height: 8rem;
   }
 
-  .lg\:vr-source-sans\ pro-none-xs {
+  .lg\:vr-source-sans-none-xs {
     font-size: .75rem;
     padding-top: .253rem;
     margin-bottom: -.252rem;
     line-height: 1rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .lg\:vr-source-sans\ pro-tight-xs {
+  .lg\:vr-source-sans-tight-xs {
     font-size: .75rem;
     padding-top: .253rem;
     margin-bottom: -.252rem;
     line-height: 1rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .lg\:vr-source-sans\ pro-snug-xs {
+  .lg\:vr-source-sans-snug-xs {
     font-size: .75rem;
     padding-top: .253rem;
     margin-bottom: -.252rem;
     line-height: 1rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .lg\:vr-source-sans\ pro-normal-xs {
+  .lg\:vr-source-sans-normal-xs {
     font-size: .75rem;
     padding-top: .253rem;
     margin-bottom: -.252rem;
     line-height: 1rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .lg\:vr-source-sans\ pro-relaxed-xs {
+  .lg\:vr-source-sans-relaxed-xs {
     font-size: .75rem;
     padding-top: .253rem;
     margin-bottom: -.252rem;
     line-height: 1rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .lg\:vr-source-sans\ pro-loose-xs {
+  .lg\:vr-source-sans-loose-xs {
     font-size: .75rem;
     padding-top: .502rem;
     margin-bottom: -.502rem;
     line-height: 1.5rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .lg\:vr-source-sans\ pro-xs {
+  .lg\:vr-source-sans-xs {
     font-size: .75rem;
     padding-top: .502rem;
     margin-bottom: -.502rem;
     line-height: 1.5rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .lg\:vr-source-sans\ pro-none-sm {
+  .lg\:vr-source-sans-none-sm {
     font-size: .875rem;
     padding-top: .211rem;
     margin-bottom: -.211rem;
     line-height: 1rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .lg\:vr-source-sans\ pro-tight-sm {
+  .lg\:vr-source-sans-tight-sm {
     font-size: .875rem;
     padding-top: .211rem;
     margin-bottom: -.211rem;
     line-height: 1rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .lg\:vr-source-sans\ pro-snug-sm {
+  .lg\:vr-source-sans-snug-sm {
     font-size: .875rem;
     padding-top: .211rem;
     margin-bottom: -.211rem;
     line-height: 1rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .lg\:vr-source-sans\ pro-normal-sm {
+  .lg\:vr-source-sans-normal-sm {
     font-size: .875rem;
     padding-top: .461rem;
     margin-bottom: -.461rem;
     line-height: 1.5rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .lg\:vr-source-sans\ pro-relaxed-sm {
+  .lg\:vr-source-sans-relaxed-sm {
     font-size: .875rem;
     padding-top: .461rem;
     margin-bottom: -.461rem;
     line-height: 1.5rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .lg\:vr-source-sans\ pro-loose-sm {
+  .lg\:vr-source-sans-loose-sm {
     font-size: .875rem;
     padding-top: .711rem;
     margin-bottom: -.711rem;
     line-height: 2rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .lg\:vr-source-sans\ pro-sm {
+  .lg\:vr-source-sans-sm {
     font-size: .875rem;
     padding-top: .711rem;
     margin-bottom: -.711rem;
     line-height: 2rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .lg\:vr-source-sans\ pro-none-base {
+  .lg\:vr-source-sans-none-base {
     font-size: 1rem;
     padding-top: .17rem;
     margin-bottom: -.17rem;
     line-height: 1rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .lg\:vr-source-sans\ pro-tight-base {
+  .lg\:vr-source-sans-tight-base {
     font-size: 1rem;
     padding-top: .42rem;
     margin-bottom: -.42rem;
     line-height: 1.5rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .lg\:vr-source-sans\ pro-snug-base {
+  .lg\:vr-source-sans-snug-base {
     font-size: 1rem;
     padding-top: .42rem;
     margin-bottom: -.42rem;
     line-height: 1.5rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .lg\:vr-source-sans\ pro-normal-base {
+  .lg\:vr-source-sans-normal-base {
     font-size: 1rem;
     padding-top: .42rem;
     margin-bottom: -.42rem;
     line-height: 1.5rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .lg\:vr-source-sans\ pro-relaxed-base {
+  .lg\:vr-source-sans-relaxed-base {
     font-size: 1rem;
     padding-top: .42rem;
     margin-bottom: -.42rem;
     line-height: 1.5rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .lg\:vr-source-sans\ pro-loose-base {
+  .lg\:vr-source-sans-loose-base {
     font-size: 1rem;
     padding-top: .67rem;
     margin-bottom: -.67rem;
     line-height: 2rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .lg\:vr-source-sans\ pro-base {
+  .lg\:vr-source-sans-base {
     font-size: 1rem;
     padding-top: .67rem;
     margin-bottom: -.67rem;
     line-height: 2rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .lg\:vr-source-sans\ pro-none-lg {
+  .lg\:vr-source-sans-none-lg {
     font-size: 1.125rem;
     padding-top: .129rem;
     margin-bottom: -.129rem;
     line-height: 1rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .lg\:vr-source-sans\ pro-tight-lg {
+  .lg\:vr-source-sans-tight-lg {
     font-size: 1.125rem;
     padding-top: .379rem;
     margin-bottom: -.379rem;
     line-height: 1.5rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .lg\:vr-source-sans\ pro-snug-lg {
+  .lg\:vr-source-sans-snug-lg {
     font-size: 1.125rem;
     padding-top: .379rem;
     margin-bottom: -.379rem;
     line-height: 1.5rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .lg\:vr-source-sans\ pro-normal-lg {
+  .lg\:vr-source-sans-normal-lg {
     font-size: 1.125rem;
     padding-top: .379rem;
     margin-bottom: -.379rem;
     line-height: 1.5rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .lg\:vr-source-sans\ pro-relaxed-lg {
+  .lg\:vr-source-sans-relaxed-lg {
     font-size: 1.125rem;
     padding-top: .629rem;
     margin-bottom: -.629rem;
     line-height: 2rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .lg\:vr-source-sans\ pro-loose-lg {
+  .lg\:vr-source-sans-loose-lg {
     font-size: 1.125rem;
     padding-top: .879rem;
     margin-bottom: -.879rem;
     line-height: 2.5rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .lg\:vr-source-sans\ pro-lg {
+  .lg\:vr-source-sans-lg {
     font-size: 1.125rem;
     padding-top: .879rem;
     margin-bottom: -.879rem;
     line-height: 2.5rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .lg\:vr-source-sans\ pro-none-xl {
+  .lg\:vr-source-sans-none-xl {
     font-size: 1.25rem;
     padding-top: .337rem;
     margin-bottom: -.337rem;
     line-height: 1.5rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .lg\:vr-source-sans\ pro-tight-xl {
+  .lg\:vr-source-sans-tight-xl {
     font-size: 1.25rem;
     padding-top: .337rem;
     margin-bottom: -.337rem;
     line-height: 1.5rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .lg\:vr-source-sans\ pro-snug-xl {
+  .lg\:vr-source-sans-snug-xl {
     font-size: 1.25rem;
     padding-top: .337rem;
     margin-bottom: -.337rem;
     line-height: 1.5rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .lg\:vr-source-sans\ pro-normal-xl {
+  .lg\:vr-source-sans-normal-xl {
     font-size: 1.25rem;
     padding-top: .587rem;
     margin-bottom: -.587rem;
     line-height: 2rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .lg\:vr-source-sans\ pro-relaxed-xl {
+  .lg\:vr-source-sans-relaxed-xl {
     font-size: 1.25rem;
     padding-top: .587rem;
     margin-bottom: -.587rem;
     line-height: 2rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .lg\:vr-source-sans\ pro-loose-xl {
+  .lg\:vr-source-sans-loose-xl {
     font-size: 1.25rem;
     padding-top: .837rem;
     margin-bottom: -.837rem;
     line-height: 2.5rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .lg\:vr-source-sans\ pro-xl {
+  .lg\:vr-source-sans-xl {
     font-size: 1.25rem;
     padding-top: .837rem;
     margin-bottom: -.837rem;
     line-height: 2.5rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .lg\:vr-source-sans\ pro-none-2xl {
+  .lg\:vr-source-sans-none-2xl {
     font-size: 1.5rem;
     padding-top: .255rem;
     margin-bottom: -.255rem;
     line-height: 1.5rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .lg\:vr-source-sans\ pro-tight-2xl {
+  .lg\:vr-source-sans-tight-2xl {
     font-size: 1.5rem;
     padding-top: .505rem;
     margin-bottom: -.505rem;
     line-height: 2rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .lg\:vr-source-sans\ pro-snug-2xl {
+  .lg\:vr-source-sans-snug-2xl {
     font-size: 1.5rem;
     padding-top: .505rem;
     margin-bottom: -.505rem;
     line-height: 2rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .lg\:vr-source-sans\ pro-normal-2xl {
+  .lg\:vr-source-sans-normal-2xl {
     font-size: 1.5rem;
     padding-top: .755rem;
     margin-bottom: -.755rem;
     line-height: 2.5rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .lg\:vr-source-sans\ pro-relaxed-2xl {
+  .lg\:vr-source-sans-relaxed-2xl {
     font-size: 1.5rem;
     padding-top: .755rem;
     margin-bottom: -.755rem;
     line-height: 2.5rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .lg\:vr-source-sans\ pro-loose-2xl {
+  .lg\:vr-source-sans-loose-2xl {
     font-size: 1.5rem;
     padding-top: 1.005rem;
     margin-bottom: -1.005rem;
     line-height: 3rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .lg\:vr-source-sans\ pro-2xl {
+  .lg\:vr-source-sans-2xl {
     font-size: 1.5rem;
     padding-top: 1.005rem;
     margin-bottom: -1.005rem;
     line-height: 3rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .lg\:vr-source-sans\ pro-none-3xl {
+  .lg\:vr-source-sans-none-3xl {
     font-size: 1.875rem;
     padding-top: .381rem;
     margin-bottom: -.381rem;
     line-height: 2rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .lg\:vr-source-sans\ pro-tight-3xl {
+  .lg\:vr-source-sans-tight-3xl {
     font-size: 1.875rem;
     padding-top: .631rem;
     margin-bottom: -.631rem;
     line-height: 2.5rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .lg\:vr-source-sans\ pro-snug-3xl {
+  .lg\:vr-source-sans-snug-3xl {
     font-size: 1.875rem;
     padding-top: .631rem;
     margin-bottom: -.631rem;
     line-height: 2.5rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .lg\:vr-source-sans\ pro-normal-3xl {
+  .lg\:vr-source-sans-normal-3xl {
     font-size: 1.875rem;
     padding-top: .881rem;
     margin-bottom: -.881rem;
     line-height: 3rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .lg\:vr-source-sans\ pro-relaxed-3xl {
+  .lg\:vr-source-sans-relaxed-3xl {
     font-size: 1.875rem;
     padding-top: .881rem;
     margin-bottom: -.881rem;
     line-height: 3rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .lg\:vr-source-sans\ pro-loose-3xl {
+  .lg\:vr-source-sans-loose-3xl {
     font-size: 1.875rem;
     padding-top: 1.381rem;
     margin-bottom: -1.381rem;
     line-height: 4rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .lg\:vr-source-sans\ pro-3xl {
+  .lg\:vr-source-sans-3xl {
     font-size: 1.875rem;
     padding-top: 1.381rem;
     margin-bottom: -1.381rem;
     line-height: 4rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .lg\:vr-source-sans\ pro-none-4xl {
+  .lg\:vr-source-sans-none-4xl {
     font-size: 2.25rem;
     padding-top: .507rem;
     margin-bottom: -.507rem;
     line-height: 2.5rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .lg\:vr-source-sans\ pro-tight-4xl {
+  .lg\:vr-source-sans-tight-4xl {
     font-size: 2.25rem;
     padding-top: .758rem;
     margin-bottom: -.757rem;
     line-height: 3rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .lg\:vr-source-sans\ pro-snug-4xl {
+  .lg\:vr-source-sans-snug-4xl {
     font-size: 2.25rem;
     padding-top: .758rem;
     margin-bottom: -.757rem;
     line-height: 3rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .lg\:vr-source-sans\ pro-normal-4xl {
+  .lg\:vr-source-sans-normal-4xl {
     font-size: 2.25rem;
     padding-top: 1.007rem;
     margin-bottom: -1.007rem;
     line-height: 3.5rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .lg\:vr-source-sans\ pro-relaxed-4xl {
+  .lg\:vr-source-sans-relaxed-4xl {
     font-size: 2.25rem;
     padding-top: 1.007rem;
     margin-bottom: -1.007rem;
     line-height: 3.5rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .lg\:vr-source-sans\ pro-loose-4xl {
+  .lg\:vr-source-sans-loose-4xl {
     font-size: 2.25rem;
     padding-top: 1.507rem;
     margin-bottom: -1.507rem;
     line-height: 4.5rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .lg\:vr-source-sans\ pro-4xl {
+  .lg\:vr-source-sans-4xl {
     font-size: 2.25rem;
     padding-top: 1.507rem;
     margin-bottom: -1.507rem;
     line-height: 4.5rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .lg\:vr-source-sans\ pro-none-5xl {
+  .lg\:vr-source-sans-none-5xl {
     font-size: 3rem;
     padding-top: .51rem;
     margin-bottom: -.51rem;
     line-height: 3rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .lg\:vr-source-sans\ pro-tight-5xl {
+  .lg\:vr-source-sans-tight-5xl {
     font-size: 3rem;
     padding-top: 1.01rem;
     margin-bottom: -1.01rem;
     line-height: 4rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .lg\:vr-source-sans\ pro-snug-5xl {
+  .lg\:vr-source-sans-snug-5xl {
     font-size: 3rem;
     padding-top: 1.01rem;
     margin-bottom: -1.01rem;
     line-height: 4rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .lg\:vr-source-sans\ pro-normal-5xl {
+  .lg\:vr-source-sans-normal-5xl {
     font-size: 3rem;
     padding-top: 1.26rem;
     margin-bottom: -1.26rem;
     line-height: 4.5rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .lg\:vr-source-sans\ pro-relaxed-5xl {
+  .lg\:vr-source-sans-relaxed-5xl {
     font-size: 3rem;
     padding-top: 1.51rem;
     margin-bottom: -1.51rem;
     line-height: 5rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .lg\:vr-source-sans\ pro-loose-5xl {
+  .lg\:vr-source-sans-loose-5xl {
     font-size: 3rem;
     padding-top: 2.01rem;
     margin-bottom: -2.01rem;
     line-height: 6rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .lg\:vr-source-sans\ pro-5xl {
+  .lg\:vr-source-sans-5xl {
     font-size: 3rem;
     padding-top: 2.01rem;
     margin-bottom: -2.01rem;
     line-height: 6rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .lg\:vr-source-sans\ pro-none-6xl {
+  .lg\:vr-source-sans-none-6xl {
     font-size: 4rem;
     padding-top: .68rem;
     margin-bottom: -.68rem;
     line-height: 4rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .lg\:vr-source-sans\ pro-tight-6xl {
+  .lg\:vr-source-sans-tight-6xl {
     font-size: 4rem;
     padding-top: 1.18rem;
     margin-bottom: -1.18rem;
     line-height: 5rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .lg\:vr-source-sans\ pro-snug-6xl {
+  .lg\:vr-source-sans-snug-6xl {
     font-size: 4rem;
     padding-top: 1.43rem;
     margin-bottom: -1.43rem;
     line-height: 5.5rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .lg\:vr-source-sans\ pro-normal-6xl {
+  .lg\:vr-source-sans-normal-6xl {
     font-size: 4rem;
     padding-top: 1.68rem;
     margin-bottom: -1.68rem;
     line-height: 6rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .lg\:vr-source-sans\ pro-relaxed-6xl {
+  .lg\:vr-source-sans-relaxed-6xl {
     font-size: 4rem;
     padding-top: 1.93rem;
     margin-bottom: -1.93rem;
     line-height: 6.5rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .lg\:vr-source-sans\ pro-loose-6xl {
+  .lg\:vr-source-sans-loose-6xl {
     font-size: 4rem;
     padding-top: 2.68rem;
     margin-bottom: -2.68rem;
     line-height: 8rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .lg\:vr-source-sans\ pro-6xl {
+  .lg\:vr-source-sans-6xl {
     font-size: 4rem;
     padding-top: 2.68rem;
     margin-bottom: -2.68rem;
     line-height: 8rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 }
 
@@ -64656,8 +67282,40 @@ h4 {
     border-color: #702459;
   }
 
-  .xl\:divide-accent > :not(template) ~ :not(template) {
-    border-color: #c54545;
+  .xl\:divide-accent-100 > :not(template) ~ :not(template) {
+    border-color: #FBE6F2;
+  }
+
+  .xl\:divide-accent-200 > :not(template) ~ :not(template) {
+    border-color: #F5BFDF;
+  }
+
+  .xl\:divide-accent-300 > :not(template) ~ :not(template) {
+    border-color: #EF99CC;
+  }
+
+  .xl\:divide-accent-400 > :not(template) ~ :not(template) {
+    border-color: #E24DA6;
+  }
+
+  .xl\:divide-accent-500 > :not(template) ~ :not(template) {
+    border-color: #D60080;
+  }
+
+  .xl\:divide-accent-600 > :not(template) ~ :not(template) {
+    border-color: #C10073;
+  }
+
+  .xl\:divide-accent-700 > :not(template) ~ :not(template) {
+    border-color: #80004D;
+  }
+
+  .xl\:divide-accent-800 > :not(template) ~ :not(template) {
+    border-color: #60003A;
+  }
+
+  .xl\:divide-accent-900 > :not(template) ~ :not(template) {
+    border-color: #400026;
   }
 
   .xl\:sr-only {
@@ -65100,8 +67758,40 @@ h4 {
     background-color: #702459;
   }
 
-  .xl\:bg-accent {
-    background-color: #c54545;
+  .xl\:bg-accent-100 {
+    background-color: #FBE6F2;
+  }
+
+  .xl\:bg-accent-200 {
+    background-color: #F5BFDF;
+  }
+
+  .xl\:bg-accent-300 {
+    background-color: #EF99CC;
+  }
+
+  .xl\:bg-accent-400 {
+    background-color: #E24DA6;
+  }
+
+  .xl\:bg-accent-500 {
+    background-color: #D60080;
+  }
+
+  .xl\:bg-accent-600 {
+    background-color: #C10073;
+  }
+
+  .xl\:bg-accent-700 {
+    background-color: #80004D;
+  }
+
+  .xl\:bg-accent-800 {
+    background-color: #60003A;
+  }
+
+  .xl\:bg-accent-900 {
+    background-color: #400026;
   }
 
   .xl\:hover\:bg-transparent:hover {
@@ -65480,8 +68170,40 @@ h4 {
     background-color: #702459;
   }
 
-  .xl\:hover\:bg-accent:hover {
-    background-color: #c54545;
+  .xl\:hover\:bg-accent-100:hover {
+    background-color: #FBE6F2;
+  }
+
+  .xl\:hover\:bg-accent-200:hover {
+    background-color: #F5BFDF;
+  }
+
+  .xl\:hover\:bg-accent-300:hover {
+    background-color: #EF99CC;
+  }
+
+  .xl\:hover\:bg-accent-400:hover {
+    background-color: #E24DA6;
+  }
+
+  .xl\:hover\:bg-accent-500:hover {
+    background-color: #D60080;
+  }
+
+  .xl\:hover\:bg-accent-600:hover {
+    background-color: #C10073;
+  }
+
+  .xl\:hover\:bg-accent-700:hover {
+    background-color: #80004D;
+  }
+
+  .xl\:hover\:bg-accent-800:hover {
+    background-color: #60003A;
+  }
+
+  .xl\:hover\:bg-accent-900:hover {
+    background-color: #400026;
   }
 
   .xl\:focus\:bg-transparent:focus {
@@ -65860,8 +68582,40 @@ h4 {
     background-color: #702459;
   }
 
-  .xl\:focus\:bg-accent:focus {
-    background-color: #c54545;
+  .xl\:focus\:bg-accent-100:focus {
+    background-color: #FBE6F2;
+  }
+
+  .xl\:focus\:bg-accent-200:focus {
+    background-color: #F5BFDF;
+  }
+
+  .xl\:focus\:bg-accent-300:focus {
+    background-color: #EF99CC;
+  }
+
+  .xl\:focus\:bg-accent-400:focus {
+    background-color: #E24DA6;
+  }
+
+  .xl\:focus\:bg-accent-500:focus {
+    background-color: #D60080;
+  }
+
+  .xl\:focus\:bg-accent-600:focus {
+    background-color: #C10073;
+  }
+
+  .xl\:focus\:bg-accent-700:focus {
+    background-color: #80004D;
+  }
+
+  .xl\:focus\:bg-accent-800:focus {
+    background-color: #60003A;
+  }
+
+  .xl\:focus\:bg-accent-900:focus {
+    background-color: #400026;
   }
 
   .xl\:bg-bottom {
@@ -66320,8 +69074,40 @@ h4 {
     border-color: #702459;
   }
 
-  .xl\:border-accent {
-    border-color: #c54545;
+  .xl\:border-accent-100 {
+    border-color: #FBE6F2;
+  }
+
+  .xl\:border-accent-200 {
+    border-color: #F5BFDF;
+  }
+
+  .xl\:border-accent-300 {
+    border-color: #EF99CC;
+  }
+
+  .xl\:border-accent-400 {
+    border-color: #E24DA6;
+  }
+
+  .xl\:border-accent-500 {
+    border-color: #D60080;
+  }
+
+  .xl\:border-accent-600 {
+    border-color: #C10073;
+  }
+
+  .xl\:border-accent-700 {
+    border-color: #80004D;
+  }
+
+  .xl\:border-accent-800 {
+    border-color: #60003A;
+  }
+
+  .xl\:border-accent-900 {
+    border-color: #400026;
   }
 
   .xl\:hover\:border-transparent:hover {
@@ -66700,8 +69486,40 @@ h4 {
     border-color: #702459;
   }
 
-  .xl\:hover\:border-accent:hover {
-    border-color: #c54545;
+  .xl\:hover\:border-accent-100:hover {
+    border-color: #FBE6F2;
+  }
+
+  .xl\:hover\:border-accent-200:hover {
+    border-color: #F5BFDF;
+  }
+
+  .xl\:hover\:border-accent-300:hover {
+    border-color: #EF99CC;
+  }
+
+  .xl\:hover\:border-accent-400:hover {
+    border-color: #E24DA6;
+  }
+
+  .xl\:hover\:border-accent-500:hover {
+    border-color: #D60080;
+  }
+
+  .xl\:hover\:border-accent-600:hover {
+    border-color: #C10073;
+  }
+
+  .xl\:hover\:border-accent-700:hover {
+    border-color: #80004D;
+  }
+
+  .xl\:hover\:border-accent-800:hover {
+    border-color: #60003A;
+  }
+
+  .xl\:hover\:border-accent-900:hover {
+    border-color: #400026;
   }
 
   .xl\:focus\:border-transparent:focus {
@@ -67080,8 +69898,40 @@ h4 {
     border-color: #702459;
   }
 
-  .xl\:focus\:border-accent:focus {
-    border-color: #c54545;
+  .xl\:focus\:border-accent-100:focus {
+    border-color: #FBE6F2;
+  }
+
+  .xl\:focus\:border-accent-200:focus {
+    border-color: #F5BFDF;
+  }
+
+  .xl\:focus\:border-accent-300:focus {
+    border-color: #EF99CC;
+  }
+
+  .xl\:focus\:border-accent-400:focus {
+    border-color: #E24DA6;
+  }
+
+  .xl\:focus\:border-accent-500:focus {
+    border-color: #D60080;
+  }
+
+  .xl\:focus\:border-accent-600:focus {
+    border-color: #C10073;
+  }
+
+  .xl\:focus\:border-accent-700:focus {
+    border-color: #80004D;
+  }
+
+  .xl\:focus\:border-accent-800:focus {
+    border-color: #60003A;
+  }
+
+  .xl\:focus\:border-accent-900:focus {
+    border-color: #400026;
   }
 
   .xl\:rounded-none {
@@ -67887,7 +70737,11 @@ h4 {
   }
 
   .xl\:font-sans {
-    font-family: "Source Sans Pro", system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, "Segoe UI", "Roboto", "Ubuntu", "Cantarell", "Noto Sans", sans-serif;
+    font-family: "Source Sans", system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, "Segoe UI", "Roboto", "Ubuntu", "Cantarell", "Noto Sans", sans-serif;
+  }
+
+  .xl\:font-serif {
+    font-family: "Georgia", serif;
   }
 
   .xl\:font-hairline {
@@ -72078,24 +74932,184 @@ h4 {
     color: #702459;
   }
 
-  .xl\:placeholder-accent::-webkit-input-placeholder {
-    color: #c54545;
+  .xl\:placeholder-accent-100::-webkit-input-placeholder {
+    color: #FBE6F2;
   }
 
-  .xl\:placeholder-accent::-moz-placeholder {
-    color: #c54545;
+  .xl\:placeholder-accent-100::-moz-placeholder {
+    color: #FBE6F2;
   }
 
-  .xl\:placeholder-accent:-ms-input-placeholder {
-    color: #c54545;
+  .xl\:placeholder-accent-100:-ms-input-placeholder {
+    color: #FBE6F2;
   }
 
-  .xl\:placeholder-accent::-ms-input-placeholder {
-    color: #c54545;
+  .xl\:placeholder-accent-100::-ms-input-placeholder {
+    color: #FBE6F2;
   }
 
-  .xl\:placeholder-accent::placeholder {
-    color: #c54545;
+  .xl\:placeholder-accent-100::placeholder {
+    color: #FBE6F2;
+  }
+
+  .xl\:placeholder-accent-200::-webkit-input-placeholder {
+    color: #F5BFDF;
+  }
+
+  .xl\:placeholder-accent-200::-moz-placeholder {
+    color: #F5BFDF;
+  }
+
+  .xl\:placeholder-accent-200:-ms-input-placeholder {
+    color: #F5BFDF;
+  }
+
+  .xl\:placeholder-accent-200::-ms-input-placeholder {
+    color: #F5BFDF;
+  }
+
+  .xl\:placeholder-accent-200::placeholder {
+    color: #F5BFDF;
+  }
+
+  .xl\:placeholder-accent-300::-webkit-input-placeholder {
+    color: #EF99CC;
+  }
+
+  .xl\:placeholder-accent-300::-moz-placeholder {
+    color: #EF99CC;
+  }
+
+  .xl\:placeholder-accent-300:-ms-input-placeholder {
+    color: #EF99CC;
+  }
+
+  .xl\:placeholder-accent-300::-ms-input-placeholder {
+    color: #EF99CC;
+  }
+
+  .xl\:placeholder-accent-300::placeholder {
+    color: #EF99CC;
+  }
+
+  .xl\:placeholder-accent-400::-webkit-input-placeholder {
+    color: #E24DA6;
+  }
+
+  .xl\:placeholder-accent-400::-moz-placeholder {
+    color: #E24DA6;
+  }
+
+  .xl\:placeholder-accent-400:-ms-input-placeholder {
+    color: #E24DA6;
+  }
+
+  .xl\:placeholder-accent-400::-ms-input-placeholder {
+    color: #E24DA6;
+  }
+
+  .xl\:placeholder-accent-400::placeholder {
+    color: #E24DA6;
+  }
+
+  .xl\:placeholder-accent-500::-webkit-input-placeholder {
+    color: #D60080;
+  }
+
+  .xl\:placeholder-accent-500::-moz-placeholder {
+    color: #D60080;
+  }
+
+  .xl\:placeholder-accent-500:-ms-input-placeholder {
+    color: #D60080;
+  }
+
+  .xl\:placeholder-accent-500::-ms-input-placeholder {
+    color: #D60080;
+  }
+
+  .xl\:placeholder-accent-500::placeholder {
+    color: #D60080;
+  }
+
+  .xl\:placeholder-accent-600::-webkit-input-placeholder {
+    color: #C10073;
+  }
+
+  .xl\:placeholder-accent-600::-moz-placeholder {
+    color: #C10073;
+  }
+
+  .xl\:placeholder-accent-600:-ms-input-placeholder {
+    color: #C10073;
+  }
+
+  .xl\:placeholder-accent-600::-ms-input-placeholder {
+    color: #C10073;
+  }
+
+  .xl\:placeholder-accent-600::placeholder {
+    color: #C10073;
+  }
+
+  .xl\:placeholder-accent-700::-webkit-input-placeholder {
+    color: #80004D;
+  }
+
+  .xl\:placeholder-accent-700::-moz-placeholder {
+    color: #80004D;
+  }
+
+  .xl\:placeholder-accent-700:-ms-input-placeholder {
+    color: #80004D;
+  }
+
+  .xl\:placeholder-accent-700::-ms-input-placeholder {
+    color: #80004D;
+  }
+
+  .xl\:placeholder-accent-700::placeholder {
+    color: #80004D;
+  }
+
+  .xl\:placeholder-accent-800::-webkit-input-placeholder {
+    color: #60003A;
+  }
+
+  .xl\:placeholder-accent-800::-moz-placeholder {
+    color: #60003A;
+  }
+
+  .xl\:placeholder-accent-800:-ms-input-placeholder {
+    color: #60003A;
+  }
+
+  .xl\:placeholder-accent-800::-ms-input-placeholder {
+    color: #60003A;
+  }
+
+  .xl\:placeholder-accent-800::placeholder {
+    color: #60003A;
+  }
+
+  .xl\:placeholder-accent-900::-webkit-input-placeholder {
+    color: #400026;
+  }
+
+  .xl\:placeholder-accent-900::-moz-placeholder {
+    color: #400026;
+  }
+
+  .xl\:placeholder-accent-900:-ms-input-placeholder {
+    color: #400026;
+  }
+
+  .xl\:placeholder-accent-900::-ms-input-placeholder {
+    color: #400026;
+  }
+
+  .xl\:placeholder-accent-900::placeholder {
+    color: #400026;
   }
 
   .xl\:focus\:placeholder-transparent:focus::-webkit-input-placeholder {
@@ -73978,24 +76992,184 @@ h4 {
     color: #702459;
   }
 
-  .xl\:focus\:placeholder-accent:focus::-webkit-input-placeholder {
-    color: #c54545;
+  .xl\:focus\:placeholder-accent-100:focus::-webkit-input-placeholder {
+    color: #FBE6F2;
   }
 
-  .xl\:focus\:placeholder-accent:focus::-moz-placeholder {
-    color: #c54545;
+  .xl\:focus\:placeholder-accent-100:focus::-moz-placeholder {
+    color: #FBE6F2;
   }
 
-  .xl\:focus\:placeholder-accent:focus:-ms-input-placeholder {
-    color: #c54545;
+  .xl\:focus\:placeholder-accent-100:focus:-ms-input-placeholder {
+    color: #FBE6F2;
   }
 
-  .xl\:focus\:placeholder-accent:focus::-ms-input-placeholder {
-    color: #c54545;
+  .xl\:focus\:placeholder-accent-100:focus::-ms-input-placeholder {
+    color: #FBE6F2;
   }
 
-  .xl\:focus\:placeholder-accent:focus::placeholder {
-    color: #c54545;
+  .xl\:focus\:placeholder-accent-100:focus::placeholder {
+    color: #FBE6F2;
+  }
+
+  .xl\:focus\:placeholder-accent-200:focus::-webkit-input-placeholder {
+    color: #F5BFDF;
+  }
+
+  .xl\:focus\:placeholder-accent-200:focus::-moz-placeholder {
+    color: #F5BFDF;
+  }
+
+  .xl\:focus\:placeholder-accent-200:focus:-ms-input-placeholder {
+    color: #F5BFDF;
+  }
+
+  .xl\:focus\:placeholder-accent-200:focus::-ms-input-placeholder {
+    color: #F5BFDF;
+  }
+
+  .xl\:focus\:placeholder-accent-200:focus::placeholder {
+    color: #F5BFDF;
+  }
+
+  .xl\:focus\:placeholder-accent-300:focus::-webkit-input-placeholder {
+    color: #EF99CC;
+  }
+
+  .xl\:focus\:placeholder-accent-300:focus::-moz-placeholder {
+    color: #EF99CC;
+  }
+
+  .xl\:focus\:placeholder-accent-300:focus:-ms-input-placeholder {
+    color: #EF99CC;
+  }
+
+  .xl\:focus\:placeholder-accent-300:focus::-ms-input-placeholder {
+    color: #EF99CC;
+  }
+
+  .xl\:focus\:placeholder-accent-300:focus::placeholder {
+    color: #EF99CC;
+  }
+
+  .xl\:focus\:placeholder-accent-400:focus::-webkit-input-placeholder {
+    color: #E24DA6;
+  }
+
+  .xl\:focus\:placeholder-accent-400:focus::-moz-placeholder {
+    color: #E24DA6;
+  }
+
+  .xl\:focus\:placeholder-accent-400:focus:-ms-input-placeholder {
+    color: #E24DA6;
+  }
+
+  .xl\:focus\:placeholder-accent-400:focus::-ms-input-placeholder {
+    color: #E24DA6;
+  }
+
+  .xl\:focus\:placeholder-accent-400:focus::placeholder {
+    color: #E24DA6;
+  }
+
+  .xl\:focus\:placeholder-accent-500:focus::-webkit-input-placeholder {
+    color: #D60080;
+  }
+
+  .xl\:focus\:placeholder-accent-500:focus::-moz-placeholder {
+    color: #D60080;
+  }
+
+  .xl\:focus\:placeholder-accent-500:focus:-ms-input-placeholder {
+    color: #D60080;
+  }
+
+  .xl\:focus\:placeholder-accent-500:focus::-ms-input-placeholder {
+    color: #D60080;
+  }
+
+  .xl\:focus\:placeholder-accent-500:focus::placeholder {
+    color: #D60080;
+  }
+
+  .xl\:focus\:placeholder-accent-600:focus::-webkit-input-placeholder {
+    color: #C10073;
+  }
+
+  .xl\:focus\:placeholder-accent-600:focus::-moz-placeholder {
+    color: #C10073;
+  }
+
+  .xl\:focus\:placeholder-accent-600:focus:-ms-input-placeholder {
+    color: #C10073;
+  }
+
+  .xl\:focus\:placeholder-accent-600:focus::-ms-input-placeholder {
+    color: #C10073;
+  }
+
+  .xl\:focus\:placeholder-accent-600:focus::placeholder {
+    color: #C10073;
+  }
+
+  .xl\:focus\:placeholder-accent-700:focus::-webkit-input-placeholder {
+    color: #80004D;
+  }
+
+  .xl\:focus\:placeholder-accent-700:focus::-moz-placeholder {
+    color: #80004D;
+  }
+
+  .xl\:focus\:placeholder-accent-700:focus:-ms-input-placeholder {
+    color: #80004D;
+  }
+
+  .xl\:focus\:placeholder-accent-700:focus::-ms-input-placeholder {
+    color: #80004D;
+  }
+
+  .xl\:focus\:placeholder-accent-700:focus::placeholder {
+    color: #80004D;
+  }
+
+  .xl\:focus\:placeholder-accent-800:focus::-webkit-input-placeholder {
+    color: #60003A;
+  }
+
+  .xl\:focus\:placeholder-accent-800:focus::-moz-placeholder {
+    color: #60003A;
+  }
+
+  .xl\:focus\:placeholder-accent-800:focus:-ms-input-placeholder {
+    color: #60003A;
+  }
+
+  .xl\:focus\:placeholder-accent-800:focus::-ms-input-placeholder {
+    color: #60003A;
+  }
+
+  .xl\:focus\:placeholder-accent-800:focus::placeholder {
+    color: #60003A;
+  }
+
+  .xl\:focus\:placeholder-accent-900:focus::-webkit-input-placeholder {
+    color: #400026;
+  }
+
+  .xl\:focus\:placeholder-accent-900:focus::-moz-placeholder {
+    color: #400026;
+  }
+
+  .xl\:focus\:placeholder-accent-900:focus:-ms-input-placeholder {
+    color: #400026;
+  }
+
+  .xl\:focus\:placeholder-accent-900:focus::-ms-input-placeholder {
+    color: #400026;
+  }
+
+  .xl\:focus\:placeholder-accent-900:focus::placeholder {
+    color: #400026;
   }
 
   .xl\:pointer-events-none {
@@ -74679,8 +77853,40 @@ h4 {
     color: #702459;
   }
 
-  .xl\:text-accent {
-    color: #c54545;
+  .xl\:text-accent-100 {
+    color: #FBE6F2;
+  }
+
+  .xl\:text-accent-200 {
+    color: #F5BFDF;
+  }
+
+  .xl\:text-accent-300 {
+    color: #EF99CC;
+  }
+
+  .xl\:text-accent-400 {
+    color: #E24DA6;
+  }
+
+  .xl\:text-accent-500 {
+    color: #D60080;
+  }
+
+  .xl\:text-accent-600 {
+    color: #C10073;
+  }
+
+  .xl\:text-accent-700 {
+    color: #80004D;
+  }
+
+  .xl\:text-accent-800 {
+    color: #60003A;
+  }
+
+  .xl\:text-accent-900 {
+    color: #400026;
   }
 
   .xl\:hover\:text-transparent:hover {
@@ -75059,8 +78265,40 @@ h4 {
     color: #702459;
   }
 
-  .xl\:hover\:text-accent:hover {
-    color: #c54545;
+  .xl\:hover\:text-accent-100:hover {
+    color: #FBE6F2;
+  }
+
+  .xl\:hover\:text-accent-200:hover {
+    color: #F5BFDF;
+  }
+
+  .xl\:hover\:text-accent-300:hover {
+    color: #EF99CC;
+  }
+
+  .xl\:hover\:text-accent-400:hover {
+    color: #E24DA6;
+  }
+
+  .xl\:hover\:text-accent-500:hover {
+    color: #D60080;
+  }
+
+  .xl\:hover\:text-accent-600:hover {
+    color: #C10073;
+  }
+
+  .xl\:hover\:text-accent-700:hover {
+    color: #80004D;
+  }
+
+  .xl\:hover\:text-accent-800:hover {
+    color: #60003A;
+  }
+
+  .xl\:hover\:text-accent-900:hover {
+    color: #400026;
   }
 
   .xl\:focus\:text-transparent:focus {
@@ -75439,8 +78677,40 @@ h4 {
     color: #702459;
   }
 
-  .xl\:focus\:text-accent:focus {
-    color: #c54545;
+  .xl\:focus\:text-accent-100:focus {
+    color: #FBE6F2;
+  }
+
+  .xl\:focus\:text-accent-200:focus {
+    color: #F5BFDF;
+  }
+
+  .xl\:focus\:text-accent-300:focus {
+    color: #EF99CC;
+  }
+
+  .xl\:focus\:text-accent-400:focus {
+    color: #E24DA6;
+  }
+
+  .xl\:focus\:text-accent-500:focus {
+    color: #D60080;
+  }
+
+  .xl\:focus\:text-accent-600:focus {
+    color: #C10073;
+  }
+
+  .xl\:focus\:text-accent-700:focus {
+    color: #80004D;
+  }
+
+  .xl\:focus\:text-accent-800:focus {
+    color: #60003A;
+  }
+
+  .xl\:focus\:text-accent-900:focus {
+    color: #400026;
   }
 
   .xl\:italic {
@@ -78907,564 +82177,564 @@ h4 {
     line-height: 8rem;
   }
 
-  .xl\:vr-source-sans\ pro-none-xs {
+  .xl\:vr-source-sans-none-xs {
     font-size: .75rem;
     padding-top: .253rem;
     margin-bottom: -.252rem;
     line-height: 1rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .xl\:vr-source-sans\ pro-tight-xs {
+  .xl\:vr-source-sans-tight-xs {
     font-size: .75rem;
     padding-top: .253rem;
     margin-bottom: -.252rem;
     line-height: 1rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .xl\:vr-source-sans\ pro-snug-xs {
+  .xl\:vr-source-sans-snug-xs {
     font-size: .75rem;
     padding-top: .253rem;
     margin-bottom: -.252rem;
     line-height: 1rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .xl\:vr-source-sans\ pro-normal-xs {
+  .xl\:vr-source-sans-normal-xs {
     font-size: .75rem;
     padding-top: .253rem;
     margin-bottom: -.252rem;
     line-height: 1rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .xl\:vr-source-sans\ pro-relaxed-xs {
+  .xl\:vr-source-sans-relaxed-xs {
     font-size: .75rem;
     padding-top: .253rem;
     margin-bottom: -.252rem;
     line-height: 1rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .xl\:vr-source-sans\ pro-loose-xs {
+  .xl\:vr-source-sans-loose-xs {
     font-size: .75rem;
     padding-top: .502rem;
     margin-bottom: -.502rem;
     line-height: 1.5rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .xl\:vr-source-sans\ pro-xs {
+  .xl\:vr-source-sans-xs {
     font-size: .75rem;
     padding-top: .502rem;
     margin-bottom: -.502rem;
     line-height: 1.5rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .xl\:vr-source-sans\ pro-none-sm {
+  .xl\:vr-source-sans-none-sm {
     font-size: .875rem;
     padding-top: .211rem;
     margin-bottom: -.211rem;
     line-height: 1rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .xl\:vr-source-sans\ pro-tight-sm {
+  .xl\:vr-source-sans-tight-sm {
     font-size: .875rem;
     padding-top: .211rem;
     margin-bottom: -.211rem;
     line-height: 1rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .xl\:vr-source-sans\ pro-snug-sm {
+  .xl\:vr-source-sans-snug-sm {
     font-size: .875rem;
     padding-top: .211rem;
     margin-bottom: -.211rem;
     line-height: 1rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .xl\:vr-source-sans\ pro-normal-sm {
+  .xl\:vr-source-sans-normal-sm {
     font-size: .875rem;
     padding-top: .461rem;
     margin-bottom: -.461rem;
     line-height: 1.5rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .xl\:vr-source-sans\ pro-relaxed-sm {
+  .xl\:vr-source-sans-relaxed-sm {
     font-size: .875rem;
     padding-top: .461rem;
     margin-bottom: -.461rem;
     line-height: 1.5rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .xl\:vr-source-sans\ pro-loose-sm {
+  .xl\:vr-source-sans-loose-sm {
     font-size: .875rem;
     padding-top: .711rem;
     margin-bottom: -.711rem;
     line-height: 2rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .xl\:vr-source-sans\ pro-sm {
+  .xl\:vr-source-sans-sm {
     font-size: .875rem;
     padding-top: .711rem;
     margin-bottom: -.711rem;
     line-height: 2rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .xl\:vr-source-sans\ pro-none-base {
+  .xl\:vr-source-sans-none-base {
     font-size: 1rem;
     padding-top: .17rem;
     margin-bottom: -.17rem;
     line-height: 1rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .xl\:vr-source-sans\ pro-tight-base {
+  .xl\:vr-source-sans-tight-base {
     font-size: 1rem;
     padding-top: .42rem;
     margin-bottom: -.42rem;
     line-height: 1.5rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .xl\:vr-source-sans\ pro-snug-base {
+  .xl\:vr-source-sans-snug-base {
     font-size: 1rem;
     padding-top: .42rem;
     margin-bottom: -.42rem;
     line-height: 1.5rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .xl\:vr-source-sans\ pro-normal-base {
+  .xl\:vr-source-sans-normal-base {
     font-size: 1rem;
     padding-top: .42rem;
     margin-bottom: -.42rem;
     line-height: 1.5rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .xl\:vr-source-sans\ pro-relaxed-base {
+  .xl\:vr-source-sans-relaxed-base {
     font-size: 1rem;
     padding-top: .42rem;
     margin-bottom: -.42rem;
     line-height: 1.5rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .xl\:vr-source-sans\ pro-loose-base {
+  .xl\:vr-source-sans-loose-base {
     font-size: 1rem;
     padding-top: .67rem;
     margin-bottom: -.67rem;
     line-height: 2rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .xl\:vr-source-sans\ pro-base {
+  .xl\:vr-source-sans-base {
     font-size: 1rem;
     padding-top: .67rem;
     margin-bottom: -.67rem;
     line-height: 2rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .xl\:vr-source-sans\ pro-none-lg {
+  .xl\:vr-source-sans-none-lg {
     font-size: 1.125rem;
     padding-top: .129rem;
     margin-bottom: -.129rem;
     line-height: 1rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .xl\:vr-source-sans\ pro-tight-lg {
+  .xl\:vr-source-sans-tight-lg {
     font-size: 1.125rem;
     padding-top: .379rem;
     margin-bottom: -.379rem;
     line-height: 1.5rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .xl\:vr-source-sans\ pro-snug-lg {
+  .xl\:vr-source-sans-snug-lg {
     font-size: 1.125rem;
     padding-top: .379rem;
     margin-bottom: -.379rem;
     line-height: 1.5rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .xl\:vr-source-sans\ pro-normal-lg {
+  .xl\:vr-source-sans-normal-lg {
     font-size: 1.125rem;
     padding-top: .379rem;
     margin-bottom: -.379rem;
     line-height: 1.5rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .xl\:vr-source-sans\ pro-relaxed-lg {
+  .xl\:vr-source-sans-relaxed-lg {
     font-size: 1.125rem;
     padding-top: .629rem;
     margin-bottom: -.629rem;
     line-height: 2rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .xl\:vr-source-sans\ pro-loose-lg {
+  .xl\:vr-source-sans-loose-lg {
     font-size: 1.125rem;
     padding-top: .879rem;
     margin-bottom: -.879rem;
     line-height: 2.5rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .xl\:vr-source-sans\ pro-lg {
+  .xl\:vr-source-sans-lg {
     font-size: 1.125rem;
     padding-top: .879rem;
     margin-bottom: -.879rem;
     line-height: 2.5rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .xl\:vr-source-sans\ pro-none-xl {
+  .xl\:vr-source-sans-none-xl {
     font-size: 1.25rem;
     padding-top: .337rem;
     margin-bottom: -.337rem;
     line-height: 1.5rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .xl\:vr-source-sans\ pro-tight-xl {
+  .xl\:vr-source-sans-tight-xl {
     font-size: 1.25rem;
     padding-top: .337rem;
     margin-bottom: -.337rem;
     line-height: 1.5rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .xl\:vr-source-sans\ pro-snug-xl {
+  .xl\:vr-source-sans-snug-xl {
     font-size: 1.25rem;
     padding-top: .337rem;
     margin-bottom: -.337rem;
     line-height: 1.5rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .xl\:vr-source-sans\ pro-normal-xl {
+  .xl\:vr-source-sans-normal-xl {
     font-size: 1.25rem;
     padding-top: .587rem;
     margin-bottom: -.587rem;
     line-height: 2rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .xl\:vr-source-sans\ pro-relaxed-xl {
+  .xl\:vr-source-sans-relaxed-xl {
     font-size: 1.25rem;
     padding-top: .587rem;
     margin-bottom: -.587rem;
     line-height: 2rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .xl\:vr-source-sans\ pro-loose-xl {
+  .xl\:vr-source-sans-loose-xl {
     font-size: 1.25rem;
     padding-top: .837rem;
     margin-bottom: -.837rem;
     line-height: 2.5rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .xl\:vr-source-sans\ pro-xl {
+  .xl\:vr-source-sans-xl {
     font-size: 1.25rem;
     padding-top: .837rem;
     margin-bottom: -.837rem;
     line-height: 2.5rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .xl\:vr-source-sans\ pro-none-2xl {
+  .xl\:vr-source-sans-none-2xl {
     font-size: 1.5rem;
     padding-top: .255rem;
     margin-bottom: -.255rem;
     line-height: 1.5rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .xl\:vr-source-sans\ pro-tight-2xl {
+  .xl\:vr-source-sans-tight-2xl {
     font-size: 1.5rem;
     padding-top: .505rem;
     margin-bottom: -.505rem;
     line-height: 2rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .xl\:vr-source-sans\ pro-snug-2xl {
+  .xl\:vr-source-sans-snug-2xl {
     font-size: 1.5rem;
     padding-top: .505rem;
     margin-bottom: -.505rem;
     line-height: 2rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .xl\:vr-source-sans\ pro-normal-2xl {
+  .xl\:vr-source-sans-normal-2xl {
     font-size: 1.5rem;
     padding-top: .755rem;
     margin-bottom: -.755rem;
     line-height: 2.5rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .xl\:vr-source-sans\ pro-relaxed-2xl {
+  .xl\:vr-source-sans-relaxed-2xl {
     font-size: 1.5rem;
     padding-top: .755rem;
     margin-bottom: -.755rem;
     line-height: 2.5rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .xl\:vr-source-sans\ pro-loose-2xl {
+  .xl\:vr-source-sans-loose-2xl {
     font-size: 1.5rem;
     padding-top: 1.005rem;
     margin-bottom: -1.005rem;
     line-height: 3rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .xl\:vr-source-sans\ pro-2xl {
+  .xl\:vr-source-sans-2xl {
     font-size: 1.5rem;
     padding-top: 1.005rem;
     margin-bottom: -1.005rem;
     line-height: 3rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .xl\:vr-source-sans\ pro-none-3xl {
+  .xl\:vr-source-sans-none-3xl {
     font-size: 1.875rem;
     padding-top: .381rem;
     margin-bottom: -.381rem;
     line-height: 2rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .xl\:vr-source-sans\ pro-tight-3xl {
+  .xl\:vr-source-sans-tight-3xl {
     font-size: 1.875rem;
     padding-top: .631rem;
     margin-bottom: -.631rem;
     line-height: 2.5rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .xl\:vr-source-sans\ pro-snug-3xl {
+  .xl\:vr-source-sans-snug-3xl {
     font-size: 1.875rem;
     padding-top: .631rem;
     margin-bottom: -.631rem;
     line-height: 2.5rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .xl\:vr-source-sans\ pro-normal-3xl {
+  .xl\:vr-source-sans-normal-3xl {
     font-size: 1.875rem;
     padding-top: .881rem;
     margin-bottom: -.881rem;
     line-height: 3rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .xl\:vr-source-sans\ pro-relaxed-3xl {
+  .xl\:vr-source-sans-relaxed-3xl {
     font-size: 1.875rem;
     padding-top: .881rem;
     margin-bottom: -.881rem;
     line-height: 3rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .xl\:vr-source-sans\ pro-loose-3xl {
+  .xl\:vr-source-sans-loose-3xl {
     font-size: 1.875rem;
     padding-top: 1.381rem;
     margin-bottom: -1.381rem;
     line-height: 4rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .xl\:vr-source-sans\ pro-3xl {
+  .xl\:vr-source-sans-3xl {
     font-size: 1.875rem;
     padding-top: 1.381rem;
     margin-bottom: -1.381rem;
     line-height: 4rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .xl\:vr-source-sans\ pro-none-4xl {
+  .xl\:vr-source-sans-none-4xl {
     font-size: 2.25rem;
     padding-top: .507rem;
     margin-bottom: -.507rem;
     line-height: 2.5rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .xl\:vr-source-sans\ pro-tight-4xl {
+  .xl\:vr-source-sans-tight-4xl {
     font-size: 2.25rem;
     padding-top: .758rem;
     margin-bottom: -.757rem;
     line-height: 3rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .xl\:vr-source-sans\ pro-snug-4xl {
+  .xl\:vr-source-sans-snug-4xl {
     font-size: 2.25rem;
     padding-top: .758rem;
     margin-bottom: -.757rem;
     line-height: 3rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .xl\:vr-source-sans\ pro-normal-4xl {
+  .xl\:vr-source-sans-normal-4xl {
     font-size: 2.25rem;
     padding-top: 1.007rem;
     margin-bottom: -1.007rem;
     line-height: 3.5rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .xl\:vr-source-sans\ pro-relaxed-4xl {
+  .xl\:vr-source-sans-relaxed-4xl {
     font-size: 2.25rem;
     padding-top: 1.007rem;
     margin-bottom: -1.007rem;
     line-height: 3.5rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .xl\:vr-source-sans\ pro-loose-4xl {
+  .xl\:vr-source-sans-loose-4xl {
     font-size: 2.25rem;
     padding-top: 1.507rem;
     margin-bottom: -1.507rem;
     line-height: 4.5rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .xl\:vr-source-sans\ pro-4xl {
+  .xl\:vr-source-sans-4xl {
     font-size: 2.25rem;
     padding-top: 1.507rem;
     margin-bottom: -1.507rem;
     line-height: 4.5rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .xl\:vr-source-sans\ pro-none-5xl {
+  .xl\:vr-source-sans-none-5xl {
     font-size: 3rem;
     padding-top: .51rem;
     margin-bottom: -.51rem;
     line-height: 3rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .xl\:vr-source-sans\ pro-tight-5xl {
+  .xl\:vr-source-sans-tight-5xl {
     font-size: 3rem;
     padding-top: 1.01rem;
     margin-bottom: -1.01rem;
     line-height: 4rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .xl\:vr-source-sans\ pro-snug-5xl {
+  .xl\:vr-source-sans-snug-5xl {
     font-size: 3rem;
     padding-top: 1.01rem;
     margin-bottom: -1.01rem;
     line-height: 4rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .xl\:vr-source-sans\ pro-normal-5xl {
+  .xl\:vr-source-sans-normal-5xl {
     font-size: 3rem;
     padding-top: 1.26rem;
     margin-bottom: -1.26rem;
     line-height: 4.5rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .xl\:vr-source-sans\ pro-relaxed-5xl {
+  .xl\:vr-source-sans-relaxed-5xl {
     font-size: 3rem;
     padding-top: 1.51rem;
     margin-bottom: -1.51rem;
     line-height: 5rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .xl\:vr-source-sans\ pro-loose-5xl {
+  .xl\:vr-source-sans-loose-5xl {
     font-size: 3rem;
     padding-top: 2.01rem;
     margin-bottom: -2.01rem;
     line-height: 6rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .xl\:vr-source-sans\ pro-5xl {
+  .xl\:vr-source-sans-5xl {
     font-size: 3rem;
     padding-top: 2.01rem;
     margin-bottom: -2.01rem;
     line-height: 6rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .xl\:vr-source-sans\ pro-none-6xl {
+  .xl\:vr-source-sans-none-6xl {
     font-size: 4rem;
     padding-top: .68rem;
     margin-bottom: -.68rem;
     line-height: 4rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .xl\:vr-source-sans\ pro-tight-6xl {
+  .xl\:vr-source-sans-tight-6xl {
     font-size: 4rem;
     padding-top: 1.18rem;
     margin-bottom: -1.18rem;
     line-height: 5rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .xl\:vr-source-sans\ pro-snug-6xl {
+  .xl\:vr-source-sans-snug-6xl {
     font-size: 4rem;
     padding-top: 1.43rem;
     margin-bottom: -1.43rem;
     line-height: 5.5rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .xl\:vr-source-sans\ pro-normal-6xl {
+  .xl\:vr-source-sans-normal-6xl {
     font-size: 4rem;
     padding-top: 1.68rem;
     margin-bottom: -1.68rem;
     line-height: 6rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .xl\:vr-source-sans\ pro-relaxed-6xl {
+  .xl\:vr-source-sans-relaxed-6xl {
     font-size: 4rem;
     padding-top: 1.93rem;
     margin-bottom: -1.93rem;
     line-height: 6.5rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .xl\:vr-source-sans\ pro-loose-6xl {
+  .xl\:vr-source-sans-loose-6xl {
     font-size: 4rem;
     padding-top: 2.68rem;
     margin-bottom: -2.68rem;
     line-height: 8rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 
-  .xl\:vr-source-sans\ pro-6xl {
+  .xl\:vr-source-sans-6xl {
     font-size: 4rem;
     padding-top: 2.68rem;
     margin-bottom: -2.68rem;
     line-height: 8rem;
-    font-family: Source Sans Pro;
+    font-family: Source Sans;
   }
 }
 

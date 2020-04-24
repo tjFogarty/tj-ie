@@ -6,8 +6,10 @@ layout: layouts/home.njk
 <article>
   <h1>Tags</h1>
 
+  <ul class="list-none flex flex-wrap p-0">
   {% for tag in collections.tagList %}
     {% set tagUrl %}/tags/{{ tag }}/{% endset %}
-    <a href="{{ tagUrl | url }}" class="tag">{{ tag }}</a>
+    <a href="{{ tagUrl | url }}" class="mr-3">{{ tag }}</a>
   {% endfor %}
+  </ul>
 </article>
