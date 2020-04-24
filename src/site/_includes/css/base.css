@@ -17,8 +17,8 @@
 }
 
 body {
-  @apply font-sans;
   @apply vr-source-sans-normal-xl;
+  @apply font-sans;
   @apply subpixel-antialiased;
   @apply text-gray-900;
   @apply bg-gray-100;
