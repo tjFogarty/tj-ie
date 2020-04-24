@@ -23,5 +23,43 @@ templateClass: tmpl-post
     {%- endif -%}
   {% endfor %}
 
+  <p>
+    <style>.bmc-button img {
+      height: 34px !important;
+      width: 35px !important;
+      box-shadow: none !important;
+      border: none !important;
+      vertical-align: middle !important;
+    }
+
+    .bmc-button {
+      text-decoration: none !important;
+      display: inline-flex !important;
+      color: #ffffff !important;
+      border-radius: 5px !important;
+      border: 1px solid transparent !important;
+      font-size: 22px !important;
+      letter-spacing: 0.6px !important;
+      box-shadow: 0px 1px 2px rgba(190, 190, 190, 0.5) !important;
+      margin: 0 auto !important;
+      box-sizing: border-box !important;
+    }
+
+    .bmc-button:hover,
+    .bmc-button:active,
+    .bmc-button:focus {
+      text-decoration: none !important;
+      box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;
+      opacity: 0.85 !important;
+      color: #ffffff !important;
+    }
+
+    </style>
+    <a class="bmc-button bg-accent-500 p-1 md:float-right" target="_blank" href="https://www.buymeacoffee.com/tj">
+      <img src="https://cdn.buymeacoffee.com/buttons/bmc-new-btn-logo.svg" alt="" loading="lazy">
+      <span style="margin: 0 15px; font-size: 16px;">Buy me a coffee</span>
+    </a>
+  </p>
+
   <p><a href="{{ '/' | url }}">← Home</a></p>
 </article>

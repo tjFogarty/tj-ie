@@ -15,7 +15,7 @@ if (!isDev) {
     preset: 'default',
   }));
   plugins.push(purgecss({
-    content: ['./src/site/posts/**/*.md', './src/site/_includes/**/*.*', './src/site/about/index.md', './*.njk'],
+    content: ['./src/site/posts/**/*.md', './src/site/_includes/**/*.*', './src/site/about/index.md', './src/**/*.njk'],
     defaultExtractor: content => content.match(/[\w-/:]+(?<!:)/g) || [],
   }));
 }
