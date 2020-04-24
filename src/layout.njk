@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="no-js">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -41,21 +41,33 @@
     <meta property="og:image" content="https://res.cloudinary.com/dab4jaczr/image/upload/w_1200,f_auto,q_auto/v1536498344/{{ cover_image }}">
     {% endif %}
 
+    <script>
+      (function() {
+        var htmlTag = document.querySelector('html');
+        htmlTag.classList.remove('no-js');
+        htmlTag.classList.add('js');
+      })();
+    </script>
+
+    <% if (webpackConfig.mode === 'development') { %>
+      <%= htmlWebpackPlugin.tags.headTags %>
+    <% } else { %>
     <style>
       <% _.each(htmlWebpackPlugin.files.css, function(cssFile) { %>
         <%= compilation.assets[cssFile.substr(htmlWebpackPlugin.files.publicPath.length)].source() %>
       <% }); %>
     </style>
+    <% } %>
   </head>
-  <body class="c-page">
+  <body>
     <header>
-      <ul class="c-nav">
-        <li class="c-nav__item">
+      <ul class="flex p-6">
+        <li class="mr-auto">
           <a href="{{ '/' | url }}">{{ metadata.title }}</a>
         </li>
       {%- for entry in collections.all | eleventyNavigation %}
-        <li class="c-nav__item{% if entry.url == page.url %} is-active{% endif %}">
-          <a href="{{ entry.url | url }}">{{ entry.title }}</a>
+        <li class="{% if not loop.last %}mr-3 md:mr-6{% endif %}">
+          <a href="{{ entry.url | url }}"{% if entry.url == page.url %} class="no-underline text-accent-600"{% endif %}>{{ entry.title }}</a>
         </li>
       {%- endfor %}
       </ul>
@@ -65,13 +77,15 @@
       {{ content | safe }}
     </main>
 
-    <footer class="c-footer">
+    <footer class="p-6">
       &copy; TJ Fogarty
     </footer>
 
     <!-- Current page: {{ page.url | url }} -->
+
     <%= htmlWebpackPlugin.tags.bodyTags %>
 
+    <% if (webpackConfig.mode !== 'development') { %>
     <script>
       if ('serviceWorker' in navigator) {
       window.addEventListener('load', () => {
@@ -83,5 +97,6 @@
       });
     }
     </script>
+    <% } %>
   </body>
 </html>

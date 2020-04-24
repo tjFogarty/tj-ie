@@ -1,0 +1,140 @@
+@font-face {
+  font-family: 'Source Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Source Sans Pro Regular'), local('SourceSansPro-Regular'),
+       url('../fonts/source-sans-pro-v13-latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Source Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Source Sans Pro Bold'), local('SourceSansPro-Bold'),
+       url('../fonts/source-sans-pro-v13-latin-700.woff2') format('woff2');
+}
+
+body {
+  @apply font-sans;
+  @apply vr-source-sans-normal-xl;
+  @apply subpixel-antialiased;
+  @apply text-gray-900;
+  @apply bg-gray-100;
+  @apply m-0;
+  @apply p-0;
+}
+
+code {
+  @apply bg-gray-200;
+  @apply p-1;
+  @apply vr-normal-base;
+}
+
+pre code {
+  @apply bg-transparent;
+  @apply p-0;
+  @apply vr-normal-base;
+}
+
+a {
+  @apply underline;
+}
+
+a:hover,
+a:focus {
+  @apply no-underline;
+  @apply text-accent-500;
+}
+
+iframe {
+  @apply mt-4;
+}
+
+article {
+  max-width: 70ch;
+  @apply px-6;
+  @apply ml-auto;
+  @apply mr-auto;
+}
+
+article ul,
+article ol {
+  @apply list-outside;
+  @apply pl-5;
+  @apply mt-4;
+}
+
+article ul {
+  @apply list-disc;
+}
+
+article ol {
+  @apply list-decimal;
+}
+
+p {
+  @apply mt-4;
+}
+
+h1 {
+  @apply vr-source-sans-normal-3xl;
+  @apply font-bold;
+}
+
+h1 + * {
+  @apply mt-12;
+}
+
+h2 {
+  @apply vr-source-sans-normal-2xl;
+  @apply font-bold;
+  @apply mt-10;
+}
+
+h3 {
+  @apply vr-source-sans-normal-xl;
+  @apply font-bold;
+  @apply mt-8;
+}
+
+h4 {
+  @apply vr-source-sans-normal-lg;
+  @apply font-bold;
+  @apply mt-6;
+}
+
+.direct-link {
+  @apply no-underline;
+  @apply text-gray-400;
+  margin-left: -17px;
+}
+
+blockquote {
+  @apply font-serif;
+  @apply bg-gray-200;
+  @apply italic;
+  @apply p-3;
+  @apply mt-3;
+  @apply border-l-4;
+}
+
+blockquote > * {
+  @apply m-0;
+}
+
+blockquote p {
+  display: inline;
+}
+
+blockquote:before {
+  content: open-quote;
+  @apply vr-normal-6xl;
+  @apply m-0;
+  @apply mr-2;
+  @apply p-0;
+  @apply text-accent-400;
+  line-height: 0;
+  vertical-align: -25px;
+}

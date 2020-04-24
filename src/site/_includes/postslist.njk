@@ -1,0 +1,36 @@
+{% if postslistYears === 'off' %}
+<ol class="p-0 list-none">
+{% endif %}
+
+{% set year = '' %}
+  {% for post in postslist | reverse %}
+    {% set postYear = post.date | year %}
+    {% set isNewYear = year !== postYear %}
+    {% if isNewYear and postslistYears !== 'off' %}
+
+    {# this reminds me of working with ExpressionEngine #}
+    {% if not loop.first %}
+    </ol>
+    </div>
+    {% endif %}
+
+    <div class="md:flex">
+    <div class="sticky self-start bg-gray-100 md:bg-transparent top-0 md:mr-6">
+      <h2 class="mt-1">{{ postYear }}</h2>
+    </div>
+
+    <ol class="p-0 list-none flex-grow">
+      {% set year = postYear %}
+    {% endif %}
+    <li
+      class="
+        border-b border-gray-300
+        {% if isNewYear %} pb-4 {% else %} py-4 {% endif %}
+        {% if postslistYears === 'off' %} py-6 {% endif %}
+        {% if not post.data.description %} pb-8 {% endif %}">
+      {% include 'components/post-teaser.njk' %}
+    </li>
+  {% endfor %}
+{% if postslistYears === 'off' %}
+</ol>
+{% endif %}

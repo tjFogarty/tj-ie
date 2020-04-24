@@ -1,0 +1,27 @@
+---
+layout: layouts/base.njk
+templateClass: tmpl-post
+---
+
+<article>
+  {% if date %}
+  <time datetime="{{ date | htmlDateString }}" class="text-gray-600 vr-normal-base">
+    {{ date | readableDate }}
+  </time>
+  {% endif %}
+
+  <h1>{{ title }}</h1>
+
+  {{ content | safe }}
+
+  {% for tag in tags %}
+    {%- if collections.tagList.indexOf(tag) != -1 -%}
+    {% set tagUrl %}/tags/{{ tag }}/{% endset %}
+    <a href="{{ tagUrl | url }}" class="text-sm text-gray-600 mr-2 mt-2 no-underline inline-block" aria-label="See all {{ tag }} posts">
+      {{ tag }}
+    </a>
+    {%- endif -%}
+  {% endfor %}
+
+  <p><a href="{{ '/' | url }}">← Home</a></p>
+</article>

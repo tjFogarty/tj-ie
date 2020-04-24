@@ -5,15 +5,21 @@ eleventyNavigation:
   order: 1
 ---
 
-<article class="c-article">
+<article>
   <h1>TJ Fogarty</h1>
-  <p>Senior Software Engineer @ Teamwork</p>
+  <p>Senior Software Engineer @ <a href="https://teamwork.com">Teamwork</a></p>
 
   <h2>Latest 3 Posts</h2>
 
   {% set postslist = collections.posts | head(-3) %}
-  {% set postslistYears = 'off' %}
-  {% include "postslist.njk" %}
+  {% set hlevel = '3' %}
+  <ol class="list-none p-0">
+    {% for post in postslist | reverse %}
+    <li>
+      {% include 'components/post-teaser.njk' %}
+    </li>
+    {% endfor %}
+  </ol>
 
   <p>More posts can be found in <a href="{{ '/archive/' | url }}">the archive</a>.</p>
 </article>

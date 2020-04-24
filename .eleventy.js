@@ -75,16 +75,16 @@ module.exports = function(eleventyConfig) {
     return array.slice(0, n)
   })
 
-  eleventyConfig.addCollection('tagList', require('./_11ty/getTagList'))
+  eleventyConfig.addCollection('tagList', require('./src/site/_11ty/getTagList'))
 
-  eleventyConfig.addPassthroughCopy('assets')
-  eleventyConfig.addPassthroughCopy('favicon.ico')
-  eleventyConfig.addPassthroughCopy('robots.txt')
-  eleventyConfig.addPassthroughCopy('keybase.txt')
-  eleventyConfig.addPassthroughCopy('googlea2c3a0ad5b2401f7.html')
-  eleventyConfig.addPassthroughCopy('sw.js')
-  eleventyConfig.addPassthroughCopy('sw.js.map')
-  eleventyConfig.addPassthroughCopy('workbox-*')
+  eleventyConfig.addPassthroughCopy('./src/site/assets')
+  eleventyConfig.addPassthroughCopy('./src/site/favicon.ico')
+  eleventyConfig.addPassthroughCopy('./robots.txt')
+  eleventyConfig.addPassthroughCopy('./keybase.txt')
+  eleventyConfig.addPassthroughCopy('./googlea2c3a0ad5b2401f7.html')
+  eleventyConfig.addPassthroughCopy('./src/site/sw.js')
+  eleventyConfig.addPassthroughCopy('./src/site/sw.js.map')
+  eleventyConfig.addPassthroughCopy('./src/site/workbox-*')
 
   /* Markdown Overrides */
   let markdownLibrary = markdownIt({
@@ -94,26 +94,10 @@ module.exports = function(eleventyConfig) {
   }).use(markdownItAnchor, {
     permalink: true,
     permalinkClass: 'direct-link',
-    permalinkSymbol: '#'
+    permalinkSymbol: '#',
+    permalinkBefore: true,
   })
   eleventyConfig.setLibrary('md', markdownLibrary)
-
-  // Browsersync Overrides
-  eleventyConfig.setBrowserSyncConfig({
-    callbacks: {
-      ready: function(err, browserSync) {
-        const content_404 = fs.readFileSync('_site/404.html')
-
-        browserSync.addMiddleware('*', (req, res) => {
-          // Provides the 404 content without redirect.
-          res.write(content_404)
-          res.end()
-        })
-      },
-    },
-    ui: false,
-    ghostMode: false
-  })
 
   return {
     templateFormats: [
@@ -122,26 +106,12 @@ module.exports = function(eleventyConfig) {
       'html',
       'liquid'
     ],
-
     passthroughFileCopy: true,
-
-    // If your site lives in a different subdirectory, change this.
-    // Leading or trailing slashes are all normalized away, so don’t worry about those.
-
-    // If you don’t have a subdirectory, use ' or '/' (they do the same thing)
-    // This is only used for link URLs (it does not affect your file structure)
-    // Best paired with the `url` filter: https://www.11ty.io/docs/filters/url/
-
-    // You can also pass this in on the command line using `--pathprefix`
-    // pathPrefix: '/',
-
     markdownTemplateEngine: 'liquid',
     htmlTemplateEngine: 'njk',
     dataTemplateEngine: 'njk',
-
-    // These are all optional, defaults are shown:
     dir: {
-      input: '.',
+      input: 'src/site',
       includes: '_includes',
       data: '_data',
       output: '_site'
