@@ -138,3 +138,7 @@ blockquote:before {
   line-height: 0;
   vertical-align: -25px;
 }
+
+.profile-image {
+  filter: brightness(1.2);
+}

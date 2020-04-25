@@ -34,10 +34,11 @@ module.exports = function(eleventyConfig) {
     sizes = '(min-width: 922px) 900px, 100vw',
     srcsetWidths = [400, 600, 700, 800, 900, 1000],
     defaultWidth = 600,
+    transforms = '',
   ) {
     const baseUrl = 'https://res.cloudinary.com/dab4jaczr'
     const srcs = srcsetWidths.map(w => {
-      return `${baseUrl}/image/upload/w_${w},f_auto,q_auto/v1536498344/${src} ${w}w`
+      return `${baseUrl}/image/upload/w_${w},f_auto,q_auto${transforms ? ',' + transforms : ''}/v1536498344/${src} ${w}w`
     }).join(', ')
     return `<img
         src="${baseUrl}/image/upload/w_${defaultWidth},f_auto,q_auto/v1536498344/${src}"

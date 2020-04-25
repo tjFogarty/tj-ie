@@ -6,8 +6,52 @@ eleventyNavigation:
 ---
 
 <article>
-  <h1>TJ Fogarty</h1>
-  <p>Senior Software Engineer @ <a href="https://teamwork.com">Teamwork</a></p>
+  <div class="flex">
+    <div>
+      <h1>TJ Fogarty</h1>
+      <p class="mt-5">Senior Software Engineer @ <a target="_blank" href="https://teamwork.com" rel="noopener noreferrer">Teamwork</a></p>
+
+      <ul class="list-none p-0 flex">
+        <li class="mr-3">
+          <a
+            href="https://twitter.com/tj_fogarty"
+            target="_blank"
+            aria-label="Twitter @tj_fogarty"
+            rel="noopener noreferrer">
+            {% include "components/twitter-icon.njk" %}
+          </a>
+        </li>
+
+        <li class="mr-3">
+          <a
+            href="https://codepen.io/tjFogarty"
+            target="_blank"
+            aria-label="CodePen"
+            rel="noopener noreferrer">
+            {% include "components/codepen-icon.njk" %}
+          </a>
+        </li>
+
+        <li>
+          <a
+            href="https://github.com/tjFogarty/"
+            target="_blank"
+            aria-label="GitHub"
+            rel="noopener noreferrer">
+            {% include "components/github-icon.njk" %}
+          </a>
+        </li>
+      </ul>
+
+      <p class="vr-normal-sm">
+        Icons from <a href="https://feathericons.com/">Feather Icons</a>.
+      </p>
+    </div>
+
+    <div>
+      <img src="https://res.cloudinary.com/dab4jaczr/image/upload/w_220,f_auto,q_100,a_hflip,e_grayscale/v1536498344/profile-nobg.png" alt="TJ Fogarty Profile" loading="auto" class="profile-image">
+    </div>
+  </div>
 
   <h2>Latest 3 Posts</h2>
 
