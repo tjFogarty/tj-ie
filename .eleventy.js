@@ -79,9 +79,9 @@ module.exports = function(eleventyConfig) {
 
   eleventyConfig.addPassthroughCopy('./src/site/assets')
   eleventyConfig.addPassthroughCopy('./src/site/favicon.ico')
-  eleventyConfig.addPassthroughCopy('./robots.txt')
-  eleventyConfig.addPassthroughCopy('./keybase.txt')
-  eleventyConfig.addPassthroughCopy('./googlea2c3a0ad5b2401f7.html')
+  eleventyConfig.addPassthroughCopy('./src/site/robots.txt')
+  eleventyConfig.addPassthroughCopy('./src/site/keybase.txt')
+  eleventyConfig.addPassthroughCopy('./src/site/googlea2c3a0ad5b2401f7.html')
   eleventyConfig.addPassthroughCopy('./src/site/sw.js')
   eleventyConfig.addPassthroughCopy('./src/site/sw.js.map')
   eleventyConfig.addPassthroughCopy('./src/site/workbox-*')
