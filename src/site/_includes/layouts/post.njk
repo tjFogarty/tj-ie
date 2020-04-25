@@ -23,6 +23,7 @@ templateClass: tmpl-post
     {%- endif -%}
   {% endfor %}
 
+  {% if date %}
   <p>
     <style>.bmc-button img {
       height: 34px !important;
@@ -60,6 +61,8 @@ templateClass: tmpl-post
       <span style="margin: 0 15px; font-size: 16px;">Buy me a coffee</span>
     </a>
   </p>
+
+  {% endif %}
 
   <p><a href="{{ '/' | url }}">← Home</a></p>
 </article>
