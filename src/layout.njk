@@ -49,6 +49,10 @@
       })();
     </script>
 
+    <% for (var index in htmlWebpackPlugin.files.js) { %>
+    <link rel="preload" href="<%= htmlWebpackPlugin.files.js[index] %>" as="script">
+    <% } %>
+
     <% if (webpackConfig.mode === 'development') { %>
       <%= htmlWebpackPlugin.tags.headTags %>
     <% } else { %>

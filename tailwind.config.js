@@ -1,7 +1,7 @@
 module.exports = {
   theme: {
     fontFamily: {
-      sans: ['"Source Sans"', 'system-ui', '-apple-system', '"Segoe UI"', '"Roboto"', '"Ubuntu"', '"Cantarell"', '"Noto Sans"', 'sans-serif'],
+      sans: ['"Source Sans", sans-serif'],
       serif: ['"Georgia", serif']
     },
     extend: {
