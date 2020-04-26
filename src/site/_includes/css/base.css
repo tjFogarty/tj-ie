@@ -144,5 +144,11 @@ blockquote:before {
 }
 
 .profile-image-container {
-  flex: 1 0 250px;
+  flex: 1 0 150px;
+}
+
+@media (min-width: 640px) {
+  .profile-image-container {
+    flex: 1 0 250px;
+  }
 }
