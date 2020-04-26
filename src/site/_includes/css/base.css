@@ -142,3 +142,7 @@ blockquote:before {
 .profile-image {
   filter: brightness(1.2);
 }
+
+.profile-image-container {
+  flex: 1 0 250px;
+}

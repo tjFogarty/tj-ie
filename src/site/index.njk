@@ -6,10 +6,14 @@ eleventyNavigation:
 ---
 
 <article>
-  <div class="flex">
+  <div class="flex items-center md:items-end">
     <div>
       <h1>TJ Fogarty</h1>
-      <p class="mt-5">Senior Software Engineer @ <a target="_blank" href="https://teamwork.com" rel="noopener noreferrer">Teamwork</a></p>
+      <p class="mt-5">
+        Senior Software Engineer @ <a target="_blank" href="https://teamwork.com" rel="noopener noreferrer">Teamwork</a>
+        building performant and accessible solutions.
+        Specialising in <span class="text-green-500">Vue</span>, <span class="text-blue-700">React</span>, and <span class="text-pink-500">Sass</span>.
+      </p>
 
       <ul class="list-none p-0 flex">
         <li class="mr-3">
@@ -32,7 +36,7 @@ eleventyNavigation:
           </a>
         </li>
 
-        <li>
+        <li class="mr-3">
           <a
             href="https://github.com/tjFogarty/"
             target="_blank"
@@ -41,14 +45,24 @@ eleventyNavigation:
             {% include "components/github-icon.njk" %}
           </a>
         </li>
+
+        <li>
+          <a
+            href="https://www.linkedin.com/in/fogartytj/"
+            target="_blank"
+            aria-label="LinkedIn"
+            rel="noopener noreferrer">
+            {% include "components/linkedin-icon.njk" %}
+          </a>
+        </li>
       </ul>
 
       <p class="vr-normal-sm">
-        Icons from <a href="https://feathericons.com/">Feather Icons</a>.
+        Icons from <a href="https://feathericons.com/" target="_blank" rel="noopener noreferrer">Feather Icons</a>.
       </p>
     </div>
 
-    <div>
+    <div class="profile-image-container">
       <img src="https://res.cloudinary.com/dab4jaczr/image/upload/w_220,f_auto,q_100,a_hflip,e_grayscale/v1536498344/profile-nobg.png" alt="TJ Fogarty Profile" loading="auto" class="profile-image">
     </div>
   </div>
