@@ -22,7 +22,7 @@ You'll need a {% external-link "https://www.heroku.com/", "Heroku" %} account, a
 
 So without further ado, the commands are as follows:
 
-{{< highlight shell >}}
+``` shell
 # Get the code
 $ git clone https://github.com/usefathom/fathom.git
 $ cd fathom
@@ -57,7 +57,6 @@ To clarify a comment when running `heroku config:get JAWSDB_URL ...`, what it gi
 After that, it's almost ready. The last step is to link to the tracking script as follows:
 
 ``` html
-<!-- Fathom - simple website analytics - https://github.com/usefathom/fathom -->
 <script>
 (function(f, a, t, h, o, m){
     a[h]=a[h]||function(){
@@ -70,7 +69,6 @@ After that, it's almost ready. The last step is to link to the tracking script a
 })(document, window, '//your-app-name.herokuapp.com/tracker.js', 'fathom');
 fathom('trackPageview');
 </script>
-<!-- / Fathom -->
 ```
 
 I'd say it took about 15 minutes to get up and running, which is pretty good going for me. I'm looking forward to what the future holds for Fathom.
