@@ -7,6 +7,10 @@ from = "/categories/"
 to = "/tags/"
 
 [[redirects]]
+from = "/src/layout/"
+to = "/"
+
+[[redirects]]
 from = "/page-visibility/"
 to = "/page-visibility-api/"
 
