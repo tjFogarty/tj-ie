@@ -4,6 +4,7 @@ description: "Solving the problem of a scrolling results list with the DraftJS m
 date: 2020-05-04T14:36:00+01:00
 permalink: "/draft-js-mentions-plugin-scrolling-keyboard/"
 layout: layouts/post.njk
+cover_image: draftjs-mentions.jpg
 tags:
 - javascript
 - react
