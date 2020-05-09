@@ -16,6 +16,7 @@ if (!isDev) {
   }));
   plugins.push(purgecss({
     content: ['./src/site/posts/**/*.md', './src/site/_includes/**/*.*', './src/site/about/index.md', './src/**/*.njk'],
+    whitelist: ['js', 'profile-image', 'profile-image-container'],
     defaultExtractor: content => content.match(/[\w-/:]+(?<!:)/g) || [],
   }));
 }

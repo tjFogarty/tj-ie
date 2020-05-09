@@ -139,8 +139,15 @@ blockquote:before {
   vertical-align: -25px;
 }
 
-.profile-image {
-  filter: brightness(1.2);
+.js .profile-image {
+  opacity: 0;
+  transition: opacity ease 0.2s;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+}
+
+.js .profile-image.is-loaded {
+  opacity: 1;
 }
 
 .profile-image-container {
@@ -150,5 +157,7 @@ blockquote:before {
 @media (min-width: 640px) {
   .profile-image-container {
     flex: 1 0 250px;
+    width: 250px;
+    height: 250px;
   }
 }
