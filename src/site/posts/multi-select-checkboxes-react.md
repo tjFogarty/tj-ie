@@ -18,7 +18,13 @@ An issue arose recently where a user wanted to be able to hold the Shift key to 
 
 Here's what we'll be making. Try checking off an item then hold the Shift key and click on another item further down the list.
 
-<a href="https://oennn.codesandbox.io/" class="c-btn c-btn-primary--inverted" target="_blank" rel="noopener noreferrer">View Demo</a>
+<iframe
+  src="https://codesandbox.io/embed/multiselect-checkboxes-oennn?fontsize=14&hidenavigation=1&module=%2Fsrc%2Fcomponents%2Flist%2Findex.js&theme=dark"
+  style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
+  title="Multi-Select Checkboxes"
+  allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr"
+  sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+></iframe>
 
 ## The Component
 
