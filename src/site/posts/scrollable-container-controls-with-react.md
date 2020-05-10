@@ -24,7 +24,13 @@ For the purposes of showing how I ended up with a solution, I won't be doing the
 
 Also, a chunk of this isn't really React-specific. You could take the DOM parts out and drop them into any other setup that you'd like. My use-case just happened to `require('react')`.
 
-<a href="https://codesandbox.io/s/github/tjFogarty/scrollable-container-react" target="_blank" rel="noopener noreferrer" class="c-btn c-btn-primary--inverted">View Demo & Source</a>
+<iframe
+  src="https://codesandbox.io/embed/github/tjFogarty/scrollable-container-react/tree/master/?fontsize=14&hidenavigation=1&module=%2Fsrc%2Fcomponents%2FScrollableContainer.js&theme=dark"
+  style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
+  title="scrollable-container"
+  allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr"
+  sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+></iframe>
 
 ## Setup
 
@@ -373,5 +379,3 @@ componentWillUnmount() {
   this.debounceCheckForOverflow.cancel()
 }
 ```
-
-{% external-link "https://codesandbox.io/s/github/tjFogarty/scrollable-container-react", "View Demo & Source" %}
