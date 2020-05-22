@@ -41,6 +41,7 @@
     {% endif %}
 
     {% set headingFont = 'Abril Fatface' %}
+    {% set headingFont = 'Fugaz One' %}
     {% set bodyFont = 'Open Sans' %}
 
     <style>
@@ -49,6 +50,17 @@
         --body-font: "{{ bodyFont }}", sans-serif;
       }
     </style>
+
+    {% set css %}
+      {% include "../../assets/css/base.reset.css" %}
+      {% include "../../assets/css/base.variables.css" %}
+      {% include "../../assets/css/base.body.css" %}
+      {% include "../../assets/css/base.type.css" %}
+      {% include "../../assets/css/base.article.css" %}
+      {% include "../../assets/css/code.css" %}
+    {% endset %}
+
+    <style>{{ css | safe }}</style>
 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
@@ -91,5 +103,7 @@
     </footer>
 
     <!-- Current page: {{ page.url | url }} -->
+
+    <script type="module" src="/assets/js/index.js"></script>
   </body>
 </html>
