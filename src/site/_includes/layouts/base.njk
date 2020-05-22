@@ -44,14 +44,11 @@
     {% set headingFont = 'Fugaz One' %}
     {% set bodyFont = 'Open Sans' %}
 
-    <style>
+    {% set css %}
       :root {
         --heading-font: "{{ headingFont }}", serif;
         --body-font: "{{ bodyFont }}", sans-serif;
       }
-    </style>
-
-    {% set css %}
       {% include "../../assets/css/base.reset.css" %}
       {% include "../../assets/css/base.variables.css" %}
       {% include "../../assets/css/base.body.css" %}
@@ -60,9 +57,10 @@
       {% include "../../assets/css/code.css" %}
     {% endset %}
 
-    <style>{{ css | safe }}</style>
+    <style>{{ css | cssmin | safe }}</style>
 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
 
     <link
       rel="preload"
@@ -81,14 +79,14 @@
     </noscript>
   </head>
   <body>
-    <header class="mb-12">
-      <ul class="flex p-6">
-        <li class="mr-auto">
+    <header>
+      <ul>
+        <li>
           <a href="{{ '/' | url }}">{{ metadata.title }}</a>
         </li>
       {%- for entry in collections.all | eleventyNavigation %}
-        <li class="{% if not loop.last %}mr-3 md:mr-6{% endif %}">
-          <a href="{{ entry.url | url }}"{% if entry.url == page.url %} class="no-underline text-accent-600"{% endif %}>{{ entry.title }}</a>
+        <li>
+          <a href="{{ entry.url | url }}"{% if entry.url == page.url %} class="is-active"{% endif %}>{{ entry.title }}</a>
         </li>
       {%- endfor %}
       </ul>
@@ -98,11 +96,9 @@
       {{ content | safe }}
     </main>
 
-    <footer class="p-6">
+    <footer>
       &copy; TJ Fogarty
     </footer>
-
-    <!-- Current page: {{ page.url | url }} -->
 
     <script type="module" src="/assets/js/index.js"></script>
   </body>
