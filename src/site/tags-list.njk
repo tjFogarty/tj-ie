@@ -3,13 +3,13 @@ permalink: /tags/
 layout: layouts/home.njk
 ---
 
-<article>
+<article class="container">
   <h1>Tags</h1>
 
-  <ul>
+  <ul class="tag-list">
   {% for tag in collections.tagList %}
     {% set tagUrl %}/tags/{{ tag }}/{% endset %}
-    <a href="{{ tagUrl | url }}">{{ tag }}</a>
+    <li class="tag-list__item"><a href="{{ tagUrl | url }}">{{ tag }}</a></li>
   {% endfor %}
   </ul>
 </article>

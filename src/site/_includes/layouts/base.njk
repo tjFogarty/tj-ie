@@ -54,12 +54,15 @@
       {% include "../../assets/css/base.body.css" %}
       {% include "../../assets/css/base.type.css" %}
       {% include "../../assets/css/base.article.css" %}
+      {% include "../../assets/css/base.iframe.css" %}
       {% include "../../assets/css/code.css" %}
       {% include "../../assets/css/layout.container.css" %}
       {% include "../../assets/css/component.post-list.css" %}
       {% include "../../assets/css/component.post-tease.css" %}
       {% include "../../assets/css/component.hero.css" %}
       {% include "../../assets/css/component.nav.css" %}
+      {% include "../../assets/css/component.tag-list.css" %}
+      {% include "../../assets/css/component.footer.css" %}
     {% endset %}
 
     <style>{{ css | cssmin | safe }}</style>
@@ -101,7 +104,7 @@
       {{ content | safe }}
     </main>
 
-    <footer>
+    <footer class="footer">
       &copy; TJ Fogarty
     </footer>
 
