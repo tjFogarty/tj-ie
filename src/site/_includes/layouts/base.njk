@@ -40,9 +40,9 @@
     <meta property="og:image" content="https://res.cloudinary.com/dab4jaczr/image/upload/w_1200,f_auto,q_auto/v1536498344/{{ cover_image }}">
     {% endif %}
 
-    {% set headingFont = 'Abril Fatface' %}
-    {% set headingFont = 'Fugaz One' %}
-    {% set bodyFont = 'Open Sans' %}
+    {% set headingFont = 'Yeseva One' %}
+    {% set bodyFont = 'Source Serif Pro' %}
+    {% set fontUrl = 'https://fonts.googleapis.com/css2?family=' + headingFont.replace(" ", "+") + '&family=' + bodyFont.replace(" ", "+") + '&display=swap' %}
 
     {% set css %}
       :root {
@@ -55,6 +55,7 @@
       {% include "../../assets/css/base.type.css" %}
       {% include "../../assets/css/base.article.css" %}
       {% include "../../assets/css/code.css" %}
+      {% include "../../assets/css/layout.css" %}
     {% endset %}
 
     <style>{{ css | cssmin | safe }}</style>
@@ -65,17 +66,17 @@
     <link
       rel="preload"
       as="style"
-      href="https://fonts.googleapis.com/css2?family={{ headingFont | replace(" ", "+") }}&family={{ bodyFont | replace(" ", "+") }}&display=swap" />
+      href="{{ fontUrl }}" />
 
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family={{ headingFont | replace(" ", "+") }}&family={{ bodyFont | replace(" ", "+") }}&display=swap"
+      href="{{ fontUrl }}"
       media="print" onload="this.media='all'" />
 
     <noscript>
       <link
         rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family={{ headingFont | replace(" ", "+") }}&family={{ bodyFont | replace(" ", "+") }}&display=swap" />
+        href="{{ fontUrl }}" />
     </noscript>
   </head>
   <body>

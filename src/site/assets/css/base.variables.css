@@ -1,5 +1,6 @@
 :root {
-  --c-background: #151515;
-  --c-text: #F0EFF4;
-  --c-heading: #0E79B2;
+  --c-accent: #ffc75f;
+  --c-background: #121c2e;
+  --c-text: #f0eff4;
+  --c-heading: #fff;
 }

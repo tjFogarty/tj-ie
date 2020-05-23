@@ -1,8 +1,47 @@
+html {
+  font-size: 100%;
+}
+
+body {
+  line-height: 1.65;
+}
+
+p {
+  margin-bottom: 1.15rem;
+}
+
+a {
+  color: var(--c-text);
+  text-decoration: underline;
+  text-decoration-color: var(--c-accent);
+}
+
+a:hover,
+a:focus {
+  text-decoration-color: var(--c-text);
+  color: var(--c-accent);
+}
+
 h1, h2, h3, h4 {
   font-family: var(--heading-font);
   color: var(--c-heading);
+  -webkit-font-smoothing: antialiased;
+  font-weight: normal;
+  line-height: 1.15;
+  margin: 2.75rem 0 1.05rem;
 }
 
 h1 {
-  font-size: 6rem;
+  font-size: 5.653em;
+  margin-top: 0;
 }
+
+h2 {font-size: 3.998em;}
+
+h3 {font-size: 2.827em;}
+
+h4 {font-size: 1.999em;}
+
+h5 {font-size: 1.414em;}
+
+small {font-size: 0.707em;}
