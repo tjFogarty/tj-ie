@@ -1,0 +1,15 @@
+.post-list {
+  list-style: none;
+  padding: 0;
+  margin-top: var(--size--6);
+}
+
+.post-list__item {
+  padding: var(--size--4) 0;
+  border-top: 1px dashed var(--c-gray);
+}
+
+.post-list__item:last-child {
+  border-bottom: 1px dashed var(--c-gray);
+  padding-bottom: var(--size--4);
+}

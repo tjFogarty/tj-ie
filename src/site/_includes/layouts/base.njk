@@ -55,7 +55,11 @@
       {% include "../../assets/css/base.type.css" %}
       {% include "../../assets/css/base.article.css" %}
       {% include "../../assets/css/code.css" %}
-      {% include "../../assets/css/layout.css" %}
+      {% include "../../assets/css/layout.container.css" %}
+      {% include "../../assets/css/component.post-list.css" %}
+      {% include "../../assets/css/component.post-tease.css" %}
+      {% include "../../assets/css/component.hero.css" %}
+      {% include "../../assets/css/component.nav.css" %}
     {% endset %}
 
     <style>{{ css | cssmin | safe }}</style>
@@ -81,13 +85,13 @@
   </head>
   <body>
     <header>
-      <ul>
-        <li>
-          <a href="{{ '/' | url }}">{{ metadata.title }}</a>
+      <ul class="nav">
+        <li class="nav__item">
+          <a class="nav__link" href="{{ '/' | url }}">{{ metadata.title }}</a>
         </li>
       {%- for entry in collections.all | eleventyNavigation %}
-        <li>
-          <a href="{{ entry.url | url }}"{% if entry.url == page.url %} class="is-active"{% endif %}>{{ entry.title }}</a>
+        <li class="nav__item">
+          <a class="nav__link{% if entry.url == page.url %} is-active{% endif %}" href="{{ entry.url | url }}">{{ entry.title }}</a>
         </li>
       {%- endfor %}
       </ul>

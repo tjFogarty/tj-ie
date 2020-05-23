@@ -5,71 +5,44 @@ eleventyNavigation:
   order: 1
 ---
 
+{% set socials = [
+  { link: 'https://twitter.com/tj_fogarty', label: 'Twitter', icon: 'twitter' },
+  { link: 'https://codepen.io/tjFogarty', label: 'CodePen', icon: 'codepen' },
+  { link: 'https://github.com/tjFogarty/', label: 'GitHub', icon: 'github' },
+  { link: 'https://www.linkedin.com/in/fogartytj/', label: 'LinkedIn', icon: 'linkedin' }
+] %}
+
 <article class="container">
-  <div>
-    <div>
-      <h1>TJ Fogarty</h1>
-      <p>
-        Senior Software Engineer @ <a target="_blank" href="https://teamwork.com" rel="noopener noreferrer">Teamwork</a>
-        building performant and accessible solutions.
-        Specialising in Vue, React, and Sass.
-      </p>
+  <div class="hero">
+    <h1 class="hero__title">TJ Fogarty</h1>
+    <p class="hero__description">
+      Senior Software Engineer at <a target="_blank" href="https://teamwork.com" rel="noopener noreferrer">Teamwork</a> building performant and accessible solutions. Specialising in Vue, React, and Sass.
+    </p>
 
-      <ul>
-        <li>
-          <a
-            href="https://twitter.com/tj_fogarty"
-            target="_blank"
-            aria-label="Twitter @tj_fogarty"
-            rel="noopener noreferrer">
-            {% include "components/twitter-icon.njk" %}
-          </a>
-        </li>
-
-        <li>
-          <a
-            href="https://codepen.io/tjFogarty"
-            target="_blank"
-            aria-label="CodePen"
-            rel="noopener noreferrer">
-            {% include "components/codepen-icon.njk" %}
-          </a>
-        </li>
-
-        <li>
-          <a
-            href="https://github.com/tjFogarty/"
-            target="_blank"
-            aria-label="GitHub"
-            rel="noopener noreferrer">
-            {% include "components/github-icon.njk" %}
-          </a>
-        </li>
-
-        <li>
-          <a
-            href="https://www.linkedin.com/in/fogartytj/"
-            target="_blank"
-            aria-label="LinkedIn"
-            rel="noopener noreferrer">
-            {% include "components/linkedin-icon.njk" %}
-          </a>
-        </li>
-      </ul>
-
-      <p>
-        Icons from <a href="https://feathericons.com/" target="_blank" rel="noopener noreferrer">Feather Icons</a>.
-      </p>
-    </div>
+    <ul class="hero__social">
+      {% for social in socials %}
+      <li class="hero__social-item">
+        <a
+          class="hero__social-link"
+          href="{{ social.link }}"
+          target="_blank"
+          aria-label="{{ social.label }}"
+          rel="noopener noreferrer">
+          {% include "components/" + social.icon + "-icon.njk" %}
+        </a>
+      </li>
+    {% endfor %}
+    </ul>
   </div>
 
-  <h2>Latest 3 Posts</h2>
+
+  <h2>Recent Posts</h2>
 
   {% set postslist = collections.posts | head(-3) %}
   {% set hlevel = '3' %}
-  <ol>
+  <ol class="post-list">
     {% for post in postslist | reverse %}
-    <li>
+    <li class="post-list__item">
       {% include 'components/post-teaser.njk' %}
     </li>
     {% endfor %}

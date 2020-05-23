@@ -1,0 +1,19 @@
+.nav {
+  display: flex;
+  list-style: none;
+  padding: 0 var(--size--2);
+  margin-bottom: var(--size--7);
+}
+
+.nav__item:not(:first-child) {
+  margin-left: var(--size--2);
+}
+
+.nav__item:first-child {
+  margin-right: auto;
+}
+
+.nav__link.is-active {
+  text-decoration: none;
+  color: var(--c-accent);
+}

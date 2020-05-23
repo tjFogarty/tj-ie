@@ -1,24 +1,26 @@
 html {
-  font-size: 100%;
+  font-size: calc(var(--base-font-size) / 16 * 100%);
 }
 
 body {
-  line-height: 1.65;
+  line-height: var(--body-lh);
 }
 
 p {
-  margin-bottom: 1.15rem;
+  margin-top: var(--paragraph-mb);
+  margin-bottom: 0;
 }
 
 a {
   color: var(--c-text);
   text-decoration: underline;
   text-decoration-color: var(--c-accent);
+  transition: color ease 0.2s;
 }
 
 a:hover,
 a:focus {
-  text-decoration-color: var(--c-text);
+  text-decoration: none;
   color: var(--c-accent);
 }
 
@@ -27,21 +29,31 @@ h1, h2, h3, h4 {
   color: var(--c-heading);
   -webkit-font-smoothing: antialiased;
   font-weight: normal;
-  line-height: 1.15;
-  margin: 2.75rem 0 1.05rem;
+  line-height: var(--heading-lh);
+  margin: var(--heading-mt) 0 var(--heading-mb);
 }
 
 h1 {
-  font-size: 5.653em;
+  font-size: var(--size--6);
   margin-top: 0;
 }
 
-h2 {font-size: 3.998em;}
+h2 {
+  font-size: var(--size--5);
+}
 
-h3 {font-size: 2.827em;}
+h3 {
+  font-size: var(--size--4);
+}
 
-h4 {font-size: 1.999em;}
+h4 {
+  font-size: var(--size--3);
+}
 
-h5 {font-size: 1.414em;}
+h5 {
+  font-size: var(--size--2);
+}
 
-small {font-size: 0.707em;}
+small {
+  font-size: var(--size--1);
+}
