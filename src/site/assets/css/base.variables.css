@@ -18,7 +18,7 @@
   --size--4: calc(var(--size-ratio) * var(--size-ratio) * var(--size-ratio) * 1em);
   --size--3: calc(var(--size-ratio) * var(--size-ratio) * 1em);
   --size--2: calc(var(--size-ratio) * 1em);
-  --size--1: calc(var(--size-ratio) / 2em);
+  --size--1: calc(var(--size-ratio) / 2 * 1em);
 
   --paragraph-mb: var(--size--2);
   --heading-mt: 2.75rem;
