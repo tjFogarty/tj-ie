@@ -1,0 +1,32 @@
+:root {
+  --c-accent: #ffc75f;
+  --c-background: #121c2e;
+  --c-text: #f0eff4;
+  --c-heading: #fff;
+  --c-gray: #8b8e98;
+
+  /* Sizing */
+  --body-lh: 1.65;
+  --heading-lh: 1.15;
+
+  --base-font-size: 20; /* px */
+
+  --size-ratio: 1.333;
+  --size--7: calc(var(--size-ratio) * var(--size-ratio) * var(--size-ratio) * var(--size-ratio) * var(--size-ratio) * var(--size-ratio) * 1em);
+  --size--6: calc(var(--size-ratio) * var(--size-ratio) * var(--size-ratio) * var(--size-ratio) * var(--size-ratio) * 1em);
+  --size--5: calc(var(--size-ratio) * var(--size-ratio) * var(--size-ratio) * var(--size-ratio) * 1em);
+  --size--4: calc(var(--size-ratio) * var(--size-ratio) * var(--size-ratio) * 1em);
+  --size--3: calc(var(--size-ratio) * var(--size-ratio) * 1em);
+  --size--2: calc(var(--size-ratio) * 1em);
+  --size--1: calc(var(--size-ratio) / 2 * 1em);
+
+  --paragraph-mb: var(--size--2);
+  --heading-mt: 2.75rem;
+  --heading-mb: 1.05rem;
+}
+
+@media (max-width: 720px) {
+  :root {
+    --size-ratio: 1.2;
+  }
+}

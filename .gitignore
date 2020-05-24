@@ -144,9 +144,3 @@ temp/
 
 # Local Netlify folder
 .netlify
-
-sw.js
-sw.js.map
-workbox-*
-/src/site/assets/
-src/site/_includes/layouts/base.njk

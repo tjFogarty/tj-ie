@@ -1,0 +1,15 @@
+.post__date {
+  color: var(--c-gray);
+}
+
+.direct-link {
+  color: var(--c-gray);
+  text-decoration: none;
+}
+
+@media (min-width: 1000px) {
+  .direct-link {
+    position: absolute;
+    transform: translateX(-150%);
+  }
+}

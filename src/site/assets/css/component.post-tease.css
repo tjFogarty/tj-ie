@@ -1,0 +1,27 @@
+.post-tease {
+  display: block;
+  text-decoration: none;
+}
+
+.post-tease:focus,
+.post-tease:hover {
+  color: var(--c-text);
+}
+
+.post-tease__title {
+  margin-top: 0;
+}
+
+.post-tease:focus .post-tease__title,
+.post-tease:hover .post-tease__title {
+  color: var(--c-accent);
+  text-decoration: none;
+}
+
+.post-tease__description {
+  font-size: var(--size--2);
+}
+
+.post-tease__date {
+  color: var(--c-gray);
+}

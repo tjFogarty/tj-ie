@@ -1,13 +1,13 @@
 {% set level = hlevel or '2' %}
 
-<a href="{{ post.url | url }}" class="block no-underline">
-  <time datetime="{{ post.date | htmlDateString }}" class="text-gray-700 vr-normal-sm mt-0 inline-block">
+<a href="{{ post.url | url }}" class="post-tease">
+  <time datetime="{{ post.date | htmlDateString }}" class="post-tease__date">
     {{ post.date | readableDate }}
   </time>
 
-  <h{{ level }} class="mt-0 pt-0">{% if post.data.title %}{{ post.data.title }}{% else %}<code>{{ post.url }}</code>{% endif %}</h{{ level }}>
+  <h{{ level }} class="post-tease__title">{% if post.data.title %}{{ post.data.title }}{% else %}<code>{{ post.url }}</code>{% endif %}</h{{ level }}>
 
   {% if post.data.description %}
-  <p class="mt-2 vr-normal-base text-gray-900 pb-6">{{ post.data.description }}</p>
+  <p class="post-tease__description">{{ post.data.description }}</p>
   {% endif %}
 </a>

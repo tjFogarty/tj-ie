@@ -1,0 +1,19 @@
+.tag-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+}
+
+.tag-list__item {
+  margin-right: var(--size--2);
+}
+
+.single-tag {
+  display: inline-block;
+  margin-top: var(--size--2);
+  color: var(--c-gray);
+  margin-right: var(--size--2);
+  font-size: var(--size--1);
+}

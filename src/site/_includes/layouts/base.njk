@@ -36,36 +36,70 @@
     {% if page.date %}
     <meta property="article:published_time" content="{{ page.date }}" />
     {% endif %}
-
     {% if cover_image %}
     <meta property="og:image" content="https://res.cloudinary.com/dab4jaczr/image/upload/w_1200,f_auto,q_auto/v1536498344/{{ cover_image }}">
     {% endif %}
 
-    <script>
-      (function() {
-        var htmlTag = document.querySelector('html');
-        htmlTag.classList.remove('no-js');
-        htmlTag.classList.add('js');
-      })();
-    </script>
+    {% set headingFont = 'Yeseva One' %}
+    {% set bodyFont = 'Source Serif Pro' %}
+    {% set fontUrl = 'https://fonts.googleapis.com/css2?family=' + headingFont.replace(" ", "+") + '&family=' + bodyFont.replace(" ", "+") + '&display=swap' %}
 
-    
-    <link rel="preload" href="/assets/main.d4784a97b08a606ebfa3.js" as="script">
-    
+    {% set css %}
+      :root {
+        --heading-font: "{{ headingFont }}", serif;
+        --body-font: "{{ bodyFont }}", sans-serif;
+      }
+      {% include "../../assets/css/base.reset.css" %}
+      {% include "../../assets/css/base.variables.css" %}
+      {% include "../../assets/css/base.body.css" %}
+      {% include "../../assets/css/base.type.css" %}
+      {% include "../../assets/css/base.article.css" %}
+      {% include "../../assets/css/base.iframe.css" %}
+      {% include "../../assets/css/base.blockquote.css" %}
+      {% include "../../assets/css/code.css" %}
+      {% include "../../assets/css/layout.container.css" %}
+      {% include "../../assets/css/component.post.css" %}
+      {% include "../../assets/css/component.post-list.css" %}
+      {% include "../../assets/css/component.post-tease.css" %}
+      {% include "../../assets/css/component.hero.css" %}
+      {% include "../../assets/css/component.nav.css" %}
+      {% include "../../assets/css/component.tag-list.css" %}
+      {% include "../../assets/css/component.footer.css" %}
+    {% endset %}
 
-    
-      <link href="/assets/main.css" rel="stylesheet">
-    
+    <style>{{ css | cssmin | safe }}</style>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
+
+    <link rel="preload" as="script" href="/assets/js/index.js" crossorigin />
+    <link rel="preload" as="script" href="/assets/js/instant-page.js" crossorigin />
+
+    <link
+      rel="preload"
+      as="style"
+      href="{{ fontUrl }}" />
+
+    <link
+      rel="stylesheet"
+      href="{{ fontUrl }}"
+      media="print" onload="this.media='all'" />
+
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="{{ fontUrl }}" />
+    </noscript>
   </head>
   <body>
-    <header class="mb-12">
-      <ul class="flex p-6">
-        <li class="mr-auto">
-          <a href="{{ '/' | url }}">{{ metadata.title }}</a>
+    <header>
+      <ul class="nav">
+        <li class="nav__item">
+          <a class="nav__link" href="{{ '/' | url }}">{{ metadata.title }}</a>
         </li>
       {%- for entry in collections.all | eleventyNavigation %}
-        <li class="{% if not loop.last %}mr-3 md:mr-6{% endif %}">
-          <a href="{{ entry.url | url }}"{% if entry.url == page.url %} class="no-underline text-accent-600"{% endif %}>{{ entry.title }}</a>
+        <li class="nav__item">
+          <a class="nav__link{% if entry.url == page.url %} is-active{% endif %}" href="{{ entry.url | url }}">{{ entry.title }}</a>
         </li>
       {%- endfor %}
       </ul>
@@ -75,14 +109,10 @@
       {{ content | safe }}
     </main>
 
-    <footer class="p-6">
+    <footer class="footer">
       &copy; TJ Fogarty
     </footer>
 
-    <!-- Current page: {{ page.url | url }} -->
-
-    <script defer src="/assets/main.d4784a97b08a606ebfa3.js"></script>
-
-    
+    <script type="module" src="/assets/js/index.js"></script>
   </body>
 </html>

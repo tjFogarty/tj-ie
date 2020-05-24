@@ -1,0 +1,27 @@
+.hero {
+  margin-bottom: var(--size--7);
+}
+
+.hero__description {
+  font-size: var(--size--3);
+  font-size: clamp(var(--size--2), 5vw, var(--size--3));
+}
+
+.hero__social {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+.hero__social-link {
+  color: var(--c-gray);
+}
+
+.hero__social-item {
+  margin-right: var(--size--2);
+}
+
+.hero__social svg {
+  width: var(--size--3);
+  height: var(--size--3);
+}

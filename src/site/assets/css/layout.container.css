@@ -1,0 +1,11 @@
+.container {
+  max-width: 42em;
+  margin: 0 auto;
+  padding: 0 var(--size--2);
+}
+
+@media (min-width: 670px) {
+  .container__text {
+    max-width: 75%;
+  }
+}

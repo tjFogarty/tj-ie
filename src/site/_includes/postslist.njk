@@ -1,5 +1,5 @@
 {% if postslistYears === 'off' %}
-<ol class="p-0 list-none">
+<ol class="post-list">
 {% endif %}
 
 {% set year = '' %}
@@ -14,20 +14,15 @@
     </div>
     {% endif %}
 
-    <div class="md:flex">
-    <div class="sticky self-start bg-gray-100 md:bg-transparent top-0 md:mr-6">
-      <h2 class="mt-1">{{ postYear }}</h2>
-    </div>
+    <div class="post-list--year-container">
+      <div class="post-list__year-column">
+        <h2 class="post-list__year">{{ postYear }}</h2>
+      </div>
 
-    <ol class="p-0 list-none flex-grow">
+      <ol class="post-list">
       {% set year = postYear %}
     {% endif %}
-    <li
-      class="
-        border-b border-gray-300
-        {% if isNewYear %} pb-4 {% else %} py-4 {% endif %}
-        {% if postslistYears === 'off' %} py-6 {% endif %}
-        {% if not post.data.description %} pb-8 {% endif %}">
+    <li class="post-list__item {% if not post.data.description %} pb-8 {% endif %}">
       {% include 'components/post-teaser.njk' %}
     </li>
   {% endfor %}

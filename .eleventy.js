@@ -6,11 +6,16 @@ const pluginNavigation = require('@11ty/eleventy-navigation')
 const markdownIt = require('markdown-it')
 const markdownItAnchor = require('markdown-it-anchor')
 const htmlmin = require('html-minifier')
+const CleanCSS = require('clean-css')
 
 module.exports = function(eleventyConfig) {
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(pluginSyntaxHighlight)
   eleventyConfig.addPlugin(pluginNavigation)
+
+  eleventyConfig.addFilter('cssmin', function(code) {
+    return new CleanCSS({}).minify(code).styles
+  })
 
   eleventyConfig.addShortcode('external-link', function(href, content) {
     return `<a href="${href}" target="_blank" rel="noopener noreferrer">${content}</a>`
@@ -53,9 +58,10 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.setDataDeepMerge(true)
 
   eleventyConfig.addLayoutAlias('post', 'layouts/post.njk')
+  eleventyConfig.addLayoutAlias('base', 'layouts/base.njk')
 
   eleventyConfig.addFilter('readableDate', dateObj => {
-    return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat('dd LLL yyyy')
+    return DateTime.fromJSDate(dateObj, { zone: 'utc' }).toFormat('dd LLL yyyy')
   })
 
   eleventyConfig.addFilter('year', dateObj => {
@@ -64,12 +70,12 @@ module.exports = function(eleventyConfig) {
 
   // https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string
   eleventyConfig.addFilter('htmlDateString', (dateObj) => {
-    return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat('yyyy-LL-dd')
+    return DateTime.fromJSDate(dateObj, { zone: 'utc' }).toFormat('yyyy-LL-dd')
   })
 
   // Get the first `n` elements of a collection.
   eleventyConfig.addFilter('head', (array, n) => {
-    if( n < 0 ) {
+    if (n < 0) {
       return array.slice(n)
     }
 
@@ -83,9 +89,6 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy('./src/site/robots.txt')
   eleventyConfig.addPassthroughCopy('./src/site/keybase.txt')
   eleventyConfig.addPassthroughCopy('./src/site/googlea2c3a0ad5b2401f7.html')
-  eleventyConfig.addPassthroughCopy('./src/site/sw.js')
-  eleventyConfig.addPassthroughCopy('./src/site/sw.js.map')
-  eleventyConfig.addPassthroughCopy('./src/site/workbox-*')
 
   /* Markdown Overrides */
   let markdownLibrary = markdownIt({
