@@ -16,6 +16,7 @@
 
 .post-list--year-container {
   display: flex;
+  position: relative;
 }
 
 .post-list--year-container .post-list .post-list__item:last-child {
@@ -29,6 +30,14 @@
   font-size: var(--size--3);
   top: var(--size--1);
   color: var(--c-gray);
+}
+
+@media (min-width: 1120px) {
+  .post-list__year-column {
+    position: absolute;
+    height: 100%;
+    transform: translateX(-100%);
+  }
 }
 
 @media (max-width: 650px) {
