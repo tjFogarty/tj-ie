@@ -5,8 +5,7 @@
 }
 
 @media (min-width: 910px) {
-  .container--text {
-    max-width: 35em;
-    transform: translateX(-3em);
+  .container__text {
+    max-width: 75%;
   }
 }

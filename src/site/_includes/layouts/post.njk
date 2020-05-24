@@ -3,39 +3,30 @@ layout: layouts/base.njk
 templateClass: tmpl-post
 ---
 
-<article class="article">
+<article class="post">
   <div class="container">
     {% if date %}
-    <time datetime="{{ date | htmlDateString }}">
+    <time class="post__date" datetime="{{ date | htmlDateString }}">
       {{ date | readableDate }}
     </time>
     {% endif %}
 
     <h1>{{ title }}</h1>
+
+    <div class="container__text">
+      {{ content | safe }}
+      {% for tag in tags %}
+        {%- if collections.tagList.indexOf(tag) != -1 -%}
+        {% set tagUrl %}/tags/{{ tag }}/{% endset %}
+        <a href="{{ tagUrl | url }}" class="tag" aria-label="See all {{ tag }} posts">
+          {{ tag }}
+        </a>
+        {%- endif -%}
+      {% endfor %}
+
+      <p><a href="{{ '/' | url }}">← Home</a></p>
+    </div>
   </div>
 
-  <div class="container container--text">
-  {{ content | safe }}
-    {% for tag in tags %}
-      {%- if collections.tagList.indexOf(tag) != -1 -%}
-      {% set tagUrl %}/tags/{{ tag }}/{% endset %}
-      <a href="{{ tagUrl | url }}" class="tag" aria-label="See all {{ tag }} posts">
-        {{ tag }}
-      </a>
-      {%- endif -%}
-    {% endfor %}
-
-    {% if date %}
-    <p>
-      Thanks for reading. If you found this useful, consider
-      <a target="_blank" href="https://www.buymeacoffee.com/tj">
-        buying me a coffee.
-      </a>
-    </p>
-
-    {% endif %}
-
-    <p><a href="{{ '/' | url }}">← Home</a></p>
-  </div>
 
 </article>

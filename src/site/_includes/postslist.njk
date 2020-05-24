@@ -14,20 +14,15 @@
     </div>
     {% endif %}
 
-    <div>
-    <div>
-      <h2>{{ postYear }}</h2>
-    </div>
+    <div class="post-list--year-container">
+      <div>
+        <h2 class="post-list__year">{{ postYear }}</h2>
+      </div>
 
-    <ol class="post-list">
+      <ol class="post-list">
       {% set year = postYear %}
     {% endif %}
-    <li
-      class="
-        post-list__item
-        {% if isNewYear %} pb-4 {% else %} py-4 {% endif %}
-        {% if postslistYears === 'off' %} py-6 {% endif %}
-        {% if not post.data.description %} pb-8 {% endif %}">
+    <li class="post-list__item {% if not post.data.description %} pb-8 {% endif %}">
       {% include 'components/post-teaser.njk' %}
     </li>
   {% endfor %}

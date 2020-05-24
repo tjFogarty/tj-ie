@@ -1,4 +1,5 @@
 .post-tease {
+  display: block;
   text-decoration: none;
 }
 
@@ -8,8 +9,6 @@
 }
 
 .post-tease__title {
-  text-decoration: underline;
-  text-decoration-color: var(--c-accent);
   margin-top: 0;
 }
 
