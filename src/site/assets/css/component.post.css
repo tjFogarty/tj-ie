@@ -1,3 +1,10 @@
 .post__date {
   color: var(--c-gray);
 }
+
+.direct-link {
+  position: absolute;
+  color: var(--c-gray);
+  transform: translateX(-150%);
+  text-decoration: none;
+}

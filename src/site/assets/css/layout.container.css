@@ -4,7 +4,7 @@
   padding: 0 var(--size--2);
 }
 
-@media (min-width: 910px) {
+@media (min-width: 670px) {
   .container__text {
     max-width: 75%;
   }

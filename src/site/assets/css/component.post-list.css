@@ -30,3 +30,13 @@
   top: var(--size--1);
   color: var(--c-gray);
 }
+
+@media (max-width: 650px) {
+  .post-list__year {
+    position: static;
+  }
+
+  .post-list--year-container {
+    display: block;
+  }
+}

@@ -10,7 +10,7 @@
   margin-right: var(--size--2);
 }
 
-.tag {
+.single-tag {
   display: inline-block;
   margin-top: var(--size--2);
   color: var(--c-gray);

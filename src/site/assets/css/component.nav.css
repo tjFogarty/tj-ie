@@ -1,5 +1,6 @@
 .nav {
   display: flex;
+  flex-wrap: wrap;
   list-style: none;
   padding: 0 var(--size--2);
   margin-bottom: var(--size--7);
@@ -16,4 +17,16 @@
 .nav__link.is-active {
   text-decoration: none;
   color: var(--c-accent);
+}
+
+@media (max-width: 500px) {
+  .nav__item:first-child {
+    flex: 0 0 100%;
+    margin-bottom: var(--size--1);
+  }
+
+  .nav__item:not(:first-child) {
+    margin-left: 0;
+    margin-right: var(--size--1);
+  }
 }
