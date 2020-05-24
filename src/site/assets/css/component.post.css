@@ -3,8 +3,13 @@
 }
 
 .direct-link {
-  position: absolute;
   color: var(--c-gray);
-  transform: translateX(-150%);
   text-decoration: none;
+}
+
+@media (min-width: 1000px) {
+  .direct-link {
+    position: absolute;
+    transform: translateX(-150%);
+  }
 }
