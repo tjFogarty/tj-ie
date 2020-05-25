@@ -31,7 +31,7 @@
 {% set sizes = range(25, 45) %}
 {% set positions = range(0, 100) %}
 
-<div class="checkmark-header">
+<div class="checkmark-header" aria-hidden="true">
   {% for i in range(0, 15) %}
 
   {% set size %} {{ sizes | random }}{% endset %}
