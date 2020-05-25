@@ -4,3 +4,8 @@ body {
   color: var(--c-text);
   -webkit-font-smoothing: subpixel-antialiased;
 }
+
+::selection {
+  background-color: var(--c-accent);
+  color: var(--c-background);
+}
