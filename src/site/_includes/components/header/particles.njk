@@ -1,0 +1,95 @@
+<script>
+(() => {
+  function addTextSelection() {
+    const heading = document.querySelector('h1');
+    const textToReplace = 'Particle Effects';
+
+    heading.innerHTML = heading.textContent.replace(textToReplace, `<span class="particle-text">${textToReplace}<span class="selection-bg"></span></span>`);
+
+    if (ResizeObserver && document.body.animate) {
+      const selectionBg = document.querySelector('.selection-bg');
+      const resizeObserver = new ResizeObserver(entries => {
+        for (let entry of entries) {
+          const { x, y } = entry.target.getBoundingClientRect();
+          const { width, height } = entry.contentRect;
+
+          createParticle(x + width, y + height)
+        }
+      });
+
+     function createParticle(x, y) {
+        const particle = document.createElement('particle')
+
+        document.body.appendChild(particle)
+
+        const size = Math.floor(Math.random() * 10 + 25)
+
+        particle.style.width = `${size}px`
+        particle.style.height = `${size / 5}px`
+        particle.style.background = `var(--c-accent)`
+
+        const destinationX = x
+        const destinationY = y + 10
+
+        const animation = particle.animate([{
+            transform: `translate(${x - (size / 2)}px, ${y - (size / 2)}px) rotate(0deg)`,
+            opacity: 1
+          },
+          {
+            transform: `translate(${destinationX}px, ${destinationY}px) rotate(-10deg)`,
+            opacity: 0
+          }
+        ], {
+          duration: 500 + Math.random() * 1000,
+          easing: 'cubic-bezier(0, .9, .57, 1)',
+          delay: Math.random() * 100
+        })
+
+        animation.addEventListener('finish', () => {
+          particle.remove()
+        }, { once: true })
+      }
+
+
+      setTimeout(() => {
+        resizeObserver.observe(selectionBg);
+        selectionBg.classList.add('ready');
+      }, 500)
+    }
+  }
+
+  document.addEventListener('DOMContentLoaded', addTextSelection);
+})();
+</script>
+
+<style>
+.particle-text {
+  position: relative;
+  display: inline-block;
+}
+
+.selection-bg {
+  position: absolute;
+  pointer-events: none;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: var(--c-accent);
+  mix-blend-mode: darken;
+  transition: width linear 0.8s;
+}
+
+.selection-bg.ready {
+  width: 100%;
+}
+
+particle {
+  left: 0;
+  pointer-events: none;
+  position: fixed;
+  top: 0;
+  opacity: 0;
+}
+
+</style>
