@@ -1,0 +1,27 @@
+<script>
+(() => {
+  function addPlaceholderHeading() {
+    const heading = document.querySelector('h1');
+
+    heading.innerHTML = heading.textContent.replace('Placeholder', '<span class="placeholder-text">Placeholder</span>');
+  }
+
+  document.addEventListener('DOMContentLoaded', addPlaceholderHeading);
+})();
+</script>
+
+<style>
+.placeholder-text {
+  color: var(--c-gray);
+  text-decoration: underline;
+  text-decoration-color: var(--c-text);
+  border-left: 3px solid var(--c-accent);
+  animation: placeholder ease 1.5s infinite;
+}
+
+@keyframes placeholder {
+  0% { border-left-color: transparent; }
+  50% { border-left-color: var(--c-accent); }
+  100% { border-left-color: transparent; }
+}
+</style>
