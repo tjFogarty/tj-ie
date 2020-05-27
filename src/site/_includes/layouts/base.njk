@@ -47,7 +47,7 @@
     {% set css %}
       :root {
         --heading-font: "{{ headingFont }}", serif;
-        --body-font: "{{ bodyFont }}", sans-serif;
+        --body-font: "{{ bodyFont }}", serif;
       }
       {% include "../../assets/css/base.reset.css" %}
       {% include "../../assets/css/base.variables.css" %}
@@ -72,7 +72,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
 
-    <link rel="preload" as="script" href="/assets/js/index.js" crossorigin />
     <link rel="preload" as="script" href="/assets/js/instant-page.js" crossorigin />
 
     <link
@@ -113,6 +112,6 @@
       &copy; TJ Fogarty
     </footer>
 
-    <script type="module" src="/assets/js/index.js"></script>
+    <script type="module" src="/assets/js/instant-page.js"></script>
   </body>
 </html>

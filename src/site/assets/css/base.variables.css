@@ -11,7 +11,7 @@
 
   --base-font-size: 20; /* px */
 
-  --size-ratio: 1.333;
+  --size-ratio: 1.2;
   --size--7: calc(var(--size-ratio) * var(--size-ratio) * var(--size-ratio) * var(--size-ratio) * var(--size-ratio) * var(--size-ratio) * 1em);
   --size--6: calc(var(--size-ratio) * var(--size-ratio) * var(--size-ratio) * var(--size-ratio) * var(--size-ratio) * 1em);
   --size--5: calc(var(--size-ratio) * var(--size-ratio) * var(--size-ratio) * var(--size-ratio) * 1em);
@@ -25,8 +25,8 @@
   --heading-mb: 1.05rem;
 }
 
-@media (max-width: 720px) {
+@media (min-width: 1200px) {
   :root {
-    --size-ratio: 1.2;
+    --size-ratio: 1.333;
   }
 }

@@ -46,10 +46,9 @@ code[class*="language-"] ::selection {
 
 /* Code blocks */
 pre[class*="language-"] {
-  @apply mt-4;
-  @apply vr-normal-base;
   padding: 1em;
   overflow: auto;
+  font-size: calc(var(--size--1) * 1.5);
 }
 
 :not(pre) > code[class*="language-"],
