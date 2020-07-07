@@ -3,7 +3,7 @@
 code[class*="language-"],
 pre[class*="language-"] {
   color: #d6deeb;
-  font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
+  font-family: var(--code-font);
   text-align: left;
   white-space: pre;
   word-spacing: normal;
@@ -93,6 +93,10 @@ pre[class*="language-"] {
 .token.operator,
 .token.keyword {
   color: rgb(127, 219, 202);
+}
+
+.token.keyword {
+  font-style: italic;
 }
 
 .token.boolean {

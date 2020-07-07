@@ -7,6 +7,10 @@
   text-decoration: none;
 }
 
+.post .container__text {
+  margin-top: var(--size--5);
+}
+
 @media (min-width: 1000px) {
   .direct-link {
     position: absolute;

@@ -7,95 +7,83 @@
     <meta name="description" content="{{ renderData.description or description or metadata.description }}">
     <link rel="alternate" href="{{ metadata.feed.path | url }}" type="application/atom+xml" title="{{ metadata.title }}">
 
-    <link rel="canonical" href="{{ page.url | url }}" />
+    <link rel="canonical" href="{{ page.url | url }}"/>
 
     <link rel="me" href="mailto:contact@tj.ie">
     <link rel="me" href="https://github.com/tjFogarty">
     <link rel="authorization_endpoint" href="https://indieauth.com/auth">
 
-    <link rel="webmention" href="https://webmention.io/tj.ie/webmention" />
-    <link rel="pingback" href="https://webmention.io/tj.ie/xmlrpc" />
+    <link rel="webmention" href="https://webmention.io/tj.ie/webmention"/>
+    <link rel="pingback" href="https://webmention.io/tj.ie/xmlrpc"/>
 
     <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:description" content="{{ renderData.description or description or metadata.description }}" />
-    <meta name="twitter:title" content="{{ renderData.title or title or metadata.title }}" />
-    <meta name="twitter:site" content="@tj_fogarty" />
-    <meta name="twitter:creator" content="@tj_fogarty" />
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:description" content="{{ renderData.description or description or metadata.description }}"/>
+    <meta name="twitter:title" content="{{ renderData.title or title or metadata.title }}"/>
+    <meta name="twitter:site" content="@tj_fogarty"/>
+    <meta name="twitter:creator" content="@tj_fogarty"/>
 
     <!-- OG data -->
-    <meta property="og:locale" content="en_IE" />
-    <meta property="og:type" content="article" />
+    <meta property="og:locale" content="en_IE"/>
+    <meta property="og:type" content="article"/>
     <meta content="{{ renderData.title or title or metadata.title }}" property="og:title">
     <meta content="{{ renderData.description or description or metadata.description }}" property="og:description">
-    <meta property="og:url" content="{{ page.url | url }}" />
-    <meta property="og:site_name" content="TJ Fogarty - Web Developer" />
+    <meta property="og:url" content="{{ page.url | url }}"/>
+    <meta property="og:site_name" content="TJ Fogarty - Web Developer"/>
     {% for tag in post.data.tags %}
-    <meta property="article:section" content="{{ tag }}" />
+      <meta property="article:section" content="{{ tag }}"/>
     {% endfor %}
     {% if page.date %}
-    <meta property="article:published_time" content="{{ page.date }}" />
+      <meta property="article:published_time" content="{{ page.date }}"/>
     {% endif %}
     {% if cover_image %}
-    <meta property="og:image" content="https://res.cloudinary.com/dab4jaczr/image/upload/w_1200,f_auto,q_auto/v1536498344/{{ cover_image }}">
+      <meta property="og:image" content="https://res.cloudinary.com/dab4jaczr/image/upload/w_1200,f_auto,q_auto/v1536498344/{{ cover_image }}">
     {% endif %}
 
-    {% set headingFont = 'Yeseva One' %}
-    {% set bodyFont = 'Source Serif Pro' %}
-    {% set fontUrl = 'https://fonts.googleapis.com/css2?family=' + headingFont.replace(" ", "+") + '&family=' + bodyFont.replace(" ", "+") + '&display=swap' %}
+    {% set fontUrl = 'https://cloud.typography.com/6360898/6440412/css/fonts.css' %}
+
+    <link rel="preconnect" href="https://cloud.typography.com" crossorigin="crossorigin"/>
+
+    <link rel="preload" as="style" href="{{ fontUrl }}"/>
+
+    {# <link rel="stylesheet" href="{{ fontUrl }}" media="print" onload="this.media='all'"/> #}
+
+    {# <noscript> #}
+    <link rel="stylesheet" href="{{ fontUrl }}"/>
+    {# </noscript> #}
 
     {% set css %}
-      :root {
-        --heading-font: "{{ headingFont }}", serif;
-        --body-font: "{{ bodyFont }}", serif;
-      }
-      {% include "../../assets/css/base.reset.css" %}
-      {% include "../../assets/css/base.variables.css" %}
-      {% include "../../assets/css/base.body.css" %}
-      {% include "../../assets/css/base.type.css" %}
-      {% include "../../assets/css/base.article.css" %}
-      {% include "../../assets/css/base.iframe.css" %}
-      {% include "../../assets/css/base.blockquote.css" %}
-      {% include "../../assets/css/code.css" %}
-      {% include "../../assets/css/layout.container.css" %}
-      {% include "../../assets/css/component.post.css" %}
-      {% include "../../assets/css/component.post-list.css" %}
-      {% include "../../assets/css/component.post-tease.css" %}
-      {% include "../../assets/css/component.hero.css" %}
-      {% include "../../assets/css/component.nav.css" %}
-      {% include "../../assets/css/component.tag-list.css" %}
-      {% include "../../assets/css/component.footer.css" %}
+    :root { --heading-font: "Quarto A", "Quarto B", serif; --body-font: "Ideal Sans A", "Ideal Sans B", serif; --code-font: "Operator Mono A", "Operator Mono B", Consolas,Monaco, "Andale Mono", "Ubuntu Mono", monospace; }
+    {% include "../../assets/css/base.reset.css" %}
+    {% include "../../assets/css/base.variables.css" %}
+    {% include "../../assets/css/base.body.css" %}
+    {% include "../../assets/css/base.type.css" %}
+    {% include "../../assets/css/base.article.css" %}
+    {% include "../../assets/css/base.iframe.css" %}
+    {% include "../../assets/css/base.blockquote.css" %}
+    {% include "../../assets/css/code.css" %}
+    {% include "../../assets/css/layout.container.css" %}
+    {% include "../../assets/css/component.post.css" %}
+    {% include "../../assets/css/component.post-list.css" %}
+    {% include "../../assets/css/component.post-tease.css" %}
+    {% include "../../assets/css/component.hero.css" %}
+    {% include "../../assets/css/component.nav.css" %}
+    {% include "../../assets/css/component.tag-list.css" %}
+    {% include "../../assets/css/component.footer.css" %}
     {% endset %}
 
-    <style>{{ css | cssmin | safe }}</style>
+    <style>
+      {{css | cssmin | safe}}
+    </style>
 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
-
-    <link rel="preload" as="script" href="/assets/js/instant-page.js" crossorigin />
-
-    <link
-      rel="preload"
-      as="style"
-      href="{{ fontUrl }}" />
-
-    <link
-      rel="stylesheet"
-      href="{{ fontUrl }}"
-      media="print" onload="this.media='all'" />
-
-    <noscript>
-      <link
-        rel="stylesheet"
-        href="{{ fontUrl }}" />
-    </noscript>
+    <link rel="preload" as="script" href="/assets/js/instant-page.js" crossorigin="crossorigin"/>
   </head>
   <body>
     <header>
       {% include "components/navigation.njk" %}
     </header>
 
-    <main{% if templateClass %} class="{{ templateClass }}"{% endif %}>
+    <main{% if templateclass %} class="{{ templateClass }}" {% endif %}>
       {{ content | safe }}
     </main>
 
