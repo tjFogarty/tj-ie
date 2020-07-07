@@ -8,16 +8,16 @@ const markdownItAnchor = require('markdown-it-anchor')
 const htmlmin = require('html-minifier')
 const CleanCSS = require('clean-css')
 
-module.exports = function(eleventyConfig) {
+module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(pluginSyntaxHighlight)
   eleventyConfig.addPlugin(pluginNavigation)
 
-  eleventyConfig.addFilter('cssmin', function(code) {
+  eleventyConfig.addFilter('cssmin', function (code) {
     return new CleanCSS({}).minify(code).styles
   })
 
-  eleventyConfig.addShortcode('external-link', function(href, content) {
+  eleventyConfig.addShortcode('external-link', function (href, content) {
     return `<a href="${href}" target="_blank" rel="noopener noreferrer">${content}</a>`
   })
 
@@ -33,7 +33,7 @@ module.exports = function(eleventyConfig) {
     return content
   })
 
-  eleventyConfig.addShortcode("cloudinary", function(
+  eleventyConfig.addShortcode("cloudinary", function (
     src,
     alt,
     sizes = '(min-width: 922px) 900px, 100vw',
@@ -65,7 +65,7 @@ module.exports = function(eleventyConfig) {
   })
 
   eleventyConfig.addFilter('year', dateObj => {
-    return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat('yyyy')
+    return DateTime.fromJSDate(dateObj, { zone: 'utc' }).toFormat('yyyy')
   })
 
   // https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string
@@ -85,6 +85,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addCollection('tagList', require('./src/site/_11ty/getTagList'))
 
   eleventyConfig.addPassthroughCopy('./src/site/assets')
+  eleventyConfig.addPassthroughCopy('./src/site/fonts')
   eleventyConfig.addPassthroughCopy('./src/site/favicon.ico')
   eleventyConfig.addPassthroughCopy('./src/site/robots.txt')
   eleventyConfig.addPassthroughCopy('./src/site/keybase.txt')
