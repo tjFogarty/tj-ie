@@ -23,6 +23,18 @@
     <meta name="twitter:site" content="@tj_fogarty"/>
     <meta name="twitter:creator" content="@tj_fogarty"/>
 
+    <script>
+      (function () {
+        const html = document.querySelector('html');
+        html
+          .classList
+          .remove('no-js');
+        html
+          .classList
+          .add('js');
+      })();
+    </script>
+
     <!-- OG data -->
     <meta property="og:locale" content="en_IE"/>
     <meta property="og:type" content="article"/>
@@ -91,6 +103,21 @@
       &copy; TJ Fogarty
     </footer>
 
+    <div class="nav__overlay js-nav-overlay" tabindex="-1" id="nav-overlay">
+      <ul class="nav__list">
+        {%- for entry in collections.all | eleventyNavigation %}
+          <li class="nav__item">
+            <a class="nav__link{% if entry.url == page.url %} is-active{% endif %}" href="{{ entry.url | url }}">{{ entry.title }}</a>
+          </li>
+        {%- endfor %}
+      </ul>
+
+      <button type="button" class="nav__overlay-close js-toggle-menu" aria-label="Close Menu">
+        {% include "components/close-icon.njk" %}
+      </button>
+    </div>
+
+    <script src="/assets/js/main.js" defer="defer"></script>
     <script type="module" src="/assets/js/instant-page.js"></script>
   </body>
 </html>
