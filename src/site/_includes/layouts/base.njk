@@ -104,7 +104,7 @@
     </footer>
 
     <div class="nav__overlay js-nav-overlay" aria-modal="true" tabindex="-1" id="nav-overlay" role="dialog" aria-labelledby="menu-label">
-      <p id="menu-label">Site Navigation</p>
+      <p id="menu-label" aria-label="Site Navigation" class="nav__overlay-title">Navigation</p>
       <ul class="nav__list">
         {%- for entry in collections.all | eleventyNavigation %}
           <li class="nav__item">
