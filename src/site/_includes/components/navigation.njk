@@ -1,4 +1,6 @@
 <div class="nav">
   <a href="{{ '/' | url }}">{{ metadata.title }}</a>
-  <a href="#nav-overlay" class="js-toggle-menu nav__button">Menu</button>
+  <a href="#nav-overlay" class="js-toggle-menu nav__button" aria-label="Menu">
+    {% include "components/menu-icon.njk" %}
+  </a>
 </div>

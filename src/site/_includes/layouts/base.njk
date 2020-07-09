@@ -103,7 +103,8 @@
       &copy; TJ Fogarty
     </footer>
 
-    <div class="nav__overlay js-nav-overlay" tabindex="-1" id="nav-overlay">
+    <div class="nav__overlay js-nav-overlay" aria-modal="true" tabindex="-1" id="nav-overlay" role="dialog" aria-labelledby="menu-label">
+      <p id="menu-label">Site Navigation</p>
       <ul class="nav__list">
         {%- for entry in collections.all | eleventyNavigation %}
           <li class="nav__item">

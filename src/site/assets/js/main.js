@@ -18,7 +18,7 @@
 
         if (body.classList.contains(openClass)) {
           menu.addEventListener('transitionend', () => {
-            menu.querySelector('a').focus();
+            menu.focus();
           }, { once: true });
           window.addEventListener('keydown', handleKeydown);
         } else {
