@@ -125,3 +125,19 @@ to = "/"
 [[redirects]]
 from = "/post/20839272675/i-know-the-feeling-cat-sleepy-taken-with"
 to = "/"
+
+[[redirects]]
+from = "/wp-login.php"
+to = "https://www.youtube.com/watch?v=-ZoDJX9YFX8"
+
+[[redirects]]
+from = "/wp-json/*"
+to = "https://www.youtube.com/watch?v=-ZoDJX9YFX8"
+
+[[redirects]]
+from = "/wp-content/*"
+to = "https://www.youtube.com/watch?v=-ZoDJX9YFX8"
+
+[[redirects]]
+from = "/.env"
+to = "https://www.youtube.com/watch?v=-ZoDJX9YFX8"
