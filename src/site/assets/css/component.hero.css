@@ -3,8 +3,7 @@
 }
 
 .hero__description {
-  font-size: var(--size--3);
-  font-size: clamp(var(--size--2), 5vw, var(--size--3));
+  font-size: var(--size--2);
 }
 
 .hero__social {

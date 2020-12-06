@@ -24,7 +24,10 @@ a:focus {
   color: var(--c-accent);
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   font-family: var(--heading-font);
   color: var(--c-heading);
   -webkit-font-smoothing: antialiased;
@@ -34,20 +37,20 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-  font-size: var(--size--6);
+  font-size: var(--size--7);
   margin-top: 0;
 }
 
 h2 {
-  font-size: var(--size--5);
+  font-size: var(--size--6);
 }
 
 h3 {
-  font-size: var(--size--4);
+  font-size: var(--size--5);
 }
 
 h4 {
-  font-size: var(--size--3);
+  font-size: var(--size--4);
 }
 
 h5 {

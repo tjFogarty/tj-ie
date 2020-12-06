@@ -52,20 +52,14 @@
       <meta property="og:image" content="https://res.cloudinary.com/dab4jaczr/image/upload/w_1200,f_auto,q_auto/v1536498344/{{ cover_image }}">
     {% endif %}
 
-    {% set fontUrl = 'https://cloud.typography.com/6360898/6440412/css/fonts.css' %}
-
-    <link rel="preconnect" href="https://cloud.typography.com" crossorigin="crossorigin"/>
-
-    <link rel="preload" as="style" href="{{ fontUrl }}"/>
-
-    {# <link rel="stylesheet" href="{{ fontUrl }}" media="print" onload="this.media='all'"/> #}
-
-    {# <noscript> #}
-    <link rel="stylesheet" href="{{ fontUrl }}"/>
-    {# </noscript> #}
+    <link rel="preload" href="/fonts/crimson-pro-v13-latin-600.woff2" as="font" type="font/woff2" crossorigin="crossorigin">
+    <link rel="preload" href="/fonts/crimson-pro-v13-latin-regular.woff2" as="font" type="font/woff2" crossorigin="crossorigin">
+    <link rel="preload" href="/fonts/poppins-v15-latin-regular.woff2" as="font" type="font/woff2" crossorigin="crossorigin">
+    <link rel="preload" href="/fonts/fira-code-v9-latin-regular.woff2" as="font" type="font/woff2" crossorigin="crossorigin">
 
     {% set css %}
-    :root { --heading-font: "Quarto A", "Quarto B", serif; --body-font: "Ideal Sans A", "Ideal Sans B", serif; --code-font: "Operator Mono A", "Operator Mono B", Consolas,Monaco, "Andale Mono", "Ubuntu Mono", monospace; }
+    :root { --heading-font: "Crimson Pro", serif; --body-font: "Poppins", sans-serif; --code-font: "Fira Code", Consolas,Monaco, "Andale Mono", "Ubuntu Mono", monospace; }
+    {% include "../../assets/css/base.fonts.css" %}
     {% include "../../assets/css/base.reset.css" %}
     {% include "../../assets/css/base.variables.css" %}
     {% include "../../assets/css/base.body.css" %}

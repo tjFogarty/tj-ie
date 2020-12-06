@@ -1,0 +1,33 @@
+@font-face {
+  font-family: "Fira Code";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local(""), url("/fonts/fira-code-v9-latin-regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: local(""),
+    url("../fonts/poppins-v15-latin-regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Crimson Pro";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: local(""),
+    url("/fonts/crimson-pro-v13-latin-regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Crimson Pro";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 600;
+  src: local(""), url("/fonts/crimson-pro-v13-latin-600.woff2") format("woff2");
+}
