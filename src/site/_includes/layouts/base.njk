@@ -52,14 +52,8 @@
       <meta property="og:image" content="https://res.cloudinary.com/dab4jaczr/image/upload/w_1200,f_auto,q_auto/v1536498344/{{ cover_image }}">
     {% endif %}
 
-    <link rel="preload" href="/fonts/crimson-pro-v13-latin-600.woff2" as="font" type="font/woff2" crossorigin="crossorigin">
-    <link rel="preload" href="/fonts/crimson-pro-v13-latin-regular.woff2" as="font" type="font/woff2" crossorigin="crossorigin">
-    <link rel="preload" href="/fonts/poppins-v15-latin-regular.woff2" as="font" type="font/woff2" crossorigin="crossorigin">
-    <link rel="preload" href="/fonts/fira-code-v9-latin-regular.woff2" as="font" type="font/woff2" crossorigin="crossorigin">
-
     {% set css %}
-    :root { --heading-font: "Crimson Pro", serif; --body-font: "Poppins", sans-serif; --code-font: "Fira Code", Consolas,Monaco, "Andale Mono", "Ubuntu Mono", monospace; }
-    {% include "../../assets/css/base.fonts.css" %}
+    :root { --heading-font: Georgia, serif; --body-font: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji; --code-font: Consolas,Monaco, "Andale Mono", "Ubuntu Mono", monospace; }
     {% include "../../assets/css/base.reset.css" %}
     {% include "../../assets/css/base.variables.css" %}
     {% include "../../assets/css/base.body.css" %}
