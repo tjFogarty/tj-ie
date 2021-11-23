@@ -38,6 +38,7 @@ h4 {
 
 h1 {
   font-size: var(--size--7);
+  color: var(--clr-25);
   margin-top: 0;
 }
 

@@ -10,7 +10,7 @@
 }
 
 .post-list__item:last-child {
-  border-bottom: 1px dashed var(--c-accent);
+  border-bottom: 1px dashed var(--clr-70);
   padding-bottom: var(--size--4);
 }
 
@@ -29,7 +29,7 @@
   margin: var(--size--3) var(--size--1) 0 0;
   font-size: var(--size--3);
   top: var(--size--1);
-  color: var(--c-gray);
+  color: var(--accent);
 }
 
 @media (min-width: 1120px) {
