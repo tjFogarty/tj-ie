@@ -13,7 +13,6 @@
 .single-tag {
   display: inline-block;
   margin-top: var(--size--2);
-  color: var(--c-gray);
   margin-right: var(--size--2);
   font-size: var(--size--1);
 }

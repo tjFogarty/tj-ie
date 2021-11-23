@@ -1,9 +1,9 @@
 .post__date {
-  color: var(--c-gray);
+  color: var(--clr-50);
 }
 
 .direct-link {
-  color: var(--c-gray);
+  color: var(--clr-20);
   text-decoration: none;
 }
 

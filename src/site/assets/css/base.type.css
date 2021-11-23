@@ -12,7 +12,7 @@ p {
 }
 
 a {
-  color: var(--c-text);
+  color: var(--clr-25);
   text-decoration: underline;
   text-decoration-color: var(--c-accent);
   transition: color ease 0.2s;
@@ -29,7 +29,7 @@ h2,
 h3,
 h4 {
   font-family: var(--heading-font);
-  color: var(--c-heading);
+  color: var(--clr-70);
   -webkit-font-smoothing: antialiased;
   font-weight: normal;
   line-height: var(--heading-lh);

@@ -6,7 +6,7 @@
 
 .post-list__item {
   padding: var(--size--4) 0;
-  border-top: 1px dashed var(--c-accent);
+  border-top: 1px dashed var(--clr-70);
 }
 
 .post-list__item:last-child {

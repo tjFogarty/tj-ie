@@ -1,9 +1,11 @@
 body {
   font-family: var(--body-font);
-  background-color: var(--c-background);
-  color: var(--c-text);
+  background-color: var(--clr-10);
+  color: var(--clr-90);
   -webkit-font-smoothing: subpixel-antialiased;
 }
+
+@media (prefers-color-scheme: dark) {}
 
 ::selection {
   background-color: var(--c-accent);

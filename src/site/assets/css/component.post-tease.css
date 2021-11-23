@@ -21,7 +21,3 @@
 .post-tease__description {
   font-size: var(--size--2);
 }
-
-.post-tease__date {
-  color: var(--c-gray);
-}

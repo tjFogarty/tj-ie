@@ -54,7 +54,7 @@ pre[class*="language-"] {
 :not(pre) > code[class*="language-"],
 pre[class*="language-"] {
   color: white;
-  background: #011627;
+  background: var(--clr-5);
   border: 1px dashed var(--c-accent);
 }
 
@@ -92,7 +92,7 @@ pre[class*="language-"] {
 .token.tag,
 .token.operator,
 .token.keyword {
-  color: rgb(127, 219, 202);
+  color: var(--clr-60);
 }
 
 .token.keyword {
@@ -112,6 +112,7 @@ pre[class*="language-"] {
 .token.builtin,
 .token.char {
   color: rgb(130, 170, 255);
+  color: var(--accent);
 }
 
 .token.selector,
