@@ -1,5 +1,5 @@
 .container {
-  max-width: 42em;
+  max-width: 75ch;
   margin: 0 auto;
   padding: 0 var(--size--2);
 }
