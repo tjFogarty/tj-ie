@@ -74,9 +74,11 @@ This scans through template and JavaScript files, and strips out any classes tha
 
 In `layouts/default.twig` I inline it using the Craft Mix plugin:
 
+{% raw %}
 ``` twig
 {{ mix('/assets/css/app.css', true, true) | raw }}
 ```
+{% endraw %}
 
 ## JavaScript
 
