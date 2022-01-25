@@ -1,6 +1,6 @@
 :root {
   /* https://couleur.io/ */
-  --base-hue: 200;
+  --base-hue: 172;
   --base-sat: 55%;
 
   /* full color palette, from dark to light */
@@ -42,7 +42,7 @@
 
   --c-accent: var(--accent);
   --c-background: #121c2e;
-  --c-text: #f0eff4;
+  --c-text: var(--clr-10);;
   --c-heading: #fff;
   --c-gray: #8b8e98;
 

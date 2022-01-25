@@ -29,7 +29,8 @@ h2,
 h3,
 h4 {
   font-family: var(--heading-font);
-  color: var(--clr-70);
+  color: var(--clr-20);
+  color: #4f4f4f;
   -webkit-font-smoothing: antialiased;
   font-weight: normal;
   line-height: var(--heading-lh);
@@ -38,7 +39,7 @@ h4 {
 
 h1 {
   font-size: var(--size--6);
-  color: var(--clr-25);
+  color: var(--clr-10);
   margin-top: 0;
 }
 

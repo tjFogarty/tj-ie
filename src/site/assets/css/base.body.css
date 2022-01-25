@@ -1,7 +1,7 @@
 body {
   font-family: var(--body-font);
-  background-color: var(--clr-10);
-  color: var(--clr-90);
+  background-color: #fff;
+  color: var(--clr-10);
   -webkit-font-smoothing: subpixel-antialiased;
 }
 

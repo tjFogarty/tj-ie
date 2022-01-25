@@ -6,11 +6,11 @@
 
 .post-list__item {
   padding: var(--size--4) 0;
-  border-top: 1px dashed var(--clr-70);
+  border-top: 1px dashed var(--accent-50);
 }
 
 .post-list__item:last-child {
-  border-bottom: 1px dashed var(--clr-70);
+  border-bottom: 1px dashed var(--accent-50);
   padding-bottom: var(--size--4);
 }
 
@@ -29,7 +29,7 @@
   margin: var(--size--3) var(--size--1) 0 0;
   font-size: var(--size--3);
   top: var(--size--1);
-  color: var(--accent);
+  color: var(--accent-75);
 }
 
 @media (min-width: 1120px) {
