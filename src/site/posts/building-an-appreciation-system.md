@@ -147,15 +147,16 @@ The last thing to do was to add the markup to the Svelte component. It's a littl
 {/if}
 ```
 
-You can see the {{< external-link href="https://gist.github.com/tjFogarty/ce9c70599823bfc43e5d6eb688fda850" >}}full component code here.{{< / external-link >}}
+You can see the {% external-link "https://gist.github.com/tjFogarty/ce9c70599823bfc43e5d6eb688fda850", "full component code here." %}
 
 All that's left is to kick it all off:
 
 ``` js
 import Upvotes from './upvotes/Upvotes.svelte'
 // ...
+// empty div on the page that it'll render into
 new Upvotes({
-  target: document.querySelector('.js-upvotes') // empty div on the page that it'll render into
+  target: document.querySelector('.js-upvotes')
 })
 ```
 

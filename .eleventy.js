@@ -13,6 +13,9 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(pluginSyntaxHighlight)
   eleventyConfig.addPlugin(pluginNavigation)
 
+  eleventyConfig.setLiquidOptions({ strictFilters: false })
+  eleventyConfig.setLiquidOptions({ dynamicPartials: false })
+
   eleventyConfig.addFilter('cssmin', function (code) {
     return new CleanCSS({}).minify(code).styles
   })
@@ -97,10 +100,13 @@ module.exports = function (eleventyConfig) {
     breaks: true,
     linkify: true
   }).use(markdownItAnchor, {
-    permalink: true,
-    permalinkClass: 'direct-link',
-    permalinkSymbol: '#',
-    permalinkBefore: true,
+    permalink: markdownItAnchor.permalink.linkInsideHeader({
+      symbol: `
+        <span aria-label="Jump to heading">#</span>
+      `,
+      placement: 'before',
+      class: 'direct-link',
+    }),
   })
   eleventyConfig.setLibrary('md', markdownLibrary)
 
