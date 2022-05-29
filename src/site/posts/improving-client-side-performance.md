@@ -31,11 +31,11 @@ MacOS comes with a program called Preview which lets you batch resize images. To
 
 From here you'll see the preview window:
 
-{% cloudinary "preview-1_hsqbl9.jpg", "Preview app" %}
+{% image "preview-1.png", "Preview app" %}
 
 Pressing CMD + A, you can select all the images, then go to Tools > Adjust Size. The dialogue that appears will let you set a value for the width and height, though you might only set the width and let it scale the image for you so no part of the picture is clipped.
 
-{% cloudinary "preview-2_kelj5v.jpg", "Preview app resize dialogue" %}
+{% image "preview-2.png", "Preview app resize dialogue" %}
 
 #### Batch Resize on Windows
 
@@ -75,7 +75,7 @@ Luckily, there are tools available to make this quick and simple. We're happy, a
 
 <a href="https://imageoptim.com/mac" target="_blank" rel="noopener noreferrer">ImageOptim</a> is my favourite for optimising images. You drag your images onto the program and it does the rest, replacing the existing ones by default. It lets you know how much it's saved as well. If you're not happy, you can update the preferences for more aggressive optimisation.
 
-{% cloudinary "imageoptim.jpg", "ImageOptim app results" %}
+{% image "imageoptim.png", "ImageOptim app results" %}
 
 The ImageOptim website has <a href="https://imageoptim.com/versions.html" target="_blank" rel="noopener noreferrer">a page that suggests alternatives for other platforms</a>. Again, apologies for my MacOS-centric state of mind.
 
@@ -85,7 +85,7 @@ If your images don't need transparency, you can convert them to JPEG and reap th
 
 On MacOS you can open your images in Preview, as before, then after selecting everything you can go to File > Export Selected Items. In the dialogue that appears, in the bottom left is a button labelled Options. From here you can select a different format.
 
-{% cloudinary "png-to-jpeg.jpg", "Converting PNG to JPEG with the Preview app" %}
+{% image "png-to-jpeg.png", "Converting PNG to JPEG with the Preview app" %}
 
 There's also plenty of online tools that do this. On Windows, an option might be some software like <a href="https://www.irfanview.com/" target="_blank" rel="noreferrer noopener">IrfanView</a> which I _believe_ lets you batch convert images. I don't know if I've said this yet Windows users, but I'm sorry. I haven't even apologised to Linux users yet.
 

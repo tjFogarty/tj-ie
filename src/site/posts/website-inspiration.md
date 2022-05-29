@@ -15,7 +15,7 @@ Now, I'm by no means a designer. I started out wanting to be one, but got lost i
 I'm still making things look _mostly_ alright, but trying to be more mindful as well. Below is how my site looks like right now. That is, this very second as I type. I tend to change things up frequently enough when I have some spare time to think.
 
 <figure>
-  {% cloudinary "homepage-screenshot.jpg", "My homepage" %}
+  {% image "homepage-screenshot.png", "My homepage" %}
   <figcaption>
     <small>My website as it stands at the moment.</small>
   </figcaption>
@@ -24,7 +24,7 @@ I'm still making things look _mostly_ alright, but trying to be more mindful as 
 First of all, shout out to {% external-link "http://helentran.com/", "Helen Tran" %}. She recently redesigned her site which introduced me to the {% external-link "https://typekit.com/fonts/essonnes", "Essonnes" %} font. Now, I don't spend a lot of time thinking about fonts, but I thought about this one for days, which is different for me. I visited the Typekit pricing page a number of times, and after a couple of days I went for it. That money should have gone into mortgage savings, and we'll say no more about it.
 
 <figure>
-  {% cloudinary "essonnes-example.jpg", "Essonnes font on helentran.com" %}
+  {% image "essonnes-example.png", "Essonnes font on helentran.com" %}
   <figcaption>
     <small>Essonnes font on helentran.com</small>
   </figcaption>
@@ -34,6 +34,6 @@ I copied things a bit, for sure, and I want to give credit where it's due. I'm s
 
 Another site that reinforced my enjoyment of typography was the website for {% external-link "http://lucaorio.com/", "Luca Orio" %}. There's something really clean, and crisp about it.
 
-{% cloudinary "luca-orio-website.jpg", "Homepage of lucaorio.com" %}
+{% image "luca-orio-website.png", "Homepage of lucaorio.com" %}
 
 Long story short, I'm starting to care more about design. I'm trying things out while making & breaking my site. I'm always going to be a developer, but I hope, when all is said and done, that at least I can present my own code within a well-designed interface.

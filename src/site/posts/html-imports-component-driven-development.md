@@ -26,7 +26,7 @@ In many cases, I see nothing wrong with setting up a local PHP server in a direc
 
 I was wondering if there's any way we can replicate this in the browser without relying on external libraries. Maybe it's something that could be done with the tools we have today without depending too much on JavaScript to make a bunch of AJAX calls. That's when I was reminded of HTML Imports. I wonder how far along that is now...
 
-{% cloudinary "html-import-support_zvzvay.jpg", "HTML Import support" %}
+{% image "html-import-support.png", "HTML Import support" %}
 
 Well, {% external-link "https://caniuse.com/#search=html%20imports", "at the moment it's not great" %}. Mozilla have {% external-link "https://hacks.mozilla.org/2015/06/the-state-of-web-components/", "published their thoughts on supporting it" %}.
 

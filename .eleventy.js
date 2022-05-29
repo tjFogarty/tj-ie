@@ -7,6 +7,7 @@ const markdownIt = require('markdown-it')
 const markdownItAnchor = require('markdown-it-anchor')
 const htmlmin = require('html-minifier')
 const CleanCSS = require('clean-css')
+const Image = require("@11ty/eleventy-img")
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(pluginRss);
@@ -35,6 +36,32 @@ module.exports = function (eleventyConfig) {
 
     return content
   })
+
+  async function imageShortcode(
+    src,
+    alt = '',
+    sizes = '(min-width: 922px) 900px, 100vw',
+    widths = [400, 600, 700, 800, 900, 1000]
+  ) {
+    const metadata = await Image(`./src/site/assets/images/${src}`, {
+      widths,
+      urlPath: '/assets/images/',
+      outputDir: './_site/assets/images/',
+    });
+
+    const attrs = {
+      alt,
+      sizes,
+      loading: 'lazy',
+      decoding: 'async',
+    }
+
+    return Image.generateHTML(metadata, attrs, {
+      whitespaceMode: "inline"
+    });
+  }
+  eleventyConfig.addNunjucksAsyncShortcode('image', imageShortcode);
+  eleventyConfig.addLiquidShortcode("image", imageShortcode);
 
   eleventyConfig.addShortcode("cloudinary", function (
     src,
