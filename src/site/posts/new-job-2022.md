@@ -1,6 +1,6 @@
 ---
 title: "New Job"
-description: "Exciting times with new challenges and learning opportunities."
+description: "Exciting times ahead."
 date: 2022-07-01T09:00:00+01:00
 draft: false
 permalink: "/new-job/"

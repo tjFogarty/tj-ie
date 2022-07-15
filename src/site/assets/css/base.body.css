@@ -8,6 +8,6 @@ body {
 @media (prefers-color-scheme: dark) {}
 
 ::selection {
-  background-color: var(--c-accent);
-  color: var(--c-background);
+  background-color: var(--accent-75);
+  color: #fff;
 }
