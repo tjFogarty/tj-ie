@@ -1,5 +1,12 @@
 .hero {
-  margin-bottom: var(--size--7);
+  margin-bottom: var(--size--6);
+  padding: var(--size--7) 0;
+  background-color: var(--c-background);
+  color: #fff;
+}
+
+.hero__title {
+  color: #fff;
 }
 
 .hero__description {
@@ -13,7 +20,12 @@
 }
 
 .hero__social-link {
-  color: var(--accent-75);
+  color: var(--accent);
+}
+
+.hero__social-link:hover,
+.hero__social-link:focus {
+  color: #fff;
 }
 
 .hero__social-item {

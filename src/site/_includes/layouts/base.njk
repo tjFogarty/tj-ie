@@ -72,7 +72,8 @@
 
     <link rel="preload" as="script" href="/assets/js/instant-page.js" crossorigin="crossorigin"/>
   </head>
-  <body>
+  {% set isHome = page.url === '/' %}
+  <body {% if isHome %}class="is-home"{% endif %}>
     <header>
       {% include "components/navigation.njk" %}
     </header>

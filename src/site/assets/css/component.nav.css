@@ -1,10 +1,15 @@
 .nav {
+  z-index: 1;
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
   padding: var(--size--2);
   margin-bottom: var(--size--7);
+}
+
+.is-home .nav {
+  margin-bottom: 0;
 }
 
 .nav__list {

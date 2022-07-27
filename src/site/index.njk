@@ -12,41 +12,46 @@ eleventyNavigation:
   { link: 'https://www.linkedin.com/in/fogartytj/', label: 'LinkedIn', icon: 'linkedin' }
 ] %}
 
-<article class="container">
+<article>
   <div class="hero">
-    <h1 class="hero__title">I'm TJ, a front-end developer</h1>
-    <p class="hero__description">
-      Senior Software Engineer at <a target="_blank" href="https://www.workhuman.com" rel="noopener noreferrer">Workhuman</a> building performant and accessible solutions. Specialising in JavaScript with React and Vue.
-    </p>
+    <div class="container">
 
-    <ul class="hero__social">
-      {% for social in socials %}
-      <li class="hero__social-item">
-        <a
-          class="hero__social-link"
-          href="{{ social.link }}"
-          target="_blank"
-          aria-label="{{ social.label }}"
-          rel="noopener noreferrer">
-          {% include "components/" + social.icon + "-icon.njk" %}
-        </a>
+        <h1 class="hero__title">I'm TJ, a front-end developer</h1>
+        <p class="hero__description">
+          Senior Software Engineer at <a target="_blank" href="https://www.workhuman.com" rel="noopener noreferrer">Workhuman</a> building performant and accessible solutions. Specialising in JavaScript with React and Vue.
+        </p>
+
+        <ul class="hero__social">
+          {% for social in socials %}
+          <li class="hero__social-item">
+            <a
+              class="hero__social-link"
+              href="{{ social.link }}"
+              target="_blank"
+              aria-label="{{ social.label }}"
+              rel="noopener noreferrer">
+              {% include "components/" + social.icon + "-icon.njk" %}
+            </a>
+          </li>
+        {% endfor %}
+        </ul>
+      </div>
+    </div>
+
+  <div class="container">
+    <h2>Recent Posts</h2>
+
+    {% set postslist = collections.posts | head(-3) %}
+    {% set hlevel = '3' %}
+    <ol class="post-list">
+      {% for post in postslist | reverse %}
+      <li class="post-list__item">
+        {% include 'components/post-teaser.njk' %}
       </li>
-    {% endfor %}
-    </ul>
+      {% endfor %}
+    </ol>
+
+    <p>More posts can be found in <a href="{{ '/archive/' | url }}">the archive</a>.</p>
   </div>
 
-
-  <h2>Recent Posts</h2>
-
-  {% set postslist = collections.posts | head(-3) %}
-  {% set hlevel = '3' %}
-  <ol class="post-list">
-    {% for post in postslist | reverse %}
-    <li class="post-list__item">
-      {% include 'components/post-teaser.njk' %}
-    </li>
-    {% endfor %}
-  </ol>
-
-  <p>More posts can be found in <a href="{{ '/archive/' | url }}">the archive</a>.</p>
 </article>

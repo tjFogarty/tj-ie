@@ -1,6 +1,6 @@
 ---
-title: "New Job"
-description: "Exciting times ahead."
+title: "New Job 🎉"
+description: "Back to React."
 date: 2022-07-01T09:00:00+01:00
 draft: false
 permalink: "/new-job/"
