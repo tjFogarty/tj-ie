@@ -3,10 +3,6 @@ layout: layouts/base.njk
 templateClass: tmpl-post
 ---
 
-{% if header %}
-  {% include 'components/header/' + header + '.njk' %}
-{% endif %}
-
 <article class="post">
   <div class="container">
     {% if date %}
@@ -34,3 +30,7 @@ templateClass: tmpl-post
 
 
 </article>
+
+{% if header %}
+  {% include 'components/header/' + header + '.njk' %}
+{% endif %}

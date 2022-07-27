@@ -1,4 +1,4 @@
-<script>
+<script defer>
 (() => {
   function addPlaceholderHeading() {
     const heading = document.querySelector('h1');
@@ -6,7 +6,7 @@
     heading.innerHTML = heading.textContent.replace('Placeholder', '<span class="placeholder-text">Placeholder</span>');
   }
 
-  document.addEventListener('DOMContentLoaded', addPlaceholderHeading);
+  addPlaceholderHeading();
 })();
 </script>
 

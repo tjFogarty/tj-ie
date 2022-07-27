@@ -1,4 +1,4 @@
-<script>
+<script defer>
 (() => {
   function addTextSelection() {
     const heading = document.querySelector('h1');
@@ -57,7 +57,7 @@
     }
   }
 
-  document.addEventListener('DOMContentLoaded', addTextSelection);
+  addTextSelection();
 })();
 </script>
 
