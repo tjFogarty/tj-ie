@@ -69,8 +69,6 @@
     <style>
       {{css | cssmin | safe}}
     </style>
-
-    <link rel="preload" as="script" href="/assets/js/instant-page.js" crossorigin="crossorigin"/>
   </head>
   {% set isHome = page.url === '/' %}
   <body {% if isHome %}class="is-home"{% endif %}>
