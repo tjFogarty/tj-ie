@@ -4,6 +4,7 @@ html {
 
 body {
   line-height: var(--body-lh);
+  font-variation-settings: 'wdth' 95;
 }
 
 p {
@@ -29,12 +30,11 @@ h2,
 h3,
 h4 {
   font-family: var(--heading-font);
-  color: var(--clr-20);
   color: #4f4f4f;
   -webkit-font-smoothing: antialiased;
-  font-weight: normal;
   line-height: var(--heading-lh);
   margin: var(--heading-mt) 0 var(--heading-mb);
+  font-variation-settings: 'wght' 650, 'wdth' 80;
 }
 
 h1 {

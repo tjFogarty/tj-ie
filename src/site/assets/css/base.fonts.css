@@ -1,10 +1,8 @@
-/* dm-serif-display-regular - latin */
 @font-face {
-  font-family: 'DM Serif Display';
+  font-family: 'Open Sans';
   font-display: swap;
   font-style: normal;
   font-weight: 400;
   src: local(''),
-       url('/fonts/dm-serif-display-v5-latin-regular.woff2') format('woff2'),
-       url('/fonts/dm-serif-display-v5-latin-regular.woff') format('woff');
+       url('/fonts/opensans-variable.woff2') format('woff2');
 }
