@@ -8,18 +8,15 @@ eleventyNavigation:
 
 I’m TJ, a web devel­op­er from {% external-link "https://en.wikipedia.org/wiki/Limerick", "Lim­er­ick, Ire­land" %} 🇮🇪 and liv­ing in Water­ford. I have a BSc Hons in Multimedia Programming, and Design from the Limerick Institute of Technology.
 
-I'm a Senior Software Engineer at {% external-link "https://www.workhuman.com/", "Workhuman" %}. Pre­vi­ous­ly, I’ve worked for {% external-link "https://www.teamwork.com/", "Teamwork" %} as a Senior Software Developer, {% external-link "https://emagine.ie/", "Emag­ine" %} as the Tech­ni­cal Lead, {% external-link "https://stitcherads.com/", "StitcherAds" %} as a UI Devel­op­er, {% external-link "https://www.maverick-intl.com/", "Mav­er­ick" %} as the Lead Devel­op­er, and {% external-link "https://resourcekraft.com", "ResourceKraft" %} as a Designer/​Developer,
+I've been around a while (over 10 years now), and I've had the chance to work at some great places:
 
-I've been fortunate enough to work with some amazing clients including The President of Ireland, a number of third-level colleges, and countless local, national, and international businesses.
+- Senior Software Engineer at {% external-link "https://www.workhuman.com/", "Workhuman" %} (current)
+- Senior Software Engingeer at {% external-link "https://www.teamwork.com/", "Teamwork" %}
+- UI Engineer at {% external-link "https://stitcherads.com/", "StitcherAds" %} 
+- Technical Lead at {% external-link "https://emagine.ie/", "Emag­ine" %}
+- Lead Developer at {% external-link "https://www.maverick-intl.com/", "Mav­er­ick" %}
 
-You can find me at the links below:
-
-- {% external-link "https://twitter.com/tj_fogarty", "Twit­ter" %}
-- {% external-link "https://codepen.io/tjFogarty/", "Code­Pen" %}
-- {% external-link "https://github.com/tjFogarty", "GitHub" %}
-- {% external-link "https://www.linkedin.com/in/fogartytj/", "LinkedIn" %}
-
-## Around the Web
+I've been fortunate enough to work with some amazing clients including The President of Ireland, a number of Universities & third-level colleges, and countless local, national, and international businesses.
 
 I mostly post to my blog, but here's a couple of other things I've worked on:
 

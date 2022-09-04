@@ -1,3 +1,15 @@
 .footer {
-  padding: var(--size--2);
+  display: flex;
+  justify-content: space-between;
+  padding: var(--size--3) var(--size--2);
+  margin-top: var(--size--5);
+}
+
+.footer__social {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }

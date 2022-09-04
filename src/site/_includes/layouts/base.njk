@@ -82,6 +82,21 @@
 
     <footer class="footer">
       &copy; TJ Fogarty
+
+      <ul class="footer__social">
+          {% for social in socials %}
+          <li class="footer__social-item">
+            <a
+              class="footer__social-link"
+              href="{{ social.link }}"
+              target="_blank"
+              aria-label="{{ social.label }}"
+              rel="noopener noreferrer">
+              {% include "components/" + social.icon + "-icon.njk" %}
+            </a>
+          </li>
+        {% endfor %}
+        </ul>
     </footer>
   </body>
 </html>
