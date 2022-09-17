@@ -1,7 +1,7 @@
 :root {
   /* https://couleur.io/ */
-  --base-hue: 172;
-  --base-sat: 55%;
+  --base-hue: 200;
+  --base-sat: 75%;
 
   /* full color palette, from dark to light */
   --clr-5: hsl(var(--base-hue), var(--base-sat), 5%);
