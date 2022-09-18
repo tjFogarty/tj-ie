@@ -39,8 +39,9 @@
     {% if page.date %}
       <meta property="article:published_time" content="{{ page.date }}"/>
     {% endif %}
-    {% if cover_image %}
-      <meta property="og:image" content="https://res.cloudinary.com/dab4jaczr/image/upload/w_1200,f_auto,q_auto/v1536498344/{{ cover_image }}">
+    
+    {% if post %}
+    <meta property="og:image" content="/assets/social/{{ page.url | replace('/', '') }}.png">
     {% endif %}
 
      <link rel="preload" href="/fonts/opensans-variable.woff2" as="font" type="font/woff2" crossorigin>
