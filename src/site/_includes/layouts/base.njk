@@ -12,7 +12,7 @@
     <!-- Made with https://formito.com/tools/favicon -->
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22256%22 height=%22256%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%23df6020%22></rect><path d=%22M18.13 19.21L62.11 19.21L61.26 25.88L43.29 25.88L36.66 80.11L28.75 80.11L35.38 25.88L17.32 25.88L18.13 19.21ZM82.68 19.21L77.71 59.92Q76.48 70.04 71.40 75.41Q66.32 80.79 57.91 80.79L57.91 80.79Q55.61 80.79 53.61 80.49Q51.62 80.20 49.58 79.60L49.58 79.60L50.17 74.97Q50.26 74.33 50.66 73.86Q51.06 73.40 51.91 73.40L51.91 73.40Q52.34 73.40 52.89 73.50Q53.44 73.61 54.14 73.76Q54.85 73.91 55.76 74.01Q56.67 74.12 57.86 74.12L57.86 74.12Q60.07 74.12 62.03 73.40Q63.98 72.67 65.56 71.02Q67.13 69.36 68.21 66.68Q69.30 64.00 69.76 60.09L69.76 60.09L74.74 19.21L82.68 19.21Z%22 fill=%22%23ffffff%22></path></svg>"/>
 
-    <link rel="me" href="mailto:contact@tj.ie">
+    <link rel="me" href="mailto:hi@tj.ie">
     <link rel="me" href="https://github.com/tjFogarty">
     <link rel="authorization_endpoint" href="https://indieauth.com/auth">
 
@@ -32,7 +32,7 @@
     <meta content="{{ renderData.title or title or metadata.title }}" property="og:title">
     <meta content="{{ renderData.description or description or metadata.description }}" property="og:description">
     <meta property="og:url" content="{{ page.url | url }}"/>
-    <meta property="og:site_name" content="TJ Fogarty - Web Developer"/>
+    <meta property="og:site_name" content="TJ Fogarty - Frontend Software Engineer"/>
     {% for tag in post.data.tags %}
       <meta property="article:section" content="{{ tag }}"/>
     {% endfor %}
@@ -40,7 +40,7 @@
       <meta property="article:published_time" content="{{ page.date }}"/>
     {% endif %}
     
-    <meta property="og:image" content="/assets/social/{{ page.url | replace('/', '') }}.png">
+    <meta property="og:image" content="https://tj.ie/assets/social/{{ page.url | replace('/', '') }}.png">
 
      <link rel="preload" href="/fonts/opensans-variable.woff2" as="font" type="font/woff2" crossorigin>
 
