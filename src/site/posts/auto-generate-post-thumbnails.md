@@ -2,7 +2,7 @@
 title: "Autogenerate Post Thumbnails"
 description: "Writing a script to automatically create post thumbnails"
 date: 2022-09-19T10:23:00+01:00
-permalink: false
+permalink: "/autogenerate-post-thumbnails/"
 eleventyExcludeFromCollections: true
 layout: layouts/post.njk
 ---
