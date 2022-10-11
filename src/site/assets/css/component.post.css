@@ -9,6 +9,12 @@
 .direct-link {
   color: var(--clr-20);
   text-decoration: none;
+  opacity: 0.2;
+  transition: all ease 0.2s;
+}
+
+.direct-link:hover {
+  opacity: 1;
 }
 
 .post .container__text {

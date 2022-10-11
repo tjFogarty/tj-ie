@@ -41,7 +41,7 @@ h1 {
   font-size: var(--size--6);
   color: var(--clr-10);
   margin-top: 0;
-  text-shadow: 0px 5px rgb(0 0 0 / 15%);
+  text-shadow: 3px 5px rgb(0 0 0 / 15%);
 }
 
 h2 {
