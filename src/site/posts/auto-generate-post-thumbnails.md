@@ -1,12 +1,11 @@
 ---
 title: "Autogenerate Post Thumbnails"
 description: "Writing a script to automatically create post thumbnails"
-date: 2022-09-19T10:23:00+01:00
+date: 2022-10-13T21:26:09.000+01:00
 permalink: "/autogenerate-post-thumbnails/"
 eleventyExcludeFromCollections: true
 layout: layouts/post.njk
 ---
-
 I put together a local system to generate thumbnails for my posts. No modern tooling, just some old fashioned scripting.
 
 ## Generating Data
