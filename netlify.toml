@@ -3,50 +3,6 @@
   command = "npm run build"
 
 [[redirects]]
-from = "/categories/"
-to = "/tags/"
-
-[[redirects]]
-from = "/src/layout/"
-to = "/"
-
-[[redirects]]
-from = "/page-visibility/"
-to = "/page-visibility-api/"
-
-[[redirects]]
-from = "/category/"
-to = "/archive/"
-
-[[redirects]]
-from = "/contact/"
-to = "/about/"
-
-[[redirects]]
-from = "/contact-thanks/"
-to = "/about/"
-
-[[redirects]]
-from = "/projects/"
-to = "/about/"
-
-[[redirects]]
-from = "/projects/*"
-to = "/about/"
-
-[[redirects]]
-from = "/category/*"
-to = "/tags/:splat"
-
-[[redirects]]
-from = "/posts/"
-to = "/archive/"
-
-[[redirects]]
-from = "/posts/*"
-to = "/:splat"
-
-[[redirects]]
 from = "/feed.rss"
 to = "/index.xml"
 
@@ -55,76 +11,16 @@ from = "/feed/feed.xml"
 to = "/index.xml"
 
 [[redirects]]
-from = "/avatars.io/"
-to = "/avatars-io/"
-
-[[redirects]]
 from = "https://awesome-northcutt-12634b.netlify.com/*"
 to = "https://tj.ie/:splat"
-
-[[redirects]]
-from = "/archive/page/*"
-to = "/archive/"
-
-[[redirects]]
-from = "/instagram"
-to = "/about"
-
-[[redirects]]
-from = "/react-prop-types-with-storybook/"
-to = "/tip-for-react-proptypes-with-storybook/"
-
-[[redirects]]
-from = "/ghost-theme-scaffold/"
-to = "/"
-
-[[redirects]]
-from = "/post/17657144444/the-greatest-show-on-earth-the-evidence-for"
-to = "/"
-
-[[redirects]]
-from = "/post/21808558124/live-video-from-russia"
-to = "/"
-
-[[redirects]]
-from = "/tags/sass/"
-to = "/category/css/"
-
-[[redirects]]
-from = "/post/22189000645/its-happening-taken-with-instagram"
-to = "/"
 
 [[redirects]]
 from = "/feed.xml"
 to = "/index.xml"
 
 [[redirects]]
-from = "/author/tj/"
-to = "/archive/"
-
-[[redirects]]
-from = "/here-it-goes/"
-to = "/"
-
-[[redirects]]
-from = "/cookie-policy/"
-to = "/"
-
-[[redirects]]
 from = "/rss/"
 to = "/index.xml"
-
-[[redirects]]
-from = "/post/17565617018/wake-giant-o-mine-lift-your-silver-tongue-to"
-to = "/"
-
-[[redirects]]
-from = "/post/21735576053/such-a-ridiculously-good-song"
-to = "/"
-
-[[redirects]]
-from = "/post/20839272675/i-know-the-feeling-cat-sleepy-taken-with"
-to = "/"
 
 [[redirects]]
 from = "/wp-login.php"
