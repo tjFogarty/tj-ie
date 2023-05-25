@@ -5,45 +5,54 @@ eleventyNavigation:
   order: 1
 ---
 <article>
-  <div class="hero">
+  <div class="flex items-center bg-rose-900 text-white p-8 min-h-[400px]">
+    <div class="container mx-auto">
+      <h1 class="text-5xl font-extrabold mb-4">I'm TJ</h1>
+      <p class="text-2xl">
+        A <strong>Front-End Software Engineer</strong> building performant and accessible solutions. <br>
+        Specialising in JavaScript with React and Vue.
+      </p>
+    </div>
+  </div>
+
+  <div class="py-10">
     <div class="container">
+      <h2 class="mb-8">Recent Posts</h2>
 
-        <h1 class="hero__title">I'm TJ, a front-end developer</h1>
-        <p class="hero__description">
-          Senior Software Engineer at <a target="_blank" href="https://www.workhuman.com" rel="noopener noreferrer">Workhuman</a> building performant and accessible solutions. Specialising in JavaScript with React and Vue.
-        </p>
+      {% set postslist = collections.posts | head(-3) %}
+      {% set hlevel = '3' %}
+      <ol class="mb-8">
+        {% for post in postslist | reverse %}
+        <li class="mb-5">
+          {% include 'components/post-teaser.njk' %}
+        </li>
+        {% endfor %}
+      </ol>
 
-        <ul class="hero__social">
-          {% for social in socials %}
-          <li class="hero__social-item">
-            <a
-              class="hero__social-link"
-              href="{{ social.link }}"
-              target="_blank"
-              aria-label="{{ social.label }}"
-              rel="noopener noreferrer">
-              {% include "components/" + social.icon + "-icon.njk" %}
+      <p>More posts can be found in <a href="{{ '/archive/' | url }}" class="decoration-rose-600 underline">the archive</a>.</p>
+    </div>
+  </div>
+
+  <div class="bg-slate-200 py-10">
+    <div class="container">
+      <h2 class="mb-8">Photos</h2>
+
+      {% set photolist = collections.photos | head(-6) %}
+      <ul class="md:grid grid-cols-3 gap-12">
+      {% for photo in photolist %}
+        {% if photo.data.image %}
+          <li class="mb-5 md:mb-0">
+            <a href="{{ photo.url }}" class="block">
+              <div class="thumbnail-container drop-shadow-xl aspect-square">
+                {% photo photo.data.image, photo.data.description %}
+              </div>
             </a>
           </li>
-        {% endfor %}
-        </ul>
-      </div>
-    </div>
-
-  <div class="container">
-    <h2>Recent Posts</h2>
-
-    {% set postslist = collections.posts | head(-3) %}
-    {% set hlevel = '3' %}
-    <ol class="post-list">
-      {% for post in postslist | reverse %}
-      <li class="post-list__item">
-        {% include 'components/post-teaser.njk' %}
-      </li>
+        {% endif %}
       {% endfor %}
-    </ol>
-
-    <p>More posts can be found in <a href="{{ '/archive/' | url }}">the archive</a>.</p>
+      </ul>
+    </div>
   </div>
+    
 
 </article>

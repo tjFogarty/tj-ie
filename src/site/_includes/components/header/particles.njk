@@ -4,7 +4,7 @@
     const heading = document.querySelector('h1');
     const textToReplace = 'Particle Effects';
 
-    heading.innerHTML = heading.textContent.replace(textToReplace, `<span class="particle-text">${textToReplace}<span class="selection-bg"></span></span>`);
+    heading.innerHTML = heading.textContent.replace(textToReplace, `<span class="relative inline-block px-3 py-2">${textToReplace}<span class="selection-bg absolute pointer-events-none top-0 left-0 w-0 h-full bg-rose-400 rounded-md"></span></span>`);
 
     if (ResizeObserver && document.body.animate) {
       const selectionBg = document.querySelector('.selection-bg');
@@ -62,22 +62,8 @@
 </script>
 
 <style>
-.particle-text {
-  position: relative;
-  display: inline-block;
-  padding: 0 15px;
-}
-
 .selection-bg {
-  position: absolute;
-  pointer-events: none;
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 100%;
-  background-color: var(--accent-75);
   mix-blend-mode: darken;
-  border-radius: 8px;
   transition: width ease-in-out 0.8s;
 }
 
@@ -89,7 +75,6 @@ particle {
   left: 0;
   pointer-events: none;
   position: fixed;
-  background-color: var(--accent-75);
   top: 0;
   opacity: 0;
 }

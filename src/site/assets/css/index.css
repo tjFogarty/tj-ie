@@ -1,0 +1,263 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-display: swap;
+  font-family: 'Source Sans 3';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/fonts/source-sans-3-v9-latin-regular.woff2') format('woff2');
+}
+@font-face {
+  font-display: swap;
+  font-family: 'Source Sans 3';
+  font-style: normal;
+  font-weight: 800;
+  src: url('/fonts/source-sans-3-v9-latin-800.woff2') format('woff2');
+}
+
+html {
+  font-size: 120%;
+}
+
+body {
+	background: #f7f7f7;
+}
+
+h1, h2, h3, h4 {
+  font-weight: 800;
+}
+
+h1 {
+	@apply text-4xl;
+}
+
+h2 {
+	@apply text-3xl;
+}
+
+h3 {
+	@apply text-2xl;
+}
+
+h4 {
+	@apply text-xl;
+}
+
+a {
+  @apply !decoration-rose-700;
+}
+
+a:hover,
+a:focus {
+  @apply text-rose-700;
+}
+
+particle {
+  @apply bg-rose-600;
+}
+
+.post-list-item {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 500px;
+}
+
+.photo-page {
+	content-visibility: auto;
+	contain-intrinsic-size: auto 316px;
+}
+
+.thumbnail-container {
+	height: 100%;
+	overflow: hidden;
+	@apply rounded-lg;
+}
+
+.thumbnail-container img {
+	@apply block object-cover w-full h-full rounded-lg;
+}
+
+/* 
+  Headers 
+*/
+
+/* Checkmark */
+.checkmark-header__svg {
+  animation: reveal-checkbox ease 0.5s forwards;
+}
+
+@keyframes reveal-checkbox {
+  0% { opacity: 0; }
+  50% { opacity: 1; }
+  100% { opacity: 0.2; }
+}
+
+@media (max-width: 1024px) {
+  .checkmark-header__svg:nth-child(even) {
+    display: none;
+  }
+}
+
+/**
+* xonokai theme for JavaScript, CSS and HTML
+* based on: https://github.com/MoOx/sass-prism-theme-base by Maxime Thirouin ~ MoOx --> http://moox.fr/ , which is Loosely based on Monokai textmate theme by http://www.monokai.nl/
+* license: MIT; http://moox.mit-license.org/
+*/
+code[class*="language-"],
+pre[class*="language-"] {
+	-moz-tab-size: 2;
+	-o-tab-size: 2;
+	tab-size: 2;
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+	white-space: pre;
+	white-space: pre-wrap;
+	word-wrap: normal;
+	font-family: Menlo, Monaco, "Courier New", monospace;
+	font-size: 14px;
+	color: #76d9e6;
+	text-shadow: none;
+}
+
+pre > code[class*="language-"] {
+	font-size: 1em;
+}
+
+pre[class*="language-"],
+:not(pre) > code[class*="language-"] {
+	background: #2a2a2a;
+}
+
+pre[class*="language-"] {
+	padding: 15px;
+	border-radius: 4px;
+	border: 1px solid #e1e1e8;
+	overflow: auto;
+	position: relative;
+}
+
+pre[class*="language-"] code {
+	white-space: pre;
+	display: block;
+}
+
+:not(pre) > code[class*="language-"] {
+	padding: 0.15em 0.2em 0.05em;
+	border-radius: .3em;
+	border: 0.13em solid #7a6652;
+	box-shadow: 1px 1px 0.3em -0.1em #000 inset;
+}
+
+.token.namespace {
+	opacity: .7;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	color: #6f705e;
+}
+
+.token.operator,
+.token.boolean,
+.token.number {
+	color: #a77afe;
+}
+
+.token.attr-name,
+.token.string {
+	color: #e6d06c;
+}
+
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string {
+	color: #e6d06c;
+}
+
+.token.selector,
+.token.inserted {
+	color: #a6e22d;
+}
+
+.token.atrule,
+.token.attr-value,
+.token.keyword,
+.token.important,
+.token.deleted {
+	color: #ef3b7d;
+}
+
+.token.regex,
+.token.statement {
+	color: #76d9e6;
+}
+
+.token.placeholder,
+.token.variable {
+	color: #fff;
+}
+
+.token.important,
+.token.statement,
+.token.bold {
+	font-weight: bold;
+}
+
+.token.punctuation {
+	color: #bebec5;
+}
+
+.token.entity {
+	cursor: help;
+}
+
+.token.italic {
+	font-style: italic;
+}
+
+code.language-markup {
+	color: #f9f9f9;
+}
+
+code.language-markup .token.tag {
+	color: #ef3b7d;
+}
+
+code.language-markup .token.attr-name {
+	color: #a6e22d;
+}
+
+code.language-markup .token.attr-value {
+	color: #e6d06c;
+}
+
+code.language-markup .token.style,
+code.language-markup .token.script {
+	color: #76d9e6;
+}
+
+code.language-markup .token.script .token.keyword {
+	color: #76d9e6;
+}
+
+/* Line highlight plugin */
+.line-highlight.line-highlight {
+	padding: 0;
+	background: rgba(255, 255, 255, 0.08);
+}
+
+.line-highlight.line-highlight:before,
+.line-highlight.line-highlight[data-end]:after {
+	padding: 0.2em 0.5em;
+	background-color: rgba(255, 255, 255, 0.4);
+	color: black;
+	height: 1em;
+	line-height: 1em;
+	box-shadow: 0 1px 1px rgba(255, 255, 255, 0.7);
+}

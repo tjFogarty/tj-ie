@@ -1,10 +1,6 @@
-<div class="nav">
-  <a href="{{ '/' | url }}">TJ Fogarty</a>
-  <ul class="nav__list">
-      {%- for entry in collections.all | eleventyNavigation %}
-        <li class="nav__item">
-          <a class="nav__link{% if entry.url == page.url %} is-active{% endif %}" href="{{ entry.url | url }}">{{ entry.title }}</a>
-        </li>
-      {%- endfor %}
-    </ul>
-</div>
+<nav class="flex flex-wrap gap-2 md:gap-5 py-8 justify-center">
+  <a class="w-full text-center md:text-left md:w-auto md:mr-auto" href="{{ '/' | url }}" class="mr-auto">TJ Fogarty</a>
+  {%- for entry in collections.all | eleventyNavigation %}
+    <a class="nav__link{% if entry.url == page.url %} text-rose-700 {% endif %}" href="{{ entry.url | url }}">{{ entry.title }}</a>
+  {%- endfor %}
+</nav>

@@ -1,6 +1,0 @@
-blockquote {
-  font-style: italic;
-  margin: var(--size--2) 0;
-  padding-left: var(--size--1);
-  border-left: var(--size--1) solid var(--c-accent);
-}

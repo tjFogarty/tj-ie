@@ -1,0 +1,28 @@
+---
+layout: layouts/home.njk
+permalink: /photos/
+eleventyNavigation:
+  key: Photos
+  order: 2
+---
+
+
+<article class="container">
+  <h1 class="mb-10 mt-5">Photos</h1>
+
+  {% set list = collections.photos %}
+
+  <ul class="md:grid grid-cols-3 gap-12 photo-page">
+  {% for photo in list %}
+  {% if photo.data.image %}
+    <li class="mb-8 md:mb-0">
+      <a href="{{ photo.url }}" class="block">
+        <div class="thumbnail-container drop-shadow-md aspect-square">
+          {% photo photo.data.image, photo.data.description %}
+        </div>
+      </a>
+    </li>
+  {% endif %}
+  {% endfor %}
+  </ul>
+</article>

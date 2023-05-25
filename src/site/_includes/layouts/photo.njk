@@ -1,0 +1,25 @@
+---
+layout: layouts/base.njk
+templateClass: tmpl-photo
+---
+
+<div class="container">
+  <article class="prose mx-auto">
+    {% if date %}
+    <time class="text-sm text-gray-700" datetime="{{ date | htmlDateString }}">
+      {{ date | readableDate }}
+    </time>
+    {% endif %}
+
+    <h1>{{ title }}</h1>
+
+    <figure>
+    {% photolarge image, description %}
+    <figcaption>{{ description }}</figcaption>
+    </figure>
+  </article>
+</div>
+
+{% if header %}
+  {% include 'components/header/' + header + '.njk' %}
+{% endif %}

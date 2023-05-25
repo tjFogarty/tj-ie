@@ -14,15 +14,15 @@
     </div>
     {% endif %}
 
-    <div class="post-list--year-container">
-      <div class="post-list__year-column">
-        <h2 class="post-list__year">{{ postYear }}</h2>
+    <div class="md:flex gap-5 post-list-item">
+      <div class="relative">
+        <h2 class="text-lg text-gray-500 sticky top-0">{{ postYear }}</h2>
       </div>
 
-      <ol class="post-list">
+      <ol class="mb-8 pb-8 w-full border border-t-0 border-l-0 border-r-0 border-gray-200">
       {% set year = postYear %}
     {% endif %}
-    <li class="post-list__item {% if not post.data.description %} pb-8 {% endif %}">
+    <li class="mb-8 last:mb-0">
       {% include 'components/post-teaser.njk' %}
     </li>
   {% endfor %}

@@ -8,6 +8,9 @@ const CleanCSS = require('clean-css')
 const Image = require("@11ty/eleventy-img")
 
 module.exports = function (eleventyConfig) {
+  eleventyConfig.addWatchTarget('./src/site/assets');
+  eleventyConfig.addWatchTarget('./tailwind.config.js');
+
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(pluginSyntaxHighlight)
   eleventyConfig.addPlugin(pluginNavigation)
@@ -58,8 +61,58 @@ module.exports = function (eleventyConfig) {
       whitespaceMode: "inline"
     });
   }
+
+  async function photoThumbnailShortcode(
+    src,
+    alt = '',
+    sizes = '(min-width: 800px) 250px, 100vw',
+  ) {
+    const metadata = await Image(`./src/site/assets/photos/${src}`, {
+      widths: [400, 600],
+      urlPath: '/assets/photos/',
+      outputDir: './_site/assets/photos/',
+    });
+
+    const attrs = {
+      alt,
+      sizes,
+      loading: 'lazy',
+      decoding: 'async',
+    }
+
+    return Image.generateHTML(metadata, attrs, {
+      whitespaceMode: "inline"
+    });
+  }
+
+  async function photoShortcode(
+    src,
+    alt = '',
+    sizes = '(min-width: 800px) 620px, 100vw',
+  ) {
+    const metadata = await Image(`./src/site/assets/photos/${src}`, {
+      widths: [400, 600, 800, 1000, 1500],
+      urlPath: '/assets/photos/',
+      outputDir: './_site/assets/photos/',
+    });
+
+    const attrs = {
+      alt,
+      sizes,
+      loading: 'lazy',
+      decoding: 'async',
+    }
+
+    return Image.generateHTML(metadata, attrs, {
+      whitespaceMode: "inline"
+    });
+  }
+
   eleventyConfig.addNunjucksAsyncShortcode('image', imageShortcode);
+  eleventyConfig.addNunjucksAsyncShortcode('photo', photoThumbnailShortcode);
+  eleventyConfig.addNunjucksAsyncShortcode('photolarge', photoShortcode);
   eleventyConfig.addLiquidShortcode("image", imageShortcode);
+
   eleventyConfig.addNunjucksGlobal("socials", [
     { link: 'https://twitter.com/tj_fogarty', label: 'Twitter', icon: 'twitter' },
     { link: 'https://codepen.io/tjFogarty', label: 'CodePen', icon: 'codepen' },

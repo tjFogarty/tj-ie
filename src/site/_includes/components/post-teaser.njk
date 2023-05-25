@@ -1,13 +1,13 @@
 {% set level = hlevel or '2' %}
 
-<a href="{{ post.url | url }}" class="post-tease">
-  <time datetime="{{ post.date | htmlDateString }}" class="post-tease__date">
+<a href="{{ post.url | url }}" class="inline-block group">
+  <time datetime="{{ post.date | htmlDateString }}" class="text-sm text-gray-600 group-hover:text-gray-600">
     {{ post.date | readableDate }}
   </time>
 
-  <h{{ level }} class="post-tease__title">{% if post.data.title %}{{ post.data.title }}{% else %}<code>{{ post.url }}</code>{% endif %}</h{{ level }}>
+  <h{{ level }} class="mb-1">{% if post.data.title %}{{ post.data.title }}{% else %}<code>{{ post.url }}</code>{% endif %}</h{{ level }}>
 
   {% if post.data.description %}
-  <p class="post-tease__description">{{ post.data.description }}</p>
+  <p class="group-hover:text-black ">{{ post.data.description }}</p>
   {% endif %}
 </a>

@@ -7,9 +7,9 @@ eleventyNavigation:
 ---
 
 <article class="container">
-  <h1>Archive</h1>
+  <h1 class="mb-10 mt-5">Archive</h1>
 
   {% set postslist = collections.posts %}
-
+  {% set hlevel = '3' %}
   {% include "postslist.njk" %}
 </article>
