@@ -58,6 +58,10 @@ particle {
   @apply bg-rose-600;
 }
 
+.nav-active {
+	@apply text-rose-700;
+}
+
 .post-list-item {
   content-visibility: auto;
   contain-intrinsic-size: auto 500px;
@@ -69,13 +73,46 @@ particle {
 }
 
 .thumbnail-container {
+	position: relative;
 	height: 100%;
 	overflow: hidden;
 	@apply rounded-lg;
 }
 
+.thumbnail-container::after {
+	content: '';
+	display: block;
+	position: absolute;
+	top: -200%;
+	left: -200%;
+	border-radius: 50%;
+	width: 300%;
+	height: 300%;
+	opacity: 0.2;
+	background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 1));
+}
+
 .thumbnail-container img {
 	@apply block object-cover w-full h-full rounded-lg;
+}
+
+.tmpl-photo {
+	@apply bg-slate-600 text-white;
+}
+
+.tmpl-photo h1,
+.tmpl-photo figcaption {
+	@apply text-white;
+}
+
+.tmpl-photo .nav-active,
+.tmpl-photo a:hover,
+.tmpl-photo a:focus {
+  @apply text-rose-400;
+}
+
+.tmpl-photo figure img {
+	@apply mx-auto;
 }
 
 /* 

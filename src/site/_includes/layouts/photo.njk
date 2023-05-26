@@ -4,18 +4,12 @@ templateClass: tmpl-photo
 ---
 
 <div class="container">
-  <article class="prose mx-auto">
-    {% if date %}
-    <time class="text-sm text-gray-700" datetime="{{ date | htmlDateString }}">
-      {{ date | readableDate }}
-    </time>
-    {% endif %}
-
-    <h1>{{ title }}</h1>
+  <article>
+    <h1 class="mb-10 mt-5">{{ title }}</h1>
 
     <figure>
-    {% photolarge image, description %}
-    <figcaption>{{ description }}</figcaption>
+    {% photolarge image, "" %}
+    <figcaption class="text-sm text-center mt-5">{{ description }}</figcaption>
     </figure>
   </article>
 </div>

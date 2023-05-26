@@ -1,6 +1,6 @@
 <nav class="flex flex-wrap gap-2 md:gap-5 py-8 justify-center">
   <a class="w-full text-center md:text-left md:w-auto md:mr-auto" href="{{ '/' | url }}" class="mr-auto">TJ Fogarty</a>
   {%- for entry in collections.all | eleventyNavigation %}
-    <a class="nav__link{% if entry.url == page.url %} text-rose-700 {% endif %}" href="{{ entry.url | url }}">{{ entry.title }}</a>
+    <a class="nav__link{% if entry.url == page.url %} nav-active {% endif %}" href="{{ entry.url | url }}">{{ entry.title }}</a>
   {%- endfor %}
 </nav>

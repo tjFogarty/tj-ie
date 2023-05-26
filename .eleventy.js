@@ -88,10 +88,10 @@ module.exports = function (eleventyConfig) {
   async function photoShortcode(
     src,
     alt = '',
-    sizes = '(min-width: 800px) 620px, 100vw',
+    sizes = '(min-width: 1140px) 1140px, 100vw',
   ) {
     const metadata = await Image(`./src/site/assets/photos/${src}`, {
-      widths: [400, 600, 800, 1000, 1500],
+      widths: [600, 800, 1000, 1500],
       urlPath: '/assets/photos/',
       outputDir: './_site/assets/photos/',
     });

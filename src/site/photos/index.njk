@@ -1,6 +1,7 @@
 ---
 layout: layouts/home.njk
 permalink: /photos/
+templateClass: tmpl-photo
 eleventyNavigation:
   key: Photos
   order: 2
@@ -12,12 +13,12 @@ eleventyNavigation:
 
   {% set list = collections.photos %}
 
-  <ul class="md:grid grid-cols-3 gap-12 photo-page">
+  <ul class="grid grid-cols-2 md:grid-cols-3 gap-5 md:gap-12 photo-page">
   {% for photo in list %}
   {% if photo.data.image %}
-    <li class="mb-8 md:mb-0">
+    <li>
       <a href="{{ photo.url }}" class="block">
-        <div class="thumbnail-container drop-shadow-md aspect-square">
+        <div class="thumbnail-container drop-shadow-lg aspect-square">
           {% photo photo.data.image, photo.data.description %}
         </div>
       </a>
