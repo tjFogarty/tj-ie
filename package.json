@@ -9,7 +9,7 @@
     "dev": "npm-run-all clean --parallel dev:*",
     "dev:eleventy": "eleventy --serve",
     "dev:tailwind": "npx tailwindcss -i src/site/assets/css/index.css -o _site/assets/css/styles.css --watch",
-    "build:tailwind": "npx tailwindcss -i src/assets/css/index.css -o _site/assets/css/styles.css --minify",
+    "build:tailwind": "npx tailwindcss -i src/site/assets/css/index.css -o _site/assets/css/styles.css --minify",
     "build:eleventy": "ELEVENTY_PRODUCTION=true npx @11ty/eleventy",
     "build": "NODE_ENV=production npm-run-all clean build:*"
   },
