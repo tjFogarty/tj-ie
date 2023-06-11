@@ -9,12 +9,18 @@
   font-weight: 400;
   src: url('/fonts/source-sans-3-v9-latin-regular.woff2') format('woff2');
 }
+
 @font-face {
   font-display: swap;
   font-family: 'Source Sans 3';
   font-style: normal;
   font-weight: 800;
   src: url('/fonts/source-sans-3-v9-latin-800.woff2') format('woff2');
+}
+
+::selection {
+	@apply bg-primary text-white;
+	background-color: color(display-p3 1 0.14 0.26);
 }
 
 html {
