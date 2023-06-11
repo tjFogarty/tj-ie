@@ -21,10 +21,6 @@ html {
   font-size: 120%;
 }
 
-body {
-	background: #f7f7f7;
-}
-
 h1, h2, h3, h4 {
   font-weight: 800;
 }
@@ -46,20 +42,20 @@ h4 {
 }
 
 a {
-  @apply !decoration-rose-700;
+  @apply !decoration-primary;
 }
 
 a:hover,
 a:focus {
-  @apply text-rose-700;
+  @apply text-primary;
 }
 
 particle {
-  @apply bg-rose-600;
+  @apply bg-primary;
 }
 
 .nav-active {
-	@apply text-rose-700;
+	@apply text-primary;
 }
 
 .post-list-item {
@@ -97,18 +93,13 @@ particle {
 }
 
 .tmpl-photo {
-	@apply bg-slate-600 text-white;
-}
-
-.tmpl-photo h1,
-.tmpl-photo figcaption {
-	@apply text-white;
+	@apply bg-tertiary text-secondary;
 }
 
 .tmpl-photo .nav-active,
 .tmpl-photo a:hover,
 .tmpl-photo a:focus {
-  @apply text-rose-400;
+  @apply text-primary;
 }
 
 .tmpl-photo figure img {

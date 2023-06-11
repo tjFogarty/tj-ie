@@ -52,8 +52,10 @@
   </head>
 
   <body {% if templateClass %} class="{{ templateClass }}" {% endif %}>
-    <header class="container mx-auto">
+    <header>
+      <div class="container">
       {% include "components/navigation.njk" %}
+      </div>
     </header>
 
     <main>

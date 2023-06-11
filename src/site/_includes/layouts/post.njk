@@ -3,7 +3,7 @@ layout: layouts/base.njk
 templateClass: tmpl-post
 ---
 
-<div class="container">
+<div class="container mt-14">
   <article class="prose mx-auto">
     {% if date %}
     <time class="text-sm text-gray-700" datetime="{{ date | htmlDateString }}">
@@ -13,20 +13,18 @@ templateClass: tmpl-post
 
     <h1>{{ title }}</h1>
 
-    <div>
-      {{ content | safe }}
-      {% for tag in tags %}
-        {%- if collections.tagList.indexOf(tag) != -1 -%}
-        {% set tagUrl %}/tags/{{ tag }}/{% endset %}
-        <a href="{{ tagUrl | url }}" aria-label="See all {{ tag }} posts">
-          {{ tag }}
-        </a>
-        {%- endif -%}
-      {% endfor %}
+    {{ content | safe }}
 
-      <p><a href="{{ '/' | url }}">← Home</a></p>
-    </div>
+    {% for tag in tags %}
+      {%- if collections.tagList.indexOf(tag) != -1 -%}
+      {% set tagUrl %}/tags/{{ tag }}/{% endset %}
+      <a href="{{ tagUrl | url }}" aria-label="See all {{ tag }} posts">
+        {{ tag }}
+      </a>
+      {%- endif -%}
+    {% endfor %}
 
+    <p><a href="{{ '/' | url }}">← Home</a></p>
 
   </article>
 </div>
