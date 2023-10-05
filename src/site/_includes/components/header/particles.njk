@@ -4,7 +4,7 @@
     const heading = document.querySelector('h1');
     const textToReplace = 'Particle Effects';
 
-    heading.innerHTML = heading.textContent.replace(textToReplace, `<span class="relative inline-block px-3 py-2">${textToReplace}<span class="selection-bg absolute pointer-events-none top-0 left-0 w-0 h-full bg-rose-400 rounded-md"></span></span>`);
+    heading.innerHTML = heading.textContent.replace(textToReplace, `<span class="relative inline-block px-3 py-2">${textToReplace}<span class="selection-bg absolute pointer-events-none top-0 left-0 w-0 h-full bg-slate-300 rounded-md"></span></span>`);
 
     if (ResizeObserver && document.body.animate) {
       const selectionBg = document.querySelector('.selection-bg');

@@ -20,7 +20,6 @@
 
 ::selection {
 	@apply bg-primary text-white;
-	background-color: color(display-p3 1 0.14 0.26);
 }
 
 html {
@@ -61,6 +60,7 @@ particle {
 }
 
 .nav-active {
+  text-decoration: underline;
 	@apply text-primary;
 }
 
@@ -99,7 +99,7 @@ particle {
 }
 
 .tmpl-photo {
-	@apply bg-tertiary text-secondary;
+	@apply bg-slate-300 text-secondary;
 }
 
 .tmpl-photo .nav-active,
@@ -112,8 +112,8 @@ particle {
 	@apply mx-auto;
 }
 
-/* 
-  Headers 
+/*
+  Headers
 */
 
 /* Checkmark */

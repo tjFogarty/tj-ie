@@ -30,7 +30,7 @@ module.exports = {
     plugin(function({ addBase }) {
       addBase({
         ':root': {
-          '--color-primary': '#ff5470',
+          '--color-primary': '#0087e2',
           '--color-secondary': '#3b3c36',
           '--color-tertiary': '#c4c3d0',
         }
