@@ -65,10 +65,10 @@ module.exports = function (eleventyConfig) {
   async function photoThumbnailShortcode(
     src,
     alt = '',
-    sizes = '(min-width: 800px) 250px, 100vw',
+    sizes = '(min-width: 800px) 225px, 100vw',
   ) {
     const metadata = await Image(`./src/site/assets/photos/${src}`, {
-      widths: [400, 600],
+      widths: [250, 400],
       urlPath: '/assets/photos/',
       outputDir: './_site/assets/photos/',
     });
