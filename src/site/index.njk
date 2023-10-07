@@ -5,26 +5,32 @@ eleventyNavigation:
   order: 1
 ---
 <article>
-  <div class="flex items-center py-12 md:py-24">
-    <div class="container">
-      <h1 class="text-3xl font-extrabold mb-6 max-w-xl">Full-stack software engineer, specialising in front-end technology with a focus on accessibility</h1>
+  <div class="pt-12 max-w-[1500px] mx-auto">
+    <div class="flex flex-col md:flex-row gap-4 justify-between pl-10">
+      <div class="flex flex-col justify-center mb-10 lg:mb-0">
+        <h1 class="text-3xl lg:text-5xl font-extrabold mb-6 max-w-3xl lg:leading-[1.15]">Full-stack software engineer, specialising in front-end technology with a focus on accessibility</h1>
 
-      <p class="mb-8 max-w-lg">I'm TJ, and I've been in the industry for over a decade, from agencies to large-scale <abbr title="Software as a service">SaaS</abbr> companies with millions of users.</p>
+        <p class="mb-8 max-w-lg">I'm TJ, and I've been in the industry for over a decade, from agencies to large-scale <abbr title="Software as a service">SaaS</abbr> companies with millions of users.</p>
 
-      <ul class="list-none flex flex-wrap justify-center md:justify-start items-center gap-6">
-        <li>
-          {% include "components/vue-icon.njk" %}
-        </li>
-        <li>
-          {% include "components/react-icon.njk" %}
-        </li>
-        <li>
-          {% include "components/a11y-icon.njk" %}
-        </li>
-        <li>
-          {% include "components/ts-icon.njk" %}
-        </li>
-      </ul>
+        <ul class="list-none flex flex-wrap justify-start items-center gap-6">
+          <li>
+            {% include "components/vue-icon.njk" %}
+          </li>
+          <li>
+            {% include "components/react-icon.njk" %}
+          </li>
+          <li>
+            {% include "components/a11y-icon.njk" %}
+          </li>
+          <li>
+            {% include "components/ts-icon.njk" %}
+          </li>
+        </ul>
+      </div>
+
+      <div class="max-w-[200px] ml-auto lg:max-w-max">
+        {% image "profile.png", "Picture of TJ with his black and white cat, Loki, on his lap", "(min-width: 922px) 400px, 100vw", [300, 600] %}
+      </div>
     </div>
   </div>
 
