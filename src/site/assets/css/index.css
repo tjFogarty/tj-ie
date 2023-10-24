@@ -113,6 +113,14 @@ particle {
 }
 
 /*
+  Custom helpers
+ */
+
+ .text-wrap-balance {
+  text-wrap: balance;
+ }
+
+/*
   Headers
 */
 
