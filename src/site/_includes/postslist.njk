@@ -23,7 +23,9 @@
       {% set year = postYear %}
     {% endif %}
     <li class="mb-8 last:mb-0">
+        {% if post.data.permalink !== "/journal/" %}
       {% include 'components/post-teaser.njk' %}
+        {% endif %}
     </li>
   {% endfor %}
 {% if postslistYears === 'off' %}

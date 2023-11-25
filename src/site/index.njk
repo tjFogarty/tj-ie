@@ -52,26 +52,22 @@ eleventyNavigation:
     </div>
   </div>
 
-  <div class="bg-slate-200 text-white  py-10 ">
+  <div class="py-10 bg-slate-200">
     <div class="container">
-      <h2 class="mb-8 text-secondary">Photos</h2>
+      <h2 class="mb-8">Journal</h2>
 
-      {% set photolist = collections.photos | head(-8) %}
-      <ul class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 md:gap-12">
-      {% for photo in photolist %}
-        {% if photo.data.image %}
-          <li>
-            <a href="{{ photo.url }}" class="block">
-              <div class="thumbnail-container drop-shadow-xl aspect-square">
-                {% photo photo.data.image, photo.data.description %}
-              </div>
-            </a>
-          </li>
+      {% set postslist = collections.journal | head(-4) %}
+      {% set hlevel = '3' %}
+      <ol class="mb-8 md:flex flex-wrap gap-8">
+        {% for post in postslist | reverse %}
+        {% if post.data.permalink !== "/journal/" %}
+        <li class="mb-5">
+          {% include 'components/post-teaser.njk' %}
+        </li>
         {% endif %}
-      {% endfor %}
-      </ul>
+        {% endfor %}
+      </ol>
     </div>
   </div>
-
 
 </article>

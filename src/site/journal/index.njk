@@ -1,0 +1,16 @@
+---
+layout: layouts/home.njk
+permalink: /journal/
+templateClass: tmpl-journal
+eleventyNavigation:
+  key: Journal
+  order: 2
+---
+
+<article class="container">
+  <h1 class="mb-10 mt-5">Journal</h1>
+
+  {% set postslist = collections.journal %}
+  {% set hlevel = '3' %}
+  {% include "postslist.njk" %}
+</article>
