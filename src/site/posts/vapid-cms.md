@@ -9,6 +9,10 @@ tags:
   - javascript
 ---
 
+__Update__: Nevermind, it's gone. I'll leave the post here to remember it by.
+
+---
+
 I recently gave Vapid a quick run-through, and it does what it says on the tin:
 
 > Vapid is an intentionally simple content management system built on the idea that you can create a custom dashboard without ever leaving the HTML.
