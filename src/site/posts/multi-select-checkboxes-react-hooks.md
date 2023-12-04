@@ -10,7 +10,9 @@ tags:
   - javascript
 ---
 
-I felt like revisiting this bit of code from a few years ago, since it still gets a bit of traffic. Here it is using React Hooks, scroll below for a demo:
+I felt like revisiting this bit of code from a few years ago, since it still gets a bit of traffic. You can view the old post [at this link](/multi-select-checkboxes-with-react/).
+
+Here's the new code using React Hooks, scroll below for a demo:
 
 ``` jsx
 import React, { useState, useRef, useEffect } from "react";
