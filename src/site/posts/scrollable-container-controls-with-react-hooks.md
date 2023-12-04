@@ -25,7 +25,7 @@ export const ScrollableContainer = () => {
 
   const checkForScrollPosition = () => {
     const { scrollLeft, scrollWidth, clientWidth } = containerRef.current;
-    const pos = Math.floor(scrollLeft);
+    const pos = Math.ceil(scrollLeft);
 
     setCanScrollLeft(pos > 0);
     setCanScrollRight(pos !== scrollWidth - clientWidth);
