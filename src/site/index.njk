@@ -40,7 +40,7 @@ eleventyNavigation:
 
       {% set postslist = collections.posts | head(-4) %}
       {% set hlevel = '3' %}
-      <ol class="mb-8 md:flex flex-wrap gap-8">
+      <ol class="mb-8 md:grid md:grid-cols-2 md:gap-8">
         {% for post in postslist | reverse %}
         <li class="mb-5">
           {% include 'components/post-teaser.njk' %}
@@ -58,7 +58,7 @@ eleventyNavigation:
 
       {% set postslist = collections.journal | head(-4) %}
       {% set hlevel = '3' %}
-      <ol class="mb-8 md:flex flex-wrap gap-8">
+      <ol class="mb-8 md:grid md:grid-cols-2 md:gap-8">
         {% for post in postslist | reverse %}
         {% if post.data.permalink !== "/journal/" %}
         <li class="mb-5">

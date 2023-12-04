@@ -9,6 +9,12 @@ tags:
   - react
 ---
 
+__Update__: If you would like to use Hooks instead, I've posted an updated version of the code here: [Scrollable Container Controls with React Hooks](/scrollable-container-controls-with-react-hooks/)
+
+The below still serves as an explanation of the code, and so still has value if you're interested to learn more about it.
+
+---
+
 I recently had to solve an issue: A container has a list of items which can be scrolled horizontally. However, it is not obvious you can scroll if a scrollbar isn't visible. This is the case sometimes depending on OS and user preferences.
 
 The agreed solution was to add some buttons to let the user know there's more content available. Clicking these buttons would scroll either backwards or forwards. Seems straight-forward enough, though there were some things to consider:
