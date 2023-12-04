@@ -10,6 +10,12 @@ tags:
   - javascript
 ---
 
+__Update__: If you would like to use Hooks instead, I've posted an updated version of the code here: [Multi-Select Checkboxes with React Hooks](/multi-select-checkboxes-with-react-hooks/)
+
+The below still serves as an explanation of the code, and so still has value if you're interested to learn more about it.
+
+---
+
 An issue arose recently where a user wanted to be able to hold the Shift key to select a range of items in a list. A pal in work set me off on the right path, but what ended up being approved was quite different as there were multiple things to consider:
 
 - Shift + Click could be in either direction - up or down - to select a range of items.
