@@ -116,6 +116,14 @@ particle {
 }
 
 /*
+    Posts
+*/
+
+.tmpl-post iframe {
+    max-width: 100%;
+}
+
+/*
   Custom helpers
  */
 
