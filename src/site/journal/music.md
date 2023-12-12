@@ -1,6 +1,6 @@
 ---
 title: "Music"
-description: "The music I'm into, and what I've been listening to lately."
+description: "My musical journey from pop music to metal."
 date: 2023-12-12T22:08:24+01:00
 permalink: "/journal/music/"
 layout: layouts/post.njk
