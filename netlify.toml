@@ -3,37 +3,5 @@
   command = "npm run build"
 
 [[redirects]]
-from = "/feed.rss"
-to = "/index.xml"
-
-[[redirects]]
-from = "/feed/feed.xml"
-to = "/index.xml"
-
-[[redirects]]
 from = "https://awesome-northcutt-12634b.netlify.com/*"
 to = "https://tj.ie/:splat"
-
-[[redirects]]
-from = "/feed.xml"
-to = "/index.xml"
-
-[[redirects]]
-from = "/rss/"
-to = "/index.xml"
-
-[[redirects]]
-from = "/wp-login.php"
-to = "https://www.youtube.com/watch?v=-ZoDJX9YFX8"
-
-[[redirects]]
-from = "/wp-json/*"
-to = "https://www.youtube.com/watch?v=-ZoDJX9YFX8"
-
-[[redirects]]
-from = "/wp-content/*"
-to = "https://www.youtube.com/watch?v=-ZoDJX9YFX8"
-
-[[redirects]]
-from = "/.env"
-to = "https://www.youtube.com/watch?v=-ZoDJX9YFX8"
