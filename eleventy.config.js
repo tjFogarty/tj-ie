@@ -1,13 +1,13 @@
-const pluginRss = require("@11ty/eleventy-plugin-rss");
-const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
-const pluginNavigation = require("@11ty/eleventy-navigation");
-const markdownIt = require("markdown-it");
-const markdownItAnchor = require("markdown-it-anchor");
-const CleanCSS = require("clean-css");
-const Image = require("@11ty/eleventy-img");
-const htmlmin = require("html-minifier");
+import pluginRss from "@11ty/eleventy-plugin-rss";
+import pluginSyntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight";
+import pluginNavigation from "@11ty/eleventy-navigation";
+import markdownIt from "markdown-it";
+import markdownItAnchor from "markdown-it-anchor";
+import CleanCSS from "clean-css";
+import Image from "@11ty/eleventy-img";
+import htmlmin from "html-minifier";
 
-module.exports = function (eleventyConfig) {
+export default async function (eleventyConfig) {
   eleventyConfig.addWatchTarget("./src/site/assets");
   eleventyConfig.addWatchTarget("./tailwind.config.js");
 
@@ -148,10 +148,34 @@ module.exports = function (eleventyConfig) {
     return array.slice(0, n);
   });
 
-  eleventyConfig.addCollection(
-    "tagList",
-    require("./src/site/_11ty/getTagList"),
-  );
+  eleventyConfig.addCollection("tagList", async function (collection) {
+    let tagSet = new Set();
+    collection.getAll().forEach(function (item) {
+      if ("tags" in item.data) {
+        let tags = item.data.tags;
+
+        tags = tags.filter(function (item) {
+          switch (item) {
+            // this list should match the `filter` list in tags.njk
+            case "all":
+            case "nav":
+            case "post":
+            case "posts":
+              return false;
+          }
+
+          return true;
+        });
+
+        for (const tag of tags) {
+          tagSet.add(tag);
+        }
+      }
+    });
+
+    // returning an array in addCollection works in Eleventy 0.5.3
+    return [...tagSet];
+  });
 
   eleventyConfig.addPassthroughCopy("./src/site/assets");
   eleventyConfig.addPassthroughCopy("./src/site/fonts");
@@ -217,4 +241,4 @@ module.exports = function (eleventyConfig) {
       output: "_site",
     },
   };
-};
+}
