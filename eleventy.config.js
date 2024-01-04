@@ -9,7 +9,7 @@ import htmlmin from "html-minifier";
 
 export default async function (eleventyConfig) {
   eleventyConfig.addWatchTarget("./src/site/assets");
-  eleventyConfig.addWatchTarget("./tailwind.config.js");
+  eleventyConfig.addWatchTarget("./src/site/_includes");
 
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(pluginSyntaxHighlight);
@@ -25,6 +25,30 @@ export default async function (eleventyConfig) {
   eleventyConfig.addShortcode("external-link", function (href, content) {
     return `<a href="${href}" target="_blank" rel="noopener noreferrer">${content}</a>`;
   });
+
+  function postThumbnailShortcode(src, className = "", alt = "") {
+    Image(`./src/site/assets/images/${src}`, {
+      widths: [400],
+      urlPath: "/assets/images/",
+      outputDir: "./_site/assets/images/",
+    });
+
+    const attrs = {
+      alt,
+      className: className,
+      sizes: "400",
+      loading: "lazy",
+      decoding: "async",
+    };
+
+    const metadata = Image.statsSync(`./src/site/assets/images/${src}`, {
+      widths: [400],
+      urlPath: "/assets/images/",
+      outputDir: "./_site/assets/images/",
+    });
+
+    return Image.generateHTML(metadata, attrs);
+  }
 
   async function imageShortcode(
     src,
@@ -50,55 +74,9 @@ export default async function (eleventyConfig) {
     });
   }
 
-  async function photoThumbnailShortcode(
-    src,
-    alt = "",
-    sizes = "(min-width: 800px) 225px, 100vw",
-  ) {
-    const metadata = await Image(`./src/site/assets/photos/${src}`, {
-      widths: [250, 400],
-      urlPath: "/assets/photos/",
-      outputDir: "./_site/assets/photos/",
-    });
-
-    const attrs = {
-      alt,
-      sizes,
-      loading: "lazy",
-      decoding: "async",
-    };
-
-    return Image.generateHTML(metadata, attrs, {
-      whitespaceMode: "inline",
-    });
-  }
-
-  async function photoShortcode(
-    src,
-    alt = "",
-    sizes = "(min-width: 1140px) 1140px, 100vw",
-  ) {
-    const metadata = await Image(`./src/site/assets/photos/${src}`, {
-      widths: [600, 800, 1000, 1500],
-      urlPath: "/assets/photos/",
-      outputDir: "./_site/assets/photos/",
-    });
-
-    const attrs = {
-      alt,
-      sizes,
-      loading: "lazy",
-      decoding: "async",
-    };
-
-    return Image.generateHTML(metadata, attrs, {
-      whitespaceMode: "inline",
-    });
-  }
-
   eleventyConfig.addNunjucksAsyncShortcode("image", imageShortcode);
-  eleventyConfig.addNunjucksAsyncShortcode("photo", photoThumbnailShortcode);
-  eleventyConfig.addNunjucksAsyncShortcode("photolarge", photoShortcode);
+  eleventyConfig.addShortcode("postThumbnail", postThumbnailShortcode);
+  eleventyConfig.addNunjucksShortcode("postThumbnail", postThumbnailShortcode);
   eleventyConfig.addLiquidShortcode("image", imageShortcode);
 
   eleventyConfig.addNunjucksGlobal("socials", [

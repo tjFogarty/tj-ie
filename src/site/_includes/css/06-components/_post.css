@@ -1,0 +1,12 @@
+.c-post {
+    font-size: 1.2em;
+}
+
+.c-post p {
+    margin-top: 1.33333em;
+    margin-bottom: 1.33333em;
+}
+
+.c-post p:first-child {
+    margin-top: 0;
+}

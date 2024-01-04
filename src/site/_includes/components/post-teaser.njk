@@ -1,13 +1,29 @@
 {% set level = hlevel or '2' %}
 
-<a href="{{ post.url | url }}" class="inline-block group">
-  <time datetime="{{ post.date | htmlDateString }}" class="text-sm text-gray-600 group-hover:text-gray-600">
-    {{ post.date | readableDate }}
-  </time>
+<div class="c-teaser">
+        {% if post.data.coverPreview %}
+        <a href="{{ post.url | url }}" class="c-teaser__link">
+        <div class="c-teaser__img-container">
+            {% postThumbnail post.data.coverPreview, "c-teaser__image" %}
+        </div>
+        </a>
+        {% endif %}
 
-  <h{{ level }} class="mb-1">{% if post.data.title %}{{ post.data.title }}{% else %}<code>{{ post.url }}</code>{% endif %}</h{{ level }}>
+    <div class="c-teaser__meta">
+        <a href="{{ post.url | url }}" class="c-teaser__link">
+            <h{{ level }} class="c-teaser__title">{% if post.data.title %}{{ post.data.title }}{% else %}<code>{{
+                    post.url
+                    }}</code>{%
+                endif %}</h{{ level }}>
+        </a>
 
-  {% if post.data.description %}
-  <p class="group-hover:text-black ">{{ post.data.description }}</p>
-  {% endif %}
-</a>
+        {% if post.data.description %}
+        <p class="c-teaser__description">{{ post.data.description }}</p>
+        {% endif %}
+
+        <time datetime="{{ post.date | htmlDateString }}" class="c-teaser__date">
+            {{ post.date | readableDate }}
+        </time>
+    </div>
+
+</div>

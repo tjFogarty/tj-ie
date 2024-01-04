@@ -4,7 +4,7 @@ description: "Listen for hotkeys to select multiple checkboxes in a few clicks."
 date: 2019-05-20T20:50:21+01:00
 permalink: "/multi-select-checkboxes-with-react/"
 layout: layouts/post.njk
-header: checkmark
+coverPreview: "checkboxes.png"
 tags:
   - react
   - javascript

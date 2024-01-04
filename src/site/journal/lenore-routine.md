@@ -5,6 +5,7 @@ date: 2023-11-28T20:05:24+01:00
 permalink: "/journal/lenore-routine/"
 layout: layouts/post.njk
 cover: "https://tj.ie/assets/images/lenore-window.jpeg"
+coverPreview: "lenore-window.jpeg"
 ---
 
 Lenore has a bit of a different routine to Loki and Ares. For starters, she gets fed four times a day, whereas the other two only get fed twice. I say "only", but they get half a pouch each in the morning, and the other half at night with "hunting" food - we hide dry food around some rooms and they have to find it. They enjoy it, and it's fun watching them hunt and figure out where the food is.

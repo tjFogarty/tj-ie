@@ -1,0 +1,29 @@
+.selection {
+    position: relative;
+    display: inline-block;
+}
+
+.selection-bg {
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: var(--colour-secondary);
+    mix-blend-mode: darken;
+    transition: width ease-in-out 0.8s;
+}
+
+.selection-bg.ready {
+    width: 100%;
+}
+
+particle {
+    left: 0;
+    pointer-events: none;
+    position: fixed;
+    top: 0;
+    opacity: 0;
+    background-color: var(--colour-secondary);
+}

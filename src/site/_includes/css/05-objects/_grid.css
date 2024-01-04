@@ -1,0 +1,21 @@
+.o-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+}
+
+.o-grid--3-col > * {
+    width: 100%;
+}
+
+@media (min-width: 650px) {
+    .o-grid--3-col > * {
+        width: 44%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .o-grid--3-col > * {
+        width: 31.5%;
+    }
+}

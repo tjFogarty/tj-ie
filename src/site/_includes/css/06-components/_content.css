@@ -1,0 +1,15 @@
+.c-content {
+    position: relative;
+    z-index: 1;
+    padding: 1em;
+    background-color: #fff;
+    border-radius: 10px;
+    max-width: 1000px;
+    width: 100%;
+}
+
+@media (min-width: 700px) {
+    .c-content {
+        padding: 3em 9em 3em 3em;
+    }
+}

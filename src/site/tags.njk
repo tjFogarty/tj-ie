@@ -15,12 +15,25 @@ eleventyComputed:
   title: Tagged “{{ tag }}”
 permalink: /tags/{{ tag }}/
 ---
-<article class="container mx-auto">
-  <h1 class="text-5xl mb-8">Tagged “{{ tag }}”</h1>
+<article class="">
+<div class="c-hero c-hero--small">
+        <div class="o-wrapper">
+            <div class="c-hero__content">
+                <h1 class="c-hero__title">
+                    <span class="c-hero__prompt" aria-hidden="true">></span
+                    >Tagged “{{ tag }}”
+                </h1>
+            </div>
+        </div>
+    </div>
 
+<div class="o-wrapper">
+<div class="c-content">
   {% set postslistYears = 'off' %}
   {% set postslist = collections[ tag ] %}
   {% include "postslist.njk" %}
 
   <p>See <a href="{{ '/tags/' | url }}">all tags</a>.</p>
+  </div>
+  </div>
 </article>

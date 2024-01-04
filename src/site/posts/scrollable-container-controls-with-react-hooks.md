@@ -4,6 +4,7 @@ description: "Revisiting some old code to convert it to using hooks."
 date: 2023-12-04T17:55:42+01:00
 permalink: "/scrollable-container-controls-with-react-hooks/"
 layout: layouts/post.njk
+coverPreview: "react-scroll.png"
 tags:
   - javascript
   - react

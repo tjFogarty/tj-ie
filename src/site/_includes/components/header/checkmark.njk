@@ -9,14 +9,14 @@
 {% set sizes = range(25, 45) %}
 {% set positions = range(0, 100) %}
 
-<div class="absolute top-[100px] left-0 w-full h-[300px] z-[-1]" aria-hidden="true">
+<div class="" aria-hidden="true">
   {% for i in range(0, 15) %}
 
   {% set size %} {{ sizes | random }}{% endset %}
   {% set top %} {{ positions | random }}{% endset %}
   {% set left %} {{ positions | random }}{% endset %}
 
-  <svg class="checkmark-header__svg absolute opacity-0 will-change-[opacity]" viewBox="0 0 100 100" width="{{ size | trim }}" height="{{ size | trim }}" style="top: {{ top | trim }}%; inset-inline-start: {{ left | trim }}%; animation-delay: 0.{{ i }}s">
+  <svg class="checkmark-header__svg" viewBox="0 0 100 100" width="{{ size | trim }}" height="{{ size | trim }}" style="top: {{ top | trim }}%; inset-inline-start: {{ left | trim }}%; animation-delay: 0.{{ i }}s">
     <use xlink:href="#checkmark"></use>
   </svg>
   {% endfor %}

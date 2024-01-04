@@ -1,0 +1,38 @@
+.c-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5em;
+    padding: 2em 0;
+}
+
+.c-nav__link {
+    color: #fff;
+    font-family: var(--font-mono);
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 2px dotted transparent;
+}
+
+.c-nav__link:hover,
+.c-nav__link:focus {
+    color: #fff;
+    border-bottom-color: var(--colour-secondary);
+}
+
+.c-nav__link:first-child {
+    width: 100%;
+    text-align: center;
+}
+
+@media (min-width: 500px) {
+    .c-nav__link:first-child {
+        width: auto;
+        text-align: start;
+        margin-inline-end: auto;
+    }
+}
+
+.c-nav__link--active {
+    border-bottom-color: var(--colour-secondary);
+}

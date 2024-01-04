@@ -4,6 +4,7 @@ description: "Small experiment with sound based on scroll distance."
 date: 2023-04-13T19:02:47.000+01:00
 permalink: "/distant-sound/"
 layout: layouts/post.njk
+coverPreview: "sound.png"
 tags:
   - javascript
 ---

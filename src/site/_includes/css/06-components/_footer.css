@@ -1,0 +1,22 @@
+.c-footer {
+    display: flex;
+    color: #fff;
+    padding: 2em 0;
+}
+
+.c-footer__links {
+    display: flex;
+    gap: 1em;
+    list-style: none;
+    margin-inline-start: auto;
+    padding: 0;
+}
+
+.c-footer__icon {
+    color: var(--colour-secondary);
+}
+
+.c-footer__icon:hover,
+.c-footer__icon:focus {
+    color: #fff;
+}

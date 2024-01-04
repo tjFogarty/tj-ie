@@ -5,6 +5,8 @@ date: 2023-12-10T20:33:24+01:00
 permalink: "/journal/visiting-family-and-friends/"
 layout: layouts/post.njk
 cover: "https://tj.ie/assets/images/mac.jpeg"
+coverPreview: "mac.jpeg"
+script: lite-youtube.js
 ---
 
 My family and friends are back in Limerick, so I make trips there when possible. Usually, I make tracks early Saturday morning. I'll take a pit stop in Mooncoin to get something to drink and another one in Tipperary before making the final leg of the journey to Limerick.

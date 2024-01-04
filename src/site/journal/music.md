@@ -5,6 +5,8 @@ date: 2023-12-12T22:08:24+01:00
 permalink: "/journal/music/"
 layout: layouts/post.njk
 cover: "https://tj.ie/assets/images/music.jpeg"
+coverPreview: "music.jpeg"
+script: lite-youtube.js
 ---
 
 When I was a kid, I was into pop music. It was the melodies that I was drawn to, the things that would stick in my head and not leave for days or weeks at a time. At 15, I discovered Thrice on a Yahoo station and struggled to find music like this in stores. I resorted to destroying the family computer with Limewire.

@@ -1,93 +1,170 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ title or metadata.title }}</title>
-    <meta name="description" content="{{ description or metadata.description }}">
-    <link rel="alternate" href="{{ metadata.feed.path | url }}" type="application/atom+xml" title="{{ metadata.title }}">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>{{ title or metadata.title }}</title>
+        <meta
+            name="description"
+            content="{{ description or metadata.description }}"
+        />
+        <link
+            rel="alternate"
+            href="{{ metadata.feed.path | url }}"
+            type="application/atom+xml"
+            title="{{ metadata.title }}"
+        />
 
-    <link rel="canonical" href="https://tj.ie{{ page.url | url }}"/>
+        <link rel="canonical" href="https://tj.ie{{ page.url | url }}" />
 
-    <!-- Made with https://formito.com/tools/favicon -->
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22256%22 height=%22256%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%23df6020%22></rect><path d=%22M18.13 19.21L62.11 19.21L61.26 25.88L43.29 25.88L36.66 80.11L28.75 80.11L35.38 25.88L17.32 25.88L18.13 19.21ZM82.68 19.21L77.71 59.92Q76.48 70.04 71.40 75.41Q66.32 80.79 57.91 80.79L57.91 80.79Q55.61 80.79 53.61 80.49Q51.62 80.20 49.58 79.60L49.58 79.60L50.17 74.97Q50.26 74.33 50.66 73.86Q51.06 73.40 51.91 73.40L51.91 73.40Q52.34 73.40 52.89 73.50Q53.44 73.61 54.14 73.76Q54.85 73.91 55.76 74.01Q56.67 74.12 57.86 74.12L57.86 74.12Q60.07 74.12 62.03 73.40Q63.98 72.67 65.56 71.02Q67.13 69.36 68.21 66.68Q69.30 64.00 69.76 60.09L69.76 60.09L74.74 19.21L82.68 19.21Z%22 fill=%22%23ffffff%22></path></svg>"/>
+        <!-- Made with https://formito.com/tools/favicon -->
+        <link
+            rel="icon"
+            type="image/svg+xml"
+            href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22256%22 height=%22256%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%23df6020%22></rect><path d=%22M18.13 19.21L62.11 19.21L61.26 25.88L43.29 25.88L36.66 80.11L28.75 80.11L35.38 25.88L17.32 25.88L18.13 19.21ZM82.68 19.21L77.71 59.92Q76.48 70.04 71.40 75.41Q66.32 80.79 57.91 80.79L57.91 80.79Q55.61 80.79 53.61 80.49Q51.62 80.20 49.58 79.60L49.58 79.60L50.17 74.97Q50.26 74.33 50.66 73.86Q51.06 73.40 51.91 73.40L51.91 73.40Q52.34 73.40 52.89 73.50Q53.44 73.61 54.14 73.76Q54.85 73.91 55.76 74.01Q56.67 74.12 57.86 74.12L57.86 74.12Q60.07 74.12 62.03 73.40Q63.98 72.67 65.56 71.02Q67.13 69.36 68.21 66.68Q69.30 64.00 69.76 60.09L69.76 60.09L74.74 19.21L82.68 19.21Z%22 fill=%22%23ffffff%22></path></svg>"
+        />
 
-    <link rel="me" href="mailto:hi@tj.ie">
-    <link rel="me" href="https://github.com/tjFogarty">
-    <link rel="authorization_endpoint" href="https://indieauth.com/auth">
+        <link rel="me" href="mailto:hi@tj.ie" />
+        <link rel="me" href="https://github.com/tjFogarty" />
+        <link rel="authorization_endpoint" href="https://indieauth.com/auth" />
 
-    <link rel="webmention" href="https://webmention.io/tj.ie/webmention"/>
-    <link rel="pingback" href="https://webmention.io/tj.ie/xmlrpc"/>
+        <link rel="webmention" href="https://webmention.io/tj.ie/webmention" />
+        <link rel="pingback" href="https://webmention.io/tj.ie/xmlrpc" />
 
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:description" content="{{ description or metadata.description }}"/>
-    <meta name="twitter:title" content="{{ title or metadata.title }}"/>
-    <meta name="twitter:site" content="@tj_fogarty"/>
-    <meta name="twitter:creator" content="@tj_fogarty"/>
+        <!-- Twitter Card -->
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+            name="twitter:description"
+            content="{{ description or metadata.description }}"
+        />
+        <meta name="twitter:title" content="{{ title or metadata.title }}" />
+        <meta name="twitter:site" content="@tj_fogarty" />
+        <meta name="twitter:creator" content="@tj_fogarty" />
 
-    <!-- OG data -->
-    <meta property="og:locale" content="en_IE"/>
-    <meta property="og:type" content="article"/>
-    <meta content="{{ title or metadata.title }}" property="og:title">
-    <meta content="{{ description or metadata.description }}" property="og:description">
-    <meta property="og:url" content="{{ page.url | url }}"/>
-    <meta property="og:site_name" content="TJ Fogarty - Frontend Software Engineer"/>
-    {% for tag in post.data.tags %}
-      <meta property="article:section" content="{{ tag }}"/>
-    {% endfor %}
-    {% if page.date %}
-      <meta property="article:published_time" content="{{ page.date }}"/>
-    {% endif %}
+        <!-- OG data -->
+        <meta property="og:locale" content="en_IE" />
+        <meta property="og:type" content="article" />
+        <meta content="{{ title or metadata.title }}" property="og:title" />
+        <meta
+            content="{{ description or metadata.description }}"
+            property="og:description"
+        />
+        <meta property="og:url" content="{{ page.url | url }}" />
+        <meta
+            property="og:site_name"
+            content="TJ Fogarty - Frontend Software Engineer"
+        />
+        {% for tag in post.data.tags %}
+        <meta property="article:section" content="{{ tag }}" />
+        {% endfor %} {% if page.date %}
+        <meta property="article:published_time" content="{{ page.date }}" />
+        {% endif %} {% if cover %}
+        <meta property="og:image" content="{{ cover }}" />
+        <meta name="twitter:image" content="{{ cover }}" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        {% endif %}
 
-    {% if cover %}
-    <meta property="og:image" content="{{ cover }}">
-    <meta name="twitter:image" content="{{ cover }}">
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
-    {% endif %}
+        <link
+            rel="preload"
+            href="/assets/fonts/fira-mono-v14-latin-regular.woff2"
+            as="font"
+            type="font/woff2"
+            crossorigin
+        />
 
-    <link rel="preload" href="/fonts/source-sans-3-v9-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="/fonts/source-sans-3-v9-latin-800.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="/assets/css/styles.css" as="style">
+        {% set css %}
+        {% include "css/01-settings/_text.css" %}
+        {% include "css/01-settings/_colours.css" %}
+        {% include "css/01-settings/_variables.css" %}
 
-    <link rel="stylesheet" href="/assets/css/styles.css"/>
+        {% include "css/03-generic/_reset.css" %}
 
-    <script src="https://cdn.counter.dev/script.js" data-id="c5e16e16-b46b-4da8-bce5-afce4e892aef" data-utcoffset="1" defer></script>
+        {% include "css/04-elements/_document.css" %}
+        {% include "css/04-elements/_headings.css" %}
+        {% include "css/04-elements/_images.css" %}
+        {% include "css/04-elements/_links.css" %}
 
-    <script defer src="/assets/js/lite-youtube.js"></script>
-  </head>
+        {% include "css/05-objects/_wrapper.css" %}
+        {% include "css/05-objects/_list.css" %}
+        {% include "css/05-objects/_grid.css" %}
 
-  <body {% if templateClass %} class="{{ templateClass }}" {% endif %}>
-    <header>
-      <div class="container">
-      {% include "components/navigation.njk" %}
-      </div>
-    </header>
+        {% include "css/06-components/_site-header.css" %}
+        {% include "css/06-components/_footer.css" %}
+        {% include "css/06-components/_nav.css" %}
+        {% include "css/06-components/_hero.css" %}
+        {% include "css/06-components/_post.css" %}
+        {% include "css/06-components/_tag.css" %}
+        {% include "css/06-components/_content.css" %}
+        {% include "css/06-components/_teaser.css" %}
+        {% include "css/06-components/_section.css" %}
 
-    <main>
-      {{ content | safe }}
+        {% include "css/07-utilities/_hidden.css" %}
 
-      <a class="hidden" aria-hidden="true" rel="me" href="https://mastodon.ie/@tj">Mastodon</a>
-    </main>
+        {% include "css/08-vendor/_prism.css" %}
+        {% include "css/08-vendor/_lite-youtube.css" %}
 
-      <div class="container mx-auto py-8">
-        <footer class="flex">
-          <span class="text-sm">&copy; TJ Fogarty</span>
+        {% if styles %}
+        {% set customStyles = ["css/custom/", styles] | join %}
+        {% include customStyles %}
+        {% endif %}
+        {% endset %}
 
-          <ul class="flex ml-auto gap-5">
-            {% for social in socials %}
-            <li>
-              <a
-                href="{{ social.link }}"
-                aria-label="{{ social.label }}"
-                rel="noopener noreferrer">
-                {% include "components/" + social.icon + "-icon.njk" %}
-              </a>
-            </li>
-          {% endfor %}
-          </ul>
-        </footer>
-      </div>
-  </body>
+        <style>
+        {{ css | cssmin | safe }}
+        </style>
+
+        <script
+            src="https://cdn.counter.dev/script.js"
+            data-id="c5e16e16-b46b-4da8-bce5-afce4e892aef"
+            data-utcoffset="1"
+            defer
+        ></script>
+
+        {% if script %}
+        <script defer src="/assets/js/{{ script }}"></script>
+        {% endif %}
+    </head>
+
+    <body {% if templateClass %} class="{{ templateClass }}" {% endif %}>
+        <header class="c-site-header">
+            <div class="o-wrapper">
+                {% include "components/navigation.njk" %}
+            </div>
+        </header>
+
+        <main>
+            {{ content | safe }}
+
+            <a
+                class="hidden"
+                aria-hidden="true"
+                rel="me"
+                href="https://mastodon.ie/@tj"
+                >Mastodon</a
+            >
+        </main>
+
+        <div class="o-wrapper">
+            <footer class="c-footer">
+                <span class="">&copy; TJ Fogarty</span>
+
+                <ul class="c-footer__links">
+                    {% for social in socials %}
+                    <li>
+                        <a
+                            href="{{ social.link }}"
+                            aria-label="{{ social.label }}"
+                            rel="noopener noreferrer"
+                            class="c-footer__icon"
+                        >
+                            {% include "components/" + social.icon + "-icon.njk"
+                            %}
+                        </a>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </footer>
+        </div>
+    </body>
 </html>

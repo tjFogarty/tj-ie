@@ -1,73 +1,39 @@
 ---
 layout: layouts/home.njk
 eleventyNavigation:
-  key: Home
-  order: 1
+    key: Home
+    order: 1
 ---
+
 <article>
-  <div class="pt-12 max-w-[1500px] mx-auto">
-    <div class="flex flex-col md:flex-row gap-4 justify-between pl-10">
-      <div class="flex flex-col justify-center mb-10 lg:mb-0">
-        <h1 class="text-wrap-balance text-3xl lg:text-5xl font-extrabold mb-6 max-w-3xl lg:leading-[1.15]">Full-stack software engineer, specialising in front-end technology with a focus on accessibility</h1>
+    {% include 'components/hero.njk' %}
 
-        <p class="mb-8 max-w-lg">I'm TJ, and I've been in the industry for over a decade, from agencies to large-scale <abbr title="Software as a service">SaaS</abbr> companies with millions of users.</p>
+    <section class="c-section">
+        <div class="o-wrapper">
+            <h2 class="c-section__heading">Recent Posts</h2>
 
-        <ul class="list-none flex flex-wrap justify-start items-center gap-6">
-          <li>
-            {% include "components/vue-icon.njk" %}
-          </li>
-          <li>
-            {% include "components/react-icon.njk" %}
-          </li>
-          <li>
-            {% include "components/a11y-icon.njk" %}
-          </li>
-          <li>
-            {% include "components/ts-icon.njk" %}
-          </li>
-        </ul>
-      </div>
+            {% set postslist = collections.posts | head(-3) %} {% set hlevel =
+            '3' %}
+            <ol class="o-list-bare o-list-bare o-grid o-grid--3-col">
+                {% for post in postslist | reverse %}
+                <li class="">{% include 'components/post-teaser.njk' %}</li>
+                {% endfor %}
+            </ol>
+        </div>
+    </section>
 
-      <div class="max-w-[200px] ml-auto lg:max-w-max">
-        {% image "profile.png", "Picture of TJ with his black and white cat, Loki, on his lap", "(min-width: 922px) 400px, 100vw", [300, 600] %}
-      </div>
-    </div>
-  </div>
+    <section class="c-section">
+        <div class="o-wrapper">
+            <h2 class="c-section__heading">Journal</h2>
 
-  <div class="py-10 bg-slate-100">
-    <div class="container">
-      <h2 class="mb-8">Recent Posts</h2>
-
-      {% set postslist = collections.posts | head(-4) %}
-      {% set hlevel = '3' %}
-      <ol class="mb-8 md:grid md:grid-cols-2 md:gap-8">
-        {% for post in postslist | reverse %}
-        <li class="mb-5">
-          {% include 'components/post-teaser.njk' %}
-        </li>
-        {% endfor %}
-      </ol>
-
-      <p>More posts can be found in <a href="{{ '/archive/' | url }}" class="decoration-rose-600 underline">the archive</a>.</p>
-    </div>
-  </div>
-
-  <div class="py-10 bg-slate-200">
-    <div class="container">
-      <h2 class="mb-8">Journal</h2>
-
-      {% set postslist = collections.journal | head(-4) %}
-      {% set hlevel = '3' %}
-      <ol class="mb-8 md:grid md:grid-cols-2 md:gap-8">
-        {% for post in postslist | reverse %}
-        {% if post.data.permalink !== "/journal/" %}
-        <li class="mb-5">
-          {% include 'components/post-teaser.njk' %}
-        </li>
-        {% endif %}
-        {% endfor %}
-      </ol>
-    </div>
-  </div>
-
+            {% set postslist = collections.journal | head(-3) %} {% set hlevel =
+            '3' %}
+            <ol class="o-list-bare o-grid o-grid--3-col">
+                {% for post in postslist | reverse %} {% if post.data.permalink
+                !== "/journal/" %}
+                <li>{% include 'components/post-teaser.njk' %}</li>
+                {% endif %} {% endfor %}
+            </ol>
+        </div>
+    </section>
 </article>

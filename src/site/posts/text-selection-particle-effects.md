@@ -9,6 +9,8 @@ tags:
   - javascript
   - css
 layout: layouts/post.njk
+script: particles.js
+styles: particles.css
 ---
 
 After reading {% external-link "https://css-tricks.com/playing-with-particles-using-the-web-animations-api/", "Playing With Particles Using the Web Animations API" %} I wondered if it would be possible to create particle effects based on the user selecting text.

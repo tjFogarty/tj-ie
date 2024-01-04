@@ -9,15 +9,13 @@
     "debug": "DEBUG=* eleventy",
     "dev": "npm-run-all clean --parallel dev:*",
     "dev:eleventy": "eleventy --serve",
-    "dev:tailwind": "npx tailwindcss -i src/site/assets/css/index.css -o _site/assets/css/styles.css --watch",
-    "build:tailwind": "npx tailwindcss -i src/site/assets/css/index.css -o _site/assets/css/styles.css --minify",
     "build:eleventy": "ELEVENTY_PRODUCTION=true npx @11ty/eleventy",
     "build": "NODE_ENV=production npm-run-all clean build:*"
   },
   "license": "MIT",
   "homepage": "https://tj.ie",
   "devDependencies": {
-    "@11ty/eleventy": "3.0.0-alpha.3",
+    "@11ty/eleventy": "3.0.0-alpha.4",
     "@11ty/eleventy-img": "3.1.8",
     "@11ty/eleventy-navigation": "0.3.5",
     "@11ty/eleventy-plugin-rss": "1.2.0",
@@ -27,8 +25,7 @@
     "markdown-it": "14.0.0",
     "markdown-it-anchor": "8.6.7",
     "npm-run-all": "^4.1.5",
-    "rimraf": "^5.0.5",
-    "tailwindcss": "^3.4.0"
+    "rimraf": "^5.0.5"
   },
   "dependencies": {
     "html-minifier": "^4.0.0"

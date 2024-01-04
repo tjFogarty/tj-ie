@@ -4,7 +4,6 @@ description: "A combination of autoprefixer and transitions styles broke an inpu
 date: 2020-05-07T11:00:00+00:00
 permalink: "/ie11-placeholder-transition-issue/"
 layout: layouts/post.njk
-header: placeholder
 tags:
 - css
 ---

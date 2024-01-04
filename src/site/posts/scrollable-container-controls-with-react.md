@@ -4,6 +4,7 @@ description: "Managing a scrollable container with React by adding button contro
 date: 2019-05-03T19:15:42+01:00
 permalink: "/scrollable-container-controls-with-react/"
 layout: layouts/post.njk
+coverPreview: "react-scroll.png"
 tags:
   - javascript
   - react

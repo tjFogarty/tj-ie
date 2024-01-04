@@ -2,14 +2,28 @@
 layout: layouts/home.njk
 permalink: /archive/
 eleventyNavigation:
-  key: Archive
-  order: 2
+    key: Archive
+    order: 2
 ---
 
-<article class="container">
-  <h1 class="mb-10 mt-5">Archive</h1>
+<article>
+    <div class="c-hero c-hero--small">
+        <div class="o-wrapper">
+            <div class="c-hero__content">
+                <h1 class="c-hero__title">
+                    <span class="c-hero__prompt" aria-hidden="true">></span
+                    >Archive
+                </h1>
+            </div>
+        </div>
+    </div>
 
-  {% set postslist = collections.posts %}
-  {% set hlevel = '3' %}
-  {% include "postslist.njk" %}
+    <div class="o-wrapper">
+        <ol class="o-list-bare o-grid o-grid--3-col">
+            {% set postslist = collections.posts %} {% for post in postslist |
+            reverse %} {% if post.data.permalink !== "/journal/" %}
+            <li>{% include 'components/post-teaser.njk' %}</li>
+            {% endif %} {% endfor %}
+        </ol>
+    </div>
 </article>

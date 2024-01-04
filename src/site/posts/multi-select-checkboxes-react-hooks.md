@@ -4,7 +4,7 @@ description: "An old code demo revised to use React Hooks."
 date: 2023-12-04T13:07:21+01:00
 permalink: "/multi-select-checkboxes-with-react-hooks/"
 layout: layouts/post.njk
-header: checkmark
+coverPreview: "checkboxes.png"
 tags:
   - react
   - javascript
