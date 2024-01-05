@@ -4,6 +4,7 @@ description: "An infinite scroll timeline component written for Vue 3."
 date: 2022-08-22T11:00:00+01:00
 permalink: "/vue-timeline/"
 layout: layouts/post.njk
+coverPreview: "timeline.png"
 ---
 
 A couple of years I ago I struggled with finding a timeline component for Vue. Since then I've gone on to implement 3rd party solutions and even writing one for a company I worked for.

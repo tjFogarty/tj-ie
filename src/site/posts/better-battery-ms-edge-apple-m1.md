@@ -3,6 +3,7 @@ title: "Fixing MS Edge Battery Drain on M1 Mac"
 description: "Edge was destroying the battery life on my Macbook Air M1"
 date: 2022-09-17T10:23:00+01:00
 permalink: "/fix-edge-battery-drain-m1-mac/"
+coverPreview: "macbook-air.jpeg"
 layout: layouts/post.njk
 ---
 

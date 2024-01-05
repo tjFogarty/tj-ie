@@ -51,5 +51,6 @@
 }
 
 .c-teaser__date {
+    margin-top: auto;
     font-size: 0.8em;
 }
