@@ -2,7 +2,7 @@
 
 <div class="c-teaser">
         {% if post.data.coverPreview %}
-        <a href="{{ post.url | url }}" class="c-teaser__link">
+        <a href="{{ post.url | url }}" class="c-teaser__link" title="Link to {{ post.data.title }}">
         <div class="c-teaser__img-container">
             {% postThumbnail post.data.coverPreview, "c-teaser__image" %}
         </div>
