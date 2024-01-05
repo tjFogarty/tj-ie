@@ -3,7 +3,7 @@ layout: layouts/post.njk
 title: About Me
 eleventyNavigation:
   key: About Me
-  order: 3
+  order: 4
 ---
 
 I’m TJ, a web devel­op­er from {% external-link "https://en.wikipedia.org/wiki/Limerick", "Lim­er­ick, Ire­land" %} 🇮🇪 and liv­ing in Water­ford. I have a BSc Hons in Multimedia Programming, and Design from the Limerick Institute of Technology.
@@ -12,7 +12,7 @@ I've been around a while (over 10 years now), and I've had the chance to work at
 
 - Senior Software Engineer at {% external-link "https://www.workhuman.com/", "Workhuman" %} (current)
 - Senior Software Engineer at {% external-link "https://www.teamwork.com/", "Teamwork" %}
-- UI Engineer at {% external-link "https://stitcherads.com/", "StitcherAds" %} 
+- UI Engineer at {% external-link "https://stitcherads.com/", "StitcherAds" %}
 - Technical Lead at {% external-link "https://emagine.ie/", "Emag­ine" %}
 - Lead Developer at {% external-link "https://www.maverick-intl.com/", "Mav­er­ick" %}
 
