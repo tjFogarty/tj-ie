@@ -1,6 +1,5 @@
 .o-grid {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
     gap: 2em;
 }
 
@@ -9,13 +8,13 @@
 }
 
 @media (min-width: 650px) {
-    .o-grid--3-col > * {
-        width: 44%;
+    .o-grid--3-col {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
 @media (min-width: 1200px) {
-    .o-grid--3-col > * {
-        width: 31.5%;
+    .o-grid--3-col {
+        grid-template-columns: repeat(3, 1fr);
     }
 }
