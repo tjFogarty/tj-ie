@@ -5,6 +5,7 @@ date: 2024-01-07T13:00:00+00:00
 permalink: "/popover-api/"
 layout: layouts/post.njk
 styles: popover.css
+script: popover.js
 coverPreview: popover-expanded.png
 cover: "https://tj.ie/assets/images/popover-expanded.png"
 tags:
@@ -47,8 +48,11 @@ The default behaviour is to toggle the popover when you perform actions. For exa
 
 
 <div class="c-demo">
+    <div class="popover-html">
     <button type="button" popovertarget="menu">Toggle the popover</button>
     <div id="menu" popover>Popover content</div>
+    </div>
+    <p class="popover-not-supported">Sorry, but support for the popover api has not landed for your browser yet.</p>
 </div>
 
 Here's what it looks like when VoiceOver is turned on:
@@ -57,4 +61,4 @@ Here's what it looks like when VoiceOver is turned on:
 
 {% image "popover-expanded.png", "VoiceOver dialog declaring the popover as expanded when popover is activated" %}
 
-Currently, support is pretty good, with all typical desktop browser engines supporting it. This is a barebones example, but I'm excited to add this to my toolbelt and see where it will fit in a production environment.
+Currently, support is ok, but we're waiting on Firefox to ship support in stable. This is a barebones example, but I'm excited to add this to my toolbelt and see where it will fit in a production environment.

@@ -25,3 +25,7 @@
     background-color: var(--colour-secondary);
     color: var(--colour-primary);
 }
+
+.popover-not-supported {
+    display: none;
+}
