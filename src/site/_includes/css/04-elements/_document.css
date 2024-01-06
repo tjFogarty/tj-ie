@@ -7,5 +7,12 @@ body {
 
 body {
     font-family: var(--font-sans-serif);
+    font-size: 14px;
     background-color: var(--colour-primary);
+}
+
+@media (min-width: 700px) {
+    body {
+        font-size: 16px;
+    }
 }
