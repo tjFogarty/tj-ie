@@ -1,0 +1,27 @@
+[popover] {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    width: 200px;
+    margin-left: -150px;
+    text-align: center;
+}
+
+::backdrop {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+[popovertarget] {
+    background-color: var(--colour-primary);
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    border-radius: 4px;
+    padding: 0.5em 0.8em;
+}
+
+[popovertarget]:hover,
+[popovertarget]:focus {
+    background-color: var(--colour-secondary);
+    color: var(--colour-primary);
+}
