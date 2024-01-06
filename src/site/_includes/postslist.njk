@@ -1,35 +1,8 @@
 <div class="o-wrapper">
-{% if postslistYears === 'off' %}
-<ol class="post-list">
-{% endif %}
-
-{% set year = '' %}
-  {% for post in postslist | reverse %}
-    {% set postYear = post.date | year %}
-    {% set isNewYear = year !== postYear %}
-    {% if isNewYear and postslistYears !== 'off' %}
-
-    {# this reminds me of working with ExpressionEngine #}
-    {% if not loop.first %}
-    </ol>
+        <ol class="o-list-bare o-grid o-grid--3-col">
+            {% for post in postslist |
+            reverse %} {% if post.data.permalink !== "/journal/" %}
+            <li>{% include 'components/post-teaser.njk' %}</li>
+            {% endif %} {% endfor %}
+        </ol>
     </div>
-    {% endif %}
-
-    <div class="">
-      <div class="">
-        <h2 class="">{{ postYear }}</h2>
-      </div>
-
-      <ol class="">
-      {% set year = postYear %}
-    {% endif %}
-    <li class="">
-        {% if post.data.permalink !== "/journal/" %}
-      {% include 'components/post-teaser.njk' %}
-        {% endif %}
-    </li>
-  {% endfor %}
-{% if postslistYears === 'off' %}
-</ol>
-{% endif %}
-</div>

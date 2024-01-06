@@ -28,12 +28,10 @@ permalink: /tags/{{ tag }}/
     </div>
 
 <div class="o-wrapper">
-<div class="c-content">
+<div class="">
   {% set postslistYears = 'off' %}
   {% set postslist = collections[ tag ] %}
   {% include "postslist.njk" %}
-
-  <p>See <a href="{{ '/tags/' | url }}">all tags</a>.</p>
   </div>
   </div>
 </article>

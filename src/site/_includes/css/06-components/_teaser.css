@@ -32,9 +32,8 @@
 
 .c-teaser__img-container {
     position: relative;
-    height: 0;
+    height: 210px;
     overflow: hidden;
-    padding-top: 56%;
 }
 
 .c-teaser img {

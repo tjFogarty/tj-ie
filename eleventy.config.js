@@ -15,8 +15,10 @@ export default async function (eleventyConfig) {
   eleventyConfig.addPlugin(pluginSyntaxHighlight);
   eleventyConfig.addPlugin(pluginNavigation);
 
-  eleventyConfig.setLiquidOptions({ strictFilters: false });
-  eleventyConfig.setLiquidOptions({ dynamicPartials: false });
+  eleventyConfig.setLiquidOptions({
+    strictFilters: false,
+    dynamicPartials: false,
+  });
 
   eleventyConfig.addFilter("cssmin", function (code) {
     return new CleanCSS({}).minify(code).styles;
@@ -100,12 +102,29 @@ export default async function (eleventyConfig) {
   eleventyConfig.addLayoutAlias("post", "layouts/post.njk");
   eleventyConfig.addLayoutAlias("base", "layouts/base.njk");
 
+  // https://stackoverflow.com/a/15397495
+  const nth = (d) => {
+    if (d > 3 && d < 21) return "th";
+    switch (d % 10) {
+      case 1:
+        return "st";
+      case 2:
+        return "nd";
+      case 3:
+        return "rd";
+      default:
+        return "th";
+    }
+  };
+
   eleventyConfig.addFilter("readableDate", (dateObj) => {
-    return dateObj.toLocaleDateString("en-GB", {
-      day: "numeric",
-      month: "short",
+    const day = dateObj.toLocaleDateString("en-GB", { day: "numeric" });
+    const monthAndYear = dateObj.toLocaleDateString("en-GB", {
+      month: "long",
       year: "numeric",
     });
+
+    return `${day}${nth(day)} ${monthAndYear}`;
   });
 
   eleventyConfig.addFilter("year", (dateObj) => {
