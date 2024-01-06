@@ -6,6 +6,7 @@ permalink: "/popover-api/"
 layout: layouts/post.njk
 styles: popover.css
 coverPreview: popover-expanded.png
+cover: "https://tj.ie/assets/images/popover-expanded.png"
 tags:
 - html
 ---
