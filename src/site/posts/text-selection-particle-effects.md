@@ -4,7 +4,6 @@ description: "Creating particle effects based on text selection using the Web An
 date: 2020-03-22T9:09:24+01:00
 permalink: "/text-selection-particle-effects/"
 cover_image: text-selection-particles.jpg
-header: particles
 tags:
   - javascript
   - css

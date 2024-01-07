@@ -10,8 +10,6 @@
     left: 0;
     width: 0;
     height: 100%;
-    background: var(--colour-secondary);
-    mix-blend-mode: darken;
     transition: width ease-in-out 0.8s;
 }
 

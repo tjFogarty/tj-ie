@@ -1,8 +1,8 @@
 <div class="o-wrapper">
-        <ol class="o-list-bare o-grid o-grid--3-col">
-            {% for post in postslist |
-            reverse %} {% if post.data.permalink !== "/journal/" %}
-            <li>{% include 'components/post-teaser.njk' %}</li>
-            {% endif %} {% endfor %}
-        </ol>
-    </div>
+    <ol class="o-list-bare o-grid o-grid--3-col">
+        {% for post in postslist | reverse %} {% if post.data.permalink !==
+        "/journal/" %}
+        <li>{% include 'components/post-teaser.njk' %}</li>
+        {% endif %} {% endfor %}
+    </ol>
+</div>

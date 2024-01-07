@@ -18,25 +18,22 @@ templateClass: tmpl-post
     <div class="o-wrapper">
         <div class="c-post">
             <div class="c-content">
-            {% if date %}
-            <time class="" datetime="{{ date | htmlDateString }}">
-                {{ date | readableDate }}
-            </time>
-            {% endif %} {{ content | safe }} {% for tag in tags %} {%- if
-            collections.tagList.indexOf(tag) != -1 -%} {% set tagUrl %}/tags/{{
-            tag }}/{% endset %}
-            <a
-                href="{{ tagUrl | url }}"
-                class="c-tag"
-                aria-label="See all {{ tag }} posts"
-            >
-                {{ tag }}
-            </a>
-            {%- endif -%} {% endfor %}
-
+                {% if date %}
+                <time class="" datetime="{{ date | htmlDateString }}">
+                    {{ date | readableDate }}
+                </time>
+                {% endif %} {{ content | safe }} {% for tag in tags %} {%- if
+                collections.tagList.indexOf(tag) != -1 -%} {% set tagUrl
+                %}/tags/{{ tag }}/{% endset %}
+                <a
+                    href="{{ tagUrl | url }}"
+                    class="c-tag"
+                    aria-label="See all {{ tag }} posts"
+                >
+                    {{ tag }}
+                </a>
+                {%- endif -%} {% endfor %}
             </div>
         </div>
     </div>
 </article>
-
-{% if header %} {% include 'components/header/' + header + '.njk' %} {% endif %}
