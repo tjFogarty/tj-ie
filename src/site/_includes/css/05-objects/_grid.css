@@ -1,6 +1,6 @@
 .o-grid {
     display: grid;
-    gap: 2em;
+    gap: 3em;
 }
 
 .o-grid--3-col > * {

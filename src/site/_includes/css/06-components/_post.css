@@ -10,3 +10,30 @@
 .c-post p:first-child {
     margin-top: 0;
 }
+
+.c-post__date {
+    font-size: 0.8em;
+}
+
+.c-post h2,
+.c-post h3,
+.c-post h4 {
+    margin-top: calc(var(--scale) * 1em);
+}
+
+.c-post__direct-link {
+    color: #ccc;
+    text-decoration: none;
+}
+
+@media (min-width: 700px) {
+    .c-post__direct-link {
+        position: absolute;
+        left: -35px;
+    }
+}
+
+.c-post__direct-link:hover,
+.c-post__direct-link:focus {
+    color: var(--colour-links);
+}

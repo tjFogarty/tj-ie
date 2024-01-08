@@ -4,7 +4,7 @@
     position: relative;
     overflow: hidden;
     margin-bottom: 2em;
-    min-height: 80vh;
+    padding: 3em 0;
     color: #fff;
 }
 
@@ -83,11 +83,19 @@
         font-size: 3em;
     }
 
+    .c-hero {
+        min-height: 70vh;
+    }
+
     .c-hero--small {
-        min-height: 30vh;
+        min-height: 20vh;
     }
 
     .c-hero__content {
         padding: 5em 0;
+    }
+
+    .c-hero--small .c-hero__content {
+        padding: 3em 0;
     }
 }

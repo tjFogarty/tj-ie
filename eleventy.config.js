@@ -220,7 +220,7 @@ export default async function (eleventyConfig) {
         <span aria-label="Jump to heading">#</span>
       `,
       placement: "before",
-      class: "direct-link",
+      class: "c-post__direct-link",
     }),
   });
   eleventyConfig.setLibrary("md", markdownLibrary);

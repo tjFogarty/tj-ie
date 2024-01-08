@@ -19,7 +19,7 @@ templateClass: tmpl-post
         <div class="c-post">
             <div class="c-content">
                 {% if date %}
-                <time class="" datetime="{{ date | htmlDateString }}">
+                <time class="c-post__date" datetime="{{ date | htmlDateString }}">
                     {{ date | readableDate }}
                 </time>
                 {% endif %} {{ content | safe }} {% for tag in tags %} {%- if

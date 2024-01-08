@@ -6,20 +6,3 @@ a:focus,
 a:hover {
     color: var(--colour-primary);
 }
-
-.direct-link {
-    color: #ccc;
-    text-decoration: none;
-}
-
-@media (min-width: 700px) {
-    .direct-link {
-        position: absolute;
-        left: -35px;
-    }
-}
-
-.direct-link:hover,
-.direct-link:focus {
-    color: var(--colour-links);
-}
