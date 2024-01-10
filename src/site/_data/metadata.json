@@ -4,8 +4,8 @@
   "description": "Performance focused Front-end Development.",
   "feed": {
     "subtitle": "Performance focused Front-end Development.",
-    "filename": "feed.xml",
-    "path": "/feed/feed.xml",
+    "filename": "index.xml",
+    "path": "/index.xml",
     "id": "https://tj.ie/"
   },
   "author": {
