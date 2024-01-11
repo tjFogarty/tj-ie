@@ -9,23 +9,23 @@ eleventyNavigation:
 ---
 
 <article>
-    <div class="c-hero c-hero--small">
-        <div class="o-wrapper">
-            <div class="c-hero__content">
-                <h1 class="c-hero__title">
-                    <span class="c-hero__prompt" aria-hidden="true">></span
-                    >Journal
-                </h1>
-            </div>
-        </div>
-    </div>
-
+  <div class="c-hero c-hero--small">
     <div class="o-wrapper">
-        <ol class="o-list-bare o-grid o-grid--3-col">
-            {% set postslist = collections.journal %} {% for post in postslist |
-            reverse %} {% if post.data.permalink !== "/journal/" %}
-            <li>{% include 'components/post-teaser.njk' %}</li>
-            {% endif %} {% endfor %}
-        </ol>
+      <div class="c-hero__content">
+        <h1 class="c-hero__title">
+          <span class="c-hero__prompt" aria-hidden="true">></span>Journal
+        </h1>
+      </div>
     </div>
+  </div>
+  <div class="o-wrapper">
+    <ol class="o-list-bare o-grid o-grid--3-col">
+      {% set postslist = collections.journal %}
+      {% for post in postslist | reverse %}
+        {% if post.data.permalink !== "/journal/" %}
+          <li>{% include "components/post-teaser.njk" %}</li>
+        {% endif %}
+      {% endfor %}
+    </ol>
+  </div>
 </article>

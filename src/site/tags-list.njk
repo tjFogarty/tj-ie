@@ -4,23 +4,27 @@ layout: layouts/home.njk
 ---
 
 <article>
-<div class="c-hero c-hero--small">
-        <div class="o-wrapper">
-            <div class="c-hero__content">
-                <h1 class="c-hero__title">
-                    <span class="c-hero__prompt" aria-hidden="true">></span
-                    >Tags
-                </h1>
-            </div>
-        </div>
+  <div class="c-hero c-hero--small">
+    <div class="o-wrapper">
+      <div class="c-hero__content">
+        <h1 class="c-hero__title">
+          <span class="c-hero__prompt" aria-hidden="true">></span>Tags
+        </h1>
+      </div>
     </div>
-
-<div class="o-wrapper">
-<div class="c-content">
-  {% for tag in collections.tagList %}
-    {% set tagUrl %}/tags/{{ tag }}/{% endset %}
-    <a href="{{ tagUrl | url }}" class="c-tag">{{ tag }}</a></li>
-  {% endfor %}
   </div>
+  <div class="o-wrapper">
+    <div class="c-content">
+      <ul class="o-list-bare o-list-inline">
+        {% for tag in collections.tagList %}
+          {% set tagUrl %}
+            /tags/{{ tag }}/
+          {% endset %}
+          <li>
+            <a href="{{ tagUrl | url }}" class="c-tag">{{ tag }}</a>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
   </div>
 </article>

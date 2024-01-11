@@ -6,34 +6,29 @@ eleventyNavigation:
 ---
 
 <article>
-    {% include 'components/hero.njk' %}
-
-    <section class="c-section">
-        <div class="o-wrapper">
-            <h2 class="c-section__heading">Recent Posts</h2>
-
-            {% set postslist = collections.posts | head(-3) %} {% set hlevel =
-            '3' %}
-            <ol class="o-list-bare o-list-bare o-grid o-grid--3-col">
-                {% for post in postslist | reverse %}
-                <li class="">{% include 'components/post-teaser.njk' %}</li>
-                {% endfor %}
-            </ol>
-        </div>
-    </section>
-
-    <section class="c-section">
-        <div class="o-wrapper">
-            <h2 class="c-section__heading">Journal</h2>
-
-            {% set postslist = collections.journal | head(-3) %} {% set hlevel =
-            '3' %}
-            <ol class="o-list-bare o-grid o-grid--3-col">
-                {% for post in postslist | reverse %} {% if post.data.permalink
-                !== "/journal/" %}
-                <li>{% include 'components/post-teaser.njk' %}</li>
-                {% endif %} {% endfor %}
-            </ol>
-        </div>
-    </section>
+  {% include "components/hero.njk" %}
+  <section class="c-section">
+    <div class="o-wrapper">
+      <h2 class="c-section__heading">Recent Posts</h2>
+      {% set postslist = collections.posts | head(-3) %} {% set hlevel = "3" %}
+      <ol class="o-list-bare o-list-bare o-grid o-grid--3-col">
+        {% for post in postslist | reverse %}
+          <li>{% include "components/post-teaser.njk" %}</li>
+        {% endfor %}
+      </ol>
+    </div>
+  </section>
+  <section class="c-section">
+    <div class="o-wrapper">
+      <h2 class="c-section__heading">Journal</h2>
+      {% set postslist = collections.journal | head(-3) %} {% set hlevel = "3" %}
+      <ol class="o-list-bare o-grid o-grid--3-col">
+        {% for post in postslist | reverse %}
+          {% if post.data.permalink !== "/journal/" %}
+            <li>{% include "components/post-teaser.njk" %}</li>
+          {% endif %}
+        {% endfor %}
+      </ol>
+    </div>
+  </section>
 </article>

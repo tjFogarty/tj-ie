@@ -2,3 +2,8 @@
     list-style: none;
     padding: 0;
 }
+
+
+.o-list-inline > li {
+  display: inline-block;
+}
