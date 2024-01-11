@@ -3,5 +3,9 @@
   command = "npm run build"
 
 [[redirects]]
-from = "https://awesome-northcutt-12634b.netlify.com/*"
+from = "https://teej.netlify.com/*"
 to = "https://tj.ie/:splat"
+
+[[redirects]]
+from = "https://tj.ie/feed/feed.xml"
+to = "https://tj.ie/index.xml"
