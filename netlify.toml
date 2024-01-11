@@ -3,7 +3,7 @@
   command = "npm run build"
 
 [[redirects]]
-from = "https://teej.netlify.com/*"
+from = "https://teej.netlify.app/*"
 to = "https://tj.ie/:splat"
 
 [[redirects]]
