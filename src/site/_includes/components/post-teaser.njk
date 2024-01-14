@@ -1,5 +1,8 @@
 {% set level = hlevel or '2' %}
 {% set headingEl = ["h", hlevel] | join %}
+{% if not hlevel %}
+  {% set headingEl = "h2" %}
+{% endif %}
 <div class="c-teaser {{ modifier }}">
   {% if post.data.coverPreview %}
     <a href="{{ post.url | url }}"

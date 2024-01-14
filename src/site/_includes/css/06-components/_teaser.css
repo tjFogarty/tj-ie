@@ -75,7 +75,7 @@
     flex-shrink: 0;
   }
 
-  .c-teaser__title {
-    font-size: calc(var(--scale) * 1.5em);
+  .c-teaser--large .c-teaser__title {
+    font-size: calc(var(--scale) * 1.3em);
   }
 }
