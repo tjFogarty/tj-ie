@@ -1,6 +1,6 @@
 ---
 title: "Popover API"
-description: "For many years, we had to do this manually or rely on third-party solutions. Now, though, it's a different world."
+description: "For many years, we had to do this manually or rely on third-party solutions. Now, though, it's a different world. In this post we'll take a quick look at how it works with a demo."
 date: 2024-01-07T13:00:00+00:00
 permalink: "/popover-api/"
 layout: layouts/post.njk

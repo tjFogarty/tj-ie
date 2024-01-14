@@ -10,12 +10,22 @@ eleventyNavigation:
   <section class="c-section">
     <div class="o-wrapper">
       <h2 class="c-section__heading">Recent Posts</h2>
-      {% set postslist = collections.posts | head(-3) %} {% set hlevel = "3" %}
+      {% set postslist = collections.posts | head(-4) %} {% set hlevel = "3" %}
       <ol class="o-list-bare o-list-bare o-grid o-grid--3-col">
         {% for post in postslist | reverse %}
-          <li>{% include "components/post-teaser.njk" %}</li>
+          <li {% if loop.index === 1 %}class="o-grid-column-full"{% endif %}>
+            {% if loop.index === 1 %}
+              {% set modifier = "c-teaser--large" %}
+            {% else %}
+              {% set modifier = "" %}
+            {% endif %}
+            {% include "components/post-teaser.njk" %}
+          </li>
         {% endfor %}
       </ol>
+      <div class="o-layout-center">
+        <a class="c-section__cta" href="/archive/">View All Posts</a>
+      </div>
     </div>
   </section>
   <section class="c-section">
@@ -29,6 +39,9 @@ eleventyNavigation:
           {% endif %}
         {% endfor %}
       </ol>
+      <div class="o-layout-center">
+        <a class="c-section__cta" href="/journal/">View All Journal Entries</a>
+      </div>
     </div>
   </section>
 </article>

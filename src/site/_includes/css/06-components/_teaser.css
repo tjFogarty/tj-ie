@@ -53,3 +53,23 @@
     margin-top: auto;
     font-size: 0.8em;
 }
+
+@media (min-width: 800px) {
+  .c-teaser--large {
+    flex-direction: row;
+    flex-wrap: no-wrap;
+  }
+
+  .c-teaser--large .c-teaser__link {
+    width: 60%;
+    height: auto;
+  }
+
+  .c-teaser--large .c-teaser__img-container {
+    min-height: 350px;
+  }
+
+  .c-teaser--large .c-teaser__meta {
+    width: 40%;
+  }
+}

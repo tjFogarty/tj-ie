@@ -30,7 +30,7 @@ export default async function (eleventyConfig) {
 
   function postThumbnailShortcode(src, className = "", alt = "") {
     Image(`./src/site/assets/images/${src}`, {
-      widths: [400],
+      widths: [400, 800, 1200],
       urlPath: "/assets/images/",
       outputDir: "./_site/assets/images/",
     });
@@ -38,13 +38,13 @@ export default async function (eleventyConfig) {
     const attrs = {
       alt,
       className: className,
-      sizes: "400",
+      sizes: "400px, 1000px",
       loading: "lazy",
       decoding: "async",
     };
 
     const metadata = Image.statsSync(`./src/site/assets/images/${src}`, {
-      widths: [400],
+      widths: [400, 800, 1200],
       urlPath: "/assets/images/",
       outputDir: "./_site/assets/images/",
     });

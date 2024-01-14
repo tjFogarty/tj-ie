@@ -6,3 +6,18 @@
     color: #fff;
     margin-bottom: 1em;
 }
+
+
+.c-section__cta {
+  display: inline-block;
+  margin: 2em auto;
+  text-decoration: none;
+  background-color: var(--colour-secondary);
+  color: var(--colour-primary);
+  padding: 0.8em;
+}
+
+.c-section__cta:hover,
+.c-section__cta:focus {
+  background-color: #fff;
+}

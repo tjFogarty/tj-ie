@@ -1,29 +1,27 @@
 {% set level = hlevel or '2' %}
-
-<div class="c-teaser">
-        {% if post.data.coverPreview %}
-        <a href="{{ post.url | url }}" class="c-teaser__link" title="Link to {{ post.data.title }}">
-        <div class="c-teaser__img-container">
-            {% postThumbnail post.data.coverPreview, "c-teaser__image" %}
-        </div>
+{% set headingEl = ["h", hlevel] | join %}
+<div class="c-teaser {{ modifier }}">
+  {% if post.data.coverPreview %}
+    <a href="{{ post.url | url }}"
+       class="c-teaser__link"
+       title="Link to {{ post.data.title }}">
+      <div class="c-teaser__img-container">{% postThumbnail post.data.coverPreview, "c-teaser__image" %}</div>
+    </a>
+  {% endif %}
+  <div class="c-teaser__meta">
+    <a href="{{ post.url | url }}" class="c-teaser__link">
+      <{{ headingEl }} class="c-teaser__title">
+      {% if post.data.title %}
+        {{ post.data.title }}
+      {% else %}
+        <code>{{
+          post.url
+          }}</code>{%
+          endif %}</{{ headingEl }}>
         </a>
-        {% endif %}
-
-    <div class="c-teaser__meta">
-        <a href="{{ post.url | url }}" class="c-teaser__link">
-            <h{{ level }} class="c-teaser__title">{% if post.data.title %}{{ post.data.title }}{% else %}<code>{{
-                    post.url
-                    }}</code>{%
-                endif %}</h{{ level }}>
-        </a>
-
-        {% if post.data.description %}
-        <p class="c-teaser__description">{{ post.data.description }}</p>
-        {% endif %}
-
+        {% if post.data.description %}<p class="c-teaser__description">{{ post.data.description }}</p>{% endif %}
         <time datetime="{{ post.date | htmlDateString }}" class="c-teaser__date">
-            {{ post.date | readableDate }}
+          {{ post.date | readableDate }}
         </time>
+      </div>
     </div>
-
-</div>
