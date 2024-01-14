@@ -37,7 +37,7 @@ export default async function (eleventyConfig) {
 
     const attrs = {
       alt,
-      className: className,
+      class: className,
       sizes: "400px, 1000px",
       loading: "lazy",
       decoding: "async",
