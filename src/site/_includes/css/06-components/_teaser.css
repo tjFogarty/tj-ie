@@ -61,15 +61,21 @@
   }
 
   .c-teaser--large .c-teaser__link {
-    width: 60%;
+    width: 100%;
     height: auto;
   }
 
   .c-teaser--large .c-teaser__img-container {
     min-height: 350px;
+    height: 100%;
   }
 
   .c-teaser--large .c-teaser__meta {
-    width: 40%;
+    width: 35%;
+    flex-shrink: 0;
+  }
+
+  .c-teaser__title {
+    font-size: calc(var(--scale) * 1.5em);
   }
 }
