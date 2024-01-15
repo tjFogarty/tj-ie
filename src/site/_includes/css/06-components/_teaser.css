@@ -20,7 +20,7 @@
 
 .c-teaser__link:hover,
 .c-teaser__link:focus {
-    color: var(--colour-links);
+    color: var(--colour-accent);
 }
 
 .c-teaser__meta {
