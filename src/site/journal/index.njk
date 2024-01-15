@@ -23,7 +23,12 @@ eleventyNavigation:
       {% set postslist = collections.journal %}
       {% for post in postslist | reverse %}
         {% if post.data.permalink !== "/journal/" %}
-          <li>{% include "components/post-teaser.njk" %}</li>
+          {% if loop.index === 1 %}
+            {% set modifier = "c-teaser--large" %}
+          {% else %}
+            {% set modifier = "" %}
+          {% endif %}
+          <li {% if loop.index === 1 %}class="o-grid-column-full"{% endif %}>{% include "components/post-teaser.njk" %}</li>
         {% endif %}
       {% endfor %}
     </ol>
