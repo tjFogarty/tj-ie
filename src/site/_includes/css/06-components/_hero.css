@@ -8,10 +8,6 @@
     color: #fff;
 }
 
-.c-hero--small {
-    min-height: auto;
-}
-
 .c-hero__prompt {
     color: var(--colour-accent);
     line-height: 1.4;
