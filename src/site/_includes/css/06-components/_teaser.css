@@ -49,7 +49,7 @@
     transition: opacity ease 0.2s;
 }
 
-.c-teaser__image:hover {
+.c-teaser__img-container img:hover {
   opacity: 1;
 }
 .c-teaser__description {
