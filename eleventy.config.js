@@ -82,12 +82,6 @@ export default async function (eleventyConfig) {
   eleventyConfig.addLiquidShortcode("image", imageShortcode);
 
   eleventyConfig.addNunjucksGlobal("socials", [
-    {
-      link: "https://twitter.com/tj_fogarty",
-      label: "Twitter",
-      icon: "twitter",
-    },
-    { link: "https://codepen.io/tjFogarty", label: "CodePen", icon: "codepen" },
     { link: "https://github.com/tjFogarty/", label: "GitHub", icon: "github" },
     {
       link: "https://www.linkedin.com/in/fogartytj/",
