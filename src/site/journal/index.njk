@@ -23,12 +23,9 @@ eleventyNavigation:
       {% set postslist = collections.journal %}
       {% for post in postslist | reverse %}
         {% if post.data.permalink !== "/journal/" %}
-          {% if loop.index === 1 %}
-            {% set modifier = "c-teaser--large" %}
-          {% else %}
-            {% set modifier = "" %}
-          {% endif %}
-          <li {% if loop.index === 1 %}class="o-grid-column-full"{% endif %}>{% include "components/post-teaser.njk" %}</li>
+          <li {% if loop.index === 1 or loop.index === 2 %}class="o-grid-column-half"{% else %}class="o-grid-column-third"{% endif %}>
+            {% include "components/post-teaser.njk" %}
+          </li>
         {% endif %}
       {% endfor %}
     </ol>

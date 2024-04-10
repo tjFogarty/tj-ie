@@ -1,85 +1,91 @@
 .c-hero {
-    display: flex;
-    align-items: center;
-    position: relative;
-    overflow: hidden;
-    margin-bottom: 2em;
-    padding: 3em 0;
-    color: #fff;
-}
-
-.c-hero__prompt {
-    color: var(--colour-accent);
-    line-height: 1.4;
-    animation: pulse 1.5s linear infinite;
-}
-
-.c-hero__title {
-    display: flex;
-    gap: 0.5em;
-    font-size: 2em;
-    text-align: start;
-}
-
-.c-hero__image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: auto;
-    opacity: 0.1;
-}
-
-.c-hero__content {
-    position: relative;
-    z-index: 1;
-}
-
-.c-hero__blocks {
-    display: flex;
-    flex-wrap: wrap;
-    position: absolute;
-    border: 1px solid #91c8eb;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-}
-
-.c-hero__block {
-    display: inline-block;
-    border: 1px solid #91c8eb;
-    width: 6.25%;
-    background-color: #91c8eb;
-    opacity: var(--opacity);
-    transition: opacity ease 0.2s;
-}
-
-.c-hero__block:hover {
-    opacity: 1;
-}
-
-@keyframes pulse {
-    0% {
-        opacity: 0;
-    }
-
-    50% {
-        opacity: 1;
-    }
-
-    100% {
-        opacity: 0;
-    }
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 2em;
+  padding: 0.8em 0;
+  color: #fff;
 }
 
 @media (min-width: 800px) {
-    .c-hero__title {
-        font-size: 3em;
-    }
+  .c-hero {
+    padding: 3em 0;
+  }
+}
 
-    .c-hero__content {
-      padding: 3em 0;
-    }
+.c-hero__prompt {
+  color: var(--colour-accent);
+  line-height: 1.4;
+  animation: pulse 1.5s linear infinite;
+}
+
+.c-hero__title {
+  display: flex;
+  gap: 0.5em;
+  font-size: 2em;
+  text-align: start;
+}
+
+.c-hero__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  opacity: 0.1;
+}
+
+.c-hero__content {
+  position: relative;
+  z-index: 1;
+}
+
+.c-hero__blocks {
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  border: 1px solid #91c8eb;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.c-hero__block {
+  display: inline-block;
+  border: 1px solid #91c8eb;
+  width: 6.25%;
+  background-color: #91c8eb;
+  opacity: var(--opacity);
+  transition: opacity ease 0.2s;
+}
+
+.c-hero__block:hover {
+  opacity: 1;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@media (min-width: 800px) {
+  .c-hero__title {
+    font-size: 3em;
+  }
+
+  .c-hero__content {
+    padding: 3em 0;
+  }
 }

@@ -1,0 +1,33 @@
+.c-form {
+  max-width: 400px;
+}
+
+.c-form__title {
+  margin-bottom: 1em;
+}
+
+.c-form__label {
+  display: block;
+  margin-top: 0.8em;
+}
+
+.c-form__input {
+  display: block;
+  min-width: 250px;
+  margin-bottom: 1em;
+  padding: 0.5em;
+  border-radius: 5px;
+}
+
+.c-form__link {
+  color: var(--colour-secondary);
+}
+
+.c-form__link:hover,
+.c-form__link:focus {
+  color: #fff;
+}
+
+.c-form__button[type="submit"] {
+  margin-bottom: 0.5em;
+}

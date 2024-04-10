@@ -6,6 +6,14 @@
   grid-column: 1 / -1;
 }
 
+.o-grid-column-half {
+  grid-column: auto / span 3;
+}
+
+.o-grid-column-third {
+  grid-column: auto / span 2;
+}
+
 @media (min-width: 650px) {
   .o-grid {
     display: grid;
@@ -13,12 +21,12 @@
   }
 
   .o-grid--3-col {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
 @media (min-width: 1200px) {
   .o-grid--3-col {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(6, minmax(0, 1fr));
   }
 }

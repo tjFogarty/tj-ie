@@ -1,0 +1,15 @@
+.c-button {
+  display: inline-block;
+  text-decoration: none;
+  background-color: var(--colour-secondary);
+  color: var(--colour-primary);
+  padding: 0.6em 0.9em;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.c-button:hover,
+.c-button:focus {
+  background-color: #fff;
+}
