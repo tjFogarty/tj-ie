@@ -30,4 +30,4 @@ Replace:
 [$2]($1)
 ```
 
-I say _relatively_ straight forward, but really it was a lot of searching and refining. At the end of it all, the meaning of the regex has floated out of my head. I suppose that's how it's meant to be. It's the same with markdown links. Circle then square, right? Or is it...
+I say _relatively_ straight forward, but really it was a lot of searching and refining. At the end of it all, the meaning of the regex has floated out of my head. I suppose that's how it's meant to be. It's the same with markdown links. Circle then square, right? Or is it square then... maybe I'll just make a shortcode.
