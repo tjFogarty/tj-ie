@@ -16,12 +16,12 @@ Hey, you might read this and know a better way! Feel free to leave a comment.
 
 ## Setup
 
-You'll need an install of WordPress. This might be an existing project, or a fresh install. {% external-link "http://wp-cli.org/", "WP-CLI" %} is a very handy tool for quickly setting this up, but it'll also do many, many other things for you that I won't cover here e.g. {% external-link "http://wp-cli.org/commands/db/export/", "exporting a database" %}, and even {% external-link "http://wp-cli.org/commands/plugin/install/", "installing plugins" %}.
+You'll need an install of WordPress. This might be an existing project, or a fresh install. [WP-CLI](http://wp-cli.org/) is a very handy tool for quickly setting this up, but it'll also do many, many other things for you that I won't cover here e.g. [exporting a database](http://wp-cli.org/commands/db/export/), and even [installing plugins](http://wp-cli.org/commands/plugin/install/).
 
-Next up, you'll need {% external-link "https://getcomposer.org/", "Composer" %} installed. I'm using this to install PHPUnit globally with the command `composer global require "phpunit/phpunit=4.7.*`. You can verify the successful installation with `phpunit --version` in your terminal provided you have Composer packages added to your path. (To do this, see this {% external-link "http://akrabat.com/global-installation-of-php-tools-with-composer/", "useful post" %}.)
+Next up, you'll need [Composer](https://getcomposer.org/) installed. I'm using this to install PHPUnit globally with the command `composer global require "phpunit/phpunit=4.7.*`. You can verify the successful installation with `phpunit --version` in your terminal provided you have Composer packages added to your path. (To do this, see this [useful post](http://akrabat.com/global-installation-of-php-tools-with-composer/).)
 
 Within the root of your WordPress project you'll need to run `svn co http://develop.svn.wordpress.org/trunk/tests/phpunit/includes/`.
-This integrates with PHPUnit to make writing our tests a little easier. Want to create a post? `$this->factory->post->create()`. Want to create 30 posts? `$this->factory->post->create_many(30)`. This goes for posts, users, comments, categories; anything you might need to generate. You can {% external-link "https://core.trac.wordpress.org/browser/trunk/tests/phpunit/includes/factory.php", "browse the source" %} to learn more about it.
+This integrates with PHPUnit to make writing our tests a little easier. Want to create a post? `$this->factory->post->create()`. Want to create 30 posts? `$this->factory->post->create_many(30)`. This goes for posts, users, comments, categories; anything you might need to generate. You can [browse the source](https://core.trac.wordpress.org/browser/trunk/tests/phpunit/includes/factory.php) to learn more about it.
 
 This doesn't <em>have</em> to be in the root of your project, but this just happens to be where I've set up mine. You should now see an `includes` folder in your project root.
 
@@ -148,10 +148,10 @@ Have a look there and you'll see we're extending `WP_UnitTestCase`. This affords
 
 ---
 
-Success! In your own tests, you can access your regular WordPress functions, and your active plugin classes/functions. You might even include some Composer packages to mock your data (like {% external-link "https://github.com/fzaninotto/Faker", "Faker" %}).
+Success! In your own tests, you can access your regular WordPress functions, and your active plugin classes/functions. You might even include some Composer packages to mock your data (like [Faker](https://github.com/fzaninotto/Faker)).
 
-See the {% external-link "https://phpunit.de/documentation.html", "PHPUnit documentation" %} for more information on the tests you can run, and how you can {% external-link "https://phpunit.de/manual/current/en/textui.html", "export" %} the results.
+See the [PHPUnit documentation](https://phpunit.de/documentation.html) for more information on the tests you can run, and how you can [export](https://phpunit.de/manual/current/en/textui.html) the results.
 
-For further reading, have a look at the {% external-link "https://core.trac.wordpress.org/browser/trunk/tests/phpunit/tests", "tests written for WordPress Core" %}.
+For further reading, have a look at the [tests written for WordPress Core](https://core.trac.wordpress.org/browser/trunk/tests/phpunit/tests).
 
 Happy testing!

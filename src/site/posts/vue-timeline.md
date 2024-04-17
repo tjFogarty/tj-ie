@@ -14,5 +14,5 @@ This needs to live on an infinite scroll timeline, and it must be performance-fo
 
 With that, you can check out the below links. It's a very early work in progress.
 
-{% external-link "https://timeline.tj.ie/", "Demo" %}
-{% external-link "https://github.com/tjFogarty/vue-timeline", "GitHub" %}
+[Demo](https://timeline.tj.ie/)
+[GitHub](https://github.com/tjFogarty/vue-timeline)

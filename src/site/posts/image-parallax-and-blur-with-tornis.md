@@ -12,7 +12,7 @@ tags:
 
 I updated my site recently and wanted to put a bit more focus on images. To do that, I included a space for cover images in articles. They take up a chunk of the top of the page, and I'll probably re-think this approach at some stage. Maybe I'll overlay the title and description over the image...
 
-I wanted to include a bit of pizazz, and the image was the prime candidate. That's when I remembered {% external-link "https://tornis.robbowen.digital/", "Tornis" %}, a library that lets you respond to changes in the viewport. I wanted it for the scroll position monitoring, and while I can add an event listener to `window` and do the same thing, I'm thinking of a few other use-cases for this library, so I figured why not give it a go.
+I wanted to include a bit of pizazz, and the image was the prime candidate. That's when I remembered [Tornis](https://tornis.robbowen.digital/), a library that lets you respond to changes in the viewport. I wanted it for the scroll position monitoring, and while I can add an event listener to `window` and do the same thing, I'm thinking of a few other use-cases for this library, so I figured why not give it a go.
 
 Here's a stripped down version of the code I used on my site. In reality, I'm checking for the existence of the cover image before kicking anything off. I followed the examples on the Tornis site to get here.
 

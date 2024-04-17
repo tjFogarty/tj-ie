@@ -41,15 +41,15 @@ Also, a chunk of this isn't really React-specific. You could take the DOM parts 
 
 ## Setup
 
-If you don't want to go through the initial setup on your own machine you can use {% external-link "https://codesandbox.io/s/", "CodeSandbox" %} and select the React preset.
+If you don't want to go through the initial setup on your own machine you can use [CodeSandbox](https://codesandbox.io/s/) and select the React preset.
 
-I'm going to work off of a fresh install of {% external-link "https://github.com/facebook/create-react-app", "Create React App" %} by typing the following into my terminal:
+I'm going to work off of a fresh install of [Create React App](https://github.com/facebook/create-react-app) by typing the following into my terminal:
 
 ``` bash
 npx create-react-app scrollable-container
 ```
 
-If you're unfamiliar with `npx`, you can {% external-link "https://blog.npmjs.org/post/162869356040/introducing-npx-an-npm-package-runner", "read the announcement." %} It'll do a bunch of interesting things, but for our use case it'll let us use <abbr title="Create React App">CRA</abbr> without installing it globally first.
+If you're unfamiliar with `npx`, you can [read the announcement.](https://blog.npmjs.org/post/162869356040/introducing-npx-an-npm-package-runner) It'll do a bunch of interesting things, but for our use case it'll let us use <abbr title="Create React App">CRA</abbr> without installing it globally first.
 
 Once that's done, I'll `cd` into my new project directory and run `npm start`, or `yarn start` which will give us a development server on `localhost:3000` by default. Next, I'll clear out bits of `src/App.js` that I don't need so I'm left with this:
 

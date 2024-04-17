@@ -10,15 +10,15 @@ tags:
 
 I've been going without any sort of analytics for my website for a number of months as I just wasn't happy with giving all that information to third parties. Plus, this is a fairly small operation here, so it's not exactly a requirement of mine.
 
-That being said, I've been keeping an eye on {% external-link "https://usefathom.com/" , "Fathom Analytics" %} as it looks like an ideal solution:
+That being said, I've been keeping an eye on [Fathom Analytics](https://usefathom.com/) as it looks like an ideal solution:
 
 > It tracks users on a website (without collecting personal data) and give you a non-nerdy breakdown of your top content and top referrers. It does so with user-centric rights and privacy, and without selling, sharing or giving away the data you collect. It's a simple and easy to use for website owners at any technical level.
 
-{% external-link "https://github.com/usefathom/fathom/blob/master/pkg/api/collect.go#L47", "Looking at the source" %}, it also respects the "do not track" preference of the user.
+[Looking at the source](https://github.com/usefathom/fathom/blob/master/pkg/api/collect.go#L47), it also respects the "do not track" preference of the user.
 
-I've been holding off on giving it a go because I had no idea how to install it, until a nice person on Github gave {% external-link "https://github.com/usefathom/fathom/issues/59#issuecomment-413469001", "a quick run-through of how to get it running on Heroku" %}. I'm trialing it using a Hobby dyno which costs $7 a month, so if it all works out I'll happily front that cost.
+I've been holding off on giving it a go because I had no idea how to install it, until a nice person on Github gave [a quick run-through of how to get it running on Heroku](https://github.com/usefathom/fathom/issues/59#issuecomment-413469001). I'm trialing it using a Hobby dyno which costs $7 a month, so if it all works out I'll happily front that cost.
 
-You'll need a {% external-link "https://www.heroku.com/", "Heroku" %} account, and the {% external-link "https://devcenter.heroku.com/articles/heroku-cli", "Heroku CLI" %} to follow along. You'll need to have your billing details filled in as well as it makes use of addons for getting a database. You don't have to use a Hobby dyno either if you just want to see what's involved.
+You'll need a [Heroku](https://www.heroku.com/) account, and the [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli) to follow along. You'll need to have your billing details filled in as well as it makes use of addons for getting a database. You don't have to use a Hobby dyno either if you just want to see what's involved.
 
 So without further ado, the commands are as follows:
 

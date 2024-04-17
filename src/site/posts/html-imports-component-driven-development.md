@@ -16,7 +16,7 @@ I was thinking about the process of building a site today vs maybe 8 years ago. 
 
 Now, I didn't know a whole lot 8 years ago, so looking back there are ways it could have been done better. If I could go back, I'd probably build a static site first with all the parts, then port that over to WordPress when it was ready. It might be me, but I find not having to think about a CMS while doing initial front-end work very liberating. I don't want to troubleshoot why a template is breaking when I want to focus on styling. It's too easy for me to go off on a tangent and fiddle with PHP because I just thought of a better way to do something.
 
-Years later, this idea of focusing on the right things at the right time became, for me at least, encapsulated with {% external-link "http://atomicdesign.bradfrost.com/", "Atomic Design" %}, so I want to take this moment to thank Brad Frost for preserving the few remaining brain cells I have left. I used tools like {% external-link "https://patternlab.io/", "Pattern Lab" %}, and {% external-link "https://fractal.build/", "Fractal" %} which really opened my eyes to the benefits of focusing on one thing at a time.
+Years later, this idea of focusing on the right things at the right time became, for me at least, encapsulated with [Atomic Design](http://atomicdesign.bradfrost.com/), so I want to take this moment to thank Brad Frost for preserving the few remaining brain cells I have left. I used tools like [Pattern Lab](https://patternlab.io/), and [Fractal](https://fractal.build/) which really opened my eyes to the benefits of focusing on one thing at a time.
 
 Working on a team and incorporating these tools caused trouble at times. When I wanted to introduce this notion of building a project from components, everyone had to be on the same page, and have a solid understanding of the tools we were using. Technical bugs arose from misconfigured environments or an unmet expectation, and when you're moving fast with multiple projects, it can be a momentum-killer.
 
@@ -28,11 +28,11 @@ I was wondering if there's any way we can replicate this in the browser without 
 
 {% image "html-import-support.png", "HTML Import support" %}
 
-Well, {% external-link "https://caniuse.com/#search=html%20imports", "at the moment it's not great" %}. Mozilla have {% external-link "https://hacks.mozilla.org/2015/06/the-state-of-web-components/", "published their thoughts on supporting it" %}.
+Well, [at the moment it's not great](https://caniuse.com/#search=html%20imports). Mozilla have [published their thoughts on supporting it](https://hacks.mozilla.org/2015/06/the-state-of-web-components/).
 
 > At Mozilla we want to explore how importing custom element definitions can align with upcoming ES6 module APIs. We’d be prepared to implement if/when they appear to enable developers to do stuff they can’t already do.
 
-{% external-link "https://groups.google.com/a/chromium.org/forum/#!msg/blink-dev/h-JwMiPUnuU/sl79aLoLBQAJ", "Chrome will be deprecating the current implementation soon as well" %}.
+[Chrome will be deprecating the current implementation soon as well](https://groups.google.com/a/chromium.org/forum/#!msg/blink-dev/h-JwMiPUnuU/sl79aLoLBQAJ).
 
 Still, though, I wanted to try to replicate that process of having components and including them where I needed them, without requiring a developer to know the ins-and-outs so they can focus on coding.
 
@@ -89,6 +89,6 @@ imports.forEach(htmlImport => {
 
 I thought this was a fun little experiment, and it would be really cool to see this factor into the tooling of creating websites in the future. That's if the support is there. Otherwise, there are custom elements to look into, or I'm happy sticking with a static-like setup with PHP.
 
-{% external-link "https://htmlimports.tj.ie", "See the demo" %}
+[See the demo](https://htmlimports.tj.ie)
 
-{% external-link "https://github.com/tjFogarty/html-imports/", "View the source" %}
+[View the source](https://github.com/tjFogarty/html-imports/)

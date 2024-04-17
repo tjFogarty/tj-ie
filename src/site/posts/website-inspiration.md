@@ -21,7 +21,7 @@ I'm still making things look _mostly_ alright, but trying to be more mindful as 
   </figcaption>
 </figure>
 
-First of all, shout out to {% external-link "http://helentran.com/", "Helen Tran" %}. She recently redesigned her site which introduced me to the {% external-link "https://typekit.com/fonts/essonnes", "Essonnes" %} font. Now, I don't spend a lot of time thinking about fonts, but I thought about this one for days, which is different for me. I visited the Typekit pricing page a number of times, and after a couple of days I went for it. That money should have gone into mortgage savings, and we'll say no more about it.
+First of all, shout out to [Helen Tran](http://helentran.com/). She recently redesigned her site which introduced me to the [Essonnes](https://typekit.com/fonts/essonnes) font. Now, I don't spend a lot of time thinking about fonts, but I thought about this one for days, which is different for me. I visited the Typekit pricing page a number of times, and after a couple of days I went for it. That money should have gone into mortgage savings, and we'll say no more about it.
 
 <figure>
   {% image "essonnes-example.png", "Essonnes font on helentran.com" %}
@@ -32,7 +32,7 @@ First of all, shout out to {% external-link "http://helentran.com/", "Helen Tran
 
 I copied things a bit, for sure, and I want to give credit where it's due. I'm still finding my feet with this stuff, and while I'm no-where close in terms of design capability, I'm eagerly trying things out in the hopes I can land on my own style.
 
-Another site that reinforced my enjoyment of typography was the website for {% external-link "http://lucaorio.com/", "Luca Orio" %}. There's something really clean, and crisp about it.
+Another site that reinforced my enjoyment of typography was the website for [Luca Orio](http://lucaorio.com/). There's something really clean, and crisp about it.
 
 {% image "luca-orio-website.png", "Homepage of lucaorio.com" %}
 

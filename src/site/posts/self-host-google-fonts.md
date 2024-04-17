@@ -6,7 +6,7 @@ permalink: "/self-host-google-fonts/"
 layout: layouts/post.njk
 ---
 
-A tool I use a lot is {% external-link "https://google-webfonts-helper.herokuapp.com/fonts", "Google Webfonts Helper" %}. I download the fonts and host them myself, which I kinda like cause I have more control over the files. Part of my webpack setup involves creating a service worker, so it's minimal effort to add them in there.
+A tool I use a lot is [Google Webfonts Helper](https://google-webfonts-helper.herokuapp.com/fonts). I download the fonts and host them myself, which I kinda like cause I have more control over the files. Part of my webpack setup involves creating a service worker, so it's minimal effort to add them in there.
 
 I was doing this before Google allowed you to use `font-display`, so there was that advantage for a while.
 
@@ -18,4 +18,4 @@ I can use `rel="preload"` as well to help speed things up:
 <link rel="preload" href="/fonts/pt-serif-v10-latin-regular.woff2" as="font" crossorigin>
 ```
 
-10/10 from me. {% external-link "https://github.com/majodev/google-webfonts-helper", "You can see the source and contribute on GitHub." %}
+10/10 from me. [You can see the source and contribute on GitHub.](https://github.com/majodev/google-webfonts-helper)

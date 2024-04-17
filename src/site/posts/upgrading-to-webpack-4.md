@@ -8,7 +8,7 @@ tags:
 - javascript
 ---
 
-It's no big secret that I love {% external-link "https://github.com/JeffreyWay/laravel-mix/", "Laravel Mix" %}. It's handy enough to throw into most projects, and I had been using it with WordPress sites for a long while as it made onboarding new devs a lot easier. Babel and Sass? Done.
+It's no big secret that I love [Laravel Mix](https://github.com/JeffreyWay/laravel-mix/). It's handy enough to throw into most projects, and I had been using it with WordPress sites for a long while as it made onboarding new devs a lot easier. Babel and Sass? Done.
 
 ``` js
 mix.js('src/app.js', 'dist/').sass('src/app.scss', 'dist/');
@@ -16,7 +16,7 @@ mix.js('src/app.js', 'dist/').sass('src/app.scss', 'dist/');
 
 It abstracts away all the webpack wizardry so you can spend less time setting up. It's an amazing tool and I have no problem recommending it to people. You can inject your own configuration if you need to extend it as well so you're not locked out of anything.
 
-On the flipside I'm a divil for tinkering, so a one-liner is not conducive to my mischief. After seeing the victories achieved by the webpack team on version 4 I was eager to explore it, plus Laravel Mix is on webpack 3 ({% external-link "https://github.com/JeffreyWay/laravel-mix/pull/1495", "soon to be version 4 by the looks of it" %}).
+On the flipside I'm a divil for tinkering, so a one-liner is not conducive to my mischief. After seeing the victories achieved by the webpack team on version 4 I was eager to explore it, plus Laravel Mix is on webpack 3 ([soon to be version 4 by the looks of it](https://github.com/JeffreyWay/laravel-mix/pull/1495)).
 
 Here's the list of things I needed to do:
 
@@ -157,7 +157,7 @@ if (!isDev) {
 
 ### Service Worker
 
-I'll be honest, this is something that I still need to work on if I want to go full on PWA. I'm using {% external-link "https://github.com/GoogleChrome/workbox", "Workbox" %} to help with this.
+I'll be honest, this is something that I still need to work on if I want to go full on PWA. I'm using [Workbox](https://github.com/GoogleChrome/workbox) to help with this.
 
 So still inside the `if (!isDev)` block I added:
 
@@ -207,4 +207,4 @@ This caches images, JavaScript, and CSS. I really need to read up more on it.
 
 In the end, running `npm run dev` went from taking 6 seconds to 2.5 seconds, and `npm run production` dropped from 14 seconds to 4. Absolutely fantastic gains there, and a testament to the fine work those smart folks do working on webpack. This was more of a learning experience to get closer to the metal as it were, and I'll continue tweaking and breaking things because it's my site. Better I do it here than at work. I'll only have myself to answer to, and I'm my own harshest critic.
 
-You find the final file in {% external-link "https://github.com/tjFogarty/personal-site/blob/d78ab16e826a36dcd8fee28bf81f33acc417e529/webpack.config.js", "my repo for this site" %}.
+You find the final file in [my repo for this site](https://github.com/tjFogarty/personal-site/blob/d78ab16e826a36dcd8fee28bf81f33acc417e529/webpack.config.js).

@@ -15,4 +15,4 @@ They were very helpful in getting me set up, and even did some editing work to t
 
 In the video I walk through creating an RSS feed reader with Vue.js, and Netlify using their functions feature to deploy to AWS Lambda to fetch the feeds. Have a go if you're interested and give me a shout if there's any questions!
 
-Watch: {% external-link "https://skl.sh/2IOfH8I", "Create an RSS Feed Reader with Node and Vue.js" %}.
+Watch: [Create an RSS Feed Reader with Node and Vue.js](https://skl.sh/2IOfH8I).

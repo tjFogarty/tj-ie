@@ -9,7 +9,7 @@ tags:
 ---
 Someone told me you like boilerplates, so I went ahead and made one just for you.
 
-{% external-link "https://github.com/tjFogarty/boilerplate", "https://github.com/tjFogarty/boilerplate" %}
+[https://github.com/tjFogarty/boilerplate](https://github.com/tjFogarty/boilerplate)
 
 I know, I know, we promised we wouldn&#8217;t do gifts. Is this conversational tone creeping you out yet? Yes? Then let&#8217;s move onto the contents:
 

@@ -18,7 +18,7 @@ This got to a point where I even did someone’s final year project, and we were
 
 After college, I was lucky enough to land a job as an intern web developer working alongside someone who was incredible at what they did. After 9 months he moved on, and I was back in a very familiar position by being the only in-house web developer. I learned so much in that time, but the trial by fire that followed coupled with my eternally-nodding head left me burnt out rather quickly. I’m not going to go into specifics about my journey, but I wouldn’t be where I am today without that experience, and I’ll forever be grateful for it.
 
-Littered throughout all this are bouts of imposter syndrome, which is wonderfully explored by David Walsh in his blog post {% external-link "http://davidwalsh.name/impostor-syndrome", "I’m an Imposter" %}. It’s such an honest article, and it can apply to any industry, not just the web.
+Littered throughout all this are bouts of imposter syndrome, which is wonderfully explored by David Walsh in his blog post [I’m an Imposter](http://davidwalsh.name/impostor-syndrome). It’s such an honest article, and it can apply to any industry, not just the web.
 
 —
 

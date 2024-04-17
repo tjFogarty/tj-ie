@@ -21,4 +21,4 @@ It parses your templates, and builds a dashboard based on the variables and sect
 
 You can host it yourself (_nice_), or avail of their hosting when it becomes available. It'll be interesting to see the pricing structure for it, but I do think this is something agencies will latch on to thanks to the speed at which you can develop a site with it.
 
-{% external-link "https://www.vapid.com/", "Check out Vapid" %}
+[Check out Vapid](https://www.vapid.com/)

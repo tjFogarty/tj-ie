@@ -10,7 +10,7 @@ tags:
 - react
 ---
 
-A good while back I had to solve an issue where we were using the {% external-link "https://www.draft-js-plugins.com/plugin/mention", "Mention plugin for DraftJS" %}.
+A good while back I had to solve an issue where we were using the [Mention plugin for DraftJS](https://www.draft-js-plugins.com/plugin/mention).
 
 We wanted to have a longer list of mention suggestions, and manage the overflow by letting the user scroll the list. This idea itself isn't a big issue, but what if you were using the keyboard to navigate?
 
@@ -18,8 +18,8 @@ This is where a custom `<Entry />` component was required. When using your custo
 
 With `isFocused` we can trigger a call to scroll the focused option into view. We can do this by attaching a `ref` to our custom component, and with `useEffect` being called when the focus changes, we can call one of two appropriate methods:
 
-- {% external-link "https://developer.mozilla.org/en-US/docs/Web/API/Element/scrollIntoViewIfNeeded", "scrollIntoViewIfNeeded" %}
-- {% external-link "https://developer.mozilla.org/en-US/docs/Web/API/Element/scrollIntoView", "scrollIntoView" %}
+- [scrollIntoViewIfNeeded](https://developer.mozilla.org/en-US/docs/Web/API/Element/scrollIntoViewIfNeeded)
+- [scrollIntoView](https://developer.mozilla.org/en-US/docs/Web/API/Element/scrollIntoView)
 
 `scrollIntoViewIfNeeded` is non-standard, and has limited support. It does offer the expected behaviour, though, both for moving up and down the list.
 

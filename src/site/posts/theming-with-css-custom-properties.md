@@ -11,7 +11,7 @@ tags:
 
 I remember scoffing at the thoughts of variables in CSS. "Haha. Oh internet, we have Sass!" Alas, I was a fool. Now it's getting to the stage where I might say "Haha. Oh internet, we have CSS!" when faced with the option of using a pre-processor. There's still a few things I use pre-processors or post-processors for such as nesting and splitting files, but beyond that I'd be just as happy using vanilla CSS.
 
-I'm going to be showing the code used on this site at the moment, one difference being the name of some of the custom properties, but beyond that it's the same. As I'm using Craft, I'll be explaining this with the Twig templating language. If you use WordPress you can do this with PHP or Twig (which {% external-link "https://css-tricks.com/timber-and-twig-reignited-my-love-for-wordpress/", "I wrote an article about" %} if you're interested), but the idea can be applied anywhere from server-side rendering to JavaScript in the client.
+I'm going to be showing the code used on this site at the moment, one difference being the name of some of the custom properties, but beyond that it's the same. As I'm using Craft, I'll be explaining this with the Twig templating language. If you use WordPress you can do this with PHP or Twig (which [I wrote an article about](https://css-tricks.com/timber-and-twig-reignited-my-love-for-wordpress/) if you're interested), but the idea can be applied anywhere from server-side rendering to JavaScript in the client.
 
 ## The CSS
 

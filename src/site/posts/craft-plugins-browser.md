@@ -13,7 +13,7 @@ tags:
 
 I often find myself browsing plugins for Craft, and wanted a little resource where I could do just that searching a name, or sorting by downloads and GitHub stars.
 
-It's built with Vue, and uses the {% external-link "https://packagist.org/apidoc", "Packagist API" %}.
+It's built with Vue, and uses the [Packagist API](https://packagist.org/apidoc).
 
-You can {% external-link "https://github.com/tjFogarty/craft-plugins", "browse the source" %}, or {% external-link "https://codepen.io/tjFogarty/project/full/ZdYLPK/", "see the demo" %}.
+You can [browse the source](https://github.com/tjFogarty/craft-plugins), or [see the demo](https://codepen.io/tjFogarty/project/full/ZdYLPK/).
 

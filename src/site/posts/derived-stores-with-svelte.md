@@ -8,7 +8,7 @@ tags:
   - javascript
 ---
 
-{% external-link "https://svelte.dev/", "Svelte" %} has been getting a lot of attention recently, and rightly so. If you've used the likes of Vue or React in the past then Svelte won't be a million miles away. I recommend following {% external-link "https://svelte.dev/tutorial/basics", "their interactive tutorial" %} if you're interested.
+[Svelte](https://svelte.dev/) has been getting a lot of attention recently, and rightly so. If you've used the likes of Vue or React in the past then Svelte won't be a million miles away. I recommend following [their interactive tutorial](https://svelte.dev/tutorial/basics) if you're interested.
 
 Coming from a Vue background, one feature I love is computed properties. If you want to store some sort of value that depends on the reactive state, but you don't want to manually update it when state changes, this is where they come in. For example, a `greeting` property could return something like `"Hello, ${this.name}!"`. Vue knows to update `greeting` whenever `name` changes.
 
@@ -96,5 +96,5 @@ If we work from the inside-out, we'll see `filterByRemote` returns an array of j
 
 That's my first experience with Svelte. Hopefully not the last as it's a refreshing take on what I've been doing previously.
 
-<a href="https://codepen.io/tjFogarty/project/details/XqqnVO" class="c-btn c-btn-primary--inverted" target="_blank" rel="noopener noreferrer">See the demo</a>
-<a href="https://github.com/tjFogarty/codepen-job-board-svelte" class="c-btn c-btn-primary" target="_blank" rel="noopener noreferrer">View the source</a>
+[See the demo](https://codepen.io/tjFogarty/project/details/XqqnVO)
+[View the source](https://github.com/tjFogarty/codepen-job-board-svelte)

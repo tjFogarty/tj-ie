@@ -17,7 +17,7 @@ This is a pretty small site, and since it's developer-focused I'm imagining a go
 
 ---
 
-I found {% external-link "https://developer.mozilla.org/en-US/docs/Web/API/Navigator/doNotTrack", "some docs on MDN" %} describing how it can be used, and there's a difference in behaviour across browsers. It seems by default in Chrome and Safari, the value is `null`, whereas in Firefox it's `"unspecified"`. If you call `navigator.doNotTrack` and it returns a string value of `"1"`, then it means the request prefers no tracking. I'm going to be leaning more towards an opt-in approach, however if it returns `null` then I'll enable Google Analytics. You can find this option in your browser settings. In Safari it's under Privacy, and in Chrome and Firefox you can search your settings for 'do not track'.
+I found [some docs on MDN](https://developer.mozilla.org/en-US/docs/Web/API/Navigator/doNotTrack) describing how it can be used, and there's a difference in behaviour across browsers. It seems by default in Chrome and Safari, the value is `null`, whereas in Firefox it's `"unspecified"`. If you call `navigator.doNotTrack` and it returns a string value of `"1"`, then it means the request prefers no tracking. I'm going to be leaning more towards an opt-in approach, however if it returns `null` then I'll enable Google Analytics. You can find this option in your browser settings. In Safari it's under Privacy, and in Chrome and Firefox you can search your settings for 'do not track'.
 
 Here's how I'm checking at the moment:
 
@@ -39,7 +39,7 @@ function hasDoNotTrackEnabled() {
 
 It would be nice if it always had a value like Firefox does, but I'm gonna roll with this for now. Chances are it'll completely disable tracking for Firefox users, and enable it for Chrome and Safari users if they don't say otherwise which kinda circumvents the opt-in approach. Short of removing analytics altogether I think this is an OK approach for now.
 
-I'm using the {% external-link "https://www.npmjs.com/package/ga-lite", "ga-lite package" %} to bundle everything so I have cleaner control over how tracking works.
+I'm using the [ga-lite package](https://www.npmjs.com/package/ga-lite) to bundle everything so I have cleaner control over how tracking works.
 
 
 ``` js

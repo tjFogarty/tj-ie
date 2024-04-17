@@ -6,7 +6,7 @@ layout: layouts/post.njk
 ---
 Well, more like six-ish. If even.
 
-When I first saw {% external-link "https://twitter.com/hashtag/firstsevenjobs?src=hash", "#firstsevenjobs" %} my first thought was &quot;oh, I haven&#8217;t had that many jobs, I guess this isn&#8217;t for me&quot;. I suppose I took it a bit too literally.
+When I first saw [#firstsevenjobs](https://twitter.com/hashtag/firstsevenjobs?src=hash) my first thought was &quot;oh, I haven&#8217;t had that many jobs, I guess this isn&#8217;t for me&quot;. I suppose I took it a bit too literally.
 
 Some of the jobs I have had were more short internships that I wouldn&#8217;t really count as a &quot;job&quot;. They were more like a baby-sitting exercise for someone else.
 
@@ -28,7 +28,7 @@ I must have looked really important running around town in an oversized shirt wi
 
 ## Design intern
 
-For the second part of my work experience, I was working on a really old Mac, using Quartz and Photoshop. This was my first real taste of digital design, and I loved every moment of it. 
+For the second part of my work experience, I was working on a really old Mac, using Quartz and Photoshop. This was my first real taste of digital design, and I loved every moment of it.
 
 My supervisor was explaining something to me once, and I had to stop and get a glass of water because I had lost vision in one of my eyes. Keep hydrated folks.
 

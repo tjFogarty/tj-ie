@@ -9,7 +9,7 @@ tags:
 
 I'm working on a little project, and it's fairly lightweight. I ended up creating a JavaScript object with a few functions to help with the most common tasks, e.g. add class, toggle class, select element...
 
-It's a collection assembled from {% external-link "http://youmightnotneedjquery.com/", "You Might Not Need jQuery" %}.
+It's a collection assembled from [You Might Not Need jQuery](http://youmightnotneedjquery.com/).
 
 Example usage:
 
@@ -115,5 +115,5 @@ var U = {
 };
 ```
 
-{% external-link "https://gist.github.com/tjFogarty/04a797998fc1df10e5fe/", "View the Gist" %}
+[View the Gist](https://gist.github.com/tjFogarty/04a797998fc1df10e5fe/)
 

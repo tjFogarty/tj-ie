@@ -10,7 +10,7 @@ tags:
 
 My aim in the past while has been pointed towards front-end development, and exploring the different ways in which to produce a tidy result.
 
-These examples point to ExpressionEngine paths, but you can customise them to any project you’re working on. I’m relatively new to the ExpressionEngine game, and some of what I’m going to outline will be eventually replaced by Niall O’Brien’s {% external-link "https://github.com/niallobrien/generator-ee-foundation", "EE Foundation generator" %}, so that’s definitely something to keep an eye on.
+These examples point to ExpressionEngine paths, but you can customise them to any project you’re working on. I’m relatively new to the ExpressionEngine game, and some of what I’m going to outline will be eventually replaced by Niall O’Brien’s [EE Foundation generator](https://github.com/niallobrien/generator-ee-foundation), so that’s definitely something to keep an eye on.
 
 As with many things, we start with Gulp. This will handle our assets and do some nifty things such as generating our critical CSS and automatically injecting our Bower components whenever we update them. See below for an example setup:
 

@@ -1,10 +1,6 @@
 import Image from "@11ty/eleventy-img";
 
 export function initShortcodes(eleventyConfig) {
-  eleventyConfig.addShortcode("external-link", function (href, content) {
-    return `<a href="${href}" target="_blank" rel="noopener noreferrer">${content}</a>`;
-  });
-
   function postThumbnailShortcode(src, className = "", alt = "") {
     Image(`./src/site/assets/images/${src}`, {
       widths: [400, 800, 1200],
@@ -57,5 +53,4 @@ export function initShortcodes(eleventyConfig) {
   eleventyConfig.addShortcode("postThumbnail", postThumbnailShortcode);
   eleventyConfig.addNunjucksShortcode("postThumbnail", postThumbnailShortcode);
   eleventyConfig.addLiquidShortcode("image", imageShortcode);
-
 }

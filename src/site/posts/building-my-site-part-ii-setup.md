@@ -14,9 +14,9 @@ In the [first part](/building-my-site-part-i-decisions/) of this series I talked
 
 ## Craft
 
-At the moment, while Craft is in it's release candidate stage, it's only available as a {% external-link "https://getcomposer.org/", "Composer" %} package. This is set to change once it's ready for a wider release.
+At the moment, while Craft is in it's release candidate stage, it's only available as a [Composer](https://getcomposer.org/) package. This is set to change once it's ready for a wider release.
 
-I'm using {% external-link "https://github.com/laravel/valet", "Valet" %} for local development, but you can use whatever suits your workflow provided it meets the requirements, with the main ones being PHP >;= 7 and either MySQL 5.5+ or PostgreSQL 9.5+. It's worth looking at the {% external-link "https://github.com/craftcms/docs/blob/master/en/requirements.md", "full list of requirements" %} to see what PHP extensions are required as well.
+I'm using [Valet](https://github.com/laravel/valet) for local development, but you can use whatever suits your workflow provided it meets the requirements, with the main ones being PHP >;= 7 and either MySQL 5.5+ or PostgreSQL 9.5+. It's worth looking at the [full list of requirements](https://github.com/craftcms/docs/blob/master/en/requirements.md) to see what PHP extensions are required as well.
 
 To get a starter project installed, you can run:
 
@@ -29,17 +29,17 @@ Finally, then, visiting your new site will prompt the installation wizard to beg
 
 ### Plugins
 
-<p>Already, Craft 3&#160;{% external-link "https://plugins.craftcms.com/", "has quite a collection of great plugins" %} and I wasted no time in going through them. To be honest, I only had a few ideas of the things I needed, the rest fell into my life as I figured they'd be nice to have.</p>
+Already, Craft 3&#160;[has quite a collection of great plugins](https://plugins.craftcms.com/) and I wasted no time in going through them. To be honest, I only had a few ideas of the things I needed, the rest fell into my life as I figured they'd be nice to have.
 
-<li>{% external-link "https://github.com/craftcms/contact-form", "Contact Form" %} - &quot;Add a simple contact form to your Craft CMS site&quot;</li>
-<li>{% external-link "https://github.com/sjelfull/craft3-http2serverpush", "HTTP2 Server Push" %} - &quot;Automatically add HTTP2 Link headers for CSS, JS and image assets.&quot;</li>
-<li>{% external-link "https://github.com/nystudio107/craft3-typogrify", "Typogrify" %} - &quot;Typogrify prettifies your web typography by preventing ugly quotes and &#8216;widows' and more&quot;</li>
-<li>{% external-link "https://github.com/mister-bk/craft-plugin-mix", "Mix" %} - &quot;Helper plugin for Laravel Mix in Craft CMS templates.&quot;</li>
-<li>{% external-link "https://github.com/selvinortiz/craft-plugin-doxter", "Doxter" %} - &quot;Markdown Editor &amp; Parser for Craft 3.&quot;</li>
-<li>{% external-link "https://github.com/Dolphiq/craft3-plugin-redirect", "Redirect Manager" %} - &quot;Manage 301 and 302 redirects with an easy to use user interface.&quot;</li>
-<li>{% external-link "https://github.com/craftcms/mailgun", "Mailgun" %} - &quot;Mailgun integration for Craft CMS.&quot;</li>
-<li>{% external-link "https://github.com/jmx2inc/picpuller-for-craft3", "Pic Puller" %} - &quot;Integrate Instagram into Craft CMS.&quot;</li>
-- {% external-link "https://github.com/Rias500/craft3-scout", "Scout" %} - &quot;Craft Scout provides a simple solution for adding full-text search to your entries. Scout will automatically keep your search indexes in sync with your entries.&quot;
+- [Contact Form](https://github.com/craftcms/contact-form) - &quot;Add a simple contact form to your Craft CMS site&quot;
+- [HTTP2 Server Push](https://github.com/sjelfull/craft3-http2serverpush) - &quot;Automatically add HTTP2 Link headers for CSS, JS and image assets.&quot;
+- [Typogrify](https://github.com/nystudio107/craft3-typogrify) - &quot;Typogrify prettifies your web typography by preventing ugly quotes and &#8216;widows' and more&quot;
+- [Mix](https://github.com/mister-bk/craft-plugin-mix) - &quot;Helper plugin for Laravel Mix in Craft CMS templates.&quot;
+- [Doxter](https://github.com/selvinortiz/craft-plugin-doxter) - &quot;Markdown Editor &amp; Parser for Craft 3.&quot;
+- [Redirect Manager](https://github.com/Dolphiq/craft3-plugin-redirect) - &quot;Manage 301 and 302 redirects with an easy to use user interface.&quot;
+- [Mailgun](https://github.com/craftcms/mailgun) - &quot;Mailgun integration for Craft CMS.&quot;
+- [Pic Puller](https://github.com/jmx2inc/picpuller-for-craft3) - &quot;Integrate Instagram into Craft CMS.&quot;
+- [Scout](https://github.com/Rias500/craft3-scout) - &quot;Craft Scout provides a simple solution for adding full-text search to your entries. Scout will automatically keep your search indexes in sync with your entries.&quot;
 
 ### Entries and Templates
 
@@ -79,7 +79,7 @@ Next up, I needed to create a listing of those posts on my homepage, so I create
 
   <ul>
   {% for entry in pageEntries %}
-    <li>
+    -
           <h2>
             <a href="/{{ post.slug }}">{{ post.title | typogrify }}</a>
           </h2>
@@ -88,7 +88,7 @@ Next up, I needed to create a listing of those posts on my homepage, so I create
           <p>
                 {{ post.postContent | striptags | slice(0, 360) | raw }}&amphellip
           </p>
-    </li>
+
   {% endfor %}
   </ul>
 
@@ -112,7 +112,7 @@ Alright, the data is flowing through the templates like the life-blood that it i
 
 You could argue that for something simple, webpack just isn't needed, and you'd be absolutely right. There's nothing wrong with a single CSS file and a few script tags since that's what it all boils down to anyway. I wanted to use some features of JavaScript that needed something extra for them to work across multiple browsers. I felt it would be conducive to a more scalable codebase when things get tacked-on down the line. I could be wrong, but I'm willing to give it a go.
 
-Laravel Mix makes it easy to get started in any web project, as seen in the {% external-link "https://github.com/JeffreyWay/laravel-mix/blob/master/docs/installation.md", "installation docs" %} it's not just for Laravel.
+Laravel Mix makes it easy to get started in any web project, as seen in the [installation docs](https://github.com/JeffreyWay/laravel-mix/blob/master/docs/installation.md) it's not just for Laravel.
 
 For example, if I want to have my JavaScript &amp; Less transpiled I can do the following in my `webpack.mix.js` file:
 

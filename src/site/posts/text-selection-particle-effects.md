@@ -12,7 +12,7 @@ script: particles.js
 styles: particles.css
 ---
 
-After reading {% external-link "https://css-tricks.com/playing-with-particles-using-the-web-animations-api/", "Playing With Particles Using the Web Animations API" %} I wondered if it would be possible to create particle effects based on the user selecting text.
+After reading [Playing With Particles Using the Web Animations API](https://css-tricks.com/playing-with-particles-using-the-web-animations-api/) I wondered if it would be possible to create particle effects based on the user selecting text.
 
 You could whip up something quick by listening for a `mousedown` event and adding the particles based on the mouse position. It looks cool, but I wasn't too happy because it doesn't look as neat, and it doesn't work if you're doing selection with the keyboard.
 
@@ -38,7 +38,7 @@ Here's how it goes:
 9. If we're moving left, our `x` position will be the `left` value, otherwise, we'll use `right`
 10. Our `y` value will be the `y` value of our chosen bounds, plus the height of the selection so the particles appear below the text
 
-Thanks to {% external-link "https://twitter.com/Mamboleoo", "Louis Hoebregts" %} for a great article. I had a bunch of fun and confusion getting this to work, but it was a welcome distraction.
+Thanks to [Louis Hoebregts](https://twitter.com/Mamboleoo) for a great article. I had a bunch of fun and confusion getting this to work, but it was a welcome distraction.
 
 <p class="codepen" data-height="565" data-theme-id="light" data-default-tab="result" data-user="tjFogarty" data-slug-hash="mdJKNZM" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Particle Effects on Text Selection">
   <span>See the Pen <a href="https://codepen.io/tjFogarty/pen/mdJKNZM">

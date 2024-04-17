@@ -12,4 +12,4 @@ tags:
 
 In what can only be described as a milestone in my life, I had an article published on CSS-Tricks. It was a great experience working with Chris Coyier to get this article put together and put out there.
 
-{% external-link "https://css-tricks.com/timber-and-twig-reignited-my-love-for-wordpress/", "Read the article: Timber and Twig Reignited My Love for WordPress" %}.
+[Read the article: Timber and Twig Reignited My Love for WordPress](https://css-tricks.com/timber-and-twig-reignited-my-love-for-wordpress/).

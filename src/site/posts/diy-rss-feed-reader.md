@@ -15,11 +15,11 @@ However, I’m a simple guy with simple needs. So simple in fact, that I figured
 
 ## Feed Me
 
-I like JavaScript, and having a JSON object with data in it that I can iterate over is ideal. How do I get that JSON, though? After a couple of keystrokes on NPM I found {% external-link "https://www.npmjs.com/package/rss-parser", "rss-parser" %}. It does exactly what I was looking for; you pass a URL to a feed, and get JSON back.
+I like JavaScript, and having a JSON object with data in it that I can iterate over is ideal. How do I get that JSON, though? After a couple of keystrokes on NPM I found [rss-parser](https://www.npmjs.com/package/rss-parser). It does exactly what I was looking for; you pass a URL to a feed, and get JSON back.
 
 This is too straight-forward, though. How do I overcomplicate this?
 
-I created a little project that uses {% external-link "https://expressjs.com/", "Express" %} to respond to a GET request which returns my feed data.
+I created a little project that uses [Express](https://expressjs.com/) to respond to a GET request which returns my feed data.
 
 ``` js
 const express = require('express');
@@ -57,7 +57,7 @@ app
 
 Running `node index.js` and visiting `http://localhost:5000` in your browser then should return a bounty of data.
 
-You could do this with any language you fancy. You might already have a hosting plan where you can fire up a PHP script to do the same thing. For me, I chose {% external-link "https://ww.heroku.com", "Heroku" %} because of their free plan and integration with GitHub. It suits me to add a feed to the list by updating an array letting Heroku deploy it.
+You could do this with any language you fancy. You might already have a hosting plan where you can fire up a PHP script to do the same thing. For me, I chose [Heroku](https://ww.heroku.com) because of their free plan and integration with GitHub. It suits me to add a feed to the list by updating an array letting Heroku deploy it.
 
 ## Heroku
 
@@ -91,6 +91,6 @@ On the free plan, the app will softly fall asleep if there’s been no traffic t
 
 ## Front-end
 
-So this is where it gets far less specific. The means are there to get the data, now it’s a matter of how to display it. For me, I used Vue and hosted it using {% external-link "https://codepen.io/pro/projects", "CodePen Projects" %}. You can have a look at {% external-link "https://github.com/tjFogarty/feeds-app-fe", "the source" %} and {% external-link "https://codepen.io/tjFogarty/project/full/ZPqnVe/", "the demo" %} if you’re interested. I mostly work with React, so any chance I get to use Vue I usually take it.
+So this is where it gets far less specific. The means are there to get the data, now it’s a matter of how to display it. For me, I used Vue and hosted it using [CodePen Projects](https://codepen.io/pro/projects). You can have a look at [the source](https://github.com/tjFogarty/feeds-app-fe) and [the demo](https://codepen.io/tjFogarty/project/full/ZPqnVe/) if you’re interested. I mostly work with React, so any chance I get to use Vue I usually take it.
 
 It was a pretty fun weekend project and it gave me the chance to play with some technologies that I otherwise wouldn’t get to use. I treat these projects like a playground for some interesting tech I want to learn while also solving a problem for myself. I wanted an RSS reader that I could tinker with, so now it’s there. I’ll probably keep iterating on it, but it raised an interesting thought for me: I spend my life building things for clients to solve their problems. Why not build something for myself, and sort my own stuff out?

@@ -12,7 +12,7 @@ In a recent bit of feature-work at my job, I came across an interesting puzzle: 
 
 Say we want an event spanning the 1st to the 10th. The user is unavailble on the 5th and the 8th. So we instead end up with 3 events: 1st - 4th, 6th - 7th, and 9th - 10th.
 
-We're using {% external-link "https://www.npmjs.com/package/moment", "moment" %} so that's what you'll see here.
+We're using [moment](https://www.npmjs.com/package/moment) so that's what you'll see here.
 
 Given a start date, an end date, and some unavailable dates, we'll start with the following:
 
@@ -107,4 +107,4 @@ Which results in:
 
 I'm including the days there as it might be necessary to divide up any extra time durations that might be associated with it.
 
-{% external-link "https://gist.github.com/tjFogarty/e6cab497b457286c3fc2e76bfa43a889", "View the Gist." %}
+[View the Gist.](https://gist.github.com/tjFogarty/e6cab497b457286c3fc2e76bfa43a889)

@@ -147,7 +147,7 @@ The last thing to do was to add the markup to the Svelte component. It's a littl
 {/if}
 ```
 
-You can see the {% external-link "https://gist.github.com/tjFogarty/ce9c70599823bfc43e5d6eb688fda850", "full component code here." %}
+You can see the [full component code here](https://gist.github.com/tjFogarty/ce9c70599823bfc43e5d6eb688fda850).
 
 All that's left is to kick it all off:
 

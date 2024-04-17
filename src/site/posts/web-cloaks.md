@@ -18,7 +18,7 @@ I remember doing this with Typekit. I could hook into `wf-loading` and wait for 
 
 Usually we can show a website straight away. The text content is usually immediately available, so why not hand it over? Instead we make the user wait for something they might not care about.
 
-Thankfully these days we can start to take advantage of {% external-link "https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display", "font display" %} and even {% external-link "https://css-tricks.com/native-lazy-loading/", "native lazy loading" %}.
+Thankfully these days we can start to take advantage of [font display](https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display) and even [native lazy loading](https://css-tricks.com/native-lazy-loading/).
 
 ## Background Image Misuse
 
@@ -26,7 +26,7 @@ There's something I've noticed that has carried over from the Internet Explorer 
 
 While this is incredibly useful, it's not so great for it to be used instead of a regular image tag. For one, if you want to make the image as responsive as possible you're limited to media queries to swap them out. This isn't great when tied into a CMS. Secondly, you're essentially rendering an empty div with no context for screen readers in case the image pertains to the content.
 
-These days we can use the {% external-link "https://developer.mozilla.org/en-US/docs/Web/CSS/object-fit", "object-fit" %} property. With this we can use the image tag along with the `srcset` attribute, or inside a `picture` element.
+These days we can use the [object-fit](https://developer.mozilla.org/en-US/docs/Web/CSS/object-fit) property. With this we can use the image tag along with the `srcset` attribute, or inside a `picture` element.
 
 ## Responsive
 

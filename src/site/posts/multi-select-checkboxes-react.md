@@ -275,4 +275,4 @@ getNewSelectedItems(value) {
 
 It took a while to get this right, and even then there's probably plenty of room for improvement. It was an enjoyable problem to solve. I tried doing it with regular JavaScript, and it's a whole different ball game when the state is stored in the DOM instead. My mind has been in React land for the past 2 years, so I never thought of it any other way. It'd be a good exercise to try this out in other frameworks/paradigms.
 
-{% external-link "https://codesandbox.io/s/multiselect-checkboxes-oennn", "View Demo and Source" %}
+[View Demo and Source](https://codesandbox.io/s/multiselect-checkboxes-oennn)

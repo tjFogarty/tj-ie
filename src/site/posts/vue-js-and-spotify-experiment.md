@@ -3,7 +3,7 @@ title: "Vue.js and Spotify Experiment"
 date: 2016-02-14T00:00:00+00:00
 permalink: "/vue.js-and-spotify-experiment/"
 layout: layouts/post.njk
-tags: 
+tags:
 - javascript
 - vue
 ---
@@ -18,6 +18,6 @@ I could be doing this all wrong with Vue, but I had fun doing it. Onwards and up
 
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
-I&#8217;m useless when it comes to design, so I took ideas from {% external-link "http://www.materialup.com/posts/music-player-transition", "Music Player Transition" %}. Code for interacting with Spotify from {% external-link "http://jsfiddle.net/JMPerez/0u0v7e1b/", "here" %}.
+I&#8217;m useless when it comes to design, so I took ideas from [Music Player Transition](http://www.materialup.com/posts/music-player-transition). Code for interacting with Spotify from [here](http://jsfiddle.net/JMPerez/0u0v7e1b/).
 
-Check out the repo {% external-link "https://github.com/tjFogarty/vue-spotify-preview", "here" %}.
+Check out the repo [here](https://github.com/tjFogarty/vue-spotify-preview).

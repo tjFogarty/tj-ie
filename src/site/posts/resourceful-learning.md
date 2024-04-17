@@ -18,31 +18,31 @@ While there's a lot of resources here, they're more of a starting point to focus
 I do love podcasts. They're manageable bits and bytes of information that you can soak in at your own pace. Some of my favourites are:
 
 
-- {% external-link "http://shoptalkshow.com/", "ShopTalk" %}
-- {% external-link "http://www.laravelpodcast.com/", "The Laravel Podcast" %}
-- {% external-link "http://toolsday.io/", "Toolsday" %}
-- {% external-link "http://www.unfinished.bz/", "Unfinished Business" %}
+- [ShopTalk](http://shoptalkshow.com/)
+- [The Laravel Podcast](http://www.laravelpodcast.com/)
+- [Toolsday](http://toolsday.io/)
+- [Unfinished Business](http://www.unfinished.bz/)
 
 ## Screencasts
 
 While podcasts are great for conversations surrounding interesting topics, you can't beat watching and working with live code. That's where screencasts shine, and when done right can spark some motivation.
 
-- {% external-link "https://laracasts.com/", "Laracasts" %}
-- {% external-link "https://css-tricks.com/lodge/", "CSS-Tricks - The Lodge" %}
-- {% external-link "https://serversforhackers.com/", "Servers for Hackers" %}
-- {% external-link "https://reactforbeginners.com/", "React for Beginners" %}
-- {% external-link "https://courses.toddmotto.com/pages/courses", "Todd Motto's online courses" %}
+- [Laracasts](https://laracasts.com/)
+- [CSS-Tricks - The Lodge](https://css-tricks.com/lodge/)
+- [Servers for Hackers](https://serversforhackers.com/)
+- [React for Beginners](https://reactforbeginners.com/)
+- [Todd Motto's online courses](https://courses.toddmotto.com/pages/courses)
 
 ## Newsletters
 
 I'm finding myself signing up for more newsletters these days as they tend to reveal some really great articles that I would otherwise miss.
 
-- {% external-link "https://css-tricks.com/subscription-options/", "CSS-Tricks" %} <small>I clearly have a bit of a grá for CSS-Tricks, and was fortunate enough to have an {% external-link "https://css-tricks.com/timber-and-twig-reignited-my-love-for-wordpress/", "article" %} published there.</small>
-- {% external-link "https://ponyfoo.com/weekly", "Pony Foo" %}
-- {% external-link "http://softwareleadweekly.com/", "Software Lead Weekly" %}
-- {% external-link "http://responsivedesignweekly.com/", "Responsive Design Newsletter" %}
-- {% external-link "http://valhead.com/newsletter/", "The UI Animation Newsletter" %}
-- {% external-link "http://css-weekly.com/", "CSS Weekly" %}
+- [CSS-Tricks](https://css-tricks.com/subscription-options/) <small>I clearly have a bit of a grá for CSS-Tricks, and was fortunate enough to have an [article](https://css-tricks.com/timber-and-twig-reignited-my-love-for-wordpress/) published there.</small>
+- [Pony Foo](https://ponyfoo.com/weekly)
+- [Software Lead Weekly](http://softwareleadweekly.com/)
+- [Responsive Design Newsletter](http://responsivedesignweekly.com/)
+- [The UI Animation Newsletter](http://valhead.com/newsletter/)
+- [CSS Weekly](http://css-weekly.com/)
 
 ---
 
@@ -50,4 +50,4 @@ The nice thing about having access to all these resources is you can pick and ch
 
 Massive thanks to all those who dedicate their time to provide these resources as well. It's an incredible thing to be able to provide this knowledge.
 
-<!-- This article was also posted on {% external-link "https://www.emagine.ie/our-journal/resourceful-learning", "Emagine" %} but they've removed their blog -->
+<!-- This article was also posted on [Emagine](https://www.emagine.ie/our-journal/resourceful-learning) but they've removed their blog -->

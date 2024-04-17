@@ -13,7 +13,7 @@ After [making some decisions](/building-my-site-part-i-decisions/) and [implemen
 
 ## Fonts
 
-I previously read an article called {% external-link "https://www.zachleat.com/web/23-minutes/", "23 Minutes of Work for Better Font Loading" %} and it's a brilliant piece of work outlining the ways in which font loading can be improved. I didn't follow <em>every</em> step, but the two I implemented really made a difference:
+I previously read an article called [23 Minutes of Work for Better Font Loading](https://www.zachleat.com/web/23-minutes/) and it's a brilliant piece of work outlining the ways in which font loading can be improved. I didn't follow <em>every</em> step, but the two I implemented really made a difference:
 
 First, preloading the web fonts by putting these tags into the `<head>` of my site:
 
@@ -22,15 +22,15 @@ First, preloading the web fonts by putting these tags into the `<head>` of my si
 <link rel="preload" href="/fonts/playfair.woff2" as="font" type="font/woff2" crossorigin>
 ```
 
-Secondly, adding those fonts to my service worker using the {% external-link "https://github.com/goldhand/sw-precache-webpack-plugin", "SW Precache Webpack Plugin" %}.
+Secondly, adding those fonts to my service worker using the [SW Precache Webpack Plugin](https://github.com/goldhand/sw-precache-webpack-plugin).
 
 ## CSS
 
-I opted to use the {% external-link "https://tailwindcss.com/", "Tailwind CSS Framework" %} to style my site. I found it a great way to throw a bunch of classes on my elements to rapidly style them, and abstract them out into their own classes once I was happy with them.
+I opted to use the [Tailwind CSS Framework](https://tailwindcss.com/) to style my site. I found it a great way to throw a bunch of classes on my elements to rapidly style them, and abstract them out into their own classes once I was happy with them.
 
-If you have a look around, you might notice that there isn't a whole lot of style here. That may change in the future, but it also reminded me of {% external-link "https://csswizardry.com/", "Harry Roberts'" %} website where he inlined his styles within the `<head>` of his site rather than using a `<link>` tag.
+If you have a look around, you might notice that there isn't a whole lot of style here. That may change in the future, but it also reminded me of [Harry Roberts'](https://csswizardry.com/) website where he inlined his styles within the `<head>` of his site rather than using a `<link>` tag.
 
-Fair enough, but there's a lot of CSS being pulled in with Tailwind that wouldn't make sense to include. I'd only be needlessly increasing the weight of my page. Thankfully the author of this framework {% external-link "https://tailwindcss.com/docs/controlling-file-size/#removing-unused-css-with-purgecss", "has a solution!" %} {% external-link "https://github.com/FullHuman/purgecss", "PurgeCSS" %} to the rescue:
+Fair enough, but there's a lot of CSS being pulled in with Tailwind that wouldn't make sense to include. I'd only be needlessly increasing the weight of my page. Thankfully the author of this framework [has a solution!](https://tailwindcss.com/docs/controlling-file-size/#removing-unused-css-with-purgecss) [PurgeCSS](https://github.com/FullHuman/purgecss) to the rescue:
 
 ``` js
 // webpack.mix.js file
@@ -82,7 +82,7 @@ In `layouts/default.twig` I inline it using the Craft Mix plugin:
 
 ## JavaScript
 
-There's some JavaScript on my site that isn't required to be loaded with every single page, those being {% external-link "https://highlightjs.org/", "highlight.js" %} and {% external-link "https://github.com/algolia/algoliasearch-client-javascript", "Algolia Search" %}. Not every page requires syntax highlighting, and not everyone will click the search icon, so I needed a way to only load them when it was necessary. I did this with {% external-link "https://github.com/algolia/algoliasearch-client-javascript", "Dynamic Imports" %} and some tweaking of my `webpack.mix.js` file.
+There's some JavaScript on my site that isn't required to be loaded with every single page, those being [highlight.js](https://highlightjs.org/) and [Algolia Search](https://github.com/algolia/algoliasearch-client-javascript). Not every page requires syntax highlighting, and not everyone will click the search icon, so I needed a way to only load them when it was necessary. I did this with [Dynamic Imports](https://github.com/algolia/algoliasearch-client-javascript) and some tweaking of my `webpack.mix.js` file.
 
 When I was first using it, the chunks that were created were either dropped into the wrong directory, or the path they were loaded from were incorrect. Here's what I added to my configuration to correct it:
 
@@ -170,4 +170,4 @@ After all this, I have a deployment script that runs `npm run production` which 
 
 There's more I can do, however. Maybe there are smaller libraries out there that I can swap in, or some optimisations I can make to my artisanal, hand-rolled code. I could add the JavaScript to the service worker, though I have cache-invalidation trust issues that I need to work through first.
 
-Until then, you can see the {% external-link "https://github.com/tjFogarty/personal-site", "source code for this site" %} as it stands today.
+Until then, you can see the [source code for this site](https://github.com/tjFogarty/personal-site) as it stands today.

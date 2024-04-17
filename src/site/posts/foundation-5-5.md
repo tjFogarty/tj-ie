@@ -7,11 +7,11 @@ tags:
 - javascript
 ---
 
-Foundation 5.5 {% external-link "http://zurb.com/article/1364/a-growing-foundation-family-foundation-fo", "has arrived" %}, and It's lovely to see that great work has continued even with all the efforts going into the recent release of {% external-link "http://foundation.zurb.com/apps/", "Foundation for Apps" %}.
+Foundation 5.5 [has arrived](http://zurb.com/article/1364/a-growing-foundation-family-foundation-fo), and It's lovely to see that great work has continued even with all the efforts going into the recent release of [Foundation for Apps](http://foundation.zurb.com/apps/).
 
 This release also contains a contribution of my own (woo!) which allows you to execute code based on the current media query. It means you can check things like <code>Foundation.utils.is_large_up()</code> or <code>Foundation.utils.is_small_only()</code> which I've found to be pretty useful.
 
-You can see the pull request {% external-link "https://github.com/zurb/foundation/pull/6035", "here" %}.
+You can see the pull request [here](https://github.com/zurb/foundation/pull/6035).
 
 Full list of what you can do:
 

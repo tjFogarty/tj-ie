@@ -15,34 +15,34 @@ With that, here's what I ended up with, and why.
 
 ## Results
 
-- {% external-link "https://craftcms.com/3", "Craft CMS" %}
-- {% external-link "https://github.com/JeffreyWay/laravel-mix/","Laravel Mix" %}
-- {% external-link "https://www.digitalocean.com/", "Digital Ocean" %}
-- {% external-link "https://forge.laravel.com/", "Laravel Forge" %}
+- [Craft CMS 3](https://craftcms.com/3)
+- [Laravel Mix](https://github.com/JeffreyWay/laravel-mix/)
+- [Digital Ocean](https://www.digitalocean.com/)
+- [Laravel Forge](https://forge.laravel.com/)
 
 ## CMS
 
 ### Some History
 
-Before all this I had a self-hosted version of {% external-link "https://ghost.org/", "Ghost" %}. It's a deadly platform and incredibly easy to get up and running with. After a while I decided to move to a hosted version with them when I had less time for maintenance. It was less for me to think about. It also meant I couldn't break the server which happens when I start tinkering too much. I could rest easy knowing these folks had it all sorted.
+Before all this I had a self-hosted version of [Ghost](https://ghost.org/). It's a deadly platform and incredibly easy to get up and running with. After a while I decided to move to a hosted version with them when I had less time for maintenance. It was less for me to think about. It also meant I couldn't break the server which happens when I start tinkering too much. I could rest easy knowing these folks had it all sorted.
 
-When I had a bit more time, I moved to {% external-link "https://pages.github.com/", "GitHub Pages" %} to have a bit more control over the build. I really liked the idea of being able to make theme-related changes that take effect with a single `git push`.
+When I had a bit more time, I moved to [GitHub Pages](https://pages.github.com/) to have a bit more control over the build. I really liked the idea of being able to make theme-related changes that take effect with a single `git push`.
 
 Not long after, I started to long for a bit more control over the functionality not only afforded by the front-end, but by what happens behind the curtain as well.
 
 ### Headless CMS
 
-This is the new cool kid on the block, and I wanted to see what it was all about. After looking through a few options, I had a go of {% external-link "https://www.contentful.com/", "Contentful" %}. I had a blog prototype set up pretty quickly with Vue.js as a single page application. It was pretty nifty if I do say so myself. I gave myself a pat on the back and thought &quot;yep, this is it&quot;.
+This is the new cool kid on the block, and I wanted to see what it was all about. After looking through a few options, I had a go of [Contentful](https://www.contentful.com/). I had a blog prototype set up pretty quickly with Vue.js as a single page application. It was pretty nifty if I do say so myself. I gave myself a pat on the back and thought &quot;yep, this is it&quot;.
 
 After about 20 minutes, however, I realised I needed server-side rendering to make it more accessible. I wanted to get the ball rolling quickly, and this was something that I felt would be a bit of a time sink. I scrapped it and decided to keep moving.
 
 ### Craft
 
-I've worked a lot with PHP-based projects including WordPress, ExpressionEngine and Laravel. I wanted to use something that I was familiar with in order to extend it with any custom functionality I might need/want. The Twig templating language is also something I'm quite fond of when it {% external-link "https://css-tricks.com/timber-and-twig-reignited-my-love-for-wordpress/", "completely changed how I worked with WordPress" %} Lucky for me, this is where Craft came in.
+I've worked a lot with PHP-based projects including WordPress, ExpressionEngine and Laravel. I wanted to use something that I was familiar with in order to extend it with any custom functionality I might need/want. The Twig templating language is also something I'm quite fond of when it [completely changed how I worked with WordPress](https://css-tricks.com/timber-and-twig-reignited-my-love-for-wordpress/)". Lucky for me, this is where Craft came in.
 
 I've used it before, and really liked how straight-forward it was to get going with. I thought about using WordPress, and while I still have great time for it, I wanted to explore something different.
 
-Craft is also nearing it's release of version 3, so I figured it was a good time to get back into it and see what's changed since I last used it. Spoiler: it's looking pretty frickin' good. They also have {% external-link "https://craftcms.com/pricing", "a generous pricing plan" %} for personal use: it's free!
+Craft is also nearing it's release of version 3, so I figured it was a good time to get back into it and see what's changed since I last used it. Spoiler: it's looking pretty frickin' good. They also have [a generous pricing plan for personal use](https://craftcms.com/pricing): it's free!
 
 With that I pulled down the latest version of V3 that was available and started porting my posts over.
 
