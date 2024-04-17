@@ -3,11 +3,11 @@ title: "Variable Fonts"
 date: 2018-02-02T11:14:00+00:00
 permalink: "/variable-fonts/"
 layout: layouts/post.njk
-tags: 
+tags:
 - css
 ---
 
-I read a {% external-link "https://css-tricks.com/one-file-many-options-using-variable-fonts-web/" "great article about variable fonts" %} the other day, and saw that it&#8217;s possible to use animations.
+I read a [great article about variable fonts](https://css-tricks.com/one-file-many-options-using-variable-fonts-web/) the other day, and saw that it&#8217;s possible to use animations.
 
 Specifically, I wanted to look at scaling the weight since it can be much more granular with variable fonts.
 
