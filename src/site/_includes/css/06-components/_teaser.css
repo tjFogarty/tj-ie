@@ -49,10 +49,14 @@
   overflow: hidden;
 }
 
+.c-teaser__img-container picture {
+  height: 100%;
+}
+
 .c-teaser__img-container img {
   position: absolute;
   width: 100%;
-  height: 100%;
+  height: 210px;
   object-fit: cover;
   top: 0;
   left: 0;
