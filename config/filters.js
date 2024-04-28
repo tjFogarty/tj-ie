@@ -1,4 +1,4 @@
-import CleanCSS from "clean-css";
+import { transform } from "lightningcss";
 import { cache } from './cache.js';
 
 // https://stackoverflow.com/a/15397495
@@ -19,13 +19,21 @@ const nth = (d) => {
 const isDevelopmentMode = process.env.NODE_ENV === 'development';
 
 export function initFilters(eleventyConfig) {
-  eleventyConfig.addFilter("cssmin", function (code, key = 'styles') {
+  eleventyConfig.addFilter("cssmin", function (css, key = 'styles') {
     if (isDevelopmentMode) {
-      return new CleanCSS({}).minify(code).styles;
+      const { code } = transform({
+        minify: true,
+        code: Buffer.from(css)
+      });
+      return code;
     }
 
     if (!cache.get(key)) {
-      cache.set(key, new CleanCSS({}).minify(code).styles);
+      const { code } = transform({
+        minify: true,
+        code: Buffer.from(css)
+      });
+      cache.set(key, code);
     }
 
     return cache.get(key);
