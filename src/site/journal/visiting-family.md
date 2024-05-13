@@ -17,7 +17,7 @@ I might see some friends on Saturday or hang out with the family. Once Sunday af
 
 Here's Mac; he's a mix of a Maltese and a Bichon Freise. My parents have two dogs; the other is Marvel, a Bishon Freise.
 
-{% image "mac.jpeg", "A scruffy looking Maltese/Bichon cross looking at the camera, with a furry background of the couch." %}
+<img src="/assets/images/mac.jpeg" alt="A scruffy looking Maltese/Bichon cross looking at the camera, with a furry background of the couch." />
 
 I'll be back up for Christmas and stay a few days. In the meantime, I'll leave you with a tune I've been jamming on recent trips.
 

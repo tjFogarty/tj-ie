@@ -19,7 +19,7 @@ Now, I've gone the other way. I like Laravel, so I'm using that. I've removed al
 
 The basic setup is this - a list of feeds on the left, and clicking them reveals a list of posts on the right.
 
-{% image "rss-preview.png", "Preview of the application with a list of feeds on the left and posts belonging to the selected feed on the right." %}
+<img src="/assets/images/rss-preview.png" alt="Preview of the application with a list of feeds on the left and posts belonging to the selected feed on the right." />
 
 When I click on a post, I use the [Popover API](/popover-api/) to show it.
 

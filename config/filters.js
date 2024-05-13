@@ -1,5 +1,8 @@
-import { transform } from "lightningcss";
+import browserslist from 'browserslist';
+import { transform, browserslistToTargets } from "lightningcss";
 import { cache } from './cache.js';
+
+const targets = browserslistToTargets(browserslist('>= 0.25%'));
 
 // https://stackoverflow.com/a/15397495
 const nth = (d) => {
@@ -20,19 +23,19 @@ const isDevelopmentMode = process.env.NODE_ENV === 'development';
 
 export function initFilters(eleventyConfig) {
   eleventyConfig.addFilter("cssmin", function (css, key = 'styles') {
+    const config = {
+      minify: true,
+      code: Buffer.from(css),
+      targets
+    };
+
     if (isDevelopmentMode) {
-      const { code } = transform({
-        minify: true,
-        code: Buffer.from(css)
-      });
+      const { code } = transform(config);
       return code;
     }
 
     if (!cache.get(key)) {
-      const { code } = transform({
-        minify: true,
-        code: Buffer.from(css)
-      });
+      const { code } = transform(config);
       cache.set(key, code);
     }
 

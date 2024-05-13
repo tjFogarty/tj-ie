@@ -1,7 +1,6 @@
 import { initWatchTargets } from "./config/watchTargets.js";
 import { initPlugins } from "./config/plugins.js";
 import { initFilters } from "./config/filters.js";
-import { initShortcodes } from "./config/shortcodes.js";
 import { initGlobals } from "./config/globals.js";
 import { initLayouts } from "./config/layouts.js";
 import { initCollections } from "./config/collections.js";
@@ -9,11 +8,10 @@ import { initPassthroughs } from "./config/passthroughs.js";
 import { initTransforms } from "./config/transforms.js";
 import { initMarkdown } from "./config/markdown.js";
 
-export default async function (eleventyConfig) {
+export default function (eleventyConfig) {
   initWatchTargets(eleventyConfig);
   initPlugins(eleventyConfig);
   initFilters(eleventyConfig);
-  initShortcodes(eleventyConfig);
   initGlobals(eleventyConfig);
   initLayouts(eleventyConfig);
   initCollections(eleventyConfig);

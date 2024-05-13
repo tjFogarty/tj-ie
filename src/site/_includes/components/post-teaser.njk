@@ -8,7 +8,9 @@
     <a href="{{ post.url | url }}"
        class="c-teaser__link"
        title="Link to {{ post.data.title }}">
-      <div class="c-teaser__img-container">{% postThumbnail post.data.coverPreview, "c-teaser__image" %}</div>
+      <div class="c-teaser__img-container">
+        <img class="c-teaser__img" src="/assets/images/{{ post.data.coverPreview | url }}" alt="Cover image for {{ post.data.title }}" eleventy:widths="1200,590,380" sizes="(min-width: 1200px) 590px, 100vw" />
+      </div>
     </a>
   {% endif %}
   <div class="c-teaser__meta">

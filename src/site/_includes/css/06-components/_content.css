@@ -10,4 +10,8 @@
     border-radius: 10px;
     padding: 3em 9em 3em 3em;
   }
+
+  picture {
+    margin-bottom: 2rem;
+  }
 }

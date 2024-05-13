@@ -12,7 +12,7 @@ The previous version of my site was ok. I never found it exciting to look at, an
 
 That changed yesterday with a fresh coat of paint.
 
-{% image "new-design.png", "Screengrab of the new design" %}
+<img src="/assets/images/new-design.png" alt="Screengrab of the new design" />
 
 The site itself is still built with [Eleventy](https://www.11ty.dev), and I'm delighted with the experience of using it. I'm also looking to keep all this portable to migrate the site at the drop of a hat if required.
 

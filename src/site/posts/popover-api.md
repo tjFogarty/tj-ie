@@ -57,8 +57,8 @@ The default behaviour is to toggle the popover when you perform actions. For exa
 
 Here's what it looks like when VoiceOver is turned on:
 
-{% image "popover-collapsed.png", "VoiceOver dialog declaring the popover as collapsed when popover is closed" %}
+<img src="/assets/images/popover-collapsed.png" alt="VoiceOver dialog declaring the popover as collapsed when popover is closed" />
 
-{% image "popover-expanded.png", "VoiceOver dialog declaring the popover as expanded when popover is activated" %}
+<img src="/assets/images/popover-expanded.png" alt="VoiceOver dialog declaring the popover as expanded when popover is activated" />
 
 Currently, support is ok, but we're waiting on Firefox to ship support in stable. This is a barebones example, but I'm excited to add this to my toolbelt and see where it will fit in a production environment.

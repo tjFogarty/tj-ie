@@ -16,4 +16,4 @@ She's starting to fall into a sleeping routine with the other two, but she deman
 
 All in all, it's going well. They play together, and groom each other. She still gets a few slaps from Loki who doesn't enjoy the play as much, but that's just putting manners on her I suppose.
 
-{% image "lenore-window.jpeg", "A smoke-coloured domestic long hair cat sitting on a windowsill. She's in focus and looking just above the camera." %}
+<img src="/assets/images/lenore-window.jpeg" alt="A smoke-coloured domestic long hair cat sitting on a windowsill. She's in focus and looking just above the camera." />

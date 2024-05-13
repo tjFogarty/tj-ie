@@ -20,7 +20,7 @@ My work is not perfect, but how many sites fall apart here is pretty shocking.
 
 Take, for example, a site like my own. It's basic. You have links and text. Some JavaScript is involved, but it doesn't obstruct access to content (unless that content is an interactive demo). Here's how it looks using Lynx:
 
-{% image "simple-web.png", "Lynx browser showing tj.ie with basic text and links available" %}
+<img src="/assets/images/simple-web.png" alt="Lynx browser showing tj.ie with basic text and links available" />
 
 You can navigate between pages because links are links, and the requested HTML has the content the link describes.
 
