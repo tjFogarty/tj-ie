@@ -4,14 +4,8 @@
   position: relative;
   overflow: hidden;
   margin-bottom: 2em;
-  padding: 0.8em 0;
+  padding: clamp(0.8em, 3vw, 3em) 0;
   color: #fff;
-}
-
-@media (min-width: 800px) {
-  .c-hero {
-    padding: 3em 0;
-  }
 }
 
 .c-hero__prompt {
@@ -23,7 +17,7 @@
 .c-hero__title {
   display: flex;
   gap: 0.5em;
-  font-size: 2em;
+  font-size: clamp(1.5em, 3.5vw, 4em);
   text-align: start;
 }
 
@@ -39,6 +33,7 @@
 .c-hero__content {
   position: relative;
   z-index: 1;
+  padding: clamp(1em, 3vw, 3em) 0;
 }
 
 .c-hero__blocks {
@@ -77,15 +72,5 @@
 
   100% {
     opacity: 0;
-  }
-}
-
-@media (min-width: 800px) {
-  .c-hero__title {
-    font-size: 3em;
-  }
-
-  .c-hero__content {
-    padding: 3em 0;
   }
 }

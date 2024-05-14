@@ -9,7 +9,7 @@
        class="c-teaser__link"
        title="Link to {{ post.data.title }}">
       <div class="c-teaser__img-container">
-        <img class="c-teaser__img" src="/assets/images/{{ post.data.coverPreview | url }}" alt="Cover image for {{ post.data.title }}" eleventy:widths="1200,590,380" sizes="(min-width: 1200px) 590px, 100vw" />
+        <img class="c-teaser__img" src="/assets/images/{{ post.data.coverPreview | url }}" alt="Cover image for {{ post.data.title }}" eleventy:widths="1200,590,380" sizes="(min-width: 1200px) 590px, 100vw" loading="lazy" />
       </div>
     </a>
   {% endif %}
