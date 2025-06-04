@@ -8,9 +8,10 @@ eleventyNavigation:
 
 I’m TJ, a web devel­op­er from [Lim­er­ick, Ire­land](https://en.wikipedia.org/wiki/Limerick) 🇮🇪 and liv­ing in Water­ford. I have a BSc Hons in Multimedia Programming, and Design from the Limerick Institute of Technology.
 
-I've been around a while (over 10 years now), and I've had the chance to work at some great places:
+I've been around a while (near 15 years now), and I've had the chance to work at a wide variety of places:
 
-- Senior Software Engineer at [Workhuman](https://www.workhuman.com/) (current)
+- Senior Fullstack Engineer at [ServisBOT](https://servisbot.com) (current)
+- Technical Lead at [Workhuman](https://www.workhuman.com/)
 - Senior Software Engineer at [Teamwork](https://www.teamwork.com/)
 - UI Engineer at [StitcherAds](https://stitcherads.com/)
 - Technical Lead at [Emagine](https://emagine.ie/)

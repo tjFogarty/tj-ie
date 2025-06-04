@@ -11,6 +11,13 @@
     margin-top: 0;
 }
 
+.c-post__description {
+    font-size: 1.1em;
+    margin-bottom: 1.33333em;
+    color: #555;
+    line-height: 1.5;
+}
+
 .c-post__date {
     font-size: 0.8em;
 }

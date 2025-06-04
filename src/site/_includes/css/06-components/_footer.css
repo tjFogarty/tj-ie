@@ -12,37 +12,21 @@
   margin-top: 5em;
 }
 
-@media (min-width: 500px) {
-  .c-footer__content {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .c-footer__links {
-    display: flex;
-    flex-direction: column;
-    margin-top: 0;
-  }
+.c-footer__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .c-footer__copy {
   display: inline-block;
-  margin-top: 2em;
 }
 
 .c-footer__links {
   display: flex;
   gap: 1em;
   list-style: none;
-  margin-inline-start: auto;
   padding: 0;
-  margin-top: 2em;
-}
-
-.c-footer__links > li {
-  display: flex;
-  align-items: center;
-  flex: 1 0 auto;
 }
 
 .c-footer__icon svg {
