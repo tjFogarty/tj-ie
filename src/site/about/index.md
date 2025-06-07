@@ -21,5 +21,6 @@ I've been fortunate enough to work with some amazing clients including The Presi
 
 I mostly post to my blog, but here's a couple of other things I've worked on:
 
+- Generate a colour scheme from an image - [Swatch This](https://swatch.tj.ie)
 - CSS-Tricks article: [Tim­ber and Twig Reignit­ed my Love for Word­Press](https://css-tricks.com/timber-and-twig-reignited-my-love-for-wordpress/)
 - Free Skillshare course: [Create an RSS Feed Reader with Node and Vue.js](https://skl.sh/3eVc2WY)
