@@ -18,7 +18,7 @@ Turns out, it was a relatively straight forward process. Using VS Code, I used t
 
 Find:
 
-```
+``` bash
 {% raw %}
 \{% external-link "(.*?)", "(.*?)" %\}
 {% endraw %}
@@ -26,7 +26,7 @@ Find:
 
 Replace:
 
-```
+``` bash
 [$2]($1)
 ```
 

@@ -9,4 +9,7 @@ body {
       transparent 1px
     ),
     linear-gradient(to bottom, lch(58 97.19 2.2 / 0.1) 1px, transparent 1px);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
