@@ -1,0 +1,51 @@
+.cube-wrapper {
+  display: flex;
+  gap: 30px;
+
+  > *:first-child {
+    flex-shrink: 0;
+  }
+
+  > *:last-child {
+    flex: 0 1 auto;
+    overflow: hidden;
+  }
+}
+
+.cubes {
+  display: grid;
+  position: sticky;
+  top: 0;
+  height: fit-content;
+  grid-template-columns: repeat(var(--grid-cols), var(--cube-size));
+  grid-template-rows: repeat(var(--grid-rows), var(--cube-size));
+  gap: var(--cube-gap);
+  max-width: calc(var(--grid-cols) * var(--cube-size) + (var(--grid-cols) - 1) * var(--cube-gap));
+  opacity: 0.25;
+  z-index: -1;
+  scale: 2.5;
+  transform-origin: right;
+  pointer-events: none;
+  mix-blend-mode: color-dodge;
+}
+
+.cube {
+  width: var(--cube-size);
+  height: var(--cube-size);
+  background-image: var(--cover-preview);
+  background-size: calc(var(--grid-cols) * var(--cube-size) + (var(--grid-cols) - 1) * var(--cube-gap))
+                  calc(var(--grid-rows) * var(--cube-size) + (var(--grid-rows) - 1) * var(--cube-gap));
+  background-position: calc(var(--col) * (var(--cube-size) + var(--cube-gap)) * -1)
+                      calc(var(--row) * (var(--cube-size) + var(--cube-gap)) * -1);
+  transform: translateY(var(--top));
+}
+
+@media (max-width: 968px) {
+  .cube-wrapper {
+    display: block;
+  }
+
+  .cubes {
+    display: none;
+  }
+}

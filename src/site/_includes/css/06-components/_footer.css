@@ -38,7 +38,42 @@
   color: var(--colour-secondary);
 }
 
+.c-footer__icon[href*="github.com"] {
+  animation: flicker-1 4.2s infinite;
+}
+
+.c-footer__icon[href*="linkedin.com"] {
+  animation: flicker-2 3.7s infinite;
+}
+
+.c-footer__icon[href*="xml"] {
+  animation: flicker-3 5.1s infinite;
+}
+
 .c-footer__icon:hover,
 .c-footer__icon:focus {
   color: #fff;
+  animation: none;;
+}
+
+@keyframes flicker-1 {
+  0%, 85% { color: var(--colour-secondary); }
+  87%, 89% { color: #fff; }
+  91%, 93% { color: var(--colour-secondary); }
+  95%, 97% { color: #fff; }
+  99%, 100% { color: var(--colour-secondary); }
+}
+
+@keyframes flicker-2 {
+  0%, 78% { color: var(--colour-secondary); }
+  80% { color: #fff; }
+  82%, 88% { color: var(--colour-secondary); }
+  90%, 92% { color: #fff; }
+  94%, 100% { color: var(--colour-secondary); }
+}
+
+@keyframes flicker-3 {
+  0%, 92% { color: var(--colour-secondary); }
+  94%, 96% { color: #fff; }
+  98%, 100% { color: var(--colour-secondary); }
 }

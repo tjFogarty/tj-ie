@@ -8,4 +8,8 @@ export function initGlobals(eleventyConfig) {
     },
     { link: "/index.xml", label: "RSS", icon: "rss" },
   ]);
+
+  eleventyConfig.addNunjucksGlobal("random", (min, max) => {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+  });
 }

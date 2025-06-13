@@ -14,7 +14,7 @@ templateClass: tmpl-post
       </div>
     </div>
   </div>
-  <div class="o-wrapper">
+  <div class="o-wrapper {% if coverPreview %} cube-wrapper {% endif %}">
     <div class="c-post">
       <div class="c-content">
         {% if date %}
@@ -30,11 +30,41 @@ templateClass: tmpl-post
               /tags/{{ tag }}/
             {% endset %}
             <a href="{{ tagUrl | url }}"
-               class="c-tag"
-               aria-label="See all {{ tag }} posts">{{ tag }}</a>
+              class="c-tag"
+              aria-label="See all {{ tag }} posts">{{ tag }}</a>
           {%- endif -%}
         {% endfor %}
       </div>
     </div>
+    {% if coverPreview %}
+
+
+      <div class="cubes" aria-hidden="true">
+        {% set cols = 12 %}
+        {% set rows = 8 %}
+        {% for row in range(0, rows) %}
+          {% for col in range(0, cols) %}
+            {% set topValue = random(50, 500) %}
+            <div class="cube"
+                style="--i: {{ loop.index }}; --row: {{ row }}; --col: {{ col }}; --top: {{ topValue }}px;"
+                data-position="{{ row }}-{{ col }}"></div>
+          {% endfor %}
+        {% endfor %}
+      </div>
+    {% endif %}
+
   </div>
 </article>
+
+{% if coverPreview %}
+<style>
+  :root {
+    --cover-preview: url('/assets/images/{{ coverPreview | url }}');
+    --cube-size: 40px;
+    --cube-gap: 1px;
+    --grid-cols: 12;
+    --grid-rows: 8;
+  }
+</style>
+<script src="/assets/js/cubes.js" defer></script>
+{% endif %}
