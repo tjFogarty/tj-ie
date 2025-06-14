@@ -5,6 +5,8 @@ export function glitchText() {
 
   glitchText.forEach((element) => {
     const originalText = element.textContent;
+    // fixes the width of the element to prevent layout shifts
+    element.style.width = `${originalText.length}ch`;
 
     function intensiveGlitch() {
       const glitchChars = ['▓', '░', '▒', '█', '▄', '▀', '▌', '▐', '■', '□', '◊', '◦', '▫', '▪'];
