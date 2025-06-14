@@ -78,6 +78,7 @@
       {% include "css/06-components/_section.css" %}
       {% include "css/06-components/_form.css" %}
       {% include "css/06-components/_demo.css" %}
+      {% include "css/06-components/_skip-link.css" %}
       {% include "css/07-utilities/_hidden.css" %}
       {% include "css/08-vendor/_prism.css" %}
       {% include "css/08-vendor/_lite-youtube.css" %}
@@ -95,10 +96,11 @@
     {% if script %}<script defer src="/assets/js/{{ script }}"></script>{% endif %}
   </head>
   <body {% if templateClass %}class="{{ templateClass }}"{% endif %}>
+    <a class="c-skip-link" href="#main-content">Skip to main content</a>
     <header class="c-site-header">
       <div class="o-wrapper">{% include "components/navigation.njk" %}</div>
     </header>
-    <main>
+    <main id="main-content">
       {{ content | safe }}
       <a class="hidden"
          aria-hidden="true"

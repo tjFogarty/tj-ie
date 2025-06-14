@@ -1,9 +1,12 @@
-<nav class="c-nav">
-    <a class="c-nav__link" href="{{ '/' | url }}">TJ Fogarty</a>
+<nav class="c-nav" aria-label="Main navigation">
+    <a class="c-nav__link c-nav__home" href="{{ '/' | url }}" aria-label="TJ Fogarty - Home">
+        <span aria-hidden="true">TJ Fogarty</span>
+    </a>
     {%- for entry in collections.all | eleventyNavigation %}
     <a
         class="c-nav__link {% if entry.url == page.url %}c-nav__link--active{% endif %}"
         href="{{ entry.url | url }}"
+        {% if entry.url == page.url %}aria-current="page"{% endif %}
         >{{ entry.title }}</a
     >
     {%- endfor %}
