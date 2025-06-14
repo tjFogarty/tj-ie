@@ -30,7 +30,7 @@ Little <span class="glitch-text" data-text="ghosts">ghosts</span>, toiling away,
     color: var(--colour-text);
     font-weight: bold;
     display: inline-block;
-    font-family: 'Fira Mono', monospace;
+    font-family: var(--font-mono);
   }
 
   .glitch-text.glitching {
