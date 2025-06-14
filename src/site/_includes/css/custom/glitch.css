@@ -3,6 +3,7 @@
   color: inherit;
   display: inline;
   font-family: var(--font-mono);
+  min-width: fit-content;
 }
 
 .glitch-text.glitching {
