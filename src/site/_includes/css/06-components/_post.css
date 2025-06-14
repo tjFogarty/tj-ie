@@ -116,12 +116,12 @@
 }
 
 @media (min-width: 700px) {
-    .c-post__direct-link {
-        position: absolute;
-        left: -40px; /* Slightly more space */
-        width: 30px;
-        text-align: center;
-    }
+  .c-post__direct-link {
+      position: absolute;
+      left: -40px; /* Slightly more space */
+      width: 30px;
+      text-align: center;
+  }
 }
 
 .c-post__direct-link:hover,
