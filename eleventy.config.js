@@ -7,6 +7,7 @@ import { initCollections } from "./config/collections.js";
 import { initPassthroughs } from "./config/passthroughs.js";
 import { initTransforms } from "./config/transforms.js";
 import { initMarkdown } from "./config/markdown.js";
+import { initShortcodes } from "./config/shortcodes.js";
 
 export default function (eleventyConfig) {
   initWatchTargets(eleventyConfig);
@@ -18,6 +19,7 @@ export default function (eleventyConfig) {
   initPassthroughs(eleventyConfig);
   initTransforms(eleventyConfig);
   initMarkdown(eleventyConfig);
+  initShortcodes(eleventyConfig);
 
   eleventyConfig.setLiquidOptions({
     strictFilters: false,

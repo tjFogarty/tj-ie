@@ -83,6 +83,7 @@
       {% include "css/08-vendor/_prism.css" %}
       {% include "css/08-vendor/_lite-youtube.css" %}
       {% include "css/custom/cubes.css" %}
+      {% include "css/custom/glitch.css" %}
       {% if styles %}
         {% set customStyles = ["css/custom/", styles] | join %}
         {% include customStyles %}
@@ -124,5 +125,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="/assets/js/main.js" type="module"></script>
   </body>
 </html>
