@@ -1,7 +1,7 @@
 .glitch-text {
   position: relative;
   color: inherit;
-  display: inline-block;
+  display: inline;
   font-family: var(--font-mono);
 }
 
