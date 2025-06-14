@@ -13,7 +13,7 @@ function handleScroll() {
 
   // Adjust animation range to complete later in the scroll
   const animationStart = windowHeight; // Start when parent enters viewport
-  const animationEnd = -parentHeight * 0.8; // End when parent is almost fully scrolled past
+  const animationEnd = -parentHeight * 0.5; // End when parent is almost fully scrolled past
 
   // Calculate progress based on parent position (not cubes position since it's sticky)
   let progress = (animationStart - parentRect.top) / (animationStart - animationEnd);

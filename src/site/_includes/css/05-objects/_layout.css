@@ -2,3 +2,14 @@
   display: flex;
   justify-content: center;
 }
+
+.o-layout-end {
+  display: flex;
+  justify-content: end;
+}
+
+@media (max-width: 700px) {
+  .o-layout-end {
+    justify-content: center;
+  }
+}
