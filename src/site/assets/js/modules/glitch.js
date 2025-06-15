@@ -11,8 +11,6 @@ export function glitchText() {
     function intensiveGlitch() {
       const glitchChars = ['▓', '░', '▒', '█', '▄', '▀', '▌', '▐', '■', '□', '◊', '◦', '▫', '▪'];
 
-      element.classList.add('glitching');
-
       let iterations = 0;
       const maxIterations = 5;
 
@@ -21,19 +19,18 @@ export function glitchText() {
 
         for (let i = 0; i < originalText.length; i++) {
           if (iterations < maxIterations && Math.random() < 0.4) {
-            result += glitchChars[Math.floor(Math.random() * glitchChars.length)];
+            result += `<span class="glitch-char">${glitchChars[Math.floor(Math.random() * glitchChars.length)]}</span>`;
           } else {
             result += originalText[i];
           }
         }
 
-        element.textContent = result;
+        element.innerHTML = result;
         iterations++;
 
         if (iterations >= maxIterations * 2) {
           clearInterval(corruptInterval);
           element.textContent = originalText;
-          element.classList.remove('glitching');
         }
       }, 50);
 
