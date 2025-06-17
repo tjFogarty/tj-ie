@@ -10,8 +10,8 @@
   border: 2px solid var(--colour-accent, #000);
   z-index: 1000;
   transition: top 0.3s ease;
-}
 
-.c-skip-link:focus {
-  top: 6px;
+  &:focus {
+    top: 6px;
+  }
 }

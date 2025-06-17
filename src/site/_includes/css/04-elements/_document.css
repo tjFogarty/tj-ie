@@ -3,11 +3,9 @@ body {
   font-size: 1em;
   background-color: var(--colour-primary);
   background-size: 65px 65px;
-  background-image: linear-gradient(
-      to right,
+  background-image: linear-gradient(to right,
       lch(58 97.19 2.2 / 0.1) 1px,
-      transparent 1px
-    ),
+      transparent 1px),
     linear-gradient(to bottom, lch(58 97.19 2.2 / 0.1) 1px, transparent 1px);
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;

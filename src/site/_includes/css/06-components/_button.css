@@ -7,9 +7,9 @@
   border-radius: 5px;
   border: none;
   cursor: pointer;
-}
 
-.c-button:hover,
-.c-button:focus {
-  background-color: #fff;
+  &:hover,
+  &:focus {
+    background-color: #fff;
+  }
 }

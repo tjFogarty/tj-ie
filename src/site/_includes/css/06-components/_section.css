@@ -16,10 +16,8 @@
 
 .c-section__cta {
   margin: 2em 0;
-}
 
-@media (max-width: 700px) {
-  .c-section__cta {
+  @media (max-width: 700px) {
     margin: 1em 0;
   }
 }

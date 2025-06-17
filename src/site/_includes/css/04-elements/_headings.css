@@ -4,23 +4,23 @@ h3,
 h4,
 h5,
 h6 {
-    position: relative;
-    font-family: var(--font-mono);
-    text-wrap: balance;
+  position: relative;
+  font-family: var(--font-mono);
+  text-wrap: balance;
 }
 
 h1 {
-    font-size: calc(var(--scale) * var(--scale) * var(--scale) * 1em);
+  font-size: calc(var(--scale) * var(--scale) * var(--scale) * 1em);
 }
 
 h2 {
-    font-size: calc(var(--scale) * var(--scale) * 1em);
+  font-size: calc(var(--scale) * var(--scale) * 1em);
 }
 
 h3 {
-    font-size: calc(var(--scale) * 1em);
+  font-size: calc(var(--scale) * 1em);
 }
 
 h4 {
-    font-size: 1em;
+  font-size: 1em;
 }

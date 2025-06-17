@@ -1,13 +1,13 @@
 /* https://coolors.co/8b1e3f-3c153b-89bd9e-f0c987-db4c40 */
 
 :root {
-    --colour-purple: #3c153a;
-    --colour-yellow: #f0c987;
-    --colour-pink: lch(58 97.19 2.2);
-    --colour-blue: #2274a5;
+  --colour-purple: #3c153a;
+  --colour-yellow: #f0c987;
+  --colour-pink: lch(58 97.19 2.2);
+  --colour-blue: #2274a5;
 
-    --colour-primary: var(--colour-purple);
-    --colour-secondary: var(--colour-yellow);
-    --colour-accent: var(--colour-pink);
-    --colour-links: var(--colour-blue);
+  --colour-primary: var(--colour-purple);
+  --colour-secondary: var(--colour-yellow);
+  --colour-accent: var(--colour-pink);
+  --colour-links: var(--colour-blue);
 }

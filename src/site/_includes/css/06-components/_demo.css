@@ -1,7 +1,7 @@
 .c-demo {
-    border: 1px solid var(--colour-primary);
-    padding: 1em;
-    text-align: center;
-    border-radius: 4px;
-    margin: 2em 0;
+  border: 1px solid var(--colour-primary);
+  padding: 1em;
+  text-align: center;
+  border-radius: 4px;
+  margin: 2em 0;
 }

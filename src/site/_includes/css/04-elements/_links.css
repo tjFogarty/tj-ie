@@ -1,8 +1,8 @@
 a {
-    color: var(--colour-links);
+  color: var(--colour-links);
 }
 
 a:focus,
 a:hover {
-    color: var(--colour-primary);
+  color: var(--colour-primary);
 }

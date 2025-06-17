@@ -66,7 +66,6 @@
       {% include "css/05-objects/_list.css" %}
       {% include "css/05-objects/_grid.css" %}
       {% include "css/05-objects/_layout.css" %}
-      {% include "css/06-components/_site-header.css" %}
       {% include "css/06-components/_footer.css" %}
       {% include "css/06-components/_nav.css" %}
       {% include "css/06-components/_hero.css" %}
@@ -76,7 +75,6 @@
       {% include "css/06-components/_button.css" %}
       {% include "css/06-components/_teaser.css" %}
       {% include "css/06-components/_section.css" %}
-      {% include "css/06-components/_form.css" %}
       {% include "css/06-components/_demo.css" %}
       {% include "css/06-components/_skip-link.css" %}
       {% include "css/07-utilities/_hidden.css" %}
@@ -98,7 +96,7 @@
   </head>
   <body {% if templateClass %}class="{{ templateClass }}"{% endif %}>
     <a class="c-skip-link" href="#main-content">Skip to main content</a>
-    <header class="c-site-header">
+    <header>
       <div class="o-wrapper">{% include "components/navigation.njk" %}</div>
     </header>
     <main id="main-content">

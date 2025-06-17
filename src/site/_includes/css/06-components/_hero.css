@@ -55,10 +55,10 @@
   background-color: #91c8eb;
   opacity: var(--opacity);
   transition: opacity ease 0.2s;
-}
 
-.c-hero__block:hover {
-  opacity: 1;
+  &:hover {
+    opacity: 1;
+  }
 }
 
 @keyframes pulse {
