@@ -18,7 +18,7 @@ Emails were fine, but the website kept showing the old site on my laptop. No mat
 
 After some digging, I found something for Chromium browsers (I'm on Vivaldi, so change the URL as you see fit):
 
-```
+``` url
 vivaldi://net-internals/#dns
 ```
 

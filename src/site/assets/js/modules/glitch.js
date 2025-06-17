@@ -1,7 +1,8 @@
 export function glitchText() {
   const glitchText = document.querySelectorAll('.glitch-text');
+  const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-  if (!glitchText) return;
+  if (!glitchText || prefersReducedMotion) return;
 
   glitchText.forEach((element) => {
     const originalText = element.textContent;
