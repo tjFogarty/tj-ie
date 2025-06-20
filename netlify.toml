@@ -7,5 +7,13 @@ from = "https://teej.netlify.app/*"
 to = "https://tj.ie/:splat"
 
 [[redirects]]
-from = "https://tj.ie/feed/feed.xml"
-to = "https://tj.ie/index.xml"
+from = "/feed/feed.xml"
+to = "/index.xml"
+
+[[redirects]]
+from = "/journal/"
+to = "/"
+
+[[redirects]]
+from = "/journal/*"
+to = "/:splat"

@@ -2,7 +2,7 @@
 title: "Lenore and the new routine"
 description: "Lenore's routine and how it fits around the other two cats."
 date: 2023-11-28T20:05:24+01:00
-permalink: "/journal/lenore-routine/"
+permalink: "/lenore-routine/"
 layout: layouts/post.njk
 cover: "https://tj.ie/assets/images/lenore-window.jpeg"
 coverPreview: "lenore-window.jpeg"

@@ -2,7 +2,7 @@
 title: "New Kitten"
 description: "A new kitten joins the crew"
 date: 2023-11-25T18:28:24+01:00
-permalink: "/journal/new-kitten/"
+permalink: "/new-kitten/"
 layout: layouts/post.njk
 cover: "https://tj.ie/assets/images/lenore-and-loki.jpeg"
 coverPreview: "lenore-and-loki.jpeg"

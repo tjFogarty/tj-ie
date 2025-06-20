@@ -20,33 +20,10 @@ eleventyNavigation:
           </li>
         {% endfor %}
       </ol>
-      <div class="o-layout-end">
+      <div class="o-layout-center">
         <a class="c-button c-section__cta" href="/archive/" aria-describedby="recent-posts-heading">
           View All Posts
           <span class="sr-only">({{ collections.posts.length }} total posts)</span>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <section class="c-section" aria-labelledby="journal-heading">
-    <div class="o-wrapper">
-      <h2 id="journal-heading" class="c-section__heading">Journal</h2>
-      {% set postslist = collections.journal | head(-5) %}
-      {% set hlevel = "3" %}
-      <ol class="o-list-bare o-grid o-grid--3-col" role="list">
-        {% for post in postslist | reverse %}
-          {% if post.data.permalink !== "/journal/" %}
-            <li {% if loop.index === 1 or loop.index === 2 %}class="o-grid-column-half"{% else %}class="o-grid-column-third"{% endif %} role="listitem">
-              {% include "components/post-teaser.njk" %}
-            </li>
-          {% endif %}
-        {% endfor %}
-      </ol>
-      <div class="o-layout-end">
-        <a class="c-button c-section__cta" href="/journal/" aria-describedby="journal-heading">
-          View All Journal Entries
-          <span class="sr-only">({{ collections.journal.length }} total entries)</span>
         </a>
       </div>
     </div>

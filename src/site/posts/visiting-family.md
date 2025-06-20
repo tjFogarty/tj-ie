@@ -2,7 +2,7 @@
 title: "Visiting Family & Friends"
 description: "Visiting the family and their pets back home in Limerick."
 date: 2023-12-10T20:33:24+01:00
-permalink: "/journal/visiting-family-and-friends/"
+permalink: "/visiting-family-and-friends/"
 layout: layouts/post.njk
 cover: "https://tj.ie/assets/images/mac.jpeg"
 coverPreview: "mac.jpeg"

@@ -2,7 +2,7 @@
 title: "Got Married"
 description: "Great days. Great rest required."
 date: 2024-06-16T11:00:00+01:00
-permalink: "/journal/got-married/"
+permalink: "/got-married/"
 layout: layouts/post.njk
 cover: "https://tj.ie/assets/images/married.png"
 coverPreview: "married.png"

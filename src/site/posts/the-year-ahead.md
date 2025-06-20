@@ -2,7 +2,7 @@
 title: "The Year Ahead"
 description: "What's the plan for the year? Thinking about what I want to achieve."
 date: 2024-01-07T20:05:24+01:00
-permalink: "/journal/the-year-ahead/"
+permalink: "/the-year-ahead/"
 layout: layouts/post.njk
 cover: "https://tj.ie/assets/images/journal.jpeg"
 coverPreview: "journal.jpeg"

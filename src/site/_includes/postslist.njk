@@ -1,11 +1,9 @@
 <div class="o-wrapper">
   <ol class="o-list-bare o-grid o-grid--3-col">
     {% for post in postslist | reverse %}
-      {% if post.data.permalink !== "/journal/" %}
-        <li {% if loop.index === 1 or loop.index === 2 %}class="o-grid-column-half"{% else %}class="o-grid-column-third"{% endif %}>
-          {% include "components/post-teaser.njk" %}
-        </li>
-      {% endif %}
+    <li {% if loop.index === 1 or loop.index === 2 %}class="o-grid-column-half"{% else %}class="o-grid-column-third"{% endif %}>
+      {% include "components/post-teaser.njk" %}
+    </li>
     {% endfor %}
   </ol>
 </div>
