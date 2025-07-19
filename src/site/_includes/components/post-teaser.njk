@@ -13,7 +13,7 @@
 
     {% if post.data.coverPreview %}
       <div class="c-teaser__img-container">
-        <img class="c-teaser__img" src="/assets/images/{{ post.data.coverPreview | url }}" alt="Cover image for {{ post.data.title }}"  loading="lazy" />
+        <img class="c-teaser__img" src="/assets/images/{{ post.data.coverPreview | url }}" alt="Cover image for {{ post.data.title }}" sizes="(max-width: 600px) 100vw, 600px" />
       </div>
     {% endif %}
 
