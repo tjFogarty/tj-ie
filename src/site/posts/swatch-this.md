@@ -19,4 +19,4 @@ Here's an example:
 
 It talks to Claude to do this, and images aren't kept.
 
-Check it out! [Swatch This](https://swatch.tj.ie).
+Check it out! [Swatcher](https://swatcher.ie)

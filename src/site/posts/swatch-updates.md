@@ -10,7 +10,7 @@ tags:
 layout: layouts/post.njk
 ---
 
-More updates for [Swatch This](https://swatch.tj.ie).
+More updates for [Swatcher](https://swatcher.ie)
 
 - Generate colour palettes from text prompts
 - Check colour contrast

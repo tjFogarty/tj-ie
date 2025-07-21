@@ -11,7 +11,7 @@ tags:
 layout: layouts/post.njk
 ---
 
-Recently [I launched a tool](https://swatch.tj.ie) that creates a colour scheme from an image. One of the main things I worked on was how to provide an image to a service like Claude in a reasonable fashion.
+Recently [I launched a tool](https://swatcher.ie) that creates a colour scheme from an image. One of the main things I worked on was how to provide an image to a service like Claude in a reasonable fashion.
 
 I wanted an optimised image but didn’t want to keep it long-term. I only need it for analysis.
 

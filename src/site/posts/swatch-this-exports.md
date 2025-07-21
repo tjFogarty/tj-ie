@@ -1,5 +1,5 @@
 ---
-title: "Swatch This: Exports"
+title: "Swatcher: Exports"
 description: "Exporting colour palettes to different formats like JSON, Tailwind, CSS..."
 date: 2025-06-19T21:10:00.000+01:00
 permalink: "/swatch-this-exports/"
@@ -10,7 +10,7 @@ tags:
 layout: layouts/post.njk
 ---
 
-I'm still tipping away, working on [Swatch This](https://swatch.tj.ie). The latest update being exports.
+I'm still tipping away, working on [Swatcher](https://swatcher.ie). The latest update being exports.
 
 Right now, that's CSS, Tailwind (v3 and v4), SCSS variables, JSON and a JavaScript object.
 
