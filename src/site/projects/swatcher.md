@@ -1,7 +1,7 @@
 ---
 title: "Swatcher"
 description: "A web app for browsing paints available in Ireland. Find, browse and organise your paint projects."
-date: 2023-08-12
+date: 2025-07-21T22:10:00.000+01:00
 layout: layouts/project.njk
 projectUrl: "https://swatcher.ie"
 coverPreview: "/projects/swatcher/home.png"

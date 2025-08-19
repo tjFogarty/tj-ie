@@ -1,7 +1,7 @@
 ---
 title: "Personal Website & Blog"
 description: "A modern, fast, and accessible personal website built with Eleventy, featuring custom CSS architecture and performance optimizations."
-date: 2024-01-15
+date: 2025-08-19T22:10:00.000+01:00
 layout: layouts/project.njk
 projectUrl: "https://tj.ie"
 githubUrl: "https://github.com/tjfogarty/tj-ie"
