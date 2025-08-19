@@ -1,6 +1,7 @@
 [build]
   publish = "_site"
   command = "npm run build"
+  functions = "netlify/functions"
 
 [[redirects]]
 from = "https://teej.netlify.app/*"
