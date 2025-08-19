@@ -61,6 +61,25 @@
   }
 }
 
+/* Dark hero variant */
+.c-hero--dark {
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+  color: #fff;
+}
+
+.c-hero--dark .c-hero__prompt {
+  color: var(--colour-accent);
+}
+
+.c-hero--dark .c-hero__blocks {
+  border-color: rgba(145, 200, 235, 0.3);
+}
+
+.c-hero--dark .c-hero__block {
+  border-color: rgba(145, 200, 235, 0.3);
+  background-color: rgba(145, 200, 235, 0.1);
+}
+
 @keyframes pulse {
   0% {
     opacity: 0;

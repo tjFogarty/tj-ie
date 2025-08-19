@@ -1,0 +1,81 @@
+---
+layout: layouts/base.njk
+templateClass: tmpl-project
+---
+
+<article role="article" aria-labelledby="project-title" class="c-project">
+  <header class="c-hero">
+    <div class="o-wrapper">
+      <div class="c-hero__content">
+        <h1 id="project-title" class="c-hero__title">
+          <span class="c-hero__prompt" aria-hidden="true">></span>
+          <span>{% glitchText title %}</span>
+        </h1>
+      </div>
+    </div>
+  </header>
+
+  <div class="o-wrapper">
+    <div class="c-content" role="main">
+      {% if description %}
+        <p class="c-post__description">{{ description }}</p>
+      {% endif %}
+
+      {% if coverPreview %}
+        <img src="/assets/images/{{ coverPreview }}"
+             alt="Screenshot of {{ title }}"
+             loading="lazy">
+      {% endif %}
+
+      <div class="c-project__meta">
+        {% if projectUrl %}
+          <a href="{{ projectUrl }}"
+             class="c-button"
+             target="_blank"
+             rel="noopener noreferrer">
+            View Project
+          </a>
+        {% endif %}
+        {% if githubUrl %}
+          <a href="{{ githubUrl }}"
+             class="c-button"
+             target="_blank"
+             rel="noopener noreferrer">
+            Source Code
+          </a>
+        {% endif %}
+      </div>
+      {% if technologies and technologies.length > 0 %}
+        <aside class="c-project__technologies" aria-labelledby="tech-heading">
+          <h2 id="tech-heading" class="c-project__tech-title">Technologies Used</h2>
+          <ul class="c-project__tech-list" role="list">
+            {% for tech in technologies %}
+              <li class="c-project__tech-item">{{ tech }}</li>
+            {% endfor %}
+          </ul>
+        </aside>
+      {% endif %}
+
+      {{ content | safe }}
+
+    </div>
+
+    {% if tags and tags.length > 0 %}
+      <aside class="c-project__tags" aria-labelledby="tags-heading">
+        <h2 id="tags-heading" class="sr-only">Tags</h2>
+        <ul class="c-tag-list" role="list">
+          {% for tag in tags %}
+            {%- if collections.tagList.indexOf(tag) != -1 -%}
+              {% set tagUrl %}/tags/{{ tag }}/{% endset %}
+              <li role="listitem">
+                <a href="{{ tagUrl | url }}"
+                    class="c-tag"
+                    aria-label="View all posts tagged with {{ tag }}">{{ tag }}</a>
+              </li>
+            {%- endif -%}
+          {% endfor %}
+        </ul>
+      </aside>
+    {% endif %}
+  </div>
+</article>
