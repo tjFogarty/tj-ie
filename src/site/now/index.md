@@ -98,11 +98,13 @@ Documentation. I need to get back into books.
 - Laravel
 - Google Firebase
 - Vue stores and caching
+- How to be better at guitar
 
 ## 🎯 Current Focus
 
 - Getting in shape
 - Building more creative side projects
+- Getting back into playing guitar
 
 ## 💭 On My Mind
 
