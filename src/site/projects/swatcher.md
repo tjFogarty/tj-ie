@@ -11,6 +11,7 @@ technologies:
   - "Node"
   - "Tailwind"
   - "Firebase"
+  - "TypeScript"
 tags:
   - "colour tools"
   - "productivity"
