@@ -20,7 +20,7 @@ With that in mind, I wanted to provide the proper meta tags ahead of time, and p
 
 With Netlify, we have access to [Edge Functions](https://docs.netlify.com/build/edge-functions/overview/). These are distributed globally and help ensure that users from anywhere in the world receive a quick response.
 
-In my case, I wanted to inject meta tags for paint information. So to start, I created a function in `netlify/edge-functions/example.ts`.
+In my case, I wanted to inject meta tags for paint information. So to start, I created a function in `netlify/edge-functions/paint.ts`.
 
 Next, in `netlify.toml`, I added the following to ensure any paint detail pages get routed to this function:
 
