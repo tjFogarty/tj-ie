@@ -3,15 +3,16 @@
 }
 
 .c-section__heading {
-  position: relative;
   display: inline-block;
-  padding: 1em;
-  color: #fff;
+  align-items: center;
+  margin-bottom: 16px;
+  font-size: 11px;
+  letter-spacing: 0.18em;
   text-transform: uppercase;
-  font-size: 1em;
-  border-inline-start: 1px dashed var(--colour-accent);
-  border-inline-end: 1px dashed var(--colour-accent);
-  border-top: 1px dashed var(--colour-accent);
+  color: var(--ink);
+  border: 1px solid var(--ink);
+  padding: 12px;
+  background: var(--bg);
 }
 
 .c-section__cta {

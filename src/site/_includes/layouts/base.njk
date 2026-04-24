@@ -45,14 +45,30 @@
       <meta property="og:image:height" content="630" />
     {% endif %}
     <link rel="preload"
-          href="/assets/fonts/fira-mono-v14-latin-regular.woff2"
+          href="/assets/fonts/fraunces-v38-latin-italic.woff2"
           as="font"
           type="font/woff2" />
 
     <link rel="preload"
-          href="/assets/fonts/work-sans-v23-latin-regular.woff2"
+          href="/assets/fonts/fraunces-v38-latin-regular.woff2"
           as="font"
           type="font/woff2" />
+
+
+    <link rel="preload"
+          href="/assets/fonts/jetbrains-mono-v24-latin-500.woff2"
+          as="font"
+          type="font/woff2" />
+
+    <link rel="preload"
+          href="/assets/fonts/jetbrains-mono-v24-latin-italic.woff2"
+          as="font"
+          type="font/woff2" />
+
+    <link rel="preload"
+    href="/assets/fonts/jetbrains-mono-v24-latin-regular.woff2"
+    as="font"
+    type="font/woff2" />
     {% set css %}
       {% include "css/01-settings/_text.css" %}
       {% include "css/01-settings/_colours.css" %}
@@ -89,7 +105,9 @@
         {% include customStyles %}
       {% endif %}
     {% endset %}
+
     <style>{{ css | cssmin('main') | safe }}</style>
+
     <script src="https://cdn.counter.dev/script.js"
             data-id="c5e16e16-b46b-4da8-bce5-afce4e892aef"
             data-utcoffset="1"

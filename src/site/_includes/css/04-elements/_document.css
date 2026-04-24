@@ -1,12 +1,15 @@
 body {
-  font-family: var(--font-sans-serif);
-  font-size: 1em;
-  background-color: var(--colour-primary);
-  background-size: 65px 65px;
-  background-image: linear-gradient(to right,
-      lch(58 97.19 2.2 / 0.1) 1px,
-      transparent 1px),
-    linear-gradient(to bottom, lch(58 97.19 2.2 / 0.1) 1px, transparent 1px);
+  color: var(--ink);
+  font-family: var(--mono);
+  font-size: 15px;
+  line-height: 1.55;
+  font-feature-settings: "ss01", "cv01";
+  background-color: var(--bg);
+  background-image: linear-gradient(var(--grid-line) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid-line) 1px, transparent 1px);
+  background-size: 32px 32px;
+  min-height: 100vh;
+  background-position: -1px -1px;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

@@ -16,6 +16,11 @@ eleventyNavigation:
       <ol class="o-list-bare o-grid o-grid--3-col" role="list">
         {% for post in postslist | reverse %}
           <li {% if loop.index === 1 or loop.index === 2 %}class="o-grid-column-half"{% else %}class="o-grid-column-third"{% endif %} role="listitem">
+            {% if loop.index === 1 or loop.index === 2 %}
+              {% set modifier = "c-teaser--paper" %}
+            {% else %}
+              {% set modifier = "" %}
+            {% endif %}
             {% include "components/post-teaser.njk" %}
           </li>
         {% endfor %}

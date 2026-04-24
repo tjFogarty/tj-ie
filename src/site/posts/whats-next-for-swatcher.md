@@ -6,6 +6,8 @@ permalink: "/whats-next-for-swatcher/"
 coverPreview: swatcher-updates.png
 cover: "https://tj.ie/assets/images/swatcher-updates.png"
 layout: layouts/post.njk
+tags:
+  - ai
 ---
 
 [Swatcher](https://swatcher.ie) was officially launched in May of 2025, and in that time, it has gone through many updates. It has exceeded my own expectations in terms of traction and gets over a thousand visitors a month.

@@ -6,6 +6,9 @@ permalink: "/how-to-api/"
 coverPreview: how-to-api.png
 cover: "https://tj.ie/assets/images/how-to-api.png"
 layout: layouts/post.njk
+tags:
+  - api
+  - node
 ---
 
 I was working away on [Swatcher](https://swatcher.ie) a few weeks ago, and the server-side situation started to bother me.

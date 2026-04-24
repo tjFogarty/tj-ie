@@ -11,7 +11,7 @@ eleventyNavigation:
     <div class="o-wrapper">
       <div class="c-hero__content">
         <h1 class="c-hero__title">
-          <span class="c-hero__prompt" aria-hidden="true">></span><span class="glitch-text" aria-label="Archive">Archive</span>
+          <span class="glitch-text" aria-label="Archive">Archive</span>
         </h1>
       </div>
     </div>
@@ -21,6 +21,11 @@ eleventyNavigation:
       {% set postslist = collections.posts %}
       {% for post in postslist | reverse %}
       <li {% if loop.index === 1 or loop.index === 2 %}class="o-grid-column-half"{% else %}class="o-grid-column-third"{% endif %}>
+        {% if loop.index === 1 or loop.index === 2 %}
+          {% set modifier = "c-teaser--paper" %}
+        {% else %}
+          {% set modifier = "" %}
+        {% endif %}
         {% include "components/post-teaser.njk" %}
       </li>
       {% endfor %}

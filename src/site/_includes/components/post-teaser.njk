@@ -11,6 +11,17 @@
     class="c-teaser__link"
     title="Link to {{ post.data.title }}">
 
+    <div class="c-teaser__info">
+      {% if post.data.tags and post.data.tags.length > 1 %}
+        {{ post.data.tags[1] }}
+      {% endif %}
+      <time
+        datetime="{{ post.date | htmlDateString }}"
+        class="c-teaser__date">
+          {{ post.date | readableDate }}
+      </time>
+    </div>
+
     {% if post.data.coverPreview %}
       <div class="c-teaser__img-container">
         <img class="c-teaser__img" src="/assets/images/{{ post.data.coverPreview | url }}" alt="Cover image for {{ post.data.title }}" sizes="(max-width: 600px) 100vw, 600px" />
@@ -31,12 +42,6 @@
           {{ post.data.description }}
         </p>
       {% endif %}
-
-      <time
-        datetime="{{ post.date | htmlDateString }}"
-        class="c-teaser__date">
-          {{ post.date | readableDate }}
-      </time>
     </div>
   </a>
 </article>

@@ -1,13 +1,12 @@
 .c-footer {
-  color: #fff;
-  background-color: #0f0f0f;
-  background-size: 65px 65px;
-  background-image: linear-gradient(to right,
-      rgba(255, 255, 255, 0.05) 1px,
-      transparent 1px),
-    linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
-  padding: 5em 0;
-  margin-top: 5em;
+  padding: 40px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 11px;
+  color: var(--ink-faint);
+  letter-spacing: 0.1em;
+  border-top: 1px solid var(--rule);
 }
 
 .c-footer__content {
@@ -28,11 +27,17 @@
 }
 
 .c-footer__icon {
-  color: var(--colour-secondary);
+  width: 32px;
+  height: 32px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--rule);
+  color: var(--ink-faint);
 
   svg {
-    width: 35px;
-    height: 35px;
+    width: 20px;
+    height: 20px;
   }
 
   &[href*="github.com"] {
@@ -60,7 +65,7 @@
 
   0%,
   85% {
-    color: var(--colour-secondary);
+    color: currentColor;
   }
 
   87%,
@@ -70,7 +75,7 @@
 
   91%,
   93% {
-    color: var(--colour-secondary);
+    color: currentColor;
   }
 
   95%,
@@ -80,7 +85,7 @@
 
   99%,
   100% {
-    color: var(--colour-secondary);
+    color: currentColor;
   }
 }
 
@@ -88,7 +93,7 @@
 
   0%,
   78% {
-    color: var(--colour-secondary);
+    color: currentColor;
   }
 
   80% {
@@ -97,7 +102,7 @@
 
   82%,
   88% {
-    color: var(--colour-secondary);
+    color: currentColor;
   }
 
   90%,
@@ -107,7 +112,7 @@
 
   94%,
   100% {
-    color: var(--colour-secondary);
+    color: currentColor;
   }
 }
 
@@ -115,7 +120,7 @@
 
   0%,
   92% {
-    color: var(--colour-secondary);
+    color: currentColor;
   }
 
   94%,
@@ -125,6 +130,6 @@
 
   98%,
   100% {
-    color: var(--colour-secondary);
+    color: currentColor;
   }
 }

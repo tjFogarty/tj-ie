@@ -4,5 +4,5 @@ a {
 
 a:focus,
 a:hover {
-  color: var(--colour-primary);
+  color: var(--ink);
 }

@@ -8,16 +8,20 @@
   color: #fff;
 }
 
-.c-hero__prompt {
-  color: var(--colour-accent);
-  line-height: 1.4;
-  animation: pulse 1.5s linear infinite;
+.c-hero__meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 11px;
+  color: var(--ink-faint);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 24px;
 }
 
 .c-hero__title {
   display: flex;
-  gap: 0.5em;
-  font-size: clamp(2em, 3.5vw, 4em);
+  gap: 21px;
+  font-size: clamp(25px, 4.2vw, 56px);
   text-align: start;
 }
 
@@ -65,10 +69,6 @@
 .c-hero--dark {
   background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
   color: #fff;
-}
-
-.c-hero--dark .c-hero__prompt {
-  color: var(--colour-accent);
 }
 
 .c-hero--dark .c-hero__blocks {

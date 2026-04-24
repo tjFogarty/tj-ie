@@ -1,12 +1,10 @@
 .c-button {
-  display: inline-block;
+  background: var(--accent-2);
+  border-color: var(--accent-2);
+  color: oklch(0.22 0.04 40);
+  padding: 10px 20px;
+  font-size: 13px;
   text-decoration: none;
-  background-color: var(--colour-secondary);
-  color: var(--colour-primary);
-  padding: 0.6em 0.9em;
-  border-radius: 5px;
-  border: none;
-  cursor: pointer;
 
   &:hover,
   &:focus {
