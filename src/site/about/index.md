@@ -6,6 +6,8 @@ permalink: "/about/"
 eleventyNavigation:
   key: About Me
   order: 4
+tags:
+  - personal
 ---
 
 I’m TJ, a web devel­op­er from [Lim­er­ick, Ire­land](https://en.wikipedia.org/wiki/Limerick) 🇮🇪 and liv­ing in Water­ford. I have a BSc Hons in Multimedia Programming, and Design from the Limerick Institute of Technology.
