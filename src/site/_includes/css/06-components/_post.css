@@ -7,11 +7,12 @@
   color: var(--ink);
 
   [role="main"] a:not(.c-button) {
-    color: var(--ink-dim);
+    color: var(--accent);
 
     &:hover,
     &:focus {
-      color: var(--colour-links);
+      background: var(--accent);
+      color: white;
     }
   }
 
@@ -55,7 +56,16 @@
   }
 
   h2 {
-    font-size: 1.5em;
+    font-size: 28px;
+    letter-spacing: -0.01em;
+    font-weight: 500;
+    margin-top: 2.4em;
+    margin-bottom: 0.6em;
+    padding-top: 24px;
+    border-top: 1px solid var(--rule);
+    display: flex;
+    align-items: baseline;
+    gap: 16px;
   }
 
   h3 {
@@ -66,19 +76,51 @@
     font-size: 1.1em;
   }
 
+  hr {
+    border-color: var(--rule);
+  }
+
   /* Better list styling */
   ul,
   ol {
     margin: 1.25em 0;
     padding-left: 1.5em;
+    list-style: none;
+    padding: 0;
   }
 
   li {
+    padding-left: 28px;
+    position: relative;
     margin-bottom: 0.5em;
+
+    &:before {
+      content: "—";
+      position: absolute;
+      left: 0;
+      color: var(--accent);
+    }
   }
 
   li:last-child {
     margin-bottom: 0;
+  }
+
+  ol {
+    counter-reset: li;
+
+    li {
+      &:before {
+        counter-increment: li;
+        content: counter(li, decimal-leading-zero);
+        position: absolute;
+        left: 0;
+        color: var(--accent);
+        font-variant-numeric: tabular-nums;
+        font-size: 11px;
+        top: 4px;
+      }
+    }
   }
 
   /* Code blocks */
