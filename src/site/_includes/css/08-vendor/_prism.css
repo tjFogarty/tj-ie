@@ -1,17 +1,14 @@
 /*
- * Laserwave Theme originally by Jared Jones for Visual Studio Code
- * https://github.com/Jaredk3nt/laserwave
- *
- * Ported for PrismJS by Simon Jespersen [https://github.com/simjes]
+ * Prism theme tuned to the site palette in 01-settings/_colours.css.
+ * Uses the shared design tokens so syntax colours stay in sync with the
+ * rest of the theme.
  */
 
 code[class*="language-"],
 pre[class*="language-"] {
-  background: #27212e;
-  color: #ffffff;
+  background: var(--bg-2);
+  color: var(--ink);
   font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
-  /* this is the default */
-  /* The following properties are standard, please leave them as they are */
   font-size: 1em;
   direction: ltr;
   text-align: left;
@@ -22,7 +19,6 @@ pre[class*="language-"] {
   -moz-tab-size: 2;
   -o-tab-size: 2;
   tab-size: 2;
-  /* The following properties are also standard */
   -webkit-hyphens: none;
   -moz-hyphens: none;
   -ms-hyphens: none;
@@ -33,7 +29,7 @@ code[class*="language-"]::-moz-selection,
 code[class*="language-"] ::-moz-selection,
 pre[class*="language-"]::-moz-selection,
 pre[class*="language-"] ::-moz-selection {
-  background: #eb64b927;
+  background: color-mix(in oklab, var(--accent) 30%, transparent);
   color: inherit;
 }
 
@@ -41,54 +37,51 @@ code[class*="language-"]::selection,
 code[class*="language-"] ::selection,
 pre[class*="language-"]::selection,
 pre[class*="language-"] ::selection {
-  background: #eb64b927;
+  background: color-mix(in oklab, var(--accent) 30%, transparent);
   color: inherit;
 }
 
-/* Properties specific to code blocks */
 pre[class*="language-"] {
   padding: 1em;
-  /* this is standard */
   margin: 0.5em 0;
-  /* this is the default */
   overflow: auto;
-  /* this is standard */
   border-radius: 0.5em;
+  border: 1px solid var(--rule);
 }
 
-/* Properties specific to inline code */
-:not(pre)>code[class*="language-"] {
+:not(pre) > code[class*="language-"] {
   padding: 0.2em 0.3em;
   border-radius: 0.5rem;
   white-space: normal;
-  /* this is standard */
+  background: var(--bg-3);
 }
 
 .token.comment,
 .token.prolog,
 .token.cdata {
-  color: #91889b;
+  color: var(--ink-faint);
+  font-style: italic;
 }
 
 .token.punctuation {
-  color: #7b6995;
+  color: var(--ink-dim);
 }
 
 .token.builtin,
 .token.constant,
 .token.boolean {
-  color: #ffe261;
+  color: var(--colour-yellow);
 }
 
 .token.number {
-  color: #b381c5;
+  color: var(--accent-2);
 }
 
 .token.important,
 .token.atrule,
 .token.property,
 .token.keyword {
-  color: #40b4c4;
+  color: var(--accent-cool);
 }
 
 .token.doctype,
@@ -97,30 +90,29 @@ pre[class*="language-"] {
 .token.tag,
 .token.class-name,
 .token.symbol {
-  color: #74dfc4;
+  color: color-mix(in oklab, var(--accent-cool) 70%, var(--ink));
 }
 
 .token.attr-name,
 .token.function,
 .token.deleted,
 .token.selector {
-  color: #eb64b9;
+  color: var(--accent);
 }
 
 .token.attr-value,
 .token.regex,
 .token.char,
 .token.string {
-  color: #b4dce7;
+  color: color-mix(in oklab, var(--colour-yellow) 60%, var(--ink));
 }
 
 .token.entity,
 .token.url,
 .token.variable {
-  color: #ffffff;
+  color: var(--ink);
 }
 
-/* The following rules are pretty similar across themes, but feel free to adjust them */
 .token.bold {
   font-weight: bold;
 }

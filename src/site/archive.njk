@@ -21,7 +21,7 @@ eleventyNavigation:
       {% set postslist = collections.posts %}
       {% for post in postslist | reverse %}
       <li {% if loop.index === 1 or loop.index === 2 %}class="o-grid-column-half"{% else %}class="o-grid-column-third"{% endif %}>
-        {% if loop.index === 1 or loop.index === 2 %}
+        {% if loop.index === 1 %}
           {% set modifier = "c-teaser--paper" %}
         {% else %}
           {% set modifier = "" %}

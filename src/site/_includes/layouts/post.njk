@@ -27,15 +27,15 @@ templateClass: tmpl-post
         {% if description %}
         <p class="c-post__description">{{ description }}</p>
         {% endif %}
-        {% if date %}
         <div class="c-post__meta">
+          {% if date %}
           <time datetime="{{ date | htmlDateString }}">
             <span class="sr-only">Published on </span>{{ date | readableDate }}
           </time>
+          {% endif %}
 
-          <span>{{ content | readTime }}
+          <span>{{ content | readTime }}</span>
         </div>
-        {% endif %}
       </header>
       <div role="main">
         {{ content | safe }}

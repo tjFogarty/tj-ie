@@ -1,13 +1,14 @@
 .c-button {
   background: var(--accent-2);
   border-color: var(--accent-2);
-  color: oklch(0.22 0.04 40);
+  color: var(--bg);
   padding: 10px 20px;
   font-size: 13px;
   text-decoration: none;
 
   &:hover,
   &:focus {
+    color: var(--bg);
     background-color: #fff;
   }
 }

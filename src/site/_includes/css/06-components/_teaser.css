@@ -38,6 +38,12 @@
   }
 }
 
+@media (max-width: 649px) {
+  .c-teaser {
+    margin-bottom: 2em;
+  }
+}
+
 @media (min-width: 650px) {
   .c-teaser {
     margin-bottom: 0;

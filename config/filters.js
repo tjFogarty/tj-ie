@@ -1,9 +1,9 @@
-import browserslist from 'browserslist';
-import md from 'markdown-it';
+import browserslist from "browserslist";
+import md from "markdown-it";
 import { transform, browserslistToTargets } from "lightningcss";
-import { cache } from './cache.js';
+import { cache } from "./cache.js";
 
-const targets = browserslistToTargets(browserslist('>= 0.25%'));
+const targets = browserslistToTargets(browserslist(">= 0.25%"));
 
 // https://stackoverflow.com/a/15397495
 const nth = (d) => {
@@ -20,14 +20,14 @@ const nth = (d) => {
   }
 };
 
-const isDevelopmentMode = process.env.NODE_ENV === 'development';
+const isDevelopmentMode = process.env.NODE_ENV === "development";
 
 export function initFilters(eleventyConfig) {
-  eleventyConfig.addFilter("cssmin", function (css, key = 'styles') {
+  eleventyConfig.addFilter("cssmin", function (css, key = "styles") {
     const config = {
       minify: true,
       code: Buffer.from(css),
-      targets
+      targets,
     };
 
     if (isDevelopmentMode) {
@@ -46,7 +46,7 @@ export function initFilters(eleventyConfig) {
   eleventyConfig.addFilter("readableDate", (dateObj) => {
     const day = dateObj.toLocaleDateString("en-GB", { day: "numeric" });
     const monthAndYear = dateObj.toLocaleDateString("en-GB", {
-      month: "long",
+      month: "short",
       year: "numeric",
     });
 

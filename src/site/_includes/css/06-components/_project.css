@@ -10,9 +10,8 @@
 }
 
 .c-project__technologies {
-  background-color: var(--colour-primary);
+  background-color: var(--bg-2);
   border-left: 4px solid var(--colour-accent);
-  border-radius: 5px;
   margin: 3em 0;
   padding: 2.5em;
 }
@@ -36,8 +35,8 @@
 }
 
 .c-project__tech-list .c-project__tech-item {
-  background-color: var(--colour-secondary);
-  color: var(--colour-primary);
+  background-color: var(--paper);
+  color: var(--bg);
   border-radius: 4px;
   font-size: 0.95em;
   font-weight: 500;

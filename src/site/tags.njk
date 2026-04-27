@@ -26,9 +26,6 @@ permalink: /tags/{{ tag }}/
       </div>
     </div>
   </div>
-  <div class="o-wrapper">
-    {% set postslistYears = "off" %}
-    {% set postslist = collections[ tag ] %}
-    {% include "postslist.njk" %}
-  </div>
+  {% set postslist = collections[ tag ] %}
+  {% include "postslist.njk" %}
 </article>
