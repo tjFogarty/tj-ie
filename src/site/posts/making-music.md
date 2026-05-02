@@ -17,7 +17,7 @@ It didn't really pan out. I just stuck to recording guitar covers and lost inter
 
 ---
 
-Over the last year, I’ve really challenged myself to learn the software and invest in myself to help me enjoy the process of making music. I’ve had a domain - [https://hauntedlogic.com](hauntedlogic.com) for the better part of a decade. I just liked the name, but didn’t know what to use it for. Now I do.
+Over the last year, I’ve really challenged myself to learn the software and invest in myself to help me enjoy the process of making music. I’ve had a domain - [hauntedlogic.com](https://hauntedlogic.com) for the better part of a decade. I just liked the name, but didn’t know what to use it for. Now I do.
 
 With that, here’s the first song I’ve ever written. It’s not perfect, but it was a lot of fun, and I feel pretty happy for sticking with it.
 
