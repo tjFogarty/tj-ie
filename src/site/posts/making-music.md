@@ -13,7 +13,7 @@ tags:
 
 I've been toying with the idea of writing music for many years now. I tried it nearly 20 years ago, directly wiring up my amp to my desktop computer using software called Mixcraft. It was version 3 at the time, I think.
 
-It didn't really pan out. I just stuck to recording guitar covers and lost interest due to college and getting a job.
+It didn't really pan out. I just stuck to recording guitar covers, with a few original recordings here and there, but nothing substantial.
 
 ---
 
