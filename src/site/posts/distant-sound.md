@@ -7,6 +7,7 @@ layout: layouts/post.njk
 coverPreview: "sound.png"
 tags:
   - javascript
+  - audio
 ---
 
 I had a small idea for a demo based on sound, with the idea that the further you scroll from it, the quieter it gets.
