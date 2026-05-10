@@ -27,4 +27,4 @@ I mostly post to my blog, but here's a couple of other things I've worked on:
 
 - Create and manage colours and find paints: [Swatcher](https://swatcher.ie)
 - CSS-Tricks article: [Tim­ber and Twig Reignit­ed my Love for Word­Press](https://css-tricks.com/timber-and-twig-reignited-my-love-for-wordpress/)
-- Free Skillshare course: [Create an RSS Feed Reader with Node and Vue.js](https://skl.sh/3eVc2WY)
+- Working on some [heavier music](https://open.spotify.com/track/22ZjpFFbw9DQ6aUkoaCBeE?si=1c0e2b5eb8b04eea) and some [lighter music](https://open.spotify.com/track/7lqs1RihztNzs6V5CiHQ4d?si=992345e7abfb4644)
